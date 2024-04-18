@@ -18,6 +18,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Magmeta</title>
   </head>
   <body>
@@ -25,7 +32,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container d-flex justify-content-between">
           <a class="nav-brand" href="#">
-            <img src="./src/img/Logo Magmeta Branca 4.svg" alt="Logo Magmeta" />
+            <img class="logo" src="./src/img/logo-magmeta-white.svg" alt="Logo Magmeta" />
           </a>
 
           <button
@@ -59,12 +66,15 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="http://127.0.0.1:5500/index.html#"
+                    >Inicio</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Produtos</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -96,19 +106,13 @@
           <div class="collapse navbar-collapse text-center" id="menu-nav">
             <ul class="navbar-nav">
               <li class="botao-roxo">
-                <a class="nav-link" href="#">Vamos Conversar</a>
+                <a class="nav-link" href="#"><h5>Vamos Conversar</h5></a>
               </li>
 
               <li class="nav-item px-3">
                 <button class="botao-tema" id="toggle-theme-btn">
-                  <img src="./src/img/Icone1.svg" alt="" />
+                  <img src="./src/img/botao-tema-white.svg" alt="" />
                 </button>
-              </li>
-
-              <li class="nav-item px-3 pt-2">
-                <a class="botao-menu" href="#">
-                  <span class="navbar-toggler-icon"></span>
-                </a>
               </li>
             </ul>
           </div>
@@ -146,31 +150,31 @@
             <ul class="col-9 d-flex">
               <li class="mx-2 my-2">
                 <img
-                  src="./src/img/Vector.png"
+                  src="./src/img/logo-instagram-white.svg"
                   alt="LogoInsta"
-                  class="img-fluid mr-3"
+                  class="img-fluid mr-3 logo"
                 />
               </li>
 
               <li class="mx-2 my-2">
                 <img
-                  src="./src/img/Vector.png"
-                  alt="LogoInsta"
-                  class="img-fluid mr-3"
+                  src="./src/img/logo-bolinha-white.svg"
+                  alt="LogoBolinha"
+                  class="img-fluid mr-3 logo"
                 />
               </li>
 
               <li class="mx-2 my-2">
                 <img
-                  src="./src/img/Vector.png"
-                  alt="LogoInsta"
-                  class="img-fluid mr-3"
+                  src="./src/img/logo-behance-white.svg"
+                  alt="LogoBehance"
+                  class="img-fluid mr-3 logo"
                 />
               </li>
             </ul>
 
             <div class="col-3 d-flex justify-content-end mb-3">
-              <img src="./src/img/IconeWpp.png" alt="IconeWpp" />
+              <img src="./src/img/logo-wpp.svg" alt="IconeWpp" />
             </div>
           </div>
         </div>
@@ -203,175 +207,199 @@
               <div class="carousel-item active">
                 <div class="row my-2">
                   <div class="col-sm-12 col-md-3">
-                    <img width="100%"
-                      src="./src/img/Frame 64.png "
+                    <img
+                      width="100%"
+                      src="./src/img/Frame 64.png"
                       class="img-fluid hover-scale"
                       alt=""
                     />
-                    <div
-                      class="botao-carrousel justify-content-between flex-wrap d-flex"
-                    >
-                      <div class="pt-2 ms-4 align-items-start">
-                        <h4>Ilustração</h4>
-                        <h6>black-blues</h6>
+                    <div class="botao-carrousel justify-content-between flex-wrap d-flex"">
+                      <div class="col-md-5 texto-botao-carousel">
+                        <div>
+                          <p>Ilustração</p>
+                          <small>black-blues</small>
+                        </div>
                       </div>
-                      <div class="pt-4 me-4">
-                        <h6>
-                          Ver mais <img src="./src/img/setinha.png" alt="" />
-                        </h6>
+                      <div class="col-md-6  justify-content-end d-flex">
+                          <div class="texto-ver-mais">
+                            <small>
+                            Ver mais <img src="./src/img/setinha.svg" alt="" />
+                          </small>
+                        </div>
                       </div>
-                    </div>
+                  </div>
                   </div>
 
                   <div class="col-sm-12 col-md-3">
-                    <img width="100%"
+                    <img
+                      width="100%"
                       src="./src/img/Frame 64.png "
                       class="img-fluid hover-scale"
                       alt=""
                     />
-                    <div
-                      class="botao-carrousel justify-content-between flex-wrap d-flex"
-                    >
-                      <div class="pt-2 ms-4 align-items-start">
-                        <h4>Ilustração</h4>
-                        <h6>black-blues</h6>
+                    <div class="botao-carrousel justify-content-between flex-wrap d-flex"">
+                      <div class="col-md-5 texto-botao-carousel">
+                        <div>
+                          <p>Ilustração</p>
+                          <small>black-blues</small>
+                        </div>
                       </div>
-                      <div class="pt-4 me-4">
-                        <h6>
-                          Ver mais <img src="./src/img/setinha.png" alt="" />
-                        </h6>
+                      <div class="col-md-6  justify-content-end d-flex">
+                          <div class="texto-ver-mais">
+                            <small>
+                            Ver mais <img src="./src/img/setinha.svg" alt="" />
+                          </small>
+                        </div>
                       </div>
-                    </div>
+                  </div>
                   </div>
 
                   <div class="col-sm-12 col-md-3">
-                    <img width="100%"
+                    <img
+                      width="100%"
                       src="./src/img/Frame 64.png "
                       class="img-fluid hover-scale"
                       alt=""
                     />
-                    <div
-                      class="botao-carrousel justify-content-between flex-wrap d-flex"
-                    >
-                      <div class="pt-2 ms-4 align-items-start">
-                        <h4>Ilustração</h4>
-                        <h6>black-blues</h6>
+                    <div class="botao-carrousel justify-content-between flex-wrap d-flex"">
+                      <div class="col-md-5 texto-botao-carousel">
+                        <div>
+                          <p>Ilustração</p>
+                          <small>black-blues</small>
+                        </div>
                       </div>
-                      <div class="pt-4 me-4">
-                        <h6>
-                          Ver mais <img src="./src/img/setinha.png" alt="" />
-                        </h6>
+                      <div class="col-md-6  justify-content-end d-flex">
+                          <div class="texto-ver-mais">
+                            <small>
+                            Ver mais <img src="./src/img/setinha.svg" alt="" />
+                          </small>
+                        </div>
                       </div>
-                    </div>
+                  </div>
                   </div>
 
                   <div class="col-sm-12 col-md-3">
-                    <img width="100%"
+                    <img
+                      width="100%"
                       src="./src/img/Frame 64.png "
                       class="img-fluid hover-scale"
                       alt=""
                     />
-                    <div
-                      class="botao-carrousel justify-content-between flex-wrap d-flex"
-                    >
-                      <div class="pt-2 ms-4 align-items-start">
-                        <h4>Ilustração</h4>
-                        <h6>black-blues</h6>
+                    <div class="botao-carrousel justify-content-between flex-wrap d-flex"">
+                      <div class="col-md-5 texto-botao-carousel">
+                        <div>
+                          <p>Ilustração</p>
+                          <small>black-blues</small>
+                        </div>
                       </div>
-                      <div class="pt-4 me-4">
-                        <h6>
-                          Ver mais <img src="./src/img/setinha.png" alt="" />
-                        </h6>
+                      <div class="col-md-6  justify-content-end d-flex">
+                          <div class="texto-ver-mais">
+                            <small>
+                            Ver mais <img src="./src/img/setinha.svg" alt="" />
+                          </small>
+                        </div>
                       </div>
-                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
 
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <div class="row my-2">
                   <div class="col-sm-12 col-md-3">
-                    <img width="100%"
+                    <img
+                      width="100%"
                       src="./src/img/Frame 64.png "
                       class="img-fluid hover-scale"
                       alt=""
                     />
-                    <div
-                      class="botao-carrousel justify-content-between flex-wrap d-flex"
-                    >
-                      <div class="pt-2 ms-4 align-items-start">
-                        <h4>Ilustração</h4>
-                        <h6>black-blues</h6>
-                      </div>
-                      <div class="pt-4 me-4">
-                        <h6>
-                          Ver mais <img src="./src/img/setinha.png" alt="" />
-                        </h6>
-                      </div>
+                    <div class="botao-carrousel justify-content-between flex-wrap d-flex"">
+                        <div class="col-md-5 texto-botao-carousel">
+                          <div>
+                            <p>Ilustração</p>
+                            <small>black-blues</small>
+                          </div>
+                        </div>
+                        <div class="col-md-6  justify-content-end d-flex">
+                            <div class="texto-ver-mais">
+                              <small>
+                              Ver mais <img src="./src/img/setinha.svg" alt="" />
+                            </small>
+                          </div>
+                        </div>
                     </div>
                   </div>
 
                   <div class="col-sm-12 col-md-3">
-                    <img width="100%"
+                    <img
+                      width="100%"
                       src="./src/img/Frame 64.png "
                       class="img-fluid hover-scale"
                       alt=""
                     />
-                    <div
-                      class="botao-carrousel justify-content-between flex-wrap d-flex"
-                    >
-                      <div class="pt-2 ms-4 align-items-start">
-                        <h4>Ilustração</h4>
-                        <h6>black-blues</h6>
+                    <div class="botao-carrousel justify-content-between flex-wrap d-flex"">
+                      <div class="col-md-5 texto-botao-carousel">
+                        <div>
+                          <p>Ilustração</p>
+                          <small>black-blues</small>
+                        </div>
                       </div>
-                      <div class="pt-4 me-4">
-                        <h6>
-                          Ver mais <img src="./src/img/setinha.png" alt="" />
-                        </h6>
+                      <div class="col-md-6  justify-content-end d-flex">
+                          <div class="texto-ver-mais">
+                            <small>
+                            Ver mais <img src="./src/img/setinha.svg" alt="" />
+                          </small>
+                        </div>
                       </div>
-                    </div>
+                  </div>
                   </div>
 
                   <div class="col-sm-12 col-md-3">
-                    <img width="100%"
+                    <img
+                      width="100%"
                       src="./src/img/Frame 64.png "
                       class="img-fluid hover-scale"
                       alt=""
                     />
-                    <div
-                      class="botao-carrousel justify-content-between flex-wrap d-flex"
-                    >
-                      <div class="pt-2 ms-4 align-items-start">
-                        <h4>Ilustração</h4>
-                        <h6>black-blues</h6>
+                    <div class="botao-carrousel justify-content-between flex-wrap d-flex"">
+                      <div class="col-md-5 texto-botao-carousel">
+                        <div>
+                          <p>Ilustração</p>
+                          <small>black-blues</small>
+                        </div>
                       </div>
-                      <div class="pt-4 me-4">
-                        <h6>
-                          Ver mais <img src="./src/img/setinha.png" alt="" />
-                        </h6>
+                      <div class="col-md-6  justify-content-end d-flex">
+                          <div class="texto-ver-mais">
+                            <small>
+                            Ver mais <img src="./src/img/setinha.svg" alt="" />
+                          </small>
+                        </div>
                       </div>
-                    </div>
+                  </div>
                   </div>
 
                   <div class="col-sm-12 col-md-3">
-                    <img width="100%"
+                    <img
+                      width="100%"
                       src="./src/img/Frame 64.png "
                       class="img-fluid hover-scale"
                       alt=""
                     />
-                    <div
-                      class="botao-carrousel justify-content-between flex-wrap d-flex"
-                    >
-                      <div class="pt-2 ms-4 align-items-start">
-                        <h4>Ilustração</h4>
-                        <h6>black-blues</h6>
+                    <div class="botao-carrousel justify-content-between flex-wrap d-flex"">
+                      <div class="col-md-5 texto-botao-carousel">
+                        <div>
+                          <p>Ilustração</p>
+                          <small>black-blues</small>
+                        </div>
                       </div>
-                      <div class="pt-4 me-4">
-                        <h6>
-                          Ver mais <img src="./src/img/setinha.png" alt="" />
-                        </h6>
+                      <div class="col-md-6  justify-content-end d-flex">
+                          <div class="texto-ver-mais">
+                            <small>
+                            Ver mais <img src="./src/img/setinha.svg" alt="" />
+                          </small>
+                        </div>
                       </div>
-                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -408,17 +436,17 @@
       <section id="terceira-sessao">
         <div class="container">
           <div class="row">
-            <div class=" d-flex justify-content-end pt-5" id="botao-expertise">
-              <button class="botao-roxo d-flex botao-nossa-ex">
+            <div class="d-flex pt-5 botao-nossa-ex">
+              <button class="botao-roxo pt-2 botao-nossa-ex">
                 <h5>
-                  Nossa expertise <img src="./src/img/setinha2.png" alt="" />
+                  Nossa expertise <img src="./src/img/seta-botao.svg" alt="" />
                 </h5>
               </button>
             </div>
           </div>
 
           <div class="row pt-5 pb-5">
-            <div class="col-sm-12 col-md-7  mt-5 pt-5 mb-5">
+            <div class="col-sm-12 col-md-7 mt-5 pt-5 mb-5">
               <div class="box-texto-caminho">
                 <h1 class="texto1 text-right">
                   Sabemos o caminho para<br />dar vida à sua ideia
@@ -431,7 +459,8 @@
                 </h6>
                 <button class="botao-roxo botao-nossa-ex pt-2">
                   <h5>
-                    Nossa expertise <img src="./src/img/setinha2.png" alt="" />
+                    Nossa expertise
+                    <img src="./src/img/seta-botao.svg" alt="" />
                   </h5>
                 </button>
               </div>
@@ -457,13 +486,16 @@
           </div>
           <div class="row mb-5 pb-3">
             <div class="col">
-              <img src="./src/img/logo-usados-cad.png" alt="logo-usados-cad" />
+              <img
+                src="./src/img/logo-cadcam-white.svg"
+                alt="logo-usados-cad"
+              />
             </div>
             <div class="col">
-              <img src="./src/img/logo-usados-cad.png" alt="" />
+              <img src="./src/img/logo-klubi-white.svg" alt="" />
             </div>
             <div class="col">
-              <img src="./src/img/logo-usados-cad.png" alt="" />
+              <img src="./src/img/logo-oak-white.svg" alt="" />
             </div>
           </div>
 
@@ -479,22 +511,20 @@
               </div>
             </div>
 
-            
-
             <div class="col-sm-12 col-md-6 col-lg-6 mt-5 pt-5 mb-5">
               <div class="texto-sobre-nos">
                 <h1 class="texto1">Sobre nós</h1>
                 <div class="d-flex justify-content-between">
                   <div class="d-flex">
-                    <img src="./src/img/checkIcone.png" alt="" />
+                    <img src="./src/img/icone-check-white.svg" alt="" />
                     <h4>Design</h4>
                   </div>
                   <div class="d-flex">
-                    <img src="./src/img/checkIcone.png" alt="" />
+                    <img src="./src/img/icone-check-white.svg" alt="" />
                     <h4>Dev</h4>
                   </div>
                   <div class="d-flex">
-                    <img src="./src/img/checkIcone.png" alt="" />
+                    <img src="./src/img/icone-check-white.svg" alt="" />
                     <h4>Valores</h4>
                   </div>
                 </div>
@@ -509,10 +539,10 @@
                 </div>
 
                 <div class="d-flex pt-1 botao-nossa-ex">
-                  <button class="botao-roxo ">
+                  <button class="botao-roxo pt-2">
                     <h5>
                       Nossa expertise
-                      <img src="./src/img/setinha2.png" alt="" />
+                      <img src="./src/img/seta-botao.svg" alt="" />
                     </h5>
                   </button>
                 </div>
@@ -556,25 +586,28 @@
       <div class="container text-center rodape pt-5 mt-5">
         <div class="flex-row d-flex flex-wrap justify-content-between">
           <div class="col-2" id="logo-rodape">
-            <img src="./src/img/Logo Magmeta Branca 4.svg" alt="logo-rodape" />
+            <img src="./src/img/logo-magmeta-white.svg" alt="logo-rodape" />
           </div>
 
           <div class="col-8"></div>
 
           <div class="col-2" id="seta-rodape">
-            <img src="./src/img/Frame 58.svg" alt="seta-rodape" />
+            <img src="./src/img/logo-seta-rodape-white.svg" alt="seta-rodape" />
           </div>
         </div>
         <div class="row pt-4">
           <div class="col d-flex justify-content-center">
             <div class="mx-2 my-2">
-              <img src="./src/img/Vector (2).png" alt="logo-behance" />
+              <img src="./src/img/logo-behance-white.svg" alt="logo-behance" />
             </div>
             <div class="mx-2 my-2">
-              <img src="./src/img/Vector (1).png" alt="logo-behance" />
+              <img src="./src/img/logo-bolinha-white.svg" alt="logo-bolinha" />
             </div>
             <div class="mx-2 my-2">
-              <img src="./src/img/Vector.png" alt="logo-behance" />
+              <img
+                src="./src/img/logo-instagram-white.svg"
+                alt="logo-instagram"
+              />
             </div>
           </div>
         </div>

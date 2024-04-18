@@ -18,30 +18,48 @@ ul {
 }
 
 h1 {
-  font-family: montserrat;
   font-size: 62px !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
   font-style: normal;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-weight: 800 !important;
+  font-size: 40px !important;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400 !important;
 }
 
 h5 {
   color: #fff !important;
-  font-family: montserrat;
+  font-family: "Roboto";
+  font-weight: 700 !important;
   font-size: 24px !important;
+}
+
+h6 {
+  color: var(--bs-heading-color);
+  font-family: "Roboto";
+  font-weight: 400 !important;
+  font-size: 24px !important;
+}
+
+/* Estilos para o tema escuro */
+body.theme-dark {
+  background-color: #201034;
+  color: #d8d8d8;
 }
 
 /* Estilos para o tema claro */
 body.theme-light {
   background-color: #fff;
   color: #000;
-}
-
-/* Estilos para o tema escuro */
-body.theme-dark {
-  background-color: #000;
-  color: #d8d8d8;
 }
 
 .menu-nav {
@@ -59,7 +77,8 @@ body.theme-dark {
   font-family: montserrat;
   background-color: #5d2e9a;
   border-radius: 0.5rem;
-  width: 204px;
+  border: none;
+  width: 244px;
   height: 48px;
 }
 
@@ -83,7 +102,7 @@ body.theme-dark {
   text-align: start;
 }
 
-.box-texto-caminho{
+.box-texto-caminho {
   text-align: start;
 }
 
@@ -104,8 +123,19 @@ body.theme-dark {
 }
 
 .botao-nossa-ex {
+  justify-content: flex-end;
   border: none;
   margin-top: 2rem;
+}
+
+.texto-botao-carousel {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.texto-ver-mais {
+  margin-top: 1.5rem;
 }
 
 .hover-scale:hover {
@@ -168,8 +198,7 @@ body.theme-dark {
   }
 
   .botao-nossa-ex {
-    justify-content: none !important;
-    justify-self: center;
+    justify-content: center !important;
   }
 
   .img-caminho {
@@ -184,19 +213,37 @@ body.theme-dark {
     text-align: center;
   }
 
-  .box-texto-caminho{
+  .box-texto-caminho {
     text-align: center;
-  }
-
-  .botao-nossa-ex{
-    justify-content: center;
   }
 
   .img-vamos-conversar {
     justify-content: center;
   }
-.texto1{
-  align-items: center;
+
+  .texto1 {
+    align-items: center;
+  }
 }
 
+@media (min-width: 769px) {
+  .botao-carrousel {
+    width: 100%;
+    margin-bottom: -42px;
+    padding: 0% !important;
+  }
+
+  p {
+    margin-bottom: 0% !important;
+  }
+
+  .texto-botao-carousel {
+    margin: 0%;
+    justify-content: space-between;
+  }
+
+  .texto-ver-mais {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
