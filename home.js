@@ -9,9 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const logoImagens = document.querySelectorAll("img.logo"); // Seleciona apenas imagens com classe "logo"
 
     for (const img of logoImagens) {
-      const src = img.src;
-      const newFilename = isDarkMode ? "logo-white" : "logo-black";
-      img.src = `${newFilename}.svg`; // Assume que todas as logos são .svg
+      const src = img.getAttribute("src");
+      if (isDarkMode && src.match(/.*white\.svg$/)) {
+        // Troca a logo apenas se for modo escuro e terminar em white.svg
+ 
+        const novoNome = src.replace("white", "black"); // "./img/assets/logo-black"
+        img.className = novoNome;
+        img.src = novoNome;
+        
+      }
+      const novoNome = src.replace("white", "black"); // "./img/assets/logo-black"
+      img.className = novoNome;
+      img.src = novoNome; // Assume que todas as logos são .svg
     }
 
     if (isDarkMode) {
