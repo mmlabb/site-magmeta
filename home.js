@@ -2,25 +2,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleThemeBtn = document.getElementById("toggle-theme-btn");
   let isDarkMode = true;
 
+  isDarkMode = !isDarkMode;
+
   toggleThemeBtn.addEventListener("click", function () {
     const body = document.body;
     isDarkMode = !isDarkMode;
+
+    // const links = document.querySelectorAll(".nav-link");
+
+    // links.forEach((link) => {
+    //   if (isDarkMode) {
+    //     link.classList.remove("dark-link");
+    //     link.classList.add("light-link");
+    //   } else {
+    //     link.classList.remove("light-link");
+    //     link.classList.add("dark-link");
+    //   }
+    // });
 
     const logoImagens = document.querySelectorAll("img.logo"); // Seleciona apenas imagens com classe "logo"
 
     for (const img of logoImagens) {
       const src = img.getAttribute("src");
-      if (isDarkMode && src.match(/.*white\.svg$/)) {
-        // Troca a logo apenas se for modo escuro e terminar em white.svg
- 
-        const novoNome = src.replace("white", "black"); // "./img/assets/logo-black"
-        img.className = novoNome;
+
+      if (isDarkMode) {
+        const novoNome = src.replace("black", "white");
         img.src = novoNome;
-        
+      } else {
+        const novoNome = src.replace("white", "black");
+        img.src = novoNome;
       }
-      const novoNome = src.replace("white", "black"); // "./img/assets/logo-black"
-      img.className = novoNome;
-      img.src = novoNome; // Assume que todas as logos são .svg
     }
 
     if (isDarkMode) {
@@ -34,3 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const logoPath = "../src/img";
+
+/*   const novoNome = src.replace("white", "black"); // "./img/assets/logo-black"
+      img.className = novoNome;
+      img.src = novoNome; // Assume que todas as logos são .svg */

@@ -19,11 +19,12 @@ ul {
 
 h1 {
   font-size: 62px !important;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 700 !important;
 }
+
 
 h2 {
   font-family: "Roboto";
@@ -39,8 +40,8 @@ p {
 h5 {
   color: #fff !important;
   font-family: "Roboto";
-  font-weight: 700 !important;
-  font-size: 24px !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
 }
 
 h6 {
@@ -52,7 +53,7 @@ h6 {
 
 /* Estilos para o tema escuro */
 body.theme-dark {
-  background-color: #201034;
+  background-color: #0e0c10;
   color: #d8d8d8;
 }
 
@@ -61,6 +62,43 @@ body.theme-light {
   background-color: #fff;
   color: #000;
 }
+
+.tema-dark-ativo {
+  color: #000;
+}
+
+.tema-light-ativo {
+  color: #fff;
+}
+
+.theme-dark .nav-link {
+  color: #fff !important;
+}
+
+.theme-light .nav-link {
+  color: #000 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link  {
+  padding: 0;
+  font-weight: bold;
+  color: #5d2e9a !important;
+}
+
+#texto-magnetize-metas {
+  font-size: 90px !important;
+  text-shadow: 2px 2px 5px #333;
+}
+
+.texto-botao {
+  font-size: 18px !important;
+  font-family: roboto !important;
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+  margin-left: 24px !important;
+  margin-right: 24px !important;
+}
+
 
 .menu-nav {
   background-color: black !important;
@@ -73,17 +111,14 @@ body.theme-light {
   flex-grow: 0 !important;
 }
 
-.navbar-nav .nav-link.active{
-  color: #fff !important;
-}
-
 .botao-roxo {
-  font-family: montserrat;
+  font-family: roboto;
   background-color: #5d2e9a;
-  border-radius: 0.5rem;
-  border: none;
-  width: 244px;
+  border-radius: 1.5rem;
+  width: 234px;
   height: 48px;
+  border-color: transparent;
+  
 }
 
 .botao-tema {
@@ -102,12 +137,18 @@ body.theme-light {
   margin-top: 1rem;
 }
 
-.box-texto-sobre {
+.box-texto-caminho {
   text-align: start;
 }
 
-.box-texto-caminho {
+.texto-sobre-nos-2 {
+  font-size: 24px;
+  padding-top: 2rem;
   text-align: start;
+}
+
+.texto-sobre-nos-1 {
+  padding-bottom: 2rem;
 }
 
 .botao-carrousel {
@@ -142,6 +183,10 @@ body.theme-light {
   margin-top: 1.5rem;
 }
 
+.texto-construimos-juntos {
+  padding-bottom: 12%;
+}
+
 .hover-scale:hover {
   transform: scale(1.1);
   filter: scale(0.8);
@@ -153,10 +198,15 @@ body.theme-light {
   transition: 300ms;
 }
 
+.carousel-indicators {
+  z-index: 4 !important;
+  margin-bottom: -1.5rem !important;
+  height: 4%;
+}
+
 .img-caminho {
   margin-top: 1rem;
   padding-top: 5rem;
-  margin-left: 8.5rem;
 }
 
 .img-vamos-conversar {
@@ -174,6 +224,10 @@ body.theme-light {
   margin-right: -13%;
 }
 
+.seta-botao-ex {
+  margin-left: 0.2rem;
+}
+
 /*RODAPÉ*/
 
 #link-direitos {
@@ -188,12 +242,27 @@ body.theme-light {
 
 /* RESPONSIVO */
 
+/*TELAS DE CELULAR*/
 @media (max-width: 768px) {
   .img-personagem-magmeta {
     justify-content: center;
   }
   .texto1 {
     margin-bottom: 4rem;
+  }
+
+  .texto-sobre-nos-2 {
+    text-align: center;
+  }
+
+  .box-carousel {
+    padding-top: 1.2rem;
+  }
+
+  .texto-center {
+    align-items: center !important;
+    justify-content: center;
+    text-align: center;
   }
 
   .linha-1 {
@@ -209,7 +278,6 @@ body.theme-light {
     display: flex;
     justify-content: center !important;
     margin-top: 0rem;
-    padding-top: 0rem;
     margin-left: 4rem;
   }
 
@@ -222,15 +290,31 @@ body.theme-light {
   }
 
   .img-vamos-conversar {
+    padding-top: 4rem;
     justify-content: center;
   }
 
   .texto1 {
     align-items: center;
   }
+
+  .linha-logos {
+    padding-top: 2rem;
+  }
+
+  .texto-construimos-juntos {
+    padding-bottom: 0.8rem;
+    padding-top: 4rem;
+  }
 }
 
-@media (min-width: 769px) {
+/*TELAS DE CELULAR MENORES*/
+
+@media (min-width: 375px) {
+}
+
+/*TELAS DE COMPUTADOR MÉDIAS*/
+@media (min-width: 992px) {
   .botao-carrousel {
     width: 100%;
     margin-bottom: -42px;
@@ -249,5 +333,23 @@ body.theme-light {
   .texto-ver-mais {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .img-caminho {
+    margin-left: 4rem !important;
+  }
+
+  .box-texto-caminho {
+    padding-top: 3rem !important;
+  }
+}
+
+/*TELAS DE COMPUTADOR GRANDES*/
+@media (min-width: 1200px) {
+  .img-caminho {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    margin-left: 10rem !important;
   }
 }
