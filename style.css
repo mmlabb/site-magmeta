@@ -25,7 +25,6 @@ h1 {
   font-weight: 700 !important;
 }
 
-
 h2 {
   font-family: "Roboto";
   font-weight: 800 !important;
@@ -60,11 +59,11 @@ body.theme-dark {
 /* Estilos para o tema claro */
 body.theme-light {
   background-color: #fff;
-  color: #000;
+  color: #110e12;
 }
 
 .tema-dark-ativo {
-  color: #000;
+  color: 110e12;
 }
 
 .tema-light-ativo {
@@ -79,15 +78,66 @@ body.theme-light {
   color: #000 !important;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link  {
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 24px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 20px;
+  width: 20px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
   padding: 0;
   font-weight: bold;
   color: #5d2e9a !important;
 }
 
+#offcanvasNavbar {
+  padding-top: 0.2rem;
+  margin-right: 1.8rem;
+}
+
+
+
 #texto-magnetize-metas {
-  font-size: 90px !important;
-  text-shadow: 2px 2px 5px #333;
+  font-size: 74px !important;
+  
 }
 
 .texto-botao {
@@ -99,6 +149,14 @@ body.theme-light {
   margin-right: 24px !important;
 }
 
+#texto-botao {
+  font-size: 16px !important;
+  font-family: roboto !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  margin-left: 24px !important;
+  margin-right: 24px !important;
+}
 
 .menu-nav {
   background-color: black !important;
@@ -118,15 +176,27 @@ body.theme-light {
   width: 234px;
   height: 48px;
   border-color: transparent;
-  
 }
 
 .botao-tema {
-  width: 49px;
-  height: 49px;
-  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  margin-right: 3rem;
+  padding-top: 4%;
   border: 0;
 }
+
+.btn-outline-info {
+  color: #5D2E9A !important;
+  border-radius: 1.5rem !important;
+  border-color: #5D2E9A !important;
+  margin-top: 0.2% !important;
+}
+
+.btn-outline-info :hover {
+  background: #dad2e5ed !important;
+}
+
 
 .linha-1 {
   margin-top: 3rem;
@@ -219,11 +289,6 @@ body.theme-light {
   justify-content: flex-start;
 }
 
-#seta-rodape {
-  display: flex;
-  margin-right: -13%;
-}
-
 .seta-botao-ex {
   margin-left: 0.2rem;
 }
@@ -232,6 +297,7 @@ body.theme-light {
 
 #link-direitos {
   display: flex;
+  color: grey !important;
   margin-left: -2%;
   justify-content: flex-start;
 }
@@ -244,10 +310,15 @@ body.theme-light {
 
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
+  #texto-magnetize-metas {
+    font-size: 54px !important;
+  }
+
   .img-personagem-magmeta {
     justify-content: center;
   }
   .texto1 {
+    font-size: 54px !important;
     margin-bottom: 4rem;
   }
 
@@ -278,14 +349,15 @@ body.theme-light {
     display: flex;
     justify-content: center !important;
     margin-top: 0rem;
-    margin-left: 4rem;
   }
 
   .box-sobre-nos {
+    font-size: 54px !important;
     text-align: center;
   }
 
   .box-texto-caminho {
+    font-size: 54px !important;
     text-align: center;
   }
 
@@ -295,6 +367,7 @@ body.theme-light {
   }
 
   .texto1 {
+    font-size: 54px !important;
     align-items: center;
   }
 
@@ -306,11 +379,52 @@ body.theme-light {
     padding-bottom: 0.8rem;
     padding-top: 4rem;
   }
+
+  #seta-rodape {
+    display: flex;
+    margin-right: -13% !important;
+  }
+
+  #texto-localizacao {
+    padding-top: 0.5rem !important;
+  }
 }
 
 /*TELAS DE CELULAR MENORES*/
 
-@media (min-width: 375px) {
+@media (min-width: 350px) {
+  .linha-logos {
+    display: flex;
+    padding-top: 3rem !important;
+    flex-direction: column !important;
+  }
+
+  #seta-rodape {
+    margin-right: 0% !important;
+  }
+
+  .logo-marca {
+    padding-bottom: 3rem;
+  }
+
+  .carousel-indicators {
+    padding-top: 4rem !important;
+  }
+
+  .logo-behance {
+    padding-top: 0.2rem !important;
+  }
+
+  .navbar-toggler {
+    padding-bottom: 2.5rem !important;
+  }
+
+  .logo-check-1 {
+  }
+
+  #texto-localizacao {
+    padding-top: 2rem !important;
+  }
 }
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
@@ -342,6 +456,19 @@ body.theme-light {
   .box-texto-caminho {
     padding-top: 3rem !important;
   }
+
+  .linha-logos {
+    flex-direction: row !important;
+  }
+
+  #seta-rodape {
+    display: flex;
+    margin-right: -13% !important;
+  }
+
+  #texto-localizacao {
+    padding-top: 0.4rem !important;
+  }
 }
 
 /*TELAS DE COMPUTADOR GRANDES*/
@@ -350,6 +477,14 @@ body.theme-light {
     display: flex !important;
     flex-direction: row !important;
     justify-content: flex-end !important;
-    margin-left: 10rem !important;
+  }
+
+  #seta-rodape {
+    display: flex;
+    margin-right: -13% !important;
+  }
+
+  #texto-localizacao {
+    padding-top: 0.5rem !important;
   }
 }

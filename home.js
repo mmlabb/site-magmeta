@@ -1,24 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleThemeBtn = document.getElementById("toggle-theme-btn");
+  const chk= document.getElementById("chk");
   let isDarkMode = true;
 
-  isDarkMode = !isDarkMode;
+  
 
-  toggleThemeBtn.addEventListener("click", function () {
+  chk.addEventListener("click", function () {
     const body = document.body;
+
     isDarkMode = !isDarkMode;
 
-    // const links = document.querySelectorAll(".nav-link");
-
-    // links.forEach((link) => {
-    //   if (isDarkMode) {
-    //     link.classList.remove("dark-link");
-    //     link.classList.add("light-link");
-    //   } else {
-    //     link.classList.remove("light-link");
-    //     link.classList.add("dark-link");
-    //   }
-    // });
 
     const logoImagens = document.querySelectorAll("img.logo"); // Seleciona apenas imagens com classe "logo"
 
