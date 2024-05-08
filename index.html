@@ -19,8 +19,8 @@
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <title>Magmeta</title>
   </head>
@@ -32,38 +32,29 @@
             <img class="logo" src="./src/img/logo-magmeta-white.svg" alt="Logo Magmeta" />
           </a>
 
-          <div
-            class="offcanvas .d-lg-none .d-xl-block offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Offcanvas
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav flex-grow-1 pe-3 justify-content-end">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="http://127.0.0.1:5500/index.html#"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Produtos</a>
-                </li>
-              </ul>
-            </div>
-
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projetos</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
 
           <div class="text-center justify-content-between" id="menu-nav">
@@ -80,7 +71,7 @@
               </div>            
               
 
-              <div>
+              <div class="botao-conversar">
                 <button type="button" class="btn btn-outline-info">
                   Vamos conversar
                 </button>
@@ -107,11 +98,11 @@
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-6 d-flex justify-content-end">
-              <div>
+            <div class="col-sm-12 col-md-6 d-flex justify-content-end container-img-app-magmeta">
+              <div class="img-app-magmeta">
                 <img
-                  class="img-app"
-                  src="./src/img/MagmetaImg.png"
+                  class="img-fluid"
+                  src="./src/img/img-app-magmeta.png"
                   width="100%"
                   alt=""
                 />
@@ -182,7 +173,7 @@
                   <div class="col-sm-6 col-xs-6 col-md-3">
                     <img
                       width="100%"
-                      src="./src/img/Frame 64.png"
+                      src="./src/img/app-oak.png"
                       class="img-fluid hover-scale"
                       alt=""
                     />
