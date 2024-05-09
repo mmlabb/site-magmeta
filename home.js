@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
 const logoPath = "../src/img";
 
 /*   const novoNome = src.replace("white", "black"); // "./img/assets/logo-black"

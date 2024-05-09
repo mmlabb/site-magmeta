@@ -148,14 +148,14 @@ body.theme-light {
 
 .img-app-magmeta::after {
   content: '';
-  position: fixed;
+  position: absolute;
   top: -20px;
   left: 100px;
   width: 580px;
   height: 550px;
   background-image: linear-gradient(#8758C4, #5D2E9A, #BC85FF);
   border-radius: 100%;
-  filter: blur(500px);
+  filter: blur(300px);
   z-index: -1; /* Posicione a sombra atrás da imagem */
 }
 
@@ -253,20 +253,60 @@ body.theme-light {
   text-overflow: ellipsis;
 }
 
-.botao-carrousel:hover {
-  background-color: #332277;
-}
-
 .botao-nossa-ex {
   justify-content: flex-end;
   border: none;
   margin-top: 2rem;
 }
 
-.texto-botao-carousel {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
+
+/* Style on hover state */
+.container-portifolio:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+}
+
+.container-portifolio-1 {
+  padding-top: 1.2rem;
+  overflow: hidden !important;
+  background-image: linear-gradient(#191212 0%,#56857c 86%,#008069 100%);
+  width: 25% !important;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container-portifolio-2 {
+  padding-top: 1.2rem;
+  overflow: hidden !important;
+  background-image: linear-gradient(#4E0CB1 0%,#9D18C2 86%,#E824D2 100%);
+  width: 25% !important;
+}
+
+.container-portifolio-3 {
+  padding-top: 1.2rem;
+  overflow: hidden !important;
+  background-image: linear-gradient(#161616 0%,#5F400A 86%,#E49600 100%);
+  width: 25% !important;
+}
+
+
+.container-portifolio-4 {
+  padding-top: 1.2rem;
+  overflow: hidden !important;
+  background-image: linear-gradient( #161616 0%,#FCC366 86%,#FCC366 100%);
+  width: 25% !important;
+}
+
+.texto-h4-port{
+  font-family: roboto !important;
+  font-size: 36px;
+  font-weight: 900 !important;
+  margin-bottom: 0% !important;
+}
+
+.texto-h6-port {
+  font-family: roboto !important;
+  font-size: 16px;
+  font-weight: 400 !important;
+  margin-bottom: 0%;
 }
 
 .texto-ver-mais {
