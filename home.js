@@ -1,14 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const chk= document.getElementById("chk");
+  const chk = document.getElementById("chk");
   let isDarkMode = true;
-
-  
 
   chk.addEventListener("click", function () {
     const body = document.body;
 
     isDarkMode = !isDarkMode;
-
 
     const logoImagens = document.querySelectorAll("img.logo"); // Seleciona apenas imagens com classe "logo"
 
@@ -34,9 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 const logoPath = "../src/img";
+
 
 /*   const novoNome = src.replace("white", "black"); // "./img/assets/logo-black"
       img.className = novoNome;

@@ -258,7 +258,9 @@ body.theme-light {
   border: none;
   margin-top: 2rem;
 }
-
+.container-portifolio {
+  transition: transform 0.1s ; /* Smooth transition on hover */
+}
 
 /* Style on hover state */
 .container-portifolio:hover {
@@ -270,7 +272,6 @@ body.theme-light {
   overflow: hidden !important;
   background-image: linear-gradient(#191212 0%,#56857c 86%,#008069 100%);
   width: 25% !important;
-  transition: transform 0.3s ease-in-out;
 }
 
 .container-portifolio-2 {
