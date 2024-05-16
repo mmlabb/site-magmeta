@@ -37,7 +37,7 @@ p {
 }
 
 h5 {
-  color: #fff !important;
+  
   font-family: "Roboto";
   font-weight: bold !important;
   font-size: 20px !important;
@@ -58,12 +58,12 @@ body.theme-dark {
 
 /* Estilos para o tema claro */
 body.theme-light {
-  background-color: #fff;
+  background-color: #fff !important;
   color: #110e12;
 }
 
 .tema-dark-ativo {
-  color: 110e12;
+  color: #110e12;
 }
 
 .tema-light-ativo {
@@ -134,32 +134,29 @@ body.theme-light {
   margin-left: 1.8rem;
 }
 
-
-
 #texto-magnetize-metas {
   font-size: 74px !important;
-  
 }
 
 .container-img-app-magmeta {
-  position: relative; 
+  position: relative;
 }
 
-
 .img-app-magmeta::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -20px;
   left: 100px;
   width: 580px;
   height: 550px;
-  background-image: linear-gradient(#8758C4, #5D2E9A, #BC85FF);
+  background-image: linear-gradient(#8758c4, #5d2e9a, #bc85ff);
   border-radius: 100%;
   filter: blur(300px);
   z-index: -1; /* Posicione a sombra atrás da imagem */
 }
 
 .texto-botao {
+  color: #ffff;
   font-size: 18px !important;
   font-family: roboto !important;
   margin-top: 12px !important;
@@ -168,14 +165,7 @@ body.theme-light {
   margin-right: 24px !important;
 }
 
-#texto-botao {
-  font-size: 16px !important;
-  font-family: roboto !important;
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
-  margin-left: 24px !important;
-  margin-right: 24px !important;
-}
+
 
 .menu-nav {
   background-color: black !important;
@@ -206,17 +196,15 @@ body.theme-light {
 }
 
 .btn-outline-info {
-  color: #5D2E9A !important;
+  color: #5d2e9a !important;
   border-radius: 1.5rem !important;
-  border-color: #5D2E9A !important;
+  border-color: #5d2e9a !important;
   margin-top: 0.2% !important;
-  
 }
 
 .btn-outline-info:hover {
   background: #dad2e5ed !important;
 }
-
 
 .linha-1 {
   margin-top: 3rem;
@@ -258,45 +246,62 @@ body.theme-light {
   border: none;
   margin-top: 2rem;
 }
+
+.tag-portifolio {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .container-portifolio {
-  transition: transform 0.1s ; /* Smooth transition on hover */
-}
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: start;
+  height: 700px !important;
+  justify-content: space-between;
+  padding: 12px 16px;
+  transition: transform 0.1s ease-in;
 
-/* Style on hover state */
-.container-portifolio:hover {
-  transform: scale(1.1); /* Increase size by 10% on hover */
-}
-
-.container-portifolio-1 {
-  padding-top: 1.2rem;
   overflow: hidden !important;
-  background-image: linear-gradient(#191212 0%,#56857c 86%,#008069 100%);
-  width: 25% !important;
-}
-
-.container-portifolio-2 {
-  padding-top: 1.2rem;
-  overflow: hidden !important;
-  background-image: linear-gradient(#4E0CB1 0%,#9D18C2 86%,#E824D2 100%);
-  width: 25% !important;
-}
-
-.container-portifolio-3 {
-  padding-top: 1.2rem;
-  overflow: hidden !important;
-  background-image: linear-gradient(#161616 0%,#5F400A 86%,#E49600 100%);
-  width: 25% !important;
 }
 
 
-.container-portifolio-4 {
-  padding-top: 1.2rem;
-  overflow: hidden !important;
-  background-image: linear-gradient( #161616 0%,#FCC366 86%,#FCC366 100%);
-  width: 25% !important;
+.container-portifolio img {
+  object-fit: contain !important;
 }
 
-.texto-h4-port{
+.box-portifolio {
+  width: 25%;
+}
+
+.box-texto-p1 {
+  gap: 1rem 1rem;
+}
+
+.botao-portifolio {
+  width: 154px !important;
+  height: 50px;
+  border-radius: 24px !important;
+}
+
+
+#container-portifolio-1 {
+  background-image: linear-gradient(#191212 0%, #56857c 86%, #008069 100%);
+}
+
+#container-portifolio-2 {
+  background-image: linear-gradient(#4e0cb1 0%, #9d18c2 86%, #e824d2 100%);
+}
+
+#container-portifolio-3 {
+  background-image: linear-gradient(#161616 0%, #5f400a 86%, #e49600 100%);
+}
+
+#container-portifolio-4 {
+  background-image: linear-gradient(#161616 0%, #fcc366 86%, #fcc366 100%);
+}
+
+.texto-h4-port {
+  color: #fff;
   font-family: roboto !important;
   font-size: 36px;
   font-weight: 900 !important;
@@ -304,6 +309,7 @@ body.theme-light {
 }
 
 .texto-h6-port {
+  color: #fff;
   font-family: roboto !important;
   font-size: 16px;
   font-weight: 400 !important;
@@ -344,8 +350,6 @@ body.theme-light {
   justify-content: flex-end;
 }
 
-
-
 #logo-rodape {
   display: flex;
   margin-left: -1%;
@@ -373,7 +377,6 @@ body.theme-light {
 
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
-
   #texto-magnetize-metas {
     font-size: 54px !important;
   }
@@ -453,7 +456,6 @@ body.theme-light {
     padding-top: 0.5rem !important;
   }
 
-
   #menu-nav {
     display: none;
   }
@@ -494,7 +496,6 @@ body.theme-light {
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
 @media (min-width: 992px) {
-
   .botao-carrousel {
     width: 100%;
     margin-bottom: -42px;

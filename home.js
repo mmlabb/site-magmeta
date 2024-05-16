@@ -29,10 +29,23 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.add("theme-light");
     }
   });
+
+  function ajustarAlturaContainers() {
+    const alturaTela = window.innerHeight;
+    const containersPortifolio = document.querySelectorAll(
+      ".container-portifolio"
+    );
+
+    containersPortifolio.forEach((container) => {
+      container.style.height = alturaTela + "px";
+    });
+  }
+
+  ajustarAlturaContainers();
+  window.addEventListener("resize", ajustarAlturaContainers);
 });
 
 const logoPath = "../src/img";
-
 
 /*   const novoNome = src.replace("white", "black"); // "./img/assets/logo-black"
       img.className = novoNome;
