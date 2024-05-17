@@ -50,6 +50,7 @@ h6 {
   font-size: 24px !important;
 }
 
+
 /* Estilos para o tema escuro */
 body.theme-dark {
   background-color: #0e0c10;
@@ -78,6 +79,8 @@ body.theme-light {
   color: #000 !important;
 }
 
+
+
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -93,8 +96,8 @@ body.theme-light {
 
   padding: 5px;
   position: relative;
-  height: 24px;
-  width: 50px;
+  height: 20px;
+  width: 47px;
   transform: scale(1.5);
 }
 
@@ -104,8 +107,8 @@ body.theme-light {
   position: absolute;
   top: 2px;
   left: 2px;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
 }
@@ -122,8 +125,9 @@ body.theme-light {
   color: #f39c12;
 }
 
+
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0;
+  padding: 0% !important;
   font-weight: bold;
   color: #5d2e9a !important;
 }
@@ -191,7 +195,7 @@ body.theme-light {
   width: 32px;
   height: 32px;
   margin-right: 3rem;
-  padding-top: 4%;
+  padding-top: 5%;
   border: 0;
 }
 
@@ -207,7 +211,7 @@ body.theme-light {
 }
 
 .linha-1 {
-  margin-top: 3rem;
+ 
   padding-top: 3rem;
 }
 
@@ -252,6 +256,25 @@ body.theme-light {
   padding-bottom: 5rem;
 }
 
+.box-tag {
+  position: relative;
+}
+
+
+.texto-tag::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(to right, (#000000) 100%); /* Example gradient */
+  border-radius: 60%;
+  filter: blur(4px);
+  z-index: -1; /* Ensure the overlay is behind the text */
+}
+
+
 .container-portifolio {
   display: flex !important;
   flex-direction: column !important;
@@ -271,10 +294,22 @@ body.theme-light {
 
 .box-portifolio {
   width: 25%;
+  transition: width 0.3s ease-in;
+}
+
+
+.box-portifolio:hover {
+  /*width: 40%;*/
+  .box-texto-p1 {
+    opacity: 1;
+}
 }
 
 .box-texto-p1 {
+  color: #fff;
   gap: 1rem 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .botao-portifolio {
@@ -283,6 +318,10 @@ body.theme-light {
   border-radius: 24px !important;
 }
 
+.container-fluid{
+  padding-right: 0% !important;
+  padding-left: 0% !important;
+}
 
 #container-portifolio-1 {
   background-image: linear-gradient(#191212 0%, #56857c 86%, #008069 100%);
@@ -330,6 +369,10 @@ body.theme-light {
   transition: 300ms;
 }
 
+main {
+  overflow: hidden;
+}
+
 #segunda-sessao .carousel .carousel-item img {
   z-index: 1;
   transition: 300ms;
@@ -367,6 +410,10 @@ body.theme-light {
   color: grey !important;
   margin-left: -2%;
   justify-content: flex-start;
+}
+
+.linha-rodape {
+  padding-top: 2rem !important;
 }
 
 .rodape {
@@ -447,9 +494,12 @@ body.theme-light {
     padding-top: 4rem;
   }
 
+
+
   #seta-rodape {
     display: flex;
-    margin-right: -13% !important;
+    margin-right: 0% !important;
+    
   }
 
   #texto-localizacao {
@@ -466,9 +516,6 @@ body.theme-light {
     flex-direction: column !important;
   }
 
-  #seta-rodape {
-    margin-right: 0% !important;
-  }
 
   .logo-marca {
     padding-bottom: 3rem;

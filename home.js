@@ -43,6 +43,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ajustarAlturaContainers();
   window.addEventListener("resize", ajustarAlturaContainers);
+
+  const portfolioBoxes = document.querySelectorAll(".box-portifolio");
+
+  portfolioBoxes.forEach((box) => {
+    box.addEventListener("mouseover", () => {
+      expandBox(box);
+    });
+
+    box.addEventListener("mouseout", () => {
+      resetBoxes();
+    });
+  });
+
+  function expandBox(box) {
+    box.style.width = "40%";
+
+    portfolioBoxes.forEach((otherBox) => {
+      if (otherBox !== box) {
+        otherBox.style.width = "20%";
+      }
+    });
+  }
+
+  function resetBoxes() {
+    portfolioBoxes.forEach((box) => {
+      box.style.width = "25%";
+    });
+  }
 });
 
 const logoPath = "../src/img";
