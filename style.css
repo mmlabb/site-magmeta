@@ -125,9 +125,14 @@ body.theme-light {
   color: #f39c12;
 }
 
+.navbar  {
+  position: absolute !important;
+  top: 1rem;  
+  width: 100%;
+}
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0% !important;
+.navbar-nav .nav-link {
+  
   font-weight: bold;
   color: #5d2e9a !important;
 }
@@ -210,9 +215,12 @@ body.theme-light {
   background: #dad2e5ed !important;
 }
 
-.linha-1 {
- 
-  padding-top: 3rem;
+.box-1 {
+  padding-top: 5rem;
+}
+
+.linha-1{
+  padding-top: 5rem;
 }
 
 .texto1 {
@@ -305,6 +313,11 @@ body.theme-light {
 }
 }
 
+.texto-portifolio {
+  white-space: nowrap;
+  
+}
+
 .box-texto-p1 {
   color: #fff;
   gap: 1rem 1rem;
@@ -342,7 +355,7 @@ body.theme-light {
 .texto-h4-port {
   color: #fff;
   font-family: roboto !important;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 900 !important;
   margin-bottom: 0% !important;
 }
@@ -350,7 +363,7 @@ body.theme-light {
 .texto-h6-port {
   color: #fff;
   font-family: roboto !important;
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: 400 !important;
   margin-bottom: 0%;
 }
