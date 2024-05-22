@@ -129,7 +129,7 @@ body.theme-light {
 
 .navbar-nav .nav-link {
   font-weight: bold;
-  color: #5d2e9a !important;
+  color: #ffff;
 }
 
 #offcanvasNavbar {
@@ -259,21 +259,20 @@ body.theme-light {
   padding-bottom: 5rem;
 }
 
+.lista-tag {
+  display: flex; /* Ativa o layout flexbox */
+  flex-wrap: wrap; /* Permite que os itens quebrem em linhas */
+  justify-content: space-between; /* Distribui os itens com espaço entre eles */
+}
+
 .box-tag {
   position: relative;
 }
 
-.texto-tag::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(to right, (#000000) 100%); /* Example gradient */
-  border-radius: 60%;
-  filter: blur(4px);
-  z-index: -1; /* Ensure the overlay is behind the text */
+.tag {
+  white-space: nowrap;
+  text-shadow: #444444 3px 3px 3px;
+
 }
 
 .container-portifolio {
@@ -434,6 +433,10 @@ main {
 
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
+#portifolio-mobile {
+  display: none;
+}
+
   #texto-magnetize-metas {
     font-size: 54px !important;
   }
@@ -452,6 +455,11 @@ main {
 
   .box-carousel {
     padding-top: 1.2rem;
+  }
+
+  .lista-tag {
+    flex-direction: column; /* Muda para layout em coluna */
+    align-items: center; /* Alinha os itens no centro */
   }
 
   .texto-center {
@@ -549,7 +557,13 @@ main {
 }
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
-@media (min-width: 992px) {
+@media (min-width: 852px) {
+
+#portifolio-desktop{
+  display: none;
+}
+
+  
   .botao-carrousel {
     width: 100%;
     margin-bottom: -42px;
@@ -594,6 +608,11 @@ main {
 
 /*TELAS DE COMPUTADOR GRANDES*/
 @media (min-width: 1200px) {
+
+#portifolio-mobile {
+  display: none;
+}
+
   .img-caminho {
     display: flex !important;
     flex-direction: row !important;
