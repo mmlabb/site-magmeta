@@ -68,7 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function resetBoxes() {
     portfolioBoxes.forEach((box) => {
-      box.style.width = "25%";
+      if (window.innerWidth > 800) {
+        box.style.width = "25%"; // Set width to 25% for smaller screens
+      } else {
+        box.style.width = "50%"; // Keep the original width for tablets and larger
+      }
     });
   }
 });

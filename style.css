@@ -272,7 +272,6 @@ body.theme-light {
 .tag {
   white-space: nowrap;
   text-shadow: #444444 3px 3px 3px;
-
 }
 
 .container-portifolio {
@@ -399,7 +398,6 @@ main {
   justify-content: flex-end;
 }
 
-
 /*RODAPÉ*/
 
 #logo-rodape {
@@ -411,7 +409,6 @@ main {
 .seta-botao-ex {
   margin-left: 0.2rem;
 }
-
 
 #link-direitos {
   display: flex;
@@ -428,14 +425,17 @@ main {
   border-top: 1px solid white;
 }
 
-
 /* RESPONSIVO */
 
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
-#portifolio-mobile {
-  display: none;
-}
+  .portifolio{
+    flex-direction: column !important;
+  }
+
+  .box-portifolio  {
+    width: 100% !important; /* Tamanho para tablets */
+  }
 
   #texto-magnetize-metas {
     font-size: 54px !important;
@@ -557,13 +557,20 @@ main {
 }
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
-@media (min-width: 852px) {
+@media (max-width: 999px) {
+ 
+  #portifolio-desktop {
+  display: none !important;
+  }
 
-#portifolio-desktop{
-  display: none;
-}
+
+
+  .box-portifolio {
+    width: 50% !important ; /* Tamanho para tablets */
+  }
 
   
+
   .botao-carrousel {
     width: 100%;
     margin-bottom: -42px;
@@ -607,11 +614,10 @@ main {
 }
 
 /*TELAS DE COMPUTADOR GRANDES*/
-@media (min-width: 1200px) {
-
-#portifolio-mobile {
-  display: none;
-}
+@media (min-width: 1000px) {
+  #portifolio-mobile {
+    display: none !important;
+  }
 
   .img-caminho {
     display: flex !important;
