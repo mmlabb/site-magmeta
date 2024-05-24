@@ -22,7 +22,7 @@ h1 {
   font-family: "Roboto";
   font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 700 !important;
+  font-weight: 900 !important;
 }
 
 h2 {
@@ -433,12 +433,25 @@ main {
     display: none;
   }
 
+  .linha-1 {
+    flex-direction: column-reverse !important; /* Inverter a ordem dos elementos */
+  }
+
+  .container-img-app-magmeta{
+    padding-top: 3rem;
+    padding-left: 3rem !important;
+  }
+
   .portifolio {
     flex-direction: column !important;
   }
 
   .box-portifolio {
     width: 100% !important; /* Tamanho para tablets */
+  }
+
+  .img-vamos-conversar {
+    padding-right: 2rem;
   }
 
   #texto-magnetize-metas {
@@ -485,6 +498,7 @@ main {
     display: flex;
     justify-content: center !important;
     margin-top: 0rem;
+    margin-left: 0;
   }
 
   .box-sobre-nos {
@@ -548,9 +562,7 @@ main {
     padding-top: 0.2rem !important;
   }
 
-  .navbar-toggler {
-    padding-bottom: 2.5rem !important;
-  }
+  
 
   /* .logo-check-1 {
   } */
@@ -563,6 +575,11 @@ main {
   #portifolio-mobile .box-portifolio {
     width: 50% !important ; /* Tamanho para tablets */
   }
+
+  .img-caminho {
+    margin-left: 4rem !important;
+  }
+
 }
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
@@ -591,9 +608,6 @@ main {
     justify-content: flex-end;
   }
 
-  .img-caminho {
-    margin-left: 4rem !important;
-  }
 
   .box-texto-caminho {
     padding-top: 3rem !important;
