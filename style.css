@@ -429,11 +429,15 @@ main {
 
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
-  .portifolio{
+  #portifolio-desktop {
+    display: none;
+  }
+
+  .portifolio {
     flex-direction: column !important;
   }
 
-  .box-portifolio  {
+  .box-portifolio {
     width: 100% !important; /* Tamanho para tablets */
   }
 
@@ -548,28 +552,24 @@ main {
     padding-bottom: 2.5rem !important;
   }
 
-  .logo-check-1 {
-  }
+  /* .logo-check-1 {
+  } */
 
   #texto-localizacao {
     padding-top: 2rem !important;
   }
 }
-
-/*TELAS DE COMPUTADOR MÉDIAS*/
-@media (max-width: 999px) {
- 
-  #portifolio-desktop {
-  display: none !important;
-  }
-
-
-
-  .box-portifolio {
+@media (min-width: 768px) {
+  #portifolio-mobile .box-portifolio {
     width: 50% !important ; /* Tamanho para tablets */
   }
+}
 
-  
+/*TELAS DE COMPUTADOR MÉDIAS*/
+@media (max-width: 991.98px) {
+  #portifolio-desktop {
+    display: none !important;
+  }
 
   .botao-carrousel {
     width: 100%;
@@ -614,7 +614,7 @@ main {
 }
 
 /*TELAS DE COMPUTADOR GRANDES*/
-@media (min-width: 1000px) {
+@media (min-width: 991.98px) {
   #portifolio-mobile {
     display: none !important;
   }
