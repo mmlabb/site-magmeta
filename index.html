@@ -35,73 +35,80 @@
         <div class="container container-nav d-flex justify-content-between">
           <a class="nav-brand" href="#">
             <img
-              class="logo"
               src="./src/img/logo-magmeta-white.svg"
-              alt="Logo Magmeta"
+              alt="logo-magmeta"
+              height="48px"
+              class="logo"
             />
           </a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projetos</a>
-              </li>
+          <div class="d-flex menu-botao">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projetos</a>
+                </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Menu
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
 
-          <div class="text-center justify-content-between" id="menu-nav">
-            <div class="navbar-nav flex-row">
-              <div class="botao-tema">
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                  <i class="fa-regular fa-moon"></i>
-                  <i class="fa fa-sun"></i>
+            <div class="text-center justify-content-between" id="menu-nav">
+              <div class="navbar-nav flex-row">
+                <div class="botao-tema">
+                  <input type="checkbox" class="checkbox" id="chk" />
+                  <label class="label" for="chk">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa fa-sun"></i>
 
-                  <div class="ball"></div>
-                </label>
-              </div>
+                    <div class="ball"></div>
+                  </label>
+                </div>
 
-              <div class="botao-conversar">
-                <button type="button" class="btn btn-outline-info">
-                  Vamos conversar
-                </button>
+                <div class="botao-conversar">
+                  <button type="button" class="btn btn-outline-info">
+                    Vamos conversar
+                  </button>
+                </div>
               </div>
             </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span>
+                <img src="src/img/logo-menu-white.svg" class="logo" alt="" />
+              </span>
+            </button>
           </div>
         </div>
       </nav>
@@ -130,7 +137,7 @@
             >
               <div class="img-app-magmeta">
                 <img
-                  class="img-fluid"
+                  class=""
                   src="./src/img/img-app-magmeta.png"
                   width="100%"
                   alt=""
@@ -166,9 +173,13 @@
               </li>
             </ul>
 
-            <div class="col-3 d-flex justify-content-end mb-3">
+            <a
+              href="https://api.whatsapp.com/send?phone=SEU_NÚMERO_DE_TELEFONE&text=Olá equipe Magmeta%20Vim pelo QR code no cartão e gostaria de orçar meu projeto com vocês!"
+              target="_blank"
+              class="botao-whatsapp d-flex justify-content-end col-3"
+            >
               <img src="./src/img/logo-wpp.svg" alt="IconeWpp" />
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -191,7 +202,11 @@
           </div>
         </div>
 
-        <div class="container-fluid" id="portifolio-desktop" data-aos="fade-right">
+        <div
+          class="container-fluid"
+          id="portifolio-desktop"
+          data-aos="fade-right"
+        >
           <div class="d-flex flex-wrap portifolio align-items-center">
             <div class="box-portifolio" id="container-portifolio-1" width="">
               <div class="container-portifolio">
