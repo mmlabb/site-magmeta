@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
- 
+  
 });
 
 const logoPath = "../src/img";
