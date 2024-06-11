@@ -178,7 +178,9 @@ body.theme-light {
 
 .img-app-magmeta {
   display: flex;
+  width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .container-img-app-magmeta {
@@ -453,6 +455,7 @@ main {
   justify-content: flex-end;
 }
 
+
 /*RODAPÉ*/
 
 #logo-rodape {
@@ -614,8 +617,9 @@ main {
     padding-top: 0.2rem !important;
   }
 
-  /* .logo-check-1 {
-  } */
+  #img-mag {
+    padding-top: 0% !important;
+  }
 
   #texto-localizacao {
     padding-top: 2rem !important;
@@ -626,9 +630,7 @@ main {
     width: 50% !important ; /* Tamanho para tablets */
   }
 
-  .img-caminho {
-    margin-left: 4rem !important;
-  }
+  
 }
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
@@ -656,8 +658,20 @@ main {
 
   #pop-up-4 {
     top: 72%;
-    right: 52%;
+    right: 50%;
     animation-delay: 200ms;
+  }
+
+  #img-mag {
+    padding-top: 48%;
+  }
+
+  #mascote-magmeta {
+    margin-top: 28%;
+  }
+
+  .img-caminho {
+    margin-top: 42%;
   }
 
   .logo-check {
@@ -682,7 +696,7 @@ main {
   }
 
   .app-magmeta {
-    width: 60%;
+    height: 485px;
   }
 
   .botao-carrousel {
@@ -735,22 +749,25 @@ main {
 
   #pop-up-1 {
     top: 16%;
-    left: 70%;
+    left: 64%;
   }
 
   #pop-up-2 {
-    left: 70%;
+    left: 64%;
     top: 50%;
+    animation-delay: 500ms;
   }
 
   #pop-up-3 {
     top: 28%;
-    right: 54%;
+    right: 64%;
+    animation-delay: 1ms;
   }
 
   #pop-up-4 {
     top: 68%;
-    right: 45%;
+    right: 56%;
+    animation-delay: 200ms;
   }
 
   .app-magmeta {
