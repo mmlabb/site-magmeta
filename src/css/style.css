@@ -312,7 +312,7 @@ body.theme-light h2 {
 }
 
 .theme-light .tag {
-  color: #e9d9ff;
+  color: #5d2e9a;
 }
 
 .tag {
@@ -327,7 +327,7 @@ body.theme-light h2 {
   margin-bottom: 0% !important;
   align-items: center;
   border-radius: 12px;
-  background-color: #5d2e9a;
+  background-color: #5d2e9a27;
   justify-content: center;
   white-space: nowrap;
 }
