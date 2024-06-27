@@ -52,7 +52,7 @@ h6 {
 /* Estilos para o tema escuro */
 body.theme-dark {
   background-color: #0e0c10;
-  color: #e9d9ff;
+  color: #fff;
 }
 
 /* Estilos para o tema claro */
@@ -768,7 +768,7 @@ main {
   #pop-up-3 {
     top: 28%;
     right: 64%;
-    animation-delay: 1ms;
+    animation-delay: 1s;
   }
 
   #pop-up-4 {
