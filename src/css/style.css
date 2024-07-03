@@ -53,12 +53,14 @@ h6 {
 body.theme-dark {
   background-color: #0e0c10;
   color: #fff;
+  transition: 500ms;
 }
 
 /* Estilos para o tema claro */
 body.theme-light {
   background-color: #fff !important;
   color: #000;
+  transition: 500ms;
 }
 body.theme-light h1,
 body.theme-light h2 {
