@@ -364,11 +364,19 @@ body.theme-light h2 {
   .box-portifolio h6 {
     color: white;
   }
+
+  #copyright {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 .theme-light {
   .box-portifolio h4,
   .box-portifolio h6 {
     color: black;
+  }
+
+  #copyright {
+    color: rgba(0, 0, 0, 0.7);
   }
 }
 
