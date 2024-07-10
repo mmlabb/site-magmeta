@@ -361,17 +361,21 @@ body.theme-light h2 {
 
 .box-portifolio {
   width: 25%;
-  transition: width 0.1s ease-in;
+  transition: width 0.2s;
 }
 .box-portifolio.active {
   width: 25%;
-  transition: width 0.1s ease-in;
+  transition: width 0.2s;
 }
 
 .box-portifolio:hover {
-  /*width: 40%;*/
-  .box-texto-p1 {
+  .box-texto-p1 p {
     opacity: 1;
+    transition: 0.1s;
+  }
+  .box-texto-p1 {
+    max-height: 500px;
+    transition: max-height 1s ease-in-out;
   }
 }
 
@@ -380,10 +384,19 @@ body.theme-light h2 {
 }
 
 .box-texto-p1 {
-  color: #fff;
+  display: flex;
   gap: 1rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .5s ease-in-out;
+}
+
+.box-texto-p1 p {
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+  transition: 0.1s;
 }
 
 .botao-portifolio {
@@ -398,19 +411,19 @@ body.theme-light h2 {
 }
 
 #container-portifolio-1 {
-  background-image: linear-gradient(#191212 0%, #56857c 86%, #008069 100%);
+  background-image: linear-gradient(180deg, #0000 0%, #008069 100%);
 }
 
 #container-portifolio-2 {
-  background-image: linear-gradient(#4e0cb1 0%, #9d18c2 86%, #e824d2 100%);
+  background-image: linear-gradient(180deg, #0000 0%, #e824d2 100%);
 }
 
 #container-portifolio-3 {
-  background-image: linear-gradient(#161616 0%, #5f400a 86%, #e49600 100%);
+  background-image: linear-gradient(180deg, #0000 0%, #e49600 100%);
 }
 
 #container-portifolio-4 {
-  background-image: linear-gradient(#161616 0%, #fcc366 86%, #fcc366 100%);
+  background-image: linear-gradient(180deg, #0000 0%, #fcc366 100%);
 }
 
 .texto-h4-port {
