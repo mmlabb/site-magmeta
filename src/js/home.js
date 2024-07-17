@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const chk = document.getElementById("chk");
   let isDarkMode = true;
 
-  setTimeout(() => {
-    const loadingWrapper = document.getElementById("loading-wrapper");
-    loadingWrapper.style.opacity = "0";
-    setTimeout(() => {
-      loadingWrapper.style.display = "none";
-    }, 300);
-  }, 3000);
+  // setTimeout(() => {
+  //   const loadingWrapper = document.getElementById("loading-wrapper");
+  //   loadingWrapper.style.opacity = "0";
+  //   setTimeout(() => {
+  //     loadingWrapper.style.display = "none";
+  //   }, 300);
+  // }, 3000);
 
   const divAnoAtual = document.getElementById("ano-atual");
   divAnoAtual.textContent = new Date().getFullYear();
