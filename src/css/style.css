@@ -178,6 +178,10 @@ body.theme-light h2 {
   }
 }
 
+#primeira-sessao {
+  height: 100vh;
+}
+
 .pop-up {
   height: 44px;
   position: absolute;

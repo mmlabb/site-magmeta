@@ -24,7 +24,7 @@ canvas.style.width = "100vw";
 canvas.style.height = "100vh";
 canvas.style.pointerEvents = "none";
 
-const dirLight = new THREE.DirectionalLight(0x5d2e9a, 10);
+const dirLight = new THREE.DirectionalLight(0xf9f9f9, 8);
 dirLight.position.set(2, 4, 2);
 dirLight.castShadow = true;
 dirLight.shadow.camera.top = 2;
@@ -48,19 +48,21 @@ loader.load("./iphone_15pro.glb", (gltf) => {
   const model = gltf.scene;
   phone = model;
   phone.position.y = -10;
-  phone.rotation.y = 3;
   scene.add(model);
 
+  /**
+   * Animação que o celular aparece debaixo para cima virado de costa 
+   * depois faz um flip e fica com a tela virada para camera
+   * Celular está alinhado na vertical
+   */
   tl.to(model.position, {
     y: 0, // 360 degrees
     duration: 1,
     ease: "power2.out",
-    // onUpdate: () => {
-    //   camera.lookAt(model.position);
-    // },
   });
   tl.to(model.rotation, {
-    y: Math.PI * 2.35, // 360 degrees
+    y: Math.PI * 2.2, // 360 degrees
+    x: Math.PI * -.3,
     duration: 3,
     ease: "power2.inOut",
   });
