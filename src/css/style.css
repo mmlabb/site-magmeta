@@ -344,6 +344,10 @@ body.theme-light h2 {
   position: relative;
 }
 
+#texto-projetos {
+  padding-top: 10% !important;
+}
+
 .container-portifolio {
   display: flex !important;
   flex-direction: column !important;
@@ -540,6 +544,10 @@ main {
     display: none;
   }
 
+  .btn-mobile {
+    display: block !important;
+  }
+
   .botao-whatsapp {
     right: 0% !important;
   }
@@ -678,21 +686,20 @@ main {
   #portifolio-mobile .box-portifolio {
     width: 50% !important ; /* Tamanho para tablets */
   }
+
+  .btn-mobile {
+    display: block !important;
+  }
 }
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
 @media (max-width: 991.98px) {
-  #portifolio-mobile {
+  #portifolio-desktop {
     display: none !important;
   }
 
-  .botao-tema {
-    position: absolute !important;
-    top: 0 !important;
-    right: 0 !important;
-    transform: translate(-50%, -50%) !important;
-    width: 30px !important; /* Ajuste o tamanho conforme necessário */
-    height: 30px !important;
+  .btn-mobile {
+    display: block !important;
   }
 
   .texto1 {
@@ -728,6 +735,10 @@ main {
 
   #img-mag {
     padding-top: 48%;
+  }
+
+  #texto-projetos {
+    padding-top: 32% !important;
   }
 
   #mascote-magmeta {
@@ -803,7 +814,11 @@ main {
 
 /*TELAS DE COMPUTADOR GRANDES*/
 @media (min-width: 991.98px) {
-  #portifolio-desktop {
+  #portifolio-mobile {
+    display: none !important;
+  }
+
+  .btn-mobile {
     display: none !important;
   }
 
