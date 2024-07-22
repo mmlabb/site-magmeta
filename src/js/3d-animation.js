@@ -6,7 +6,7 @@ const canvas = document.getElementById("3d");
 
 // Scene setup
 const scene = new THREE.Scene();
-scene.fog = new THREE.Fog(0xa0a0a0, 10, 50);
+// scene.fog = new THREE.Fog(0xa0a0a0, 10, 50);
 const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
@@ -61,8 +61,8 @@ loader.load("./iphone_15pro.glb", (gltf) => {
     ease: "power2.out",
   });
   tl.to(model.rotation, {
-    y: Math.PI * 2.2, // 360 degrees
-    x: Math.PI * -.3,
+    y: Math.PI * 2.3, // 360 degrees
+    x: Math.PI * -.25,
     duration: 3,
     ease: "power2.inOut",
   });
