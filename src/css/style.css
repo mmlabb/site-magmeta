@@ -687,6 +687,10 @@ main {
     width: 50% !important ; /* Tamanho para tablets */
   }
 
+  #linha-txt-projetos {
+    padding-top: 3rem !important;
+  }
+
   .btn-mobile {
     display: block !important;
   }
@@ -698,8 +702,38 @@ main {
     display: none !important;
   }
 
+  #linha-txt-projetos {
+    padding-top: 3rem !important;
+  }
+
   .btn-mobile {
     display: block !important;
+    margin-right: 0 !important;
+    padding-top: 10%;
+  }
+
+  .btn-mobile .label {
+    height: 17px !important;
+    width: 32px !important;
+  }
+
+  .label .ball {
+    height: 12px !important;
+    width: 12px !important;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(15px);
+  }
+
+  .fa-moon {
+    color: #f1c40f;
+    font-size: 10px;
+  }
+
+  .fa-sun {
+    font-size: 10px;
+    color: #f39c12;
   }
 
   .texto1 {

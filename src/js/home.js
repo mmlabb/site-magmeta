@@ -1,45 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const chk = document.getElementById("chk");
+  const chkList = document.getElementsByClassName("chk");
+  console.log("🚀 ~ chkList:", chkList);
   let isDarkMode = true;
 
-  setTimeout(() => {
-    const loadingWrapper = document.getElementById("loading-wrapper");
-    loadingWrapper.style.opacity = "0";
-    setTimeout(() => {
-      loadingWrapper.style.display = "none";
-    }, 300);
-  }, 3000);
+  // setTimeout(() => {
+  //   const loadingWrapper = document.getElementById("loading-wrapper");
+  //   loadingWrapper.style.opacity = "0";
+  //   setTimeout(() => {
+  //     loadingWrapper.style.display = "none";
+  //   }, 300);
+  // }, 3000);
 
   const divAnoAtual = document.getElementById("ano-atual");
   divAnoAtual.textContent = new Date().getFullYear();
 
-  chk.addEventListener("click", function () {
-    const body = document.body;
+  for (var i = 0; i < chkList.length; i++) {
+    chkList[i].addEventListener("click", function () {
+      const body = document.body;
 
-    isDarkMode = !isDarkMode;
+      isDarkMode = !isDarkMode;
 
-    const logoImagens = document.querySelectorAll("img.logo"); // Seleciona apenas imagens com classe "logo"
+      const logoImagens = document.querySelectorAll("img.logo"); // Seleciona apenas imagens com classe "logo"
 
-    for (const img of logoImagens) {
-      const src = img.getAttribute("src");
+      for (const img of logoImagens) {
+        const src = img.getAttribute("src");
+
+        if (isDarkMode) {
+          const novoNome = src.replace("black", "white");
+          img.src = novoNome;
+        } else {
+          const novoNome = src.replace("white", "black");
+          img.src = novoNome;
+        }
+      }
 
       if (isDarkMode) {
-        const novoNome = src.replace("black", "white");
-        img.src = novoNome;
+        body.classList.remove("theme-light");
+        body.classList.add("theme-dark");
       } else {
-        const novoNome = src.replace("white", "black");
-        img.src = novoNome;
+        body.classList.remove("theme-dark");
+        body.classList.add("theme-light");
       }
-    }
-
-    if (isDarkMode) {
-      body.classList.remove("theme-light");
-      body.classList.add("theme-dark");
-    } else {
-      body.classList.remove("theme-dark");
-      body.classList.add("theme-light");
-    }
-  });
+    });
+  }
 
   function ajustarAlturaContainers() {
     const alturaTela = window.innerHeight;
