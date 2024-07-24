@@ -682,6 +682,14 @@ main {
     padding-top: 2rem !important;
   }
 }
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .botao-tema {
+    padding-top: 4% !important;
+    display: none !important;
+  }
+}
+
 @media (min-width: 768px) {
   #portifolio-mobile .box-portifolio {
     width: 50% !important ; /* Tamanho para tablets */
