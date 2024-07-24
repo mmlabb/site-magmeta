@@ -1,0 +1,78 @@
+#texto-somos {
+  font-family: roboto;
+  color: #fff;
+  font-size: 54px !important;
+}
+
+.mascot-magmeta {
+  align-items: center;
+}
+
+.mas-magmeta {
+  display: flex !important;
+  justify-content: flex-end !important;
+  width: 72% !important;
+}
+
+.img-magmeta {
+  display: flex;
+}
+
+.box-texto-sobre {
+  display: flex;
+  padding-top: 8%;
+  flex-direction: column;
+}
+
+
+
+#texto-sobre-2 {
+  display: flex;
+  border-right: 2px;
+  border-color: blueviolet;
+}
+
+#box-sobre-1 {
+  display: flex;
+  height: 529px;
+  background-color: #5a58c4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-sobre-2 {
+  display: flex;
+  height: 529px;
+  background-color: #5d2e9a;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-sobre-3 {
+  display: flex;
+  height: 529px;
+  background-color: #a778e4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box-sobre {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-txt-sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+
