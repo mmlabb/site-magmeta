@@ -41,9 +41,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Run npm i
+      - name: Installing dependecies
         run: npm i
-      - name: Run npm build
-        run: npm run build
-      - name: sourcing
-        run: mv ./dist .. && rm -rf *  && mv ../dist/* ./ && ls
+      - name: Building
+        run: npx vite build
