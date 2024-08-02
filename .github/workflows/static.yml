@@ -46,5 +46,5 @@ jobs:
       - name: Run npm build
         run: npm run build
       - name: sourcing
-        run: find ./dist -mindepth 1 -name four -prune -o -exec rm -rf {} \; && mv ./dist/* ./
+        run: find ./dist -mindepth 1 -name four -prune -o -exec rm -rf {} + && mv ./dist/* ./
 
