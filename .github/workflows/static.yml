@@ -46,4 +46,4 @@ jobs:
       - name: Run npm build
         run: npm run build
       - name: sourcing
-        run: mv ./dist .. && rm -rf *  && mv ../dist ./ && ls
+        run: mv ./dist .. && rm -rf *  && mv ../dist/* ./ && ls
