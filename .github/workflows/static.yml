@@ -44,4 +44,4 @@ jobs:
       - name: Run npm i
         run: npm i
       - name: Run npm build
-        run: run npm build
+        run: npm run build
