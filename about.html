@@ -30,7 +30,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>Magmeta</title>
+    <title>Sobre nos</title>
   </head>
   <body class="theme-dark">
     <header>
@@ -52,12 +52,17 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="https://magmeta.com.br/"
                     >Inicio</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Projetos</a>
+                  <a class="nav-link" href="http://127.0.0.1:5500/about.html"
+                    >Sobre</a
+                  >
                 </li>
 
                 <li class="nav-item dropdown">
@@ -133,17 +138,24 @@
     <main>
       <section id="primeira-sessao">
         <div class="container box-1">
-          <div class="row linha-1">
+          <div
+            class="row pt-5 mt-md-5"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+          >
             <div class="box-texto-somos-magmeta col-sm-12 col-md-7">
               <div class="d-flex box-texto-sobre">
-                <h1 id="texto-somos">Olá, somos a Magmeta!</h1>
-
+                <div class="txt-1">
+                  <h1 id="texto-somos">Olá,</h1>
+                  <h2>somos a Magmeta!👋🏼</h2>
+                </div>
                 <div id="texto-sobre-2">
-                  <h6>
-                    Somos uma agência especializada em Design UX/UI, com sede em
-                    São Paulo. Projetamos sites, apps e softwares que
-                    descomplicam a experiência do cliente. Há 6 anos,
-                    construindo soluções bonitas e intuitivas para problemas
+                  <h6 id="txt-2">
+                    Somos uma agência especializada em Design<br />
+                    UX/UI, com sede em São Paulo. Projetamos<br />
+                    sites, apps e softwares que descomplicam a<br />experiência
+                    do cliente. Há 6 anos, construindo<br />
+                    soluções bonitas e intuitivas para problemas<br />
                     complexos.
                   </h6>
                 </div>
@@ -153,9 +165,9 @@
             <div
               class="col-sm-12 col-md-5 d-flex justify-content-end mascot-magmeta"
             >
-              <div class="img-magmeta">
+              <div class="img-magmeta text-sm-center">
                 <img
-                  class="mas-magmeta"
+                  class="mas-magmeta img-fluid"
                   src="./src/img/desenho magmeta 1 1.png"
                   alt=""
                   data-aos="zoom-in"
@@ -178,31 +190,50 @@
 
       <section id="segunda-sessao">
         <div class="container-fluid" id="boxs-sobre">
-          <div class="row gx-2 gy-2 tag-portifolio">
+          <div class="row gx-2 gy-2 linha-box-sobre">
             <div class="col">
-              <div id="box-sobre-1">
-                <img src="./src/img/alvo.svg" alt="" />
+              <div id="box-sobre-1" data-aos="fade-up" data-aos-delay="200">
+                <div class="box-img-sobre">
+                  <img src="./src/img/MissãoLogo.svg" width="50%" alt="" />
+                </div>
                 <div class="box-txt-sobre">
                   <h2>Missão</h2>
-                  <small>lorem</small>
+
+                  <small
+                    >Somos parceiros de empresas que desejam permanecer
+                    competitivas, adotar uma mentalidade digital e abraçar os
+                    poderes
+                  </small>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div id="box-sobre-2">
-                <img src="./src/img/olho.png" alt="" />
+              <div id="box-sobre-2" data-aos="fade-up" data-aos-delay="300">
+                <div class="box-img-sobre">
+                  <img src="./src/img/VisãoLogo.svg" width="60%" alt="" />
+                </div>
                 <div class="box-txt-sobre">
-                  <h2>Visão</h2>
-                  <small>lorem</small>
+                  <h2>Missão</h2>
+
+                  <small
+                    >Somos parceiros de empresas que desejam permanecer
+                    competitivas, adotar uma mentalidade digital e abraçar os
+                    poderes
+                  </small>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div id="box-sobre-3">
-                <img src="./src/img/logo-valores.png" alt="" />
+              <div id="box-sobre-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="box-img-sobre">
+                  <img src="./src/img/ValoresLogo.svg" width="50%" alt="" />
+                </div>
                 <div class="box-txt-sobre">
                   <h2>Valores</h2>
-                  <small>lorem</small>
+                  <small
+                    >Valorizamos a honestidade e transparência em nos
+                    comprometer apenas o que podemos realmente entregar.
+                  </small>
                 </div>
               </div>
             </div>
@@ -212,56 +243,100 @@
 
       <section id="terceira-sessao">
         <div class="container">
-          <div class="row">
-            <div class="d-flex pt-5 botao-nossa-ex">
-              <button class="botao-roxo botao-nossa-ex">
-                <h5 class="texto-botao">
-                  Nossa expertise
-                  <img
-                    src="./src/img/seta-botao.svg"
-                    class="seta-botao-ex"
-                    alt=""
-                  />
-                </h5>
-              </button>
-            </div>
-          </div>
-
-          <div class="row pt-5 pb-5 mt-5 mb-5">
-            <div
-              class="col-md-6 d-sm-flex d-md-none justify-content-end align-items-center"
-            >
-              <img class="img-fluid" src="./src/img/img-caminho.png" alt="" />
-            </div>
-
+          <div class="row pt-5 pb-5">
             <div class="col-md-6">
-              <div class="box-texto-caminho">
-                <h1 class="texto1 text-right">
-                  Sabemos o caminho para<br />dar vida à sua ideia
-                </h1>
-                <h6>
-                  Validamos a ideia, construímos do zero ou evoluímos produtos
-                  já existentes.<br />
-                  Estamos prontos para ajudar em qualquer etapa do ciclo de vida
-                  de seu produto.
-                </h6>
-                <button class="botao-roxo botao-nossa-ex">
-                  <h5 class="texto-botao">
-                    Nossa expertise
-                    <img
-                      src="./src/img/seta-botao.svg"
-                      class="seta-botao-ex"
-                      alt=""
-                    />
-                  </h5>
-                </button>
+              <div>
+                <h2 class="texto1 text-center">Todo negócio é digital</h2>
               </div>
             </div>
 
             <div
-              class="col-md-6 d-md-flex d-none justify-content-end align-items-center"
+              class="col-md-6 d-md-flex justify-content-end align-items-center"
             >
-              <img class="img-fluid" src="./src/img/img-caminho.png" alt="" />
+              <h6 id="texto-parceiros">
+                Somos parceiros de empresas que desejam permanecer competitivas,
+                adotar uma mentalidade digital e abraçar os poderes
+                transformadores da tecnologia. Criamos soluções digitais
+                poderosas que beneficiam clientes e empresas.
+              </h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid text-center d-flex justify-content-center">
+          <div class="row gy-3 align-items-center align-items-center">
+            <div class="col-sm-12 col-md-6 d-md-flex fotos-equipe">
+              <img
+                src="./src/img/img-equipe-magmeta.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-12 col-md-6 d-md-flex fotos-equipe">
+              <img
+                src="./src/img/img-equipe-magmeta.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row ps-md-5 ms-md-5 pt-5 pb-5">
+            <div class="col-md-6">
+              <div class="box-texto-caminho">
+                <h2 class="texto1">Nosso Time</h2>
+                <h6>
+                  Amamos o que fazemos e apostamos no sucesso de todos os
+                  projeto que realizamos. Cada cliente é um grande negócio e
+                  estamos preparados para resolver problemas complexos de
+                  maneira criativa e inteligente. Vamos trabalhar juntos!
+                </h6>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 d-md-flex justify-content-end align-items-center flex-column logos-checks"
+            >
+              <div class="pb-2" data-aos="fade-down">
+                <img src="./src/img/icone-check-white.svg" alt="" />
+                <small>High-fidelity Design</small>
+              </div>
+
+              <div class="pb-2" data-aos="fade-down" data-aos-delay="300">
+                <img src="./src/img/icone-check-white.svg" alt="" />
+                <small>High-fidelity Design</small>
+              </div>
+
+              <div class="pb-2" data-aos="fade-down" data-aos-delay="400">
+                <img src="./src/img/icone-check-white.svg" alt="" />
+                <small>High-fidelity Design</small>
+              </div>
+
+              <div class="pb-2" data-aos="fade-down" data-aos-delay="500">
+                <img src="./src/img/icone-check-white.svg" alt="" />
+                <small>High-fidelity Design</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid pt-5 text-center">
+          <div class="row gy-3">
+            <div class="col-md-6 fotos-equipe">
+              <img
+                src="./src/img/img-equipe-magmeta.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 fotos-equipe">
+              <img
+                src="./src/img/img-equipe-magmeta.png"
+                class="img-fluid"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -271,7 +346,7 @@
           <div class="row texto-construimos-juntos">
             <h2>Já construímos juntos com:</h2>
           </div>
-          <div class="row linha-logos mb-5 pb-3">
+          <div class="row linha-logos mb-md-5 pb-md-3">
             <div class="col">
               <img
                 src="./src/img/logo-cadcam-white.svg"
@@ -294,84 +369,16 @@
               />
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div>
-                <img
-                  class="img-fluid"
-                  src="./src/img/MagmetaImg.png"
-                  id="img-mag"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-6 mt-5 pt-5 mb-5">
-              <div class="box-sobre-nos">
-                <h1 class="texto-sobre-nos-1">Sobre nós</h1>
-                <div class="d-flex justify-content-between">
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      src="./src/img/icone-check-white.svg"
-                      class="logo-check-1"
-                      alt=""
-                    />
-                    <h4 class="logo-check m-0">Design</h4>
-                  </div>
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      src="./src/img/icone-check-white.svg"
-                      class="logo-check-2"
-                      alt=""
-                    />
-                    <h4 class="logo-check m-0">Dev</h4>
-                  </div>
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      src="./src/img/icone-check-white.svg"
-                      class="logo-check-3"
-                      alt=""
-                    />
-                    <h4 class="logo-check m-0">Valores</h4>
-                  </div>
-                </div>
-
-                <div class="d-flex texto-sobre-nos-2">
-                  <h6>
-                    Validamos a ideia, construímos do zero ou evoluímos produtos
-                    já existentes. Estamos prontos para ajudar em qualquer etapa
-                    do ciclo<br />
-                    de vida de seu produto.
-                  </h6>
-                </div>
-
-                <div class="d-flex pt-1 botao-nossa-ex">
-                  <button class="botao-roxo">
-                    <h5 class="texto-botao">
-                      Nossa expertise
-                      <img
-                        src="./src/img/seta-botao.svg"
-                        class="seta-botao-ex"
-                        alt=""
-                      />
-                    </h5>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
       <section id="quinta-sessao">
         <div class="container text-center">
-          <div class="row pt-5 pb-5">
+          <div class="row pt-md-5 pb-md-5">
             <div class="col-sm-12 col-md-6 mt-5 mb-5">
               <div class="box-texto-caminho">
                 <h1 class="texto1 text-right">
-                  Tem uma ideia?<br />
+                  Tem um Projeto?<br />
                   Vamos conversar!
                 </h1>
 
@@ -385,7 +392,7 @@
               <div>
                 <img
                   class="img-fluid pb-5rem"
-                  src="./src/img/desenho magmeta 1 1.png"
+                  src="./src/img/img-vamos-conversar.png"
                   width="400px"
                   id="mascote-magmeta"
                   alt=""
