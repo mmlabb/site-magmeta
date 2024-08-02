@@ -51,21 +51,30 @@ loader.load("./iphone_15pro.glb", (gltf) => {
   scene.add(model);
 
   /**
-   * Animação que o celular aparece debaixo para cima virado de costa 
+   * Animação que o celular aparece debaixo para cima virado de costa
    * depois faz um flip e fica com a tela virada para camera
    * Celular está alinhado na vertical
    */
   tl.to(model.position, {
     y: 0, // 360 degrees
     duration: 1,
-    ease: "power2.out",
+    ease: "power3",
   });
   tl.to(model.rotation, {
     y: Math.PI * 2.3, // 360 degrees
-    x: Math.PI * -.25,
+    // x: Math.PI * -0.25,
     duration: 3,
     ease: "power2.inOut",
   });
+
+  setTimeout(() => {
+    tl.to(model.rotation, {
+      y: Math.PI * 4.3, // 360 degrees
+      x: Math.PI * -0.25,
+      duration: 30,
+      ease: "power2.inOut",
+    });
+  }, 4000);
 });
 
 // Initial camera position
@@ -78,8 +87,15 @@ gsap.to(camera.position, {
   duration: 3,
   // ease: "power2.inOut",
   onUpdate: () => {
-    camera.lookAt(-1, 0, 0.4);
+    camera.lookAt(-1.3, 0, 0.4);
   },
+});
+
+// Update cube position based on scroll
+window.addEventListener("scroll", () => {
+  // Get scroll position (you can adjust the scale factor)
+  const scrollY = window.scrollY;
+  phone.position.y = -scrollY * -0.002; // Adjust the mult  iplier as needed
 });
 
 // Animation function

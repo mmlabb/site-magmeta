@@ -187,6 +187,11 @@ body.theme-light h2 {
   height: 100vh;
 }
 
+#primeira-sessao .container,
+#primeira-sessao .row {
+  height: 100%;
+}
+
 .pop-up {
   height: 44px;
   position: absolute;
@@ -556,9 +561,9 @@ main {
     right: 0% !important;
   }
 
-  .linha-1 {
-    flex-direction: column-reverse !important; /* Inverter a ordem dos elementos */
-  }
+  /* .linha-1 {
+    flex-direction: column-reverse !important; 
+  } */
 
   .container-img-app-magmeta {
     padding-top: 3rem;
