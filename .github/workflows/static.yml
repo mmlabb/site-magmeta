@@ -43,3 +43,5 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: Run npm i
         run: npm i
+      - name: Run npm build
+        run: run npm build

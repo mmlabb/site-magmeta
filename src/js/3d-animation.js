@@ -95,7 +95,7 @@ gsap.to(camera.position, {
 window.addEventListener("scroll", () => {
   // Get scroll position (you can adjust the scale factor)
   const scrollY = window.scrollY;
-  phone.position.y = -scrollY * -0.002; // Adjust the mult  iplier as needed
+  phone.position.y = -scrollY * -0.002; // Adjust the multiplier as needed
 });
 
 // Animation function
