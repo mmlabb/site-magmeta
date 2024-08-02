@@ -183,6 +183,10 @@ body.theme-light h2 {
   }
 }
 
+#primeira-sessao {
+  height: 100vh;
+}
+
 .pop-up {
   height: 44px;
   position: absolute;
@@ -917,4 +921,14 @@ main {
   #texto-localizacao {
     padding-top: 0.5rem !important;
   }
+}
+
+#3d {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
 }
