@@ -28,18 +28,7 @@ h6 {
   display: flex;
   padding-top: 1%;
   flex-direction: column;
-}
-
-#texto-sobre-2 {
-  border-left: 4px solid #8758c4 !important;
-  margin-top: 2%;
-}
-
-#txt-2 {
-  display: flex;
-  align-items: center;
-  padding-top: 2% !important;
-  padding-left: 4%;
+  border-radius: 12px;
 }
 
 #box-sobre-1 {
@@ -48,6 +37,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 24px;
 }
 
 #box-sobre-2 {
@@ -56,15 +46,16 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 24px;
 }
 
 #box-sobre-3 {
   display: flex;
-
   background-color: #a778e4;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 24px;
 }
 
 .img-box-sobre {
@@ -79,21 +70,22 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   padding-top: 24px;
-  padding-right: 8%;
-  padding-left: 8%;
-  padding-bottom: 8%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 20%;
 }
 
 .box-img-sobre {
   display: flex;
+  height: 100px;
   align-items: center;
   justify-content: center;
-  padding-top: 24%;
+  padding-top: 28%;
+  padding-bottom: 48px;
 }
-
-
 
 .fotos-equipe {
   padding-left: 0px !important;
