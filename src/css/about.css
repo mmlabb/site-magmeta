@@ -70,12 +70,17 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
   text-align: center;
   flex-direction: column;
   padding-top: 24px;
   padding-right: 10%;
   padding-left: 10%;
   padding-bottom: 20%;
+}
+
+.txt-h2 {
+  color: #fff !important;
 }
 
 .box-img-sobre {
@@ -86,8 +91,6 @@ h6 {
   padding-top: 28%;
   padding-bottom: 48px;
 }
-
-
 
 #box-img-yes {
   height: 300px;
@@ -102,6 +105,19 @@ h6 {
 }
 
 @media (max-width: 991.98px) {
+  .box-texto-somos-magmeta {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .box-yes-we {
+    order: -1; /* Faz com que o .box-yes vá para cima dos outros elementos */
+    display: flex;
+    justify-content: center;
+    padding-top: 10% !important;
+    padding-bottom: 10%;
+  }
+
   .txt-1 {
     flex-direction: column;
     display: flex;
@@ -140,9 +156,5 @@ h6 {
     display: flex;
     justify-content: center;
     padding-top: 5%;
-  }
-
-  .box-yes-we  {
-    padding-top: 20% !important;
   }
 }
