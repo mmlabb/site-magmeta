@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         {/* <BgSquare /> */}
         <ThemeProvider>
           <div id="app-theme" className="theme-dark">
-            <canvas
+            {/* <canvas
               id="3d"
               style={{
                 position: "absolute",
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
                 zIndex: 1000,
               }}
               className="d-none d-md-block"
-            ></canvas>
+            ></canvas> */}
             <Navbar />
 
             <main>{children}</main>
