@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/SiteNavbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
 export const metadata = {

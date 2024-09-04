@@ -52,8 +52,8 @@ export default function Home() {
                   <p className="mt-2">
                     Tudo o que seu negócio precisa para dominar o digital!{" "}
                     <br />
-                    Ferramentas e estratégias que trabalham a favor do seu
-                    crescimento.
+                    Ferramentas e estratégias otimizadas especialmente para o
+                    seu crescimento.
                   </p>
                 </div>
               </div>

@@ -149,7 +149,7 @@ h6 {
   transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball {
+#chk-1:checked + .label .ball {
   transform: translateX(32px);
 }
 
@@ -176,6 +176,29 @@ header {
   left: 0;
   z-index: 2;
   padding: 8px 0;
+  transition: 300ms;
+  z-index: 1001;
+}
+
+@keyframes navbarSlide {
+  0% {
+    transform: translateY(-90px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+header.floating {
+  position: fixed;
+  animation: navbarSlide 500ms ease-in-out;
+  transition: 300ms;
+}
+.theme-dark header.floating {
+  background-color: #0e0c10;
+}
+.theme-light header.floating {
+  background-color: white;
 }
 
 #logo-magmeta {
@@ -691,6 +714,9 @@ main {
 }
 
 @media (min-width: 768px) {
+  #primeira-sessao {
+    height: 100vh;
+  }
   #portifolio-mobile .box-portifolio {
     width: 50% !important ; /* Tamanho para tablets */
   }
@@ -733,7 +759,7 @@ main {
     width: 24px !important;
   }
 
-  .checkbox:checked + .label .ball {
+  #chk-2:checked + .label .ball {
     transform: translateX(20px);
   }
 
@@ -867,10 +893,6 @@ main {
 
   #portifolio-mobile {
     display: none !important;
-  }
-
-  #primeira-sessao {
-    height: 100vh;
   }
 
   .btn-mobile {
