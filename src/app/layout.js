@@ -1,14 +1,7 @@
-import { Inter, Roboto } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import BgSquare from "@/components/BgSquare";
-
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -17,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
+    <html lang="pt-BR">
+      <body>
         {/* <BgSquare /> */}
         <ThemeProvider>
           <div id="app-theme" className="theme-dark">
@@ -33,6 +26,7 @@ export default function RootLayout({ children }) {
                 pointerEvents: "none",
                 zIndex: 1000,
               }}
+              className="d-none d-md-block"
             ></canvas>
             <Navbar />
 

@@ -5,6 +5,8 @@ import gsap from "gsap";
 // create a function to load
 // and animate a 3D model
 function loadModel() {
+  if (window.innerWidth <= 768) return;
+
   const canvas = document.getElementById("3d");
   console.log("🚀 ~ loadModel ~ canvas:", canvas);
 
