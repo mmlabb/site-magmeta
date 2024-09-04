@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
                 pointerEvents: "none",
                 zIndex: 1000,
               }}
-              className="d-none d-md-block"
+              className="d-none d-lg-block"
             ></canvas>
             <Navbar />
 

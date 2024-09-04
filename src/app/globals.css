@@ -24,9 +24,9 @@ ul {
   display: inline-block;
 }
 
-h1 {
-  font-size: 62px !important;
-
+h1,
+.texto-magnetize-metas {
+  font-size: 66px !important;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 900 !important;
@@ -215,11 +215,6 @@ header.floating {
   margin-left: 1.8rem;
 }
 
-.texto-magnetize-metas {
-  font-size: 88px !important;
-  line-height: 1;
-}
-
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -294,6 +289,7 @@ header.floating {
   bottom: 40px; /* Posição da parte inferior */
   right: 44px; /* Posição da direita */
   transition: transform 0.3s ease; /* Adicionar transição suave */
+  z-index: 1001;
 }
 
 .botao-whatsapp:hover {
@@ -585,7 +581,8 @@ main {
   }
 
   .botao-whatsapp {
-    right: 0% !important;
+    right: 1rem;
+    bottom: 1rem;
   }
 
   /* .linha-1 {
@@ -608,7 +605,7 @@ main {
     padding-right: 2rem;
   }
 
-  .texto-magnetize-metas {
+  h1 {
     font-size: 54px !important;
   }
 

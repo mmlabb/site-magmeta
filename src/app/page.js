@@ -5,13 +5,11 @@ import loadModel from "@/utils/3dAnimation.js";
 import { useEffect, useRef } from "react";
 
 export default function Home() {
-  const { darkMode } = useTheme();
-
   useEffect(() => {
     if (typeof window !== "undefined") {
-      loadModel(darkMode);
+      loadModel();
     }
-  }, [darkMode]);
+  }, []);
 
   return (
     <>
@@ -38,9 +36,9 @@ export default function Home() {
       <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
         <div className="container box-1">
           <div className="row linha-1 align-items-center">
-            <div className="box-texto-magmetize col-sm-12 col-md-6">
+            <div className="box-texto-magmetize col-md-12 col-lg-6">
               <div className="texto1 d-flex">
-                <div className="texto-center">
+                <div className="text-center text-lg-start">
                   <h1 className="texto-magnetize-metas">
                     Magnetize as metas do seu negócio com
                   </h1>
@@ -87,8 +85,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-6 d-flex justify-content-end container-img-app-magmeta">
-              <div className="img-app-magmeta d-md-none">
+            <div className="col-md-12 col-lg-6 d-flex justify-content-end container-img-app-magmeta">
+              <div className="img-app-magmeta d-lg-none">
                 <img
                   className="app-magmeta"
                   src="/assets/img/img-app-magmeta.png"
@@ -580,12 +578,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="quinta-sessao">
+      <section id="quinta-sessao" className="pt-5 mt-5 pb-5">
         <div className="container text-center">
-          <div className="row pt-5 pb-5">
-            <div className="col-sm-12 col-md-6 mt-5 mb-5">
+          <div className="row align-items-center gap-5 gap-md-0">
+            <div className="col-sm-12 col-md-6 ">
               <div className="box-texto-caminho">
-                <h1 className="texto1 text-right">
+                <h1 className=" ">
                   Tem uma ideia?
                   <br />
                   Vamos conversar!
@@ -597,16 +595,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-6 d-flex img-vamos-conversar">
-              <div>
-                <img
-                  className="img-fluid pb-5rem"
-                  src="/assets/img/desenho magmeta 1 1.png"
-                  width="400px"
-                  id="mascote-magmeta"
-                  alt=""
-                />
-              </div>
+            <div className="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+              <img
+                className="img-fluid"
+                src="/assets/img/desenho magmeta 1 1.png"
+                width="400px"
+                alt=""
+              />
             </div>
           </div>
         </div>

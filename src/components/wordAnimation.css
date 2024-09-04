@@ -1,7 +1,7 @@
 .slider-container {
   position: relative;
   overflow: hidden;
-  height: 92px; /* Adjust height according to your needs */
+  height: 68px; /* Adjust height according to your needs */
 }
 
 .slider-content {
@@ -24,7 +24,6 @@
   }
   .word {
     justify-content: center;
-    
   }
 }
 
@@ -41,13 +40,19 @@
 }
 .slider-item.out {
   position: absolute;
-
   transform: translateY(100%);
 }
 
 .word {
   display: flex;
   font-weight: 900;
+  height: 66px;
+}
+
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* .word.active {

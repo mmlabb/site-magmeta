@@ -24,7 +24,6 @@ export default function SiteNavbar() {
       const scrollY = window.scrollY;
       if (scrollY > 120 && floating === false) setFloating(true);
       else setFloating(false);
-      // console.log("🚀 ~ navbarPosition ~ scrollY:", scrollY);
     };
 
     if (typeof window !== "undefined") {
@@ -40,7 +39,7 @@ export default function SiteNavbar() {
     <header className={floating ? `floating` : ``}>
       <Navbar expand="lg" className="bg-transparent">
         <Container>
-          <Navbar.Brand href="#">
+          <Navbar.Brand as={Link} href="/">
             <img
               src="/assets/img/logo-magmeta-white.svg"
               alt="logo-magmeta"
@@ -64,7 +63,7 @@ export default function SiteNavbar() {
                 <Sun />
               </label>
             </div>
-            <div className="botao-tema d-none d-md-flex">
+            <div className="botao-tema d-none d-lg-flex">
               <input
                 onClick={alternateTheme}
                 type="checkbox"

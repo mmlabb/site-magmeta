@@ -37,19 +37,8 @@ const WordSlider = ({}) => {
   }, []);
 
   return (
-    <div className="slider-container">
+    <div className="slider-container d-flex justify-content-center justify-content-lg-start">
       <div className="slider-content">
-        {/* {words.map((word, index) => (
-          <h1
-            key={index}
-            className={`texto-magnetize-metas slider-item ${
-              index === currentIndex ? "active" : ""
-            } ${index === currentIndex - 1 ? "out" : ""}`}
-          >
-            {word}
-          </h1>
-        ))} */}
-
         {words.map((word, index) => {
           return index === currentIndex ? (
             <div
@@ -58,17 +47,18 @@ const WordSlider = ({}) => {
               style={{ color: colors[index] }}
             >
               {word.split("").map((el, i) => (
-                <motion.span
+                <motion.div
+                  key={i}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
+                  className="letter"
                   transition={{
                     duration: 0.25,
                     delay: i / 10,
                   }}
-                  key={i}
                 >
-                  {el}{" "}
-                </motion.span>
+                  {el}
+                </motion.div>
               ))}
             </div>
           ) : null;
