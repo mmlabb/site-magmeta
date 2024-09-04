@@ -45,9 +45,15 @@ export default function Home() {
                     Magnetize as metas do seu negócio com
                   </h1>
                   <WordAnimation />
-                  <p className="mt-2">
+                  {/* <p className="mt-2">
                     Seu negócio merece uma atenção especial, com ferramentas
                     otimizadas especialmente para o seu crescimento.
+                  </p> */}
+                  <p className="mt-2">
+                    Tudo o que seu negócio precisa para dominar o digital!{" "}
+                    <br />
+                    Ferramentas e estratégias que trabalham a favor do seu
+                    crescimento.
                   </p>
                 </div>
               </div>
