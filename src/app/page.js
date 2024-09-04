@@ -1,8 +1,7 @@
 "use client";
 import WordAnimation from "@/components/WordAnimation";
-import { useTheme } from "@/providers/ThemeProvider";
 import loadModel from "@/utils/3dAnimation.js";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
