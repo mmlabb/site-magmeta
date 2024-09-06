@@ -1,8 +1,8 @@
 import Clientes from "@/containers/Customers";
 import "./sobre.css";
-import Cards from "@/containers/sobre/cards";
+import CardsSection from "@/containers/sobre/CardsSection";
 
-export default function Home() {
+export default function Sobre() {
   return (
     <>
       <section className="mt-5 pt-5">
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Cards />
+      <CardsSection />
 
       <section className="py-5 my-5">
         <div className="container">

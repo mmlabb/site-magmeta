@@ -5,7 +5,7 @@ import mission from "@/assets/lottie/mission.json";
 import system from "@/assets/lottie/system.json";
 import dynamics from "@/assets/lottie/dynamics.json";
 
-export default function Cards() {
+export default function CardsSection() {
   return (
     <>
       <section>
