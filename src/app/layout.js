@@ -13,24 +13,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body>
-        {/* <BgSquare /> */}
         <ThemeProvider>
           <div id="app-theme" className="theme-dark">
-            <canvas
-              id="3d"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100vh",
-                pointerEvents: "none",
-                zIndex: 1000,
-              }}
-              className="d-none d-lg-block"
-            ></canvas>
             <Navbar />
 
+            <a
+              href="https://api.whatsapp.com/send?phone=SEU_NÚMERO_DE_TELEFONE&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
+              target="_blank"
+              className="botao-whatsapp"
+            >
+              <img src="/assets/img/logo-wpp.svg" alt="IconeWpp" />
+            </a>
             <main>{children}</main>
 
             <footer>

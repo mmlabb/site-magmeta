@@ -1,0 +1,151 @@
+#texto-somos {
+  font-family: roboto;
+  font-size: 54px !important;
+}
+h1 {
+  padding-bottom: 0% !important;
+}
+
+h6 {
+  font-size: 18px !important;
+}
+
+.mascot-magmeta {
+  align-items: center;
+}
+
+.mas-magmeta {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.img-magmeta {
+  display: flex;
+}
+
+.box-texto-sobre {
+  display: flex;
+  padding-top: 1%;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+#box-sobre-1 {
+  display: flex;
+  background-color: #5a58c4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  height: 100%;
+}
+
+#box-sobre-2 {
+  display: flex;
+  background-color: #1c1325;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  height: 100%;
+}
+
+#box-sobre-3 {
+  display: flex;
+  background-color: #a778e4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  height: 100%;
+}
+
+.img-box-sobre {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-txt-sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 20%;
+}
+
+.txt-h2 {
+  color: #fff !important;
+}
+
+.box-img-sobre {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 28%;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .linha-box-sobre {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .box-texto-somos-magmeta {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .box-yes-we {
+    order: -1; /* Faz com que o .box-yes vá para cima dos outros elementos */
+    display: flex;
+    justify-content: center;
+    padding-top: 10% !important;
+    padding-bottom: 10%;
+  }
+
+  .txt-1 {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+  }
+
+  #txt-sobre-2 {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+  }
+
+  .img-magmeta {
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  #txt-sobre-2 {
+    margin-top: 4%;
+  }
+
+  #texto-parceiros {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logos-checks {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+  }
+}

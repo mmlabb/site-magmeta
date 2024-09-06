@@ -1,5 +1,6 @@
 "use client";
 import WordAnimation from "@/components/WordAnimation";
+import Clientes from "@/containers/Customers";
 import loadModel from "@/utils/3dAnimation.js";
 import { useEffect } from "react";
 
@@ -24,13 +25,19 @@ export default function Home() {
     />
   </div>
 </div> */}
-      <a
-        href="https://api.whatsapp.com/send?phone=SEU_NÚMERO_DE_TELEFONE&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
-        target="_blank"
-        className="botao-whatsapp"
-      >
-        <img src="/assets/img/logo-wpp.svg" alt="IconeWpp" />
-      </a>
+      <canvas
+        id="3d"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          pointerEvents: "none",
+          zIndex: 1000,
+        }}
+        className="d-none d-lg-block"
+      ></canvas>
 
       <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
         <div className="container box-1">
@@ -47,9 +54,8 @@ export default function Home() {
                     otimizadas especialmente para o seu crescimento.
                   </p> */}
                   <p className="mt-2">
-                    Tudo o que seu negócio precisa para dominar o digital!{" "}
-                    <br />
-                    Ferramentas e estratégias otimizadas especialmente para o
+                    Expertize em tecnologia essencial para seu negócio! <br />
+                    Estratégia e ferramentas que trabalham especialmente para o
                     seu crescimento.
                   </p>
                 </div>
@@ -473,38 +479,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="quarta-sessao" className="pt-5">
-        <div className="container text-center">
-          <div className="row texto-construimos-juntos ">
-            <div className="col mb-5">
-              <h2>Já construímos juntos com:</h2>
-            </div>
-          </div>
-          <div className="row linha-logos mb-5 pb-3 align-items-center justify-content-center">
-            <div className="col-md-4 col-6">
-              <img
-                src="/assets/img/logo-cadcam-white.svg"
-                alt="logo-usados-cad"
-                className="logo-marca logo"
-              />
-            </div>
-            <div className="col-md-4 col-6">
-              <img
-                src="/assets/img/logo-mclove-white.svg"
-                alt="logo-mclove"
-                className="logo-marca logo"
-              />
-            </div>
-            <div className="col-md-4 col-6">
-              <img
-                src="/assets/img/logo-klubi-white.svg"
-                alt="logo-klubi"
-                className="logo-marca logo"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <Clientes />
 
       <section>
         <div className="container">

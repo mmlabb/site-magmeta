@@ -1,18 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* 
-html {
-  scrollbar-gutter: stable;
-} */
 
 * {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto";
 }
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900 !important;
 }
 
 ul {
@@ -194,10 +198,10 @@ header.floating {
   transition: 300ms;
 }
 .theme-dark header.floating {
-  background-color: #0e0c10;
+  background-color: #0e0c10a8;
 }
 .theme-light header.floating {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.774);
 }
 
 #logo-magmeta {
@@ -205,12 +209,12 @@ header.floating {
 }
 
 .navbar-nav .nav-link {
-  align-items: end;
+  align-items: flex-end;
   font-weight: bold;
 }
 
 #offcanvasNavbar {
-  align-items: start;
+  align-items: flex-start;
   padding-top: 0.2rem;
   margin-left: 1.8rem;
 }
@@ -326,7 +330,7 @@ header.floating {
 }
 
 .box-texto-caminho {
-  text-align: start;
+  text-align: left;
 }
 
 .botao-carrousel {
@@ -382,7 +386,7 @@ header.floating {
 .container-portifolio {
   display: flex !important;
   flex-direction: column !important;
-  align-items: start;
+  align-items: flex-start;
   height: 700px !important;
   justify-content: space-between;
   padding: 12px 16px;
@@ -664,8 +668,7 @@ main {
 
   #seta-rodape {
     display: flex;
-
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   #texto-localizacao {
@@ -867,7 +870,7 @@ main {
 
   #seta-rodape {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   #texto-localizacao {
@@ -877,14 +880,13 @@ main {
 
 /*TELAS DE COMPUTADOR GRANDES*/
 @media (min-width: 991.98px) {
-  .logo-marca {
-    height: 64px;
-  }
-
-  #primeira-sessao {
+  main {
     background-image: url(/assets/img/header_bg.png);
     background-repeat: no-repeat;
     background-position: right top;
+  }
+  .logo-marca {
+    height: 64px;
   }
 
   #portifolio-mobile {
@@ -942,7 +944,7 @@ main {
 
   #seta-rodape {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   #texto-localizacao {

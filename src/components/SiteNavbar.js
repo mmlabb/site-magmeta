@@ -126,7 +126,7 @@ export default function SiteNavbar() {
                   <Nav.Link as={Link} href="/">
                     Início
                   </Nav.Link>
-                  <Nav.Link as={Link} href="#segunda-sessao">
+                  <Nav.Link as={Link} href="/#segunda-sessao">
                     Projetos
                   </Nav.Link>
                   <Nav.Link as={Link} href="a-magmeta">
