@@ -14,20 +14,19 @@ function loadModel() {
   // scene.fog = new THREE.Fog(0xa0a0a0, 10, 50);
   const camera = new THREE.PerspectiveCamera(
     75,
-    window.innerWidth / window.innerHeight,
+    document.body.clientWidth / window.innerHeight,
     0.1,
     1000
   );
   const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true }); // Use the existing canvas
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setClearColor(0x000000, 0);
+  console.log(
+    "🚀 ~ loadModel ~ window.innerWidth:",
+    document.body.clientWidth,
+    canvas.clientWidth
+  );
 
-  canvas.style.position = "fixed";
-  canvas.style.top = "0";
-  canvas.style.left = "0";
-  canvas.style.width = "100%";
-  canvas.style.height = "100vh";
-  canvas.style.pointerEvents = "none";
+  renderer.setSize(document.body.clientWidth, window.innerHeight);
+  renderer.setClearColor(0x000000, 0);
 
   const dirLight = new THREE.DirectionalLight(0xf9f9f9, 8);
   dirLight.position.set(2, 4, 2);
@@ -96,13 +95,6 @@ function loadModel() {
     },
   });
 
-  // Update cube position based on scroll
-  window.addEventListener("scroll", () => {
-    // Get scroll position (you can adjust the scale factor)
-    const scrollY = window.scrollY;
-    if (phone) phone.position.y = -scrollY * -0.002; // Adjust the multiplier as needed
-  });
-
   // Animation function
   function animate() {
     requestAnimationFrame(animate);
@@ -116,10 +108,22 @@ function loadModel() {
 
   // Handle window resize
   window.addEventListener("resize", () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    console.log(
+      "🚀 ~ window.addEventListener ~ document.body.clientWidth:",
+      document.body.clientWidth
+    );
+
+    renderer.setSize(document.body.clientWidth, window.innerHeight);
+    camera.aspect = document.body.clientWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
   });
+
+  // Update cube position based on scroll
+  // window.addEventListener("scroll", () => {
+  //   // Get scroll position (you can adjust the scale factor)
+  //   const scrollY = window.scrollY;
+  //   if (phone) phone.position.y = -scrollY *  0.001; // Adjust the multiplier as needed
+  // });
 }
 
 export default loadModel;
