@@ -19,11 +19,6 @@ function loadModel() {
     1000
   );
   const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true }); // Use the existing canvas
-  console.log(
-    "🚀 ~ loadModel ~ window.innerWidth:",
-    document.body.clientWidth,
-    canvas.clientWidth
-  );
 
   renderer.setSize(document.body.clientWidth, window.innerHeight);
   renderer.setClearColor(0x000000, 0);
@@ -108,11 +103,6 @@ function loadModel() {
 
   // Handle window resize
   window.addEventListener("resize", () => {
-    console.log(
-      "🚀 ~ window.addEventListener ~ document.body.clientWidth:",
-      document.body.clientWidth
-    );
-
     renderer.setSize(document.body.clientWidth, window.innerHeight);
     camera.aspect = document.body.clientWidth / window.innerHeight;
     camera.updateProjectionMatrix();
