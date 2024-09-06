@@ -222,8 +222,9 @@ export default function Home() {
 
                 <div className="box-texto-p1">
                   <p>
-                    Somos a revolução da internet com qualidade e confiabilidade
-                    no Brasil.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc non justo interdum, mollis est quis, gravida metus.
+                    Quisque euismod consectetur tellus vitae fringilla.
                   </p>
 
                   <button

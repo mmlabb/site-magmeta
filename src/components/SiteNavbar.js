@@ -133,7 +133,7 @@ export default function SiteNavbar() {
                     Quem somos
                   </Nav.Link>
 
-                  <button type="button" className="btn btn-outline-info">
+                  <button type="button" className="btn btn-outline-light rounded-pill">
                     Vamos conversar
                   </button>
                 </Nav>
