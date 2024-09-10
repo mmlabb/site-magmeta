@@ -6,8 +6,39 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      loadModel();
+    if (typeof window === "undefined") return;
+    loadModel();
+
+    const portfolioBoxes = document.querySelectorAll(".box-portifolio");
+
+    portfolioBoxes.forEach((box) => {
+      box.addEventListener("mouseover", () => {
+        expandBox(box);
+      });
+
+      box.addEventListener("mouseout", () => {
+        resetBoxes();
+      });
+    });
+
+    function expandBox(box) {
+      portfolioBoxes.forEach((otherBox) => {
+        if (otherBox !== box) {
+          otherBox.style.width = "20%";
+        }
+      });
+
+      box.style.width = "40%";
+    }
+
+    function resetBoxes() {
+      portfolioBoxes.forEach((box) => {
+        if (window.innerWidth > 800) {
+          box.style.width = "25%"; // Set width to 25% for smaller screens
+        } else {
+          box.style.width = "50%"; // Keep the original width for tablets and larger
+        }
+      });
     }
   }, []);
 
@@ -177,34 +208,36 @@ export default function Home() {
           id="portifolio-desktop"
           data-aos="fade"
         >
-          <div className="d-flex flex-wrap portifolio align-items-center">
+          <div className="d-flex flex-wrap portifolio ">
             <div
               className="box-portifolio"
               id="container-portifolio-1"
               width=""
             >
               <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">V Tel</h6>
-                  <h4 className="texto-h4-port">Aplicativo</h4>
-                </div>
+                <div className="d-flex flex-column gap-4">
+                  <div className="texto-portifolio">
+                    <h6 className="texto-h6-port">V Tel</h6>
+                    <h4 className="texto-h4-port">Aplicativo</h4>
+                  </div>
 
-                <img src="/assets/img/app-oak.png" alt="" />
+                  <img src="/assets/img/app-oak.png" alt="" />
+                </div>
 
                 <div className="box-texto-p1">
                   <p>
-                    Desenvolvido para facilitar a vida dos clientes de
-                    empresas provedoras de internet. Com ele fica muito mais
-                    fácil pagar faturas, alterar planos e acompanhar consumo.
+                    Desenvolvido para facilitar a vida dos clientes de empresas
+                    provedoras de internet. Com ele fica muito mais fácil pagar
+                    faturas, alterar planos e acompanhar consumo.
                   </p>
 
-                  <button
+                  {/* <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -214,25 +247,30 @@ export default function Home() {
               width=""
             >
               <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">NFT Marketplace</h6>
-                  <h4 className="texto-h4-port">Ui/Ux Design</h4>
+                <div className="d-flex flex-column gap-4">
+                  <div className="texto-portifolio">
+                    <h6 className="texto-h6-port">NFT Marketplace</h6>
+                    <h4 className="texto-h4-port">Ui/Ux Design</h4>
+                  </div>
+
+                  <img src="/assets/img/app-nft.png" alt="" />
                 </div>
-
-                <img src="/assets/img/app-nft.png" alt="" />
-
                 <div className="box-texto-p1">
                   <p>
-                    Web 3.0
+                    Oferecemos soluções completas para e-commerces, desde a
+                    criação de plataformas intuitivas até a otimização de
+                    processos de vendas e pagamentos. Nosso objetivo é garantir
+                    que sua loja virtual seja eficiente, segura e preparada para
+                    crescer junto com o seu negócio.
                   </p>
 
-                  <button
+                  {/* <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -243,25 +281,27 @@ export default function Home() {
               width=""
             >
               <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">McLovs Barbearia</h6>
-                  <h4 className="texto-h4-port">Branding</h4>
+                <div className="d-flex flex-column gap-4">
+                  <div className="texto-portifolio">
+                    <h6 className="texto-h6-port">McLovs Barbearia</h6>
+                    <h4 className="texto-h4-port">Branding</h4>
+                  </div>
+
+                  <img src="/assets/img/app-mclove.png" alt="" />
                 </div>
-
-                <img src="/assets/img/app-mclove.png" alt="" />
-
                 <div className="box-texto-p1">
                   <p>
-                    Somos a revolução da internet com qualidade e confiabilidade
-                    no Brasil.
+                    Para agilizar seus atendimentos e focar no que mais importa,
+                    criamos ferramentas de gestão para seu negócio.
                   </p>
-                  <button
+
+                  {/* <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -272,24 +312,33 @@ export default function Home() {
               width=""
             >
               <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">Klubi</h6>
-                  <h4 className="texto-h4-port">Website/Blog</h4>
+                <div className="d-flex flex-column gap-4">
+                  <div className="texto-portifolio">
+                    <h6 className="texto-h6-port">Klubi</h6>
+                    <h4 className="texto-h4-port">Website/Blog</h4>
+                  </div>
+
+                  <img src="/assets/img/blog-klubi.png" alt="" />
                 </div>
-
-                <img src="/assets/img/blog-klubi.png" alt="" />
-
                 <div className="box-texto-p1">
                   <p>
-                    Encontre tudo sobre consórcio num só lugar! Acompanhe nov
+                    {/* blog é uma estratégia poderosa para empresas que desejam
+                    aumentar sua presença online. Um blog bem estruturado atrai
+                    tráfego orgânico, melhora o posicionamento nos mecanismos de
+                    busca (SEO) e estabelece autoridade no mercado. Além disso,
+                    ele oferece conteúdo relevante e informativo que engaja
+                    clientes, fortalece o relacionamento e gera confiança,
+                    resultando em mais oportunidades de vendas e crescimento
+                    para o negócio. */}
                   </p>
-                  <button
+
+                  {/* <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -309,17 +358,18 @@ export default function Home() {
 
                 <div className="box-texto-p1">
                   <p>
-                    Somos a revolução da internet com qualidade e confiabilidade
-                    no Brasil.
+                    Desenvolvido para facilitar a vida dos clientes de empresas
+                    provedoras de internet. Com ele fica muito mais fácil pagar
+                    faturas, alterar planos e acompanhar consumo.
                   </p>
 
-                  <button
+                  {/* <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -338,17 +388,20 @@ export default function Home() {
 
                 <div className="d-flex box-texto-p1 text justify-content-between">
                   <p>
-                    Somos a revolução da internet com qualidade e confiabilidade
-                    no Brasil.
+                    Oferecemos soluções completas para e-commerces, desde a
+                    criação de plataformas intuitivas até a otimização de
+                    processos de vendas e pagamentos. Nosso objetivo é garantir
+                    que sua loja virtual seja eficiente, segura e preparada para
+                    crescer junto com o seu negócio.
                   </p>
 
-                  <button
+                  {/* <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -370,17 +423,17 @@ export default function Home() {
 
                 <div className="box-texto-p1">
                   <p>
-                    Somos a revolução da internet com qualidade e confiabilidade
-                    no Brasil.
+                    Para agilizar seus atendimentos e focar no que mais importa,
+                    criamos ferramentas de gestão para seu negócio.
                   </p>
 
-                  <button
+                  {/* <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -395,21 +448,20 @@ export default function Home() {
                   <h4 className="texto-h4-port">Ui/Ux Design</h4>
                 </div>
 
-                <img src="/assets/img/site-klubi.png" alt="" />
+                <img src="/assets/img/blog-klubi.png" alt="" />
 
                 <div className="d-flex box-texto-p1 text justify-content-between">
                   <p>
-                    Somos a revolução da internet com qualidade e confiabilidade
-                    no Brasil.
+                    
                   </p>
 
-                  <button
+                  {/* <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

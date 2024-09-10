@@ -30,6 +30,18 @@ export default function Sobre() {
                 </div>
                 <div id="txt-sobre-2">
                   <h6 className="text-center text-lg-start">
+                    A Magmeta nasceu para impulsionar o crescimento de negócios!
+                    Aqui solucionamos problemas e transformamos nossa realidade
+                    com tecnologia, unindo o conhecimento de especialistas e
+                    mentes visionárias para desenvolver ferramentas e produtos
+                    para empresas de diversos ramos.
+                    <br />
+                    Através de cada solução formamos um campo magnético capaz de
+                    atrair pessoas e oportunidades de sucesso. Então se chegou
+                    aqui é sinal de que estamos prestes a conhecer mais uma!
+                    Isso é Magmeta!
+                  </h6>
+                  {/* <h6 className="text-center text-lg-start">
                     A Magmeta nasceu com a meta de transformar nossas vidas.
                     Acreditamos no poder digital de levar pessoas a descobrirem
                     e se conectar ao seu propósito, e através disto magnetizar
@@ -40,7 +52,7 @@ export default function Sobre() {
                     grandes desafios e desenvolver soluções e produtos
                     inovadores que vão além de uma entrega, mas impactam vidas
                     positivamente. E com estas mentes formamos a Magmeta.
-                  </h6>
+                  </h6> */}
                 </div>
               </div>
             </div>
