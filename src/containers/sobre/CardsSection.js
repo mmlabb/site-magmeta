@@ -13,25 +13,28 @@ export default function CardsSection() {
           <div className="row gx-2 gy-2 linha-box-sobre">
             <div className="col flex-1">
               <div
-                id="box-sobre-1"
+                id="box-sobre-3"
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay="400"
                 className="overflow-hidden"
               >
                 <span className="p-5 text-center text-white">
+                  <h3>Customização</h3>
                   Nossa abordagem personalizada garante que cada solução seja
                   ajustada às necessidades específicas, criando uma experiência
-                  única e satisfatória.
+                  única e satisfatória
                 </span>
                 <div className="">
                   <Lottie
-                    animationData={mission}
+                    animationData={dynamics}
                     className="flex justify-center items-center"
                     loop={true}
+                    speed={0.25}
                   />
                 </div>
               </div>
             </div>
+
             <div className="col flex-1">
               <div
                 id="box-sobre-2"
@@ -40,6 +43,7 @@ export default function CardsSection() {
                 className="overflow-hidden"
               >
                 <span className="p-5 text-center text-white">
+                  <h3>Soluções integradas</h3>
                   Através de cada solução conseguimos formar um campo magnético
                   capaz de unir oportunidades e pessoas de sucesso.
                 </span>
@@ -55,22 +59,22 @@ export default function CardsSection() {
             </div>
             <div className="col flex-1">
               <div
-                id="box-sobre-3"
+                id="box-sobre-1"
                 data-aos="fade-up"
-                data-aos-delay="400"
+                data-aos-delay="200"
                 className="overflow-hidden"
               >
                 <span className="p-5 text-center text-white">
-                  Unimos pessoas apaixonadas por transformar o mundo, superando
-                  desafios e criando soluções inovadoras que impactam
-                  positivamente a sociedade
+                  <h3>Inovação contínua</h3>
+                  Nossos produtos contam com as melhores tecnologias do mercado.
+                  Com pessoas apaixonadas por inovar, estamos sempre atualizados
+                  das melhores soluções para escalar.
                 </span>
                 <div className="">
                   <Lottie
-                    animationData={dynamics}
+                    animationData={mission}
                     className="flex justify-center items-center"
                     loop={true}
-                    speed={0.25}
                   />
                 </div>
               </div>

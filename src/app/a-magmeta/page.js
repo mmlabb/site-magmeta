@@ -254,6 +254,18 @@ export default function Sobre() {
 
       <section>
         <div className="container text-center">
+          <img
+            className="img-fluid pb-5rem"
+            src="/assets/img/about_mag.png"
+            width="400px"
+            height="400px"
+            id="mascote-magmeta"
+            alt=""
+          />
+        </div>
+      </section>
+      <section>
+        <div className="container text-center">
           <div className="row pt-md-5 pb-md-5">
             <div className="col-sm-12 col-md-6 mt-5 mb-5">
               <div className="box-texto-caminho">

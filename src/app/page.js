@@ -193,8 +193,9 @@ export default function Home() {
 
                 <div className="box-texto-p1">
                   <p>
-                    Somos a revolução da internet com qualidade e confiabilidade
-                    no Brasil.
+                    Desenvolvido para facilitar a vida dos clientes de
+                    empresas provedoras de internet. Com ele fica muito mais
+                    fácil pagar faturas, alterar planos e acompanhar consumo.
                   </p>
 
                   <button
@@ -222,9 +223,7 @@ export default function Home() {
 
                 <div className="box-texto-p1">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc non justo interdum, mollis est quis, gravida metus.
-                    Quisque euismod consectetur tellus vitae fringilla.
+                    Web 3.0
                   </p>
 
                   <button
@@ -278,12 +277,11 @@ export default function Home() {
                   <h4 className="texto-h4-port">Website/Blog</h4>
                 </div>
 
-                <img src="/assets/img/site-klubi.png" alt="" />
+                <img src="/assets/img/blog-klubi.png" alt="" />
 
                 <div className="box-texto-p1">
                   <p>
-                    Somos a revolução da internet com qualidade e confiabilidade
-                    no Brasil.
+                    Encontre tudo sobre consórcio num só lugar! Acompanhe nov
                   </p>
                   <button
                     type="button"
