@@ -96,9 +96,13 @@ export default function SiteNavbar() {
                 </div>
 
                 <div className="botao-conversar">
-                  <button type="button" className="btn btn-outline-info">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+5561994561273&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
+                    target="_blank"
+                    className="btn btn-outline-info"
+                  >
                     Vamos conversar
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -133,9 +137,13 @@ export default function SiteNavbar() {
                     Quem somos
                   </Nav.Link>
 
-                  <button type="button" className="btn btn-outline-light rounded-pill">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+5561994561273&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
+                    target="_blank"
+                    className="btn btn-outline-light rounded-pill"
+                  >
                     Vamos conversar
-                  </button>
+                  </a>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

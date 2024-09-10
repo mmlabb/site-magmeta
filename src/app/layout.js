@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
             <Navbar />
 
             <a
-              href="https://api.whatsapp.com/send?phone=SEU_NÚMERO_DE_TELEFONE&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
+              href="https://api.whatsapp.com/send?phone=+5561994561273&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
               target="_blank"
               className="botao-whatsapp"
             >
