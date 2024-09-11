@@ -2,12 +2,62 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Navbar from "@/components/SiteNavbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Magmeta digital",
   description:
     "Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento.",
+  applicationName: "Magmeta tecnologia",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "Software House",
+    "Fábrica de Software",
+    "Digital Marketing",
+    "Next.js",
+    "React",
+    "JavaScript",
+    "UI/UX Design",
+    "Web Development",
+    "SEO",
+    "Content Marketing",
+    "Front-end Development",
+    "Back-end Development",
+    "E-commerce Solutions",
+    "Business Growth",
+    "Tech Solutions",
+    "Marketing Automation",
+    "Social Media Marketing",
+    "Custom Software",
+    "Desenvolvimento de Software",
+    "Marketing Digital",
+    "Criação de Sites",
+    "Gestão de Mídias Sociais",
+    "Automação de Marketing",
+    "Lojas Virtuais",
+    "Design Responsivo",
+    "Desenvolvimento Front-end",
+    "Desenvolvimento Back-end",
+    "Transformação Digital",
+    "Aplicações Web",
+    "Growth Marketing",
+    "Consultoria de TI",
+    "Inbound Marketing",
+    "Funil de Vendas",
+    "Geração de Leads",
+    "Conversão",
+    "Nutrição de Leads",
+    "Anúncios Pagos",
+    "Google Ads",
+    "Facebook Ads",
+    "Engajamento",
+    "E-mail Marketing",
+    "Remarketing",
+    "Otimização de Conversão",
+    "Análise de Dados",
+    "Retenção de Clientes",
+    "Criação de Landing Pages",
+  ],
 };
 
 export default function RootLayout({ children }) {
