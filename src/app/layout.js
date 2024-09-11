@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Navbar from "@/components/SiteNavbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: "Magmeta digital",
@@ -97,6 +98,7 @@ export default function RootLayout({ children }) {
           </div>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-4FR89ZYH4B" />
     </html>
   );
 }

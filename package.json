@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.9",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.3.31",
     "gsap": "^3.12.5",
