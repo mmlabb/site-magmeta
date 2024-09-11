@@ -57,6 +57,10 @@ export const metadata = {
     "Análise de Dados",
     "Retenção de Clientes",
     "Criação de Landing Pages",
+    "ERP",
+    "CMS",
+    "Blog",
+    "SaaS",
   ],
 };
 
