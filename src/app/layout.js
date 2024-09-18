@@ -8,9 +8,13 @@ export const metadata = {
   title: "Magmeta digital",
   description:
     "Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento.",
-  applicationName: "Magmeta tecnologia",
+  applicationName: "Magmeta digital",
   referrer: "origin-when-cross-origin",
   keywords: [
+    "Magmeta",
+    "Magmeta digital",
+    "Magmeta tecnologia",
+    "Magmeta tech",
     "Software House",
     "Fábrica de Software",
     "Digital Marketing",
@@ -137,7 +141,7 @@ export default function RootLayout({ children }) {
                 <div className="row pt-5">
                   <div className="col-md-6 d-flex justify-content-center justify-content-md-start p-0">
                     <small id="texto-localizacao">
-                      Brasília - DF 04.704.383/0001-30
+                      Brasília - DF 35.877.565/0001-36
                     </small>
                   </div>
                   <div className="col-md-6 d-flex justify-content-center justify-content-md-end opacity-50">
