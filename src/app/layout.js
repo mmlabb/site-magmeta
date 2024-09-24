@@ -66,6 +66,7 @@ export const metadata = {
     "Blog",
     "SaaS",
   ],
+  thumbnail: "https://magmeta.com.br/assets/img/ad-thumb.jpg",
 };
 
 export default function RootLayout({ children }) {
