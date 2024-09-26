@@ -2,15 +2,18 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./wordAnimation.css"; // Import CSS for styling and animation
 const words = [
+  "#Aplicativo",
+  "#Loja virtual",
+  "#Funil",
+  "#ui/ux",
+  "#Website",
+  "#Landing page",
+  "#Chatbot",
+  "#Cloud",
   "#SaaS",
   "#Automação",
-  "#Funil",
-  "#Aplicativo",
   "#CRM",
   "#ERP",
-  "#Blog",
-  "#Cloud",
-  "#ui/ux",
 ];
 
 const colors = [
