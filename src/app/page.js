@@ -85,7 +85,7 @@ export default function Home() {
                     otimizadas especialmente para o seu crescimento.
                   </p> */}
                   <p className="mt-2">
-                    Expertize em tecnologia essencial para seu negócio! <br />
+                    Expertise em tecnologia essencial para seu negócio! <br />
                     Estratégia e ferramentas que trabalham especialmente para o
                     seu crescimento.
                   </p>
