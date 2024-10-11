@@ -130,11 +130,13 @@ export default function RootLayout({ children }) {
                       />
                     </div>
                     <div className="mx-2 my-2">
-                      <img
-                        src="/assets/img/logo-instagram-white.svg"
-                        alt="logo-instagram"
-                        className="logo"
-                      />
+                      <a href="https://www.instagram.com/magmetadigital">
+                        <img
+                          src="/assets/img/logo-instagram-white.svg"
+                          alt="logo-instagram"
+                          className="logo"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>

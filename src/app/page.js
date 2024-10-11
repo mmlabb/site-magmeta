@@ -84,22 +84,33 @@ export default function Home() {
                     Seu negócio merece uma atenção especial, com ferramentas
                     otimizadas especialmente para o seu crescimento.
                   </p> */}
-                  <p className="mt-2">
-                    Expertise em tecnologia essencial para seu negócio! <br />
-                    Estratégia e ferramentas que trabalham especialmente para o
-                    seu crescimento.
-                  </p>
+                  <div className="justify-content-center">
+                    <p className="mt-2">
+                      <br />
+                      Estratégia e ferramentas que trabalham especialmente para
+                      o seu crescimento.
+                    </p>
+                  </div>
+                  <div className="d-flex justify-content-center pt-5">
+                    <div className="botao-roxo botao-nossa-ex btn-mobile-orca">
+                      <a href="/quem-somos" className="btn-mobile-orcam">
+                        <h5 className="texto-botao">Orçarmento rápido</h5>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div className="d-none d-md-block">
                 <ul className="d-flex">
                   <li className="mx-2 my-2">
-                    <img
-                      src="/assets/img/logo-instagram-white.svg"
-                      alt="LogoInsta"
-                      className="img-fluid mr-3 logo"
-                    />
+                    <a href="https://www.instagram.com/magmetadigital">
+                      <img
+                        src="/assets/img/logo-instagram-white.svg"
+                        alt="LogoInsta"
+                        className="img-fluid mr-3 logo"
+                      />
+                    </a>
                   </li>
 
                   <li className="mx-2 my-2">
@@ -217,8 +228,8 @@ export default function Home() {
               <div className="container-portifolio">
                 <div className="d-flex flex-column gap-4">
                   <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">V Tel</h6>
-                    <h4 className="texto-h4-port">Aplicativo</h4>
+                    <h6 className="texto-h6-port">Clube de vantagens</h6>
+                    <h4 className="texto-h4-port">Aplicativo mobile</h4>
                   </div>
 
                   <img src="/assets/img/app-oak.png" alt="" />
@@ -226,18 +237,19 @@ export default function Home() {
 
                 <div className="box-texto-p1">
                   <p>
-                    Desenvolvido para facilitar a vida dos clientes de empresas
-                    provedoras de internet. Com ele fica muito mais fácil pagar
-                    faturas, alterar planos e acompanhar consumo.
+                    Nossa solução de UI/UX Design para Clube de Vantagens white
+                    label é personalizável e pronta para uso, com foco em uma
+                    experiência intuitiva e eficiente. Entre em contato para
+                    adquiri-la!
                   </p>
 
-                  {/* <button
+                  <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
+                  </button>
                 </div>
               </div>
             </div>
@@ -257,88 +269,19 @@ export default function Home() {
                 </div>
                 <div className="box-texto-p1">
                   <p>
-                    Oferecemos soluções completas para e-commerces, desde a
-                    criação de plataformas intuitivas até a otimização de
-                    processos de vendas e pagamentos. Nosso objetivo é garantir
-                    que sua loja virtual seja eficiente, segura e preparada para
-                    crescer junto com o seu negócio.
+                    Nosso Funil de Captação de Leads oferece um design intuitivo
+                    e uma experiência fluida, maximizando conversões. Com
+                    automação de marketing e integrações, otimizamos a geração
+                    de leads qualificados de forma eficiente.
                   </p>
 
-                  {/* <button
+                  <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="box-portifolio"
-              id="container-portifolio-3"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">McLovs Barbearia</h6>
-                    <h4 className="texto-h4-port">Branding</h4>
-                  </div>
-
-                  <img src="/assets/img/app-mclove.png" alt="" />
-                </div>
-                <div className="box-texto-p1">
-                  <p>
-                    Para agilizar seus atendimentos e focar no que mais importa,
-                    criamos ferramentas de gestão para seu negócio.
-                  </p>
-
-                  {/* <button
-                    type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
-                  >
-                    Explorar
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="box-portifolio"
-              id="container-portifolio-4"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">Klubi</h6>
-                    <h4 className="texto-h4-port">Website/Blog</h4>
-                  </div>
-
-                  <img src="/assets/img/blog-klubi.png" alt="" />
-                </div>
-                <div className="box-texto-p1">
-                  <p>
-                    {/* blog é uma estratégia poderosa para empresas que desejam
-                    aumentar sua presença online. Um blog bem estruturado atrai
-                    tráfego orgânico, melhora o posicionamento nos mecanismos de
-                    busca (SEO) e estabelece autoridade no mercado. Além disso,
-                    ele oferece conteúdo relevante e informativo que engaja
-                    clientes, fortalece o relacionamento e gera confiança,
-                    resultando em mais oportunidades de vendas e crescimento
-                    para o negócio. */}
-                  </p>
-
-                  {/* <button
-                    type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
-                  >
-                    Explorar
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
+                  </button>
                 </div>
               </div>
             </div>
@@ -363,13 +306,13 @@ export default function Home() {
                     faturas, alterar planos e acompanhar consumo.
                   </p>
 
-                  {/* <button
+                  <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
+                  </button>
                 </div>
               </div>
             </div>
@@ -395,19 +338,19 @@ export default function Home() {
                     crescer junto com o seu negócio.
                   </p>
 
-                  {/* <button
+                  <button
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="d-flex portifolio align-items-center">
+          {/*<div className="d-flex portifolio align-items-center">
             <div
               className="box-portifolio"
               id="container-portifolio-3"
@@ -434,7 +377,7 @@ export default function Home() {
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
                   </button> */}
-                </div>
+          {/*</div>
               </div>
             </div>
             <div
@@ -451,9 +394,7 @@ export default function Home() {
                 <img src="/assets/img/blog-klubi.png" alt="" />
 
                 <div className="d-flex box-texto-p1 text justify-content-between">
-                  <p>
-                    
-                  </p>
+                  <p></p>
 
                   {/* <button
                     type="button"
@@ -461,11 +402,11 @@ export default function Home() {
                   >
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
+                  </button> 
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -473,7 +414,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="d-flex pt-5 botao-nossa-ex">
-              <button className="botao-roxo botao-nossa-ex">
+              <a className="botao-roxo botao-nossa-ex" href="/quem-somos">
                 <h5 className="texto-botao">
                   Nossa expertise
                   <img
@@ -482,7 +423,7 @@ export default function Home() {
                     alt=""
                   />
                 </h5>
-              </button>
+              </a>
             </div>
           </div>
 
@@ -507,7 +448,7 @@ export default function Home() {
                   Estamos prontos para ajudar em qualquer etapa do ciclo de vida
                   de seu produto.
                 </h6>
-                <button className="botao-roxo botao-nossa-ex">
+                <a className="botao-roxo botao-nossa-ex" href="/quem-somos">
                   <h5 className="texto-botao">
                     Nossa expertise
                     <img
@@ -516,7 +457,7 @@ export default function Home() {
                       alt=""
                     />
                   </h5>
-                </button>
+                </a>
               </div>
             </div>
 
@@ -551,14 +492,14 @@ export default function Home() {
             <div className="col-sm-12 col-md-6 col-lg-6 mt-5 pt-5 mb-5">
               <div className="box-sobre-nos d-flex flex-column gap-3">
                 <h1 className="texto-sobre-nos-1">Sobre nós</h1>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between valores">
                   <div className="d-flex align-items-center gap-2">
                     <img
                       src="/assets/img/icone-check-white.svg"
                       className="logo-check-1"
                       alt=""
                     />
-                    <h4 className="logo-check m-0">Design</h4>
+                    <h4 className="logo-check m-0">Estratégia</h4>
                   </div>
                   <div className="d-flex align-items-center gap-2">
                     <img
@@ -566,7 +507,7 @@ export default function Home() {
                       className="logo-check-2"
                       alt=""
                     />
-                    <h4 className="logo-check m-0">Dev</h4>
+                    <h4 className="logo-check m-0">Velocidade</h4>
                   </div>
                   <div className="d-flex align-items-center gap-2">
                     <img
@@ -574,7 +515,7 @@ export default function Home() {
                       className="logo-check-3"
                       alt=""
                     />
-                    <h4 className="logo-check m-0">Valores</h4>
+                    <h4 className="logo-check m-0">Fidelização</h4>
                   </div>
                 </div>
 
@@ -587,7 +528,7 @@ export default function Home() {
                 </h6>
 
                 <div className="d-flex pt-1 botao-nossa-ex">
-                  <button className="botao-roxo">
+                  <a className="botao-roxo botao-nossa-ex" href="/quem-somos">
                     <h5 className="texto-botao">
                       Nossa expertise
                       <img
@@ -596,11 +537,59 @@ export default function Home() {
                         alt=""
                       />
                     </h5>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+
+          {/*<div className="row">
+            <div className="col-sm-12 col-md-4 col-lg-4 flex-direction: column">
+              <div class="d-flex justify-content-center align-items-center ">
+                <div>
+                  <img
+                    className="img-fluid"
+                    src="/assets/img/MagmetaImg.png"
+                    id="img-mag"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h6>lorem</h6>
+                  <h3>lorem</h3>
+                </div>
+                <div>
+                  <img src="/assets/img/icone-check-white.svg" />
+                  <h6>lorem</h6>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-4 col-lg-4">
+              <div>
+                <img
+                  className="img-fluid"
+                  src="/assets/img/MagmetaImg.png"
+                  id="img-mag"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-4 col-lg-4">
+              <div>
+                <img
+                  className="img-fluid"
+                  src="/assets/img/MagmetaImg.png"
+                  id="img-mag"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>*/}
         </div>
       </section>
 
@@ -615,9 +604,13 @@ export default function Home() {
                   Vamos conversar!
                 </h1>
 
-                <button className="botao-roxo botao-nossa-ex">
-                  <h5 className="texto-botao">Vamos conversar</h5>
-                </button>
+                <a
+                  href="https://onboarding.magmeta.com.br/onboarding/lead"
+                  target="_blank"
+                  className="btn btn-outline-light rounded-pill"
+                >
+                  Orçarmento rápido
+                </a>
               </div>
             </div>
 

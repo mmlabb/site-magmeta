@@ -2,7 +2,7 @@
 const nextConfig = {
   output: "export",
   reactStrictMode: true,
-  assetPrefix: "https://magmeta.com.br"
+  // assetPrefix: "https://magmeta.com.br"
 };
 
 export default nextConfig;

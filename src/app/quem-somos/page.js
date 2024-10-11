@@ -288,7 +288,7 @@ export default function Sobre() {
                 </h1>
 
                 <button className="botao-roxo botao-nossa-ex">
-                  <h5 className="texto-botao">Vamos conversar</h5>
+                  <h5 className="texto-botao">Orçarmento rápido</h5>
                 </button>
               </div>
             </div>
