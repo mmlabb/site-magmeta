@@ -91,10 +91,10 @@ export default function Home() {
                       o seu crescimento.
                     </p>
                   </div>
-                  <div className="d-flex justify-content-center pt-5">
-                    <div className="botao-roxo botao-nossa-ex btn-mobile-orca">
-                      <a href="/quem-somos" className="btn-mobile-orcam">
-                        <h5 className="texto-botao">Orçarmento rápido</h5>
+                  <div className="d-flex pb-2">
+                    <div className="botao-roxo botao-nossa-ex ">
+                      <a href="https://onboarding.magmeta.com.br/onboarding/lead" className="btn-mobile-orcam">
+                        <h5 className="texto-botao">ORÇAMENTO RÁPIDO</h5>
                       </a>
                     </div>
                   </div>
@@ -247,7 +247,7 @@ export default function Home() {
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
-                    Explorar
+                    QUERO ESSA IDEIA
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
                   </button>
                 </div>
@@ -279,7 +279,7 @@ export default function Home() {
                     type="button"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-light"
                   >
-                    Explorar
+                    QUERO VENDER
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
                   </button>
                 </div>
@@ -413,7 +413,7 @@ export default function Home() {
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
           <div className="row">
-            <div className="d-flex pt-5 botao-nossa-ex">
+            {/*<div className="d-flex pt-5 botao-nossa-ex">
               <a className="botao-roxo botao-nossa-ex" href="/quem-somos">
                 <h5 className="texto-botao">
                   Nossa expertise
@@ -424,10 +424,18 @@ export default function Home() {
                   />
                 </h5>
               </a>
-            </div>
+            </div>*/}
           </div>
 
           <div className="row pt-5 pb-5 mt-5 ">
+            <div className="col-md-6 d-md-flex d-none justify-content-start align-items-center">
+              <img
+                className="img-fluid"
+                src="/assets/img/img-caminho.png"
+                alt=""
+              />
+            </div>
+
             <div className="col-md-6 d-sm-flex d-md-none justify-content-end align-items-center">
               <img
                 className="img-fluid"
@@ -448,25 +456,15 @@ export default function Home() {
                   Estamos prontos para ajudar em qualquer etapa do ciclo de vida
                   de seu produto.
                 </h6>
-                <a className="botao-roxo botao-nossa-ex" href="/quem-somos">
-                  <h5 className="texto-botao">
-                    Nossa expertise
-                    <img
-                      src="/assets/img/seta-botao.svg"
-                      className="seta-botao-ex"
-                      alt=""
-                    />
-                  </h5>
-                </a>
+                <div className="justify-content-end">
+                  <a
+                    className="botao-roxo botao-nossa-ex justify-content-center  btn-r"
+                    href="https://onboarding.magmeta.com.br/onboarding/lead"
+                  >
+                    <h5 className="texto-botao">QUERO UMA AVALIÇÃO GRATUITA</h5>
+                  </a>
+                </div>
               </div>
-            </div>
-
-            <div className="col-md-6 d-md-flex d-none justify-content-end align-items-center">
-              <img
-                className="img-fluid"
-                src="/assets/img/img-caminho.png"
-                alt=""
-              />
             </div>
           </div>
         </div>
@@ -529,14 +527,7 @@ export default function Home() {
 
                 <div className="d-flex pt-1 botao-nossa-ex">
                   <a className="botao-roxo botao-nossa-ex" href="/quem-somos">
-                    <h5 className="texto-botao">
-                      Nossa expertise
-                      <img
-                        src="/assets/img/seta-botao.svg"
-                        className="seta-botao-ex"
-                        alt=""
-                      />
-                    </h5>
+                    <h5 className="texto-botao">NOSSA EXPERTISE</h5>
                   </a>
                 </div>
               </div>
@@ -604,13 +595,14 @@ export default function Home() {
                   Vamos conversar!
                 </h1>
 
-                <a
-                  href="https://onboarding.magmeta.com.br/onboarding/lead"
-                  target="_blank"
-                  className="btn btn-outline-light rounded-pill"
-                >
-                  Orçarmento rápido
-                </a>
+                <div className="d-flex pt-1 botao-nossa-ex">
+                  <a
+                    className="botao-roxo botao-nossa-ex btn-r"
+                    href="https://onboarding.magmeta.com.br/onboarding/lead"
+                  >
+                    <h5 className="texto-botao">QUERO EXECUTAR MINHA IDEIA</h5>
+                  </a>
+                </div>
               </div>
             </div>
 

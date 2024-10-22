@@ -142,7 +142,7 @@ export default function SiteNavbar() {
                     target="_blank"
                     className="btn btn-outline-light rounded-pill"
                   >
-                    Orçarmento rápido
+                    Vamos conversar
                   </a>
                 </Nav>
               </Offcanvas.Body>
