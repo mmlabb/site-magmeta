@@ -24,17 +24,17 @@ export default function Home() {
     function expandBox(box) {
       portfolioBoxes.forEach((otherBox) => {
         if (otherBox !== box) {
-          otherBox.style.width = "20%";
+          otherBox.style.width = "50%";
         }
       });
 
-      box.style.width = "40%";
+      box.style.width = "50%";
     }
 
     function resetBoxes() {
       portfolioBoxes.forEach((box) => {
         if (window.innerWidth > 800) {
-          box.style.width = "25%"; // Set width to 25% for smaller screens
+          box.style.width = "50%"; // Set width to 25% for smaller screens
         } else {
           box.style.width = "50%"; // Keep the original width for tablets and larger
         }
@@ -91,11 +91,14 @@ export default function Home() {
                       o seu crescimento.
                     </p>
                   </div>
-                  <div className="d-flex pb-2">
-                    <div className="botao-roxo botao-nossa-ex ">
-                      <a href="https://onboarding.magmeta.com.br/onboarding/lead" className="btn-mobile-orcam">
-                        <h5 className="texto-botao">ORÇAMENTO RÁPIDO</h5>
-                      </a>
+                  <div className="d-flex pb-2 btn-or">
+                    <div className="botao-roxo botao-nossa-ex btn-or">
+                      <a
+                        href="https://onboarding.magmeta.com.br/onboarding/lead"
+                        className="btn-mobile-orcam texto-botao"
+                      >
+                        <span>ORÇAMENTO RÁPIDO</span>
+                      </a>{" "}
                     </div>
                   </div>
                 </div>
@@ -136,7 +139,7 @@ export default function Home() {
               <div className="img-app-magmeta d-lg-none">
                 <img
                   className="app-magmeta"
-                  src="/assets/img/img-app-magmeta.png"
+                  src="/assets/img/meta-faça-magmeta.svg"
                   alt=""
                   data-aos="zoom-in"
                 />
@@ -431,15 +434,7 @@ export default function Home() {
             <div className="col-md-6 d-md-flex d-none justify-content-start align-items-center">
               <img
                 className="img-fluid"
-                src="/assets/img/img-caminho.png"
-                alt=""
-              />
-            </div>
-
-            <div className="col-md-6 d-sm-flex d-md-none justify-content-end align-items-center">
-              <img
-                className="img-fluid"
-                src="/assets/img/img-caminho.png"
+                src="/assets/img/sabemos-caminho.svg"
                 alt=""
               />
             </div>
@@ -456,12 +451,13 @@ export default function Home() {
                   Estamos prontos para ajudar em qualquer etapa do ciclo de vida
                   de seu produto.
                 </h6>
-                <div className="justify-content-end">
+                <div className="botao-roxo botao-nossa-ex justify-content-center btn-or  btn-r">
                   <a
-                    className="botao-roxo botao-nossa-ex justify-content-center  btn-r"
+                    className="texto-botao"
                     href="https://onboarding.magmeta.com.br/onboarding/lead"
+                    // Para manter a aparência do botão
                   >
-                    <h5 className="texto-botao">QUERO UMA AVALIÇÃO GRATUITA</h5>
+                    <span>QUERO UMA AVALIAÇÃO GRATUITA</span>
                   </a>
                 </div>
               </div>
@@ -479,7 +475,7 @@ export default function Home() {
               <div>
                 <img
                   className="img-fluid"
-                  src="/assets/img/MagmetaImg.png"
+                  src="/assets/img/img-neon-white.svg"
                   id="img-mag"
                   width="100%"
                   alt=""
@@ -524,11 +520,15 @@ export default function Home() {
                   entrega, mas impactam vidas positivamente. E com estas mentes
                   formamos a Magmeta.
                 </h6>
-
-                <div className="d-flex pt-1 botao-nossa-ex">
-                  <a className="botao-roxo botao-nossa-ex" href="/quem-somos">
-                    <h5 className="texto-botao">NOSSA EXPERTISE</h5>
-                  </a>
+                <div className="btn-or d-flex">
+                  <div className="botao-roxo botao-nossa-ex btn-or ">
+                    <a
+                      href="/quem-somos"
+                      className="btn-mobile-orcam texto-botao"
+                    >
+                      <span>NOSSA EXPETISE</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -587,6 +587,15 @@ export default function Home() {
       <section id="quinta-sessao" className="pt-5 mt-5 pb-5">
         <div className="container text-center">
           <div className="row align-items-center gap-5 gap-md-0">
+            <div className="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+              <img
+                className="img-fluid"
+                src="/assets/img/img-ideia.svg"
+                width="400px"
+                alt=""
+              />
+            </div>
+
             <div className="col-sm-12 col-md-6 ">
               <div className="box-texto-caminho">
                 <h1 className=" ">
@@ -595,24 +604,17 @@ export default function Home() {
                   Vamos conversar!
                 </h1>
 
-                <div className="d-flex pt-1 botao-nossa-ex">
-                  <a
-                    className="botao-roxo botao-nossa-ex btn-r"
-                    href="https://onboarding.magmeta.com.br/onboarding/lead"
-                  >
-                    <h5 className="texto-botao">QUERO EXECUTAR MINHA IDEIA</h5>
-                  </a>
+                <div className="btn-or d-flex">
+                  <div className="botao-roxo botao-nossa-ex justify-content-center  btn-r">
+                    <a
+                      className="texto-botao"
+                      href="https://onboarding.magmeta.com.br/onboarding/lead"
+                    >
+                      <span>QUERO UMA AVALIÇÃO GRATUITA</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
-              <img
-                className="img-fluid"
-                src="/assets/img/desenho magmeta 1 1.png"
-                width="400px"
-                alt=""
-              />
             </div>
           </div>
         </div>
