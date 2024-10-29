@@ -1,13 +1,21 @@
 "use client";
 import WordAnimation from "@/components/WordAnimation";
 import Clientes from "@/containers/Customers";
-import loadModel from "@/utils/3dAnimation.js";
+
 import { useEffect } from "react";
+import {
+  CircleFill,
+  FunnelFill,
+  Lightbulb,
+  LightbulbFill,
+  Rocket,
+  RocketFill,
+} from "react-bootstrap-icons";
 
 export default function Home() {
   useEffect(() => {
     if (typeof window === "undefined") return;
-    loadModel();
+    // loadModel();
 
     const portfolioBoxes = document.querySelectorAll(".box-portifolio");
 
@@ -56,7 +64,7 @@ export default function Home() {
     />
   </div>
 </div> */}
-      <canvas
+      {/*<canvas
         id="3d"
         style={{
           position: "absolute",
@@ -68,7 +76,7 @@ export default function Home() {
           zIndex: 1000,
         }}
         className="d-none d-lg-block"
-      ></canvas>
+      ></canvas>*/}
 
       <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
         <div className="container box-1">
@@ -77,7 +85,8 @@ export default function Home() {
               <div className="texto1 d-flex">
                 <div className="text-center text-lg-start">
                   <h1 className="texto-magnetize-metas">
-                    Magnetize as metas do seu negócio com
+                    Magnetize as metas
+                    <br /> do seu negócio com
                   </h1>
                   <WordAnimation />
                   {/* <p className="mt-2">
@@ -85,13 +94,13 @@ export default function Home() {
                     otimizadas especialmente para o seu crescimento.
                   </p> */}
                   <div className="justify-content-center">
-                    <p className="mt-2">
-                      <br />
+                    <p className="">
                       Estratégia e ferramentas que trabalham especialmente para
-                      o seu crescimento.
+                      o seu <br />
+                      crescimento.
                     </p>
                   </div>
-                  <div className="d-flex pb-2 btn-or">
+                  <div className="d-flex pb-2 pt-2 btn-or">
                     <div className="botao-roxo botao-nossa-ex btn-or">
                       <a
                         href="https://onboarding.magmeta.com.br/onboarding/lead"
@@ -104,7 +113,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="d-none d-md-block">
+              {/*<div className="d-none d-md-block">
                 <ul className="d-flex">
                   <li className="mx-2 my-2">
                     <a href="https://www.instagram.com/magmetadigital">
@@ -132,11 +141,11 @@ export default function Home() {
                     />
                   </li>
                 </ul>
-              </div>
+              </div>*/}
             </div>
 
             <div className="col-md-12 col-lg-6 d-flex justify-content-end container-img-app-magmeta">
-              <div className="img-app-magmeta d-lg-none">
+              <div className="img-app-magmeta">
                 <img
                   className="app-magmeta"
                   src="/assets/img/meta-faça-magmeta.svg"
@@ -144,34 +153,39 @@ export default function Home() {
                   data-aos="zoom-in"
                 />
 
-                <img
-                  className="pop-up"
-                  src="/assets/img/pop-uiux.png"
-                  id="pop-up-1"
-                  data-aos="fade-up"
-                  alt=""
-                />
-                <img
-                  className="pop-up"
-                  src="/assets/img/pop-brand.png"
-                  id="pop-up-2"
-                  data-aos="fade-up"
-                  alt=""
-                />
-                <img
-                  className="pop-up"
-                  src="/assets/img/pop-web.png"
-                  id="pop-up-3"
-                  data-aos="fade-up"
-                  alt=""
-                />
-                <img
-                  className="pop-up"
-                  src="/assets/img/pop-app.png"
-                  id="pop-up-4"
-                  data-aos="fade-up"
-                  alt=""
-                />
+                <div className="pop-up" id="pop-up-1">
+                  <div className="d-flex  flex-column pop-up-content pop-up-1">
+                    <div className="d-flex justify-content-between">
+                      <h6 className="txt-pop-up">Velocidade</h6>
+                      <RocketFill className=" icon-pop" />
+                    </div>
+                    <p className="d-none d-md-block">
+                      Ganhe tempo com a tecnologia trabalhando a seu favor
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pop-up" id="pop-up-2">
+                  <div className="d-flex  flex-column pop-up-content">
+                    <div className="d-flex justify-content-between">
+                      <h6 className="txt-pop-up">Estratégia</h6>
+                      <RocketFill className=" icon-pop" />
+                    </div>
+                    <p className="d-none d-md-block">
+                      Ganhe tempo com a tecnologia trabalhando a seu favor
+                    </p>
+                  </div>
+                </div>
+                <div className="pop-up" id="pop-up-3">
+                  <div className="d-flex justify-content-between flex-column">
+                    <h6 className="txt-pop-up">
+                      Fidelização <FunnelFill className="icon-pop" />
+                    </h6>
+                    <p className="d-none d-md-block">
+                      Experiência dos clientes elevada garantindo fidelidade
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -235,7 +249,7 @@ export default function Home() {
                     <h4 className="texto-h4-port">Aplicativo mobile</h4>
                   </div>
 
-                  <img src="/assets/img/app-oak.png" alt="" />
+                  <img src="/assets/img/mockup-net.png" alt="" />
                 </div>
 
                 <div className="box-texto-p1">
@@ -268,7 +282,7 @@ export default function Home() {
                     <h4 className="texto-h4-port">Ui/Ux Design</h4>
                   </div>
 
-                  <img src="/assets/img/app-nft.png" alt="" />
+                  <img src="/assets/img/mockup-funil.png" alt="" />
                 </div>
                 <div className="box-texto-p1">
                   <p>
@@ -300,7 +314,11 @@ export default function Home() {
                   <h4 className="texto-h4-port">Aplicativo</h4>
                 </div>
 
-                <img src="/assets/img/app-oak.png" alt="" />
+                <img
+                  src="/assets/img/mockup-net.png"
+                  alt=""
+                  className="img-fluid"
+                />
 
                 <div className="box-texto-p1">
                   <p>
@@ -330,7 +348,11 @@ export default function Home() {
                   <h4 className="texto-h4-port">Ui/Ux Design</h4>
                 </div>
 
-                <img src="/assets/img/app-nft.png" alt="" />
+                <img
+                  src="/assets/img/mockup-funil.png"
+                  alt=""
+                  className="img-fluid"
+                />
 
                 <div className="d-flex box-texto-p1 text justify-content-between">
                   <p>
@@ -412,25 +434,77 @@ export default function Home() {
           </div> */}
         </div>
       </section>
-
+      <Clientes />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
-          <div className="row">
-            {/*<div className="d-flex pt-5 botao-nossa-ex">
-              <a className="botao-roxo botao-nossa-ex" href="/quem-somos">
-                <h5 className="texto-botao">
-                  Nossa expertise
-                  <img
-                    src="/assets/img/seta-botao.svg"
-                    className="seta-botao-ex"
-                    alt=""
-                  />
-                </h5>
-              </a>
-            </div>*/}
+          <div className="row  pt-5 pb-5 mb-5">
+            <div className="col-12 d-flex pt-5 pb-5 justify-content-center text-center">
+              <h2>O que nossos clientes dizem</h2>
+            </div>
+            <div className="d-flex linha-depoimentos gap-2">
+              <div className="col-sm-12 col-md-4 col-lg-4  depoimento depoimento-1">
+                <div class="d-flex justify-content-center align-items-center ">
+                  <div>
+                    <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
+                      <CircleFill size={36} />
+                      <h3 className="text-center">Magmeta</h3>
+                      <small className="d-flex justify-content-center">
+                        lorem
+                      </small>
+                    </div>
+                    <p className="pb-3 px-3 text-center">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      look even slightly believable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-sm-12 col-md-4 col-lg-4 flex-direction: column depoimento depoimento-2">
+                <div class="d-flex justify-content-center align-items-center ">
+                  <div>
+                    <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
+                      <CircleFill size={36} />
+                      <h3 className="text-center">Magmeta</h3>
+                      <small className="d-flex justify-content-center">
+                        lorem
+                      </small>
+                    </div>
+                    <p className="pb-3 px-3 text-center">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      look even slightly believable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-sm-12 col-md-4 col-lg-4 flex-direction: column depoimento depoimento-3">
+                <div class="d-flex justify-content-center align-items-center ">
+                  <div>
+                    <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
+                      <CircleFill size={36} />
+                      <h3 className="text-center">Magmeta</h3>
+                      <small className="d-flex justify-content-center">
+                        lorem
+                      </small>
+                    </div>
+                    <p className="pb-3 px-3 text-center">
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      look even slightly believable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="row pt-5 pb-5 mt-5 ">
+          <div className="row pt-5 pb-5 mt-5  ">
             <div className="col-md-6 d-md-flex d-none justify-content-start align-items-center">
               <img
                 className="img-fluid"
@@ -466,15 +540,13 @@ export default function Home() {
         </div>
       </section>
 
-      <Clientes />
-
       <section>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <div>
                 <img
-                  className="img-fluid"
+                  className="img-fluid logo"
                   src="/assets/img/img-neon-white.svg"
                   id="img-mag"
                   width="100%"
