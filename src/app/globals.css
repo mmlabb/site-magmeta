@@ -104,15 +104,6 @@ h6 {
   color: #53385c !important;
 } */
 
-.theme-light .botao-conversar .btn-outline-light {
-  color: #fff !important; /* Cor do texto do tema escuro */
-  border-color: #fff !important; /* Cor da borda do tema escuro */
-}
-
-.theme-light .botao-conversar .btn-outline-light:hover {
-  color: #fff !important; /* Cor do texto no hover tema light */
-  background: #000 !important; /* Cor da borda no hover tema light */
-}
 
 #primeira-sessao .container {
   position: relative;
@@ -377,7 +368,7 @@ header.floating {
 }
 
 .theme-light .tag {
-  color: #5d2e9a;
+  color: #fff;
 }
 
 .tag {
@@ -464,7 +455,7 @@ header.floating {
 /* .box-portifolio.active {
   transition: width 0.2s;
 } */
-.theme-light .box-texto-p1 {
+.theme-light {
   color: black;
 }
 /*.box-portifolio:last-child .box-texto-p1 {
@@ -508,6 +499,17 @@ header.floating {
 
 .btn-outline-light {
   color: #fff !important;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.theme-light .btn-outline-light {
+  color: #000 !important;
+  border-color: #000 !important; /* ou a cor de fundo que preferir */
+}
+
+.btn-outline-light:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #db00ff 0%, #6221a2 100%) !important;
 }
 
 .botao-portifolio {
@@ -517,6 +519,20 @@ header.floating {
   justify-content: center;
   height: 48px;
   border-radius: 24px !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+ #btn-port:hover {
+  color: #fff;
+  background: #000 !important;
+  border: none !important;
+}
+
+.theme-light #btn-pot {
+  color: #fff !important;
+  border-color: #fff !important;
 }
 
 .container-fluid {
@@ -1034,10 +1050,16 @@ main {
 /*TELAS DE COMPUTADOR GRANDES*/
 @media (min-width: 991.98px) {
   main {
-    background-image: url(/assets/img/header_bg.png);
+    background-image: url(/assets/img/img-m-magmeta.svg);
     background-repeat: no-repeat;
     background-position: right top;
   }
+  .box-t-ideia {
+    background-image: url(/assets/img/img-m-magmeta.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
   .logo-marca {
     height: 64px;
   }

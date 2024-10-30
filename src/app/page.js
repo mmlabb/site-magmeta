@@ -234,7 +234,7 @@ export default function Home() {
           id="portifolio-desktop"
           data-aos="fade"
         >
-          <div className="d-flex flex-wrap portifolio ">
+          <div className="d-flex flex-wrap portifolio">
             <div
               className="box-portifolio"
               id="container-portifolio-1"
@@ -260,7 +260,8 @@ export default function Home() {
 
                   <button
                     type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
+                    id="btn-port"
+                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                   >
                     QUERO ESSA IDEIA
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
@@ -292,7 +293,8 @@ export default function Home() {
 
                   <button
                     type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
+                     id="btn-port"
+                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                   >
                     QUERO VENDER
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
@@ -439,7 +441,7 @@ export default function Home() {
             <div className="col-12 d-flex pt-5 pb-5 justify-content-center text-center">
               <h2>O que nossos clientes dizem</h2>
             </div>
-            <div className="d-flex linha-depoimentos gap-2">
+            <div className="d-flex linha-depoimentos text-white gap-2">
               <div className="col-sm-12 col-md-4 col-lg-4  depoimento depoimento-1">
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
@@ -657,7 +659,7 @@ export default function Home() {
       </section>
 
       <section id="quinta-sessao" className="pt-5 mt-5 pb-5">
-        <div className="container text-center">
+        <div className="container box-t-ideia text-center">
           <div className="row align-items-center gap-5 gap-md-0">
             <div className="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
               <img
