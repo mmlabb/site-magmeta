@@ -104,7 +104,6 @@ h6 {
   color: #53385c !important;
 } */
 
-
 #primeira-sessao .container {
   position: relative;
   z-index: 1;
@@ -524,7 +523,7 @@ header.floating {
   transition: background-color 0.3s ease; /* Adiciona uma transição suave */
 }
 
- #btn-port:hover {
+#btn-port:hover {
   color: #fff;
   background: #000 !important;
   border: none !important;
@@ -900,6 +899,12 @@ main {
   .btn-mobile .label {
     height: 28px !important;
     width: 48px !important;
+  }
+
+  .theme-light .btn-outline-light,
+  .offcanvas .btn-outline-light {
+    color: #000 !important;
+    border-color: #000 !important; /* ou a cor de fundo que preferir */
   }
 
   .label .ball {
