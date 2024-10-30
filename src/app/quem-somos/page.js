@@ -287,9 +287,18 @@ export default function Sobre() {
                   Vamos conversar!
                 </h1>
 
-                <button className="botao-roxo botao-nossa-ex">
-                  <h5 className="texto-botao">Orçarmento rápido</h5>
-                </button>
+                <div className="d-flex pb-2 pt-2 btn-or">
+                  <div className="botao-roxo botao-nossa-ex btn-or">
+                    <a
+                      href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-mobile-orcam texto-botao"
+                    >
+                      <span className="txt-b-or">VAMOS CONVERSAR</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 

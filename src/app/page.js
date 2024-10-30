@@ -105,7 +105,7 @@ export default function Home() {
                       href="https://onboarding.magmeta.com.br/onboarding/lead"
                       className="btn-mobile-orcam texto-botao"
                     >
-                      <span>ORÇAMENTO RÁPIDO</span>
+                      <span className="txt-b-or">ORÇAMENTO RÁPIDO</span>
                     </a>{" "}
                   </div>
                 </div>
@@ -529,7 +529,9 @@ export default function Home() {
                     href="https://onboarding.magmeta.com.br/onboarding/lead"
                     // Para manter a aparência do botão
                   >
-                    <span>QUERO UMA AVALIAÇÃO GRATUITA</span>
+                    <span className="txt-b-or">
+                      QUERO UMA AVALIAÇÃO GRATUITA
+                    </span>
                   </a>
                 </div>
               </div>
@@ -596,7 +598,7 @@ export default function Home() {
                       href="/quem-somos"
                       className="btn-mobile-orcam texto-botao"
                     >
-                      <span>NOSSA EXPETISE</span>
+                      <span className="txt-b-or">NOSSA EXPETISE</span>
                     </a>
                   </div>
                 </div>
@@ -678,9 +680,11 @@ export default function Home() {
                   <div className="botao-roxo botao-nossa-ex justify-content-center  btn-r">
                     <a
                       className="texto-botao"
-                      href="https://onboarding.magmeta.com.br/onboarding/lead"
+                      href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     >
-                      <span>QUERO UMA AVALIÇÃO GRATUITA</span>
+                      <span className="txt-b-or">
+                        QUERO UMA AVALIÇÃO GRATUITA
+                      </span>
                     </a>
                   </div>
                 </div>

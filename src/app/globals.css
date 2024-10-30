@@ -64,7 +64,7 @@ h6 {
   font-size: 24px !important;
 }
 
-span {
+.txt-b-or {
   font-size: 20px;
   font-family: "Roboto" !important;
   white-space: nowrap !important;
@@ -104,14 +104,14 @@ span {
   color: #53385c !important;
 } */
 
-.theme-light .botao-conversar .btn-outline-info {
+.theme-light .botao-conversar .btn-outline-light {
   color: #fff !important; /* Cor do texto do tema escuro */
-  border-color: #000 !important; /* Cor da borda do tema escuro */
+  border-color: #fff !important; /* Cor da borda do tema escuro */
 }
 
-.theme-light .botao-conversar .btn-outline-info:hover {
+.theme-light .botao-conversar .btn-outline-light:hover {
   color: #fff !important; /* Cor do texto no hover tema light */
-  background: #5d2e9a !important; /* Cor da borda no hover tema light */
+  background: #000 !important; /* Cor da borda no hover tema light */
 }
 
 #primeira-sessao .container {
@@ -341,7 +341,7 @@ header.floating {
 }
 
 .btn-outline-info:hover {
-  background: #5d2e9a !important;
+  background: #000 !important;
 }
 
 .btn-mobile-orcam {
@@ -597,7 +597,7 @@ main {
 .depoimento {
   position: relative;
   background-color: #191919;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .depoimento::before {
