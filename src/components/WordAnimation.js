@@ -12,11 +12,20 @@ const words = [
   "#Cloud",
   "#SaaS",
   "#Automação",
-  "#CRM",
   "#ERP",
 ];
 
 const colors = [
+  "#FF5733", // Cor para #SaaS
+  "#33FF57", // Cor para #Automação
+  "#3357FF", // Cor para #Funil
+  "#FF33A1", // Cor para #Aplicativo
+  "#33FFF5", // Cor para #CRM
+  "#ffd333", // Cor para #ERP
+  "#A133FF", // Cor para #Blog
+  "#FF8633", // Cor para #Cloud
+  "#33FF86", // Cor para #ui/ux
+
   "#FF5733", // Cor para #SaaS
   "#33FF57", // Cor para #Automação
   "#3357FF", // Cor para #Funil
