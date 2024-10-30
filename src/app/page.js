@@ -82,33 +82,31 @@ export default function Home() {
         <div className="container box-1">
           <div className="row linha-1 align-items-center">
             <div className="box-texto-magmetize col-md-12 col-lg-6">
-              <div className="texto1 d-flex">
-                <div className="text-center text-lg-start">
-                  <h1 className="texto-magnetize-metas">
-                    Magnetize as metas
-                    <br /> do seu negócio com
-                  </h1>
-                  <WordAnimation />
-                  {/* <p className="mt-2">
+              <div className="text-center texto1 d-flex text-lg-start flex-column">
+                <h1 className="texto-magnetize-metas">
+                  Magnetize as metas
+                  <br /> do seu negócio com
+                </h1>
+                <WordAnimation />
+                {/* <p className="mt-2">
                     Seu negócio merece uma atenção especial, com ferramentas
                     otimizadas especialmente para o seu crescimento.
                   </p> */}
-                  <div className="justify-content-center">
-                    <p className="">
-                      Estratégia e ferramentas que trabalham especialmente para
-                      o seu <br />
-                      crescimento.
-                    </p>
-                  </div>
-                  <div className="d-flex pb-2 pt-2 btn-or">
-                    <div className="botao-roxo botao-nossa-ex btn-or">
-                      <a
-                        href="https://onboarding.magmeta.com.br/onboarding/lead"
-                        className="btn-mobile-orcam texto-botao"
-                      >
-                        <span>ORÇAMENTO RÁPIDO</span>
-                      </a>{" "}
-                    </div>
+                <div className="justify-content-center">
+                  <p className="">
+                    Estratégia e ferramentas que trabalham especialmente para o
+                    seu <br />
+                    crescimento.
+                  </p>
+                </div>
+                <div className="d-flex pb-2 pt-2 btn-or">
+                  <div className="botao-roxo botao-nossa-ex btn-or">
+                    <a
+                      href="https://onboarding.magmeta.com.br/onboarding/lead"
+                      className="btn-mobile-orcam texto-botao"
+                    >
+                      <span>ORÇAMENTO RÁPIDO</span>
+                    </a>{" "}
                   </div>
                 </div>
               </div>
