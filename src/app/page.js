@@ -246,11 +246,14 @@ export default function Home() {
                     <h4 className="texto-h4-port">Aplicativo mobile</h4>
                   </div>
 
-                  <img
-                    src="/assets/img/mockup-net.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                  <div>
+                    <img
+                      src="/assets/img/mockup-net.png"
+                      max-width="100%"
+                      height="auto"
+                      alt=""
+                    />
+                  </div>
                 </div>
 
                 <div className="box-texto-p1">
@@ -286,11 +289,9 @@ export default function Home() {
                     <h4 className="texto-h4-port">Ui/Ux Design</h4>
                   </div>
 
-                  <img
-                    src="/assets/img/mockup-funil.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                  <div>
+                    <img src="/assets/img/mockup-funil.png" alt="" />
+                  </div>
                 </div>
                 <div className="box-texto-p1">
                   <p>
