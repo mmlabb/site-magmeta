@@ -258,14 +258,16 @@ export default function Home() {
                     adquiri-la!
                   </p>
 
-                  <button
-                    type="button"
+                  <a
+                    href="https://onboarding.magmeta.com.br/onboarding/lead"
                     id="btn-port"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
+                    width="100%"
+                    rel="noopener noreferrer" // Segurança adicional para links externos
                   >
                     QUERO ESSA IDEIA
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -291,14 +293,16 @@ export default function Home() {
                     de leads qualificados de forma eficiente.
                   </p>
 
-                  <button
-                    type="button"
-                     id="btn-port"
+                  <a
+                    href="https://onboarding.magmeta.com.br/onboarding/lead"
+                    id="btn-port"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
+                    width="100%"
+                    rel="noopener noreferrer" // Segurança adicional para links externos
                   >
                     QUERO VENDER
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -306,34 +310,40 @@ export default function Home() {
         </div>
 
         <div className="container-fluid" id="portifolio-mobile">
-          <div className="d-flex portifolio align-items-center">
-            <div className="box-portifolio" id="container-portifolio-1">
+          <div className="d-flex flex-wrap portifolio">
+            <div
+              className="box-portifolio"
+              id="container-portifolio-1"
+              width=""
+            >
               <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">V Telecom</h6>
-                  <h4 className="texto-h4-port">Aplicativo</h4>
-                </div>
+                <div className="d-flex flex-column gap-4">
+                  <div className="texto-portifolio">
+                    <h6 className="texto-h6-port">Clube de vantagens</h6>
+                    <h4 className="texto-h4-port">Aplicativo mobile</h4>
+                  </div>
 
-                <img
-                  src="/assets/img/mockup-net.png"
-                  alt=""
-                  className="img-fluid"
-                />
+                  <img src="/assets/img/mockup-net.png" alt="" />
+                </div>
 
                 <div className="box-texto-p1">
                   <p>
-                    Desenvolvido para facilitar a vida dos clientes de empresas
-                    provedoras de internet. Com ele fica muito mais fácil pagar
-                    faturas, alterar planos e acompanhar consumo.
+                    Nossa solução de UI/UX Design para Clube de Vantagens white
+                    label é personalizável e pronta para uso, com foco em uma
+                    experiência intuitiva e eficiente. Entre em contato para
+                    adquiri-la!
                   </p>
 
-                  <button
-                    type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
+                  <a
+                    href="https://onboarding.magmeta.com.br/onboarding/lead"
+                    id="btn-port"
+                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
+                    width="100%"
+                    rel="noopener noreferrer" // Segurança adicional para links externos
                   >
-                    Explorar
+                    QUERO ESSA IDEIA
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -343,38 +353,36 @@ export default function Home() {
               width=""
             >
               <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">NFT Marketplace</h6>
-                  <h4 className="texto-h4-port">Ui/Ux Design</h4>
+                <div className="d-flex flex-column gap-4">
+                  <div className="texto-portifolio">
+                    <h6 className="texto-h6-port">NFT Marketplace</h6>
+                    <h4 className="texto-h4-port">Ui/Ux Design</h4>
+                  </div>
+
+                  <img src="/assets/img/mockup-funil.png" alt="" />
                 </div>
-
-                <img
-                  src="/assets/img/mockup-funil.png"
-                  alt=""
-                  className="img-fluid"
-                />
-
-                <div className="d-flex box-texto-p1 text justify-content-between">
+                <div className="box-texto-p1">
                   <p>
-                    Oferecemos soluções completas para e-commerces, desde a
-                    criação de plataformas intuitivas até a otimização de
-                    processos de vendas e pagamentos. Nosso objetivo é garantir
-                    que sua loja virtual seja eficiente, segura e preparada para
-                    crescer junto com o seu negócio.
+                    Nosso Funil de Captação de Leads oferece um design intuitivo
+                    e uma experiência fluida, maximizando conversões. Com
+                    automação de marketing e integrações, otimizamos a geração
+                    de leads qualificados de forma eficiente.
                   </p>
 
-                  <button
-                    type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
+                  <a
+                    href="https://onboarding.magmeta.com.br/onboarding/lead"
+                    id="btn-port"
+                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
+                    width="100%"
+                    rel="noopener noreferrer" // Segurança adicional para links externos
                   >
-                    Explorar
+                    QUERO VENDER
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-
           {/*<div className="d-flex portifolio align-items-center">
             <div
               className="box-portifolio"

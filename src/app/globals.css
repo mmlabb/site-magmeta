@@ -479,8 +479,8 @@ header.floating {
   white-space: nowrap;
 }
 
-.box-texto-p1 button {
-  width: 100%;
+.box-texto-p1 a {
+  width: 100% !important;
 }
 .box-texto-p1 p {
   margin: 0;
@@ -874,6 +874,135 @@ main {
   .btn-mobile-orca {
     display: flex !important;
     justify-content: center !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .box-portifolio {
+    width: 50%;
+    min-height: 100vh;
+    overflow: hidden;
+    transition: width 0.7s;
+  }
+
+  #portifolio-desktop .box-portifolio .box-texto-p1 {
+    /*opacity: 0;*/
+    font-size: 18px;
+  }
+  #portifolio-desktop .box-portifolio:hover .box-texto-p1 {
+    opacity: 1 !important;
+    transition: 400ms;
+  }
+
+  /* .box-portifolio.active {
+    transition: width 0.2s;
+  } */
+  .theme-light {
+    color: black;
+  }
+  /*.box-portifolio:last-child .box-texto-p1 {
+    color: black;
+  }*/
+  .box-portifolio:last-child {
+    overflow: unset;
+  }
+
+  /* .box-portifolio:hover {
+    .box-texto-p1 p {
+      opacity: 1;
+      transition: 0.1s;
+    }
+    .box-texto-p1 {
+      max-height: 500px;
+      transition: max-height 1s ease-in-out;
+    }
+  } */
+
+  .texto-portifolio {
+    white-space: nowrap;
+  }
+
+  .box-texto-p1 a {
+    width: 100% !important;
+  }
+  .box-texto-p1 p {
+    margin: 0;
+  }
+
+  .box-texto-p1 {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .btn-or {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .pop-up {
+    display: table;
+    width: 218px !important;
+    flex-direction: column;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.293);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 12px 10px;
+    text-align: left;
+  }
+
+  .txt-pop-up {
+    font-size: 16px !important;
+  }
+
+  .icon-pop {
+    margin-left: 0% !important;
+  }
+
+  #pop-up-1 {
+    left: 60% !important;
+    top: 32% !important;
+    animation-delay: 500ms;
+  }
+  #pop-up-2 {
+    top: 22% !important;
+    left: 10% !important;
+  }
+
+  #pop-up-3 {
+    top: 72% !important;
+    right: 64% !important;
+    animation-delay: 1s;
+  }
+
+  .botao-portifolio {
+    display: flex !important;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-radius: 24px !important;
+    color: #fff !important;
+    border-color: #fff !important;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+  }
+
+  #btn-port:hover {
+    color: #fff;
+    background: #000 !important;
+    border: none !important;
+  }
+
+  .theme-light #btn-port {
+    color: #fff !important;
+    border-color: #fff !important;
   }
 }
 
