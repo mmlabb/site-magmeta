@@ -84,8 +84,7 @@ export default function Home() {
             <div className="box-texto-magmetize col-md-12 col-lg-6">
               <div className="text-center texto1 d-flex text-lg-start flex-column">
                 <h1 className="texto-magnetize-metas">
-                  Magnetize as metas
-                  <br /> do seu negócio com
+                  Magnetize as metas do seu negócio com
                 </h1>
                 <WordAnimation />
                 {/* <p className="mt-2">
@@ -95,8 +94,7 @@ export default function Home() {
                 <div className="justify-content-center">
                   <p className="">
                     Estratégia e ferramentas que trabalham especialmente para o
-                    seu <br />
-                    crescimento.
+                    seu crescimento.
                   </p>
                 </div>
                 <div className="d-flex pb-2 pt-2 btn-or">
@@ -157,7 +155,7 @@ export default function Home() {
                       <h6 className="txt-pop-up">Velocidade</h6>
                       <RocketFill className=" icon-pop" />
                     </div>
-                    <p className="d-none d-md-block">
+                    <p className="d-none d-md-block txt-up">
                       Ganhe tempo com a tecnologia trabalhando a seu favor
                     </p>
                   </div>
@@ -167,7 +165,7 @@ export default function Home() {
                   <div className="d-flex  flex-column pop-up-content">
                     <div className="d-flex justify-content-between">
                       <h6 className="txt-pop-up">Estratégia</h6>
-                      <RocketFill className=" icon-pop" />
+                      <LightbulbFill className=" icon-pop" />
                     </div>
                     <p className="d-none d-md-block">
                       Ganhe tempo com a tecnologia trabalhando a seu favor
@@ -177,7 +175,8 @@ export default function Home() {
                 <div className="pop-up" id="pop-up-3">
                   <div className="d-flex justify-content-between flex-column">
                     <h6 className="txt-pop-up">
-                      Fidelização <FunnelFill className="icon-pop" />
+                      Fidelização
+                      <FunnelFill className="icon-pop" />
                     </h6>
                     <p className="d-none d-md-block">
                       Experiência dos clientes elevada garantindo fidelidade
@@ -247,7 +246,11 @@ export default function Home() {
                     <h4 className="texto-h4-port">Aplicativo mobile</h4>
                   </div>
 
-                  <img src="/assets/img/mockup-net.png" alt="" />
+                  <img
+                    src="/assets/img/mockup-net.png"
+                    alt=""
+                    className="img-fluid"
+                  />
                 </div>
 
                 <div className="box-texto-p1">
@@ -283,7 +286,11 @@ export default function Home() {
                     <h4 className="texto-h4-port">Ui/Ux Design</h4>
                   </div>
 
-                  <img src="/assets/img/mockup-funil.png" alt="" />
+                  <img
+                    src="/assets/img/mockup-funil.png"
+                    alt=""
+                    className="img-fluid"
+                  />
                 </div>
                 <div className="box-texto-p1">
                   <p>
@@ -522,7 +529,7 @@ export default function Home() {
             </div>
 
             <div className="col-md-6">
-              <div className="box-texto-caminho d-flex flex-column gap-3 align-items-center align-items-md-start">
+              <div className="box-texto-caminho d-flex flex-column gap-3 pt-5 align-items-center align-items-md-start">
                 <h1 className="texto1 text-right">
                   Sabemos o caminho para dar vida à sua ideia
                 </h1>
@@ -551,7 +558,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <div>
@@ -566,7 +573,7 @@ export default function Home() {
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-6 mt-5 pt-5 mb-5">
-              <div className="box-sobre-nos d-flex flex-column gap-3">
+              <div className="box-sobre-nos pt-5 mt-4 d-flex flex-column gap-3">
                 <h1 className="texto-sobre-nos-1">Sobre nós</h1>
                 <div className="d-flex justify-content-between valores">
                   <div className="d-flex align-items-center gap-2">

@@ -241,7 +241,15 @@ header.floating {
 }
 
 .pop-up {
-  height: 44px;
+  display: table;
+  flex-direction: column;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(60px);
+  box-shadow: 0px 18px 33px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  padding: 12px 10px;
+  text-align: left;
   position: absolute;
   animation: float 6s ease-in-out infinite;
 }
@@ -402,7 +410,6 @@ header.floating {
 .container-portifolio {
   display: flex !important;
   flex-direction: column !important;
-  align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
   transition: transform 0.1s ease-in;
@@ -437,7 +444,6 @@ header.floating {
 
 .box-portifolio {
   width: 50%;
-  min-height: 100vh;
   overflow: hidden;
   transition: width 0.7s;
 }
@@ -856,9 +862,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  #primeira-sessao {
-    height: 100vh;
-  }
   #portifolio-mobile .box-portifolio {
     width: 50% !important ; /* Tamanho para tablets */
   }
@@ -877,10 +880,18 @@ main {
   }
 }
 
-@media (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 820px) and (max-width: 1336px) {
+  .img-app-magmeta {
+    width: 100% !important;
+    padding-top: 14%;
+  }
+
+  #texto-projetos {
+    padding-top: 14% !important;
+  }
+
   .box-portifolio {
     width: 50%;
-    min-height: 100vh;
     overflow: hidden;
     transition: width 0.7s;
   }
@@ -940,22 +951,8 @@ main {
     transition: max-height 0.5s ease-in-out;
   }
 
-  .btn-or {
-    display: flex;
-    justify-content: center !important;
-  }
-
   .pop-up {
-    display: table;
     width: 218px !important;
-    flex-direction: column;
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.293);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    padding: 12px 10px;
-    text-align: left;
   }
 
   .txt-pop-up {
@@ -963,22 +960,24 @@ main {
   }
 
   .icon-pop {
-    margin-left: 0% !important;
+    width: 22px !important;
+    height: 22px !important;
+    margin-left: 0 !important;
   }
 
   #pop-up-1 {
     left: 60% !important;
-    top: 32% !important;
+    top: 46% !important;
     animation-delay: 500ms;
   }
   #pop-up-2 {
-    top: 22% !important;
-    left: 10% !important;
+    top: 36% !important;
+    right: 59% !important;
   }
 
   #pop-up-3 {
-    top: 72% !important;
-    right: 64% !important;
+    top: 80% !important;
+    right: 57% !important;
     animation-delay: 1s;
   }
 
@@ -987,7 +986,6 @@ main {
     gap: 8px;
     align-items: center;
     justify-content: center;
-    height: 48px;
     border-radius: 24px !important;
     color: #fff !important;
     border-color: #fff !important;
@@ -1000,14 +998,24 @@ main {
     border: none !important;
   }
 
+  .btn-or {
+    justify-content: center;
+  }
+
   .theme-light #btn-port {
     color: #fff !important;
     border-color: #fff !important;
   }
 }
 
+@media (min-width: 1024px) {
+  .btn-or {
+    justify-content: flex-start;
+  }
+}
+
 /*TELAS DE COMPUTADOR MÉDIAS*/
-@media (max-width: 991.98px) {
+@media (max-width: 819px) {
   #portifolio-desktop {
     display: none !important;
   }
@@ -1060,16 +1068,7 @@ main {
   }
 
   .pop-up {
-    display: table;
     width: 131px;
-    flex-direction: column;
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.293);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    padding: 12px 10px;
-    text-align: left;
   }
 
   .txt-pop-up {
@@ -1078,6 +1077,8 @@ main {
 
   .icon-pop {
     margin-left: 0% !important;
+    width: 22px;
+    height: 22px;
   }
 
   #pop-up-1 {
@@ -1219,16 +1220,7 @@ main {
   }
 
   .pop-up {
-    display: table;
     width: 264px;
-    flex-direction: column;
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.293);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 24px;
-    padding: 14px 18px;
-    text-align: left;
   }
 
   .txt-pop-up {
@@ -1238,25 +1230,26 @@ main {
   }
 
   .icon-pop {
-    margin-left: 3rem !important;
-    margin-bottom: 0.5rem;
+    width: 32px;
+    height: 32px;
+    margin-left: 5rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   #pop-up-1 {
     top: 36%;
-    left: 70%;
+    left: 2%;
+    animation-delay: 500ms;
   }
-
   #pop-up-2 {
     top: 18%;
-    right: 54%;
-    animation-delay: 1s;
+    right: -11%;
   }
 
   #pop-up-3 {
     top: 72%;
-    right: 52%;
-    animation-delay: 200ms;
+    right: -12%;
+    animation-delay: 1s;
   }
 
   .app-magmeta {
