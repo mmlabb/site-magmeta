@@ -4,6 +4,9 @@ import Clientes from "@/containers/Customers";
 
 import { useEffect } from "react";
 import {
+  ArrowLeftSquareFill,
+  ArrowRight,
+  ArrowRightSquareFill,
   CircleFill,
   FunnelFill,
   Lightbulb,
@@ -212,7 +215,7 @@ export default function Home() {
             </div>
             <div className="col">
               <div className="tag" data-aos="fade-up" data-aos-delay="600">
-                <h5>Branding</h5>
+                <h5>Produto white label</h5>
               </div>
             </div>
             <div className="col">
@@ -222,7 +225,12 @@ export default function Home() {
             </div>
             <div className="col">
               <div className="tag" data-aos="fade-up" data-aos-delay="100">
-                <h5>Aplicativo mobile</h5>
+                <h5>Página de vendas</h5>
+              </div>
+            </div>
+            <div className="col">
+              <div className="tag" data-aos="fade-up" data-aos-delay="600">
+                <h5>MVP</h5>
               </div>
             </div>
           </div>
@@ -272,7 +280,7 @@ export default function Home() {
                     rel="noopener noreferrer" // Segurança adicional para links externos
                   >
                     QUERO ESSA IDEIA
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
+                    <ArrowRight />
                   </a>
                 </div>
               </div>
@@ -309,7 +317,7 @@ export default function Home() {
                     rel="noopener noreferrer" // Segurança adicional para links externos
                   >
                     QUERO VENDER
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
+                    <ArrowRight />
                   </a>
                 </div>
               </div>
@@ -350,7 +358,7 @@ export default function Home() {
                     rel="noopener noreferrer" // Segurança adicional para links externos
                   >
                     QUERO ESSA IDEIA
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
+                    <ArrowRight />
                   </a>
                 </div>
               </div>
@@ -385,7 +393,7 @@ export default function Home() {
                     rel="noopener noreferrer" // Segurança adicional para links externos
                   >
                     QUERO VENDER
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
+                    <ArrowRight />
                   </a>
                 </div>
               </div>

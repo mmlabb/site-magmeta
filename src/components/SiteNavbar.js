@@ -130,9 +130,9 @@ export default function SiteNavbar() {
                   <Nav.Link as={Link} href="/">
                     Início
                   </Nav.Link>
-                  <Nav.Link as={Link} href="/#segunda-sessao">
-                    Projetos
-                  </Nav.Link>
+                  {/*<Nav.Link as={Link} href="/#segunda-sessao">
+                    Soluções
+                  </Nav.Link>*/}
                   <Nav.Link as={Link} href="quem-somos">
                     Quem somos
                   </Nav.Link>

@@ -72,14 +72,14 @@ h6 {
 
 /* Estilos para o tema escuro */
 .theme-dark {
-  background-color: #0e0c10;
+  background-color: #000;
   color: #fff;
   transition: 500ms;
 }
 
 /* Estilos para o tema claro */
 .theme-light {
-  background-color: #fff !important;
+  background-color: #F1E6FF !important;
   color: #000;
   transition: 500ms;
 }
@@ -268,13 +268,12 @@ header.floating {
 .img-app-magmeta::after {
   content: "";
   position: absolute;
-  top: -20px;
-  left: 100px;
-  width: 580px;
-  height: 550px;
-  background-image: linear-gradient(#8758c4, #5d2e9a, #bc85ff);
-  border-radius: 100%;
-  filter: blur(300px);
+  top: 90px;
+  left: 168px;
+  width: 315px;
+  height: 326px;
+  background-color: #6221A2;
+  filter: blur(100px) !important;
   z-index: -1; /* Posicione a sombra atrás da imagem */
 }
 
@@ -434,7 +433,7 @@ header.floating {
 .theme-light {
   .box-portifolio h4,
   .box-portifolio h6 {
-    color: black;
+    color: #fff ;
   }
 
   #copyright {
@@ -515,6 +514,7 @@ header.floating {
 .btn-outline-light:hover {
   color: #fff;
   background: linear-gradient(135deg, #db00ff 0%, #6221a2 100%) !important;
+  border-color: transparent !important;
 }
 
 .botao-portifolio {
@@ -530,14 +530,18 @@ header.floating {
 }
 
 #btn-port:hover {
-  color: #fff;
   background: #000 !important;
   border: none !important;
 }
 
-.theme-light #btn-pot {
-  color: #fff !important;
-  border-color: #fff !important;
+ .theme-light #btn-port:hover {
+  background: #fff !important;
+  border: none !important;
+}
+
+.theme-light .botao-portifolio {
+  color: #000 !important;
+  border-color: #000 !important;
 }
 
 .container-fluid {
@@ -881,6 +885,15 @@ main {
 }
 
 @media (min-width: 820px) and (max-width: 1336px) {
+
+  #img-mag {
+    padding-top: 62% !important;
+  }
+
+  #portifolio-desktop {
+    display: none !important;
+  }
+
   .img-app-magmeta {
     width: 100% !important;
     padding-top: 14%;
@@ -909,7 +922,7 @@ main {
     transition: width 0.2s;
   } */
   .theme-light {
-    color: black;
+    color: #000;
   }
   /*.box-portifolio:last-child .box-texto-p1 {
     color: black;
@@ -981,37 +994,27 @@ main {
     animation-delay: 1s;
   }
 
-  .botao-portifolio {
-    display: flex !important;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 24px !important;
-    color: #fff !important;
-    border-color: #fff !important;
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
-  }
-
-  #btn-port:hover {
-    color: #fff;
-    background: #000 !important;
-    border: none !important;
-  }
-
+  
   .btn-or {
     justify-content: center;
   }
 
-  .theme-light #btn-port {
-    color: #fff !important;
-    border-color: #fff !important;
-  }
+  
 }
 
 @media (min-width: 1024px) {
   .btn-or {
     justify-content: flex-start;
   }
+
+  #portifolio-desktop {
+    display: block !important;
+  }
+
+  #img-mag {
+    padding-top: 28% !important;
+  }
+
 }
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
