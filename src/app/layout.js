@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/SiteNavbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Facebook } from "react-feather";
 
 export const metadata = {
   title: "Magmeta digital",
@@ -114,20 +115,19 @@ export default function RootLayout({ children }) {
                   </div>
                 </div>
                 <div className="row pt-4">
-                  <div className="col d-flex justify-content-center">
-                    <div className="mx-2 my-2">
-                      <img
-                        src="/assets/img/logo-behance-white.svg"
-                        alt="logo-behance"
-                        className="logo"
-                      />
-                    </div>
-                    <div className="mx-2 my-2">
-                      <img
-                        src="/assets/img/logo-bolinha-white.svg"
-                        alt="logo-bolinha"
-                        className="logo"
-                      />
+                  <div
+                    className="col d-flex justify-content-center  align-items: center;
+"
+                  >
+                    <div className="mx-2 my-2 d-flex">
+                      <a href="https://www.facebook.com/profile.php?id=100089418330403">
+                        <img
+                          src="/assets/img/icon-face-white.svg"
+                          alt="logo-instagram"
+                          className="logo"
+                         
+                        />
+                      </a>
                     </div>
                     <div className="mx-2 my-2">
                       <a href="https://www.instagram.com/magmetadigital">
@@ -135,6 +135,7 @@ export default function RootLayout({ children }) {
                           src="/assets/img/logo-instagram-white.svg"
                           alt="logo-instagram"
                           className="logo"
+                          width="24px"
                         />
                       </a>
                     </div>
@@ -142,7 +143,7 @@ export default function RootLayout({ children }) {
                 </div>
 
                 <div className="row pt-5">
-                  <div className="col-md-6 d-flex justify-content-center justify-content-md-start p-0">
+                  <div className="col-md-6 d-flex justify-content-center justify-content-md-start aling-items-center p-0">
                     <small id="texto-localizacao">
                       Brasília - DF 35.877.565/0001-36
                     </small>
