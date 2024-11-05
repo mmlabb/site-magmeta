@@ -79,7 +79,7 @@ h6 {
 
 /* Estilos para o tema claro */
 .theme-light {
-  background-color: #F1E6FF !important;
+  background-color: #f1e6ff !important;
   color: #000;
   transition: 500ms;
 }
@@ -268,11 +268,11 @@ header.floating {
 .img-app-magmeta::after {
   content: "";
   position: absolute;
-  top: 90px;
-  left: 168px;
+  top: 94px;
+  left: 202px;
   width: 315px;
   height: 326px;
-  background-color: #6221A2;
+  background-color: #6221a2;
   filter: blur(100px) !important;
   z-index: -1; /* Posicione a sombra atrás da imagem */
 }
@@ -283,8 +283,6 @@ header.floating {
   font-family: roboto !important;
   margin-top: 12px !important;
   margin-bottom: 12px !important;
-  margin-left: 24px !important;
-  margin-right: 24px !important;
 }
 
 .menu-nav {
@@ -312,7 +310,7 @@ header.floating {
 }
 
 .botao-roxo {
-  justify-content: center;
+  justify-content: center !important;
   align-items: center;
   display: flex;
   font-family: roboto;
@@ -321,6 +319,7 @@ header.floating {
   border-radius: 1.5rem;
   width: min-content !important;
   height: 48px;
+  width: 254px !important;
   border-color: transparent;
   text-decoration: none !important;
 }
@@ -433,7 +432,7 @@ header.floating {
 .theme-light {
   .box-portifolio h4,
   .box-portifolio h6 {
-    color: #fff ;
+    color: #fff;
   }
 
   #copyright {
@@ -534,14 +533,10 @@ header.floating {
   border: none !important;
 }
 
- .theme-light #btn-port:hover {
-  background: #fff !important;
-  border: none !important;
-}
-
-.theme-light .botao-portifolio {
+.theme-light #btn-port:hover {
+  background: #f1e6ff !important;
   color: #000 !important;
-  border-color: #000 !important;
+  border: none !important;
 }
 
 .container-fluid {
@@ -696,6 +691,10 @@ main {
 /* RESPONSIVO */
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
+  h2 {
+    font-size: 32px !important;
+  }
+
   #primeira-sessao::before {
     display: none;
   }
@@ -713,6 +712,11 @@ main {
   .botao-whatsapp {
     right: 1rem;
     bottom: 1rem;
+  }
+
+  .texto-botao {
+    margin-left: 24px !important;
+    margin-right: 24px !important;
   }
 
   /* .linha-1 {
@@ -885,7 +889,6 @@ main {
 }
 
 @media (min-width: 820px) and (max-width: 1336px) {
-
   #img-mag {
     padding-top: 62% !important;
   }
@@ -994,12 +997,9 @@ main {
     animation-delay: 1s;
   }
 
-  
   .btn-or {
     justify-content: center;
   }
-
-  
 }
 
 @media (min-width: 1024px) {
@@ -1012,9 +1012,8 @@ main {
   }
 
   #img-mag {
-    padding-top: 28% !important;
+    padding-top: 12% !important;
   }
-
 }
 
 /*TELAS DE COMPUTADOR MÉDIAS*/
@@ -1257,6 +1256,7 @@ main {
 
   .app-magmeta {
     width: 50%;
+    padding-top: 2rem !important;
   }
 
   .img-caminho {

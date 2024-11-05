@@ -7,6 +7,8 @@ import {
   ArrowLeftSquareFill,
   ArrowRight,
   ArrowRightSquareFill,
+  Check2Circle,
+  CheckCircleFill,
   CircleFill,
   FunnelFill,
   Lightbulb,
@@ -101,10 +103,12 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="d-flex pb-2 pt-2 btn-or">
-                  <div className="botao-roxo botao-nossa-ex btn-or">
+                  <div className=" botao-nossa-ex btn-or">
                     <a
                       href="https://onboarding.magmeta.com.br/onboarding/lead"
-                      className="btn-mobile-orcam texto-botao"
+                      className="btn-mobile-orcam texto-botao botao-roxo"
+                      target="_blank" // Abre o link em uma nova aba
+                      rel="noopener noreferrer" // Boa prática para segurança
                     >
                       <span className="txt-b-or">ORÇAMENTO RÁPIDO</span>
                     </a>{" "}
@@ -195,7 +199,7 @@ export default function Home() {
       <section id="segunda-sessao">
         <div className="container" id="texto-projetos">
           <div className="row text-center" id="linha-txt-projetos">
-            <h2>Projetos selecionados</h2>
+            <h2>Soluções Magmeta</h2>
           </div>
           <div className="row gx-2 gy-2 tag-portifolio">
             <div className="col">
@@ -243,7 +247,7 @@ export default function Home() {
         >
           <div className="d-flex flex-wrap portifolio">
             <div
-              className="box-portifolio"
+              className="box-portifolio text-center"
               id="container-portifolio-1"
               width=""
             >
@@ -273,7 +277,7 @@ export default function Home() {
                   </p>
 
                   <a
-                    href="https://onboarding.magmeta.com.br/onboarding/lead"
+                    href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     id="btn-port"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
@@ -286,7 +290,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="box-portifolio"
+              className="box-portifolio text-center"
               id="container-portifolio-2"
               width=""
             >
@@ -310,7 +314,7 @@ export default function Home() {
                   </p>
 
                   <a
-                    href="https://onboarding.magmeta.com.br/onboarding/lead"
+                    href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     id="btn-port"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
@@ -549,15 +553,14 @@ export default function Home() {
                   Estamos prontos para ajudar em qualquer etapa do ciclo de vida
                   de seu produto.
                 </h6>
-                <div className="botao-roxo botao-nossa-ex justify-content-center btn-or  btn-r">
+                <div className="botao-nossa-ex justify-content-center btn-or  btn-r">
                   <a
-                    className="texto-botao"
+                    className="texto-botao botao-roxo"
                     href="https://onboarding.magmeta.com.br/onboarding/lead"
-                    // Para manter a aparência do botão
+                    target="_blank" // Abre o link em uma nova aba
+                    rel="noopener noreferrer" // Boa prática para segurança
                   >
-                    <span className="txt-b-or">
-                      QUERO UMA AVALIAÇÃO GRATUITA
-                    </span>
+                    <span className="txt-b-or">ORÇAMENTO RÁPIDO</span>
                   </a>
                 </div>
               </div>
@@ -569,44 +572,20 @@ export default function Home() {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 col-md-6 col-lg-6">
-              <div>
-                <img
-                  className="img-fluid logo"
-                  src="/assets/img/img-neon-white.svg"
-                  id="img-mag"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-            </div>
-
             <div className="col-sm-12 col-md-6 col-lg-6 mt-5 pt-5 mb-5">
               <div className="box-sobre-nos pt-5 mt-4 d-flex flex-column gap-3">
                 <h1 className="texto-sobre-nos-1">Sobre nós</h1>
-                <div className="d-flex justify-content-between valores">
+                <div className="d-flex justify-content-between gap-4 valores">
                   <div className="d-flex align-items-center gap-2">
-                    <img
-                      src="/assets/img/icone-check-white.svg"
-                      className="logo-check-1"
-                      alt=""
-                    />
+                    <CheckCircleFill size={24} />
                     <h4 className="logo-check m-0">Estratégia</h4>
                   </div>
                   <div className="d-flex align-items-center gap-2">
-                    <img
-                      src="/assets/img/icone-check-white.svg"
-                      className="logo-check-2"
-                      alt=""
-                    />
+                    <CheckCircleFill size={24} />
                     <h4 className="logo-check m-0">Velocidade</h4>
                   </div>
                   <div className="d-flex align-items-center gap-2">
-                    <img
-                      src="/assets/img/icone-check-white.svg"
-                      className="logo-check-3"
-                      alt=""
-                    />
+                    <CheckCircleFill size={24} />
                     <h4 className="logo-check m-0">Fidelização</h4>
                   </div>
                 </div>
@@ -619,15 +598,27 @@ export default function Home() {
                   formamos a Magmeta.
                 </h6>
                 <div className="btn-or d-flex">
-                  <div className="botao-roxo botao-nossa-ex btn-or ">
+                  <div className=" botao-nossa-ex btn-or ">
                     <a
                       href="/quem-somos"
-                      className="btn-mobile-orcam texto-botao"
+                      className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
                     >
                       <span className="txt-b-or">NOSSA EXPETISE</span>
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-6 col-lg-6">
+              <div>
+                <img
+                  className="img-fluid logo"
+                  src="/assets/img/img-neon-white.svg"
+                  id="img-mag"
+                  width="100%"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -703,9 +694,9 @@ export default function Home() {
                 </h1>
 
                 <div className="btn-or d-flex">
-                  <div className="botao-roxo botao-nossa-ex justify-content-center  btn-r">
+                  <div className=" justify-content-center">
                     <a
-                      className="texto-botao"
+                      className="texto-botao botao-nossa-ex botao-roxo btn-r"
                       href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     >
                       <span className="txt-b-or">
