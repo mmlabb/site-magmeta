@@ -115,17 +115,13 @@ export default function RootLayout({ children }) {
                   </div>
                 </div>
                 <div className="row pt-4">
-                  <div
-                    className="col d-flex justify-content-center  align-items: center;
-"
-                  >
+                  <div className="col d-flex justify-content-center  align-items-center">
                     <div className="mx-2 my-2 d-flex">
                       <a href="https://www.facebook.com/profile.php?id=100089418330403">
                         <img
                           src="/assets/img/icon-face-white.svg"
                           alt="logo-instagram"
                           className="logo"
-                         
                         />
                       </a>
                     </div>

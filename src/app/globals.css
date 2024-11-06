@@ -205,7 +205,7 @@ header.floating {
   background-color: #0e0c10a8;
 }
 .theme-light header.floating {
-  background-color: rgba(255, 255, 255, 0.774);
+  background-color: rgba(241, 230, 255, 0.774);
 }
 
 #logo-magmeta {
@@ -322,6 +322,11 @@ header.floating {
   width: 254px !important;
   border-color: transparent;
   text-decoration: none !important;
+  transition: background 0.3s ease;
+}
+
+.botao-roxo:hover {
+  background: linear-gradient(135deg, #6221a2 0%, #db00ff 100%) !important;
 }
 
 .botao-tema {
@@ -1002,20 +1007,6 @@ main {
   }
 }
 
-@media (min-width: 1024px) {
-  .btn-or {
-    justify-content: flex-start;
-  }
-
-  #portifolio-desktop {
-    display: block !important;
-  }
-
-  #img-mag {
-    padding-top: 12% !important;
-  }
-}
-
 /*TELAS DE COMPUTADOR MÉDIAS*/
 @media (max-width: 819px) {
   #portifolio-desktop {
@@ -1273,6 +1264,26 @@ main {
   #texto-localizacao {
     padding-top: 0.5rem !important;
   }
+}
+
+@media (min-width: 1024px) {
+  .btn-or {
+    justify-content: flex-start;
+  }
+
+  #portifolio-desktop {
+    display: block !important;
+  }
+
+  #img-mag {
+    padding-top: 12% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+ .app-magmeta {
+  padding-top: 5rem !important;
+ }
 }
 
 canvas#3d {

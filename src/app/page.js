@@ -282,6 +282,7 @@ export default function Home() {
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
                     rel="noopener noreferrer" // Segurança adicional para links externos
+                    target="_blank"
                   >
                     QUERO ESSA IDEIA
                     <ArrowRight />
@@ -319,6 +320,7 @@ export default function Home() {
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
                     rel="noopener noreferrer" // Segurança adicional para links externos
+                    target="_blank"
                   >
                     QUERO VENDER
                     <ArrowRight />
@@ -360,6 +362,7 @@ export default function Home() {
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
                     rel="noopener noreferrer" // Segurança adicional para links externos
+                    target="_blank"
                   >
                     QUERO ESSA IDEIA
                     <ArrowRight />
@@ -395,6 +398,7 @@ export default function Home() {
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
                     rel="noopener noreferrer" // Segurança adicional para links externos
+                    target="_blank"
                   >
                     QUERO VENDER
                     <ArrowRight />
@@ -602,6 +606,7 @@ export default function Home() {
                     <a
                       href="/quem-somos"
                       className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
+                      target="_blank"
                     >
                       <span className="txt-b-or">NOSSA EXPETISE</span>
                     </a>
@@ -698,6 +703,7 @@ export default function Home() {
                     <a
                       className="texto-botao botao-nossa-ex botao-roxo btn-r"
                       href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                      target="_blank"
                     >
                       <span className="txt-b-or">
                         QUERO UMA AVALIÇÃO GRATUITA
