@@ -478,17 +478,16 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} />
-                      <h3 className="text-center">Magmeta</h3>
+                      <CircleFill size={36} className="icon-dep" />
+                      <h4 className="text-center">E-commerce de Moda</h4>
                       <small className="d-flex justify-content-center">
-                        lorem
+                        Ana S.
                       </small>
                     </div>
                     <p className="pb-3 px-3 text-center">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      look even slightly believable.
+                      &quot;Com a automação desenvolvida pela equipe, nosso
+                      atendimento ficou muito mais rápido e eficiente.
+                      Conseguimos focar no que importa: nossos clientes!&quot;
                     </p>
                   </div>
                 </div>
@@ -498,17 +497,18 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} />
-                      <h3 className="text-center">Magmeta</h3>
+                      <CircleFill size={36} className="icon-dep" />
+                      <h4 className="text-center">Startup de Tecnologia</h4>
                       <small className="d-flex justify-content-center">
-                        lorem
+                        Lucas M.
                       </small>
                     </div>
                     <p className="pb-3 px-3 text-center">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      look even slightly believable.
+                      &quot;O app desenvolvido pela Magmeta transformou nossa
+                      operação! A solução foi personalizada e fácil de usar, e
+                      agora nossos clientes têm acesso direto aos nossos
+                      serviços na palma da mão. Resultado: mais engajamento e
+                      aumento de vendas!&quot;
                     </p>
                   </div>
                 </div>
@@ -518,17 +518,16 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} />
-                      <h3 className="text-center">Magmeta</h3>
+                      <CircleFill size={36} className="icon-dep" />
+                      <h4 className="text-center">Empreendedor de Serviços</h4>
                       <small className="d-flex justify-content-center">
-                        lorem
+                        Rafael T.
                       </small>
                     </div>
                     <p className="pb-3 px-3 text-center">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      look even slightly believable.
+                      &quot; A Magmeta entendeu exatamente o que precisávamos e
+                      criou um protótipo funcional que atraiu nossos primeiros
+                      clientes. A equipe é incrível!&quot;
                     </p>
                   </div>
                 </div>
