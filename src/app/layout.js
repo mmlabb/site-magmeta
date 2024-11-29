@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
             <Navbar />
 
             <a
-              href="https://api.whatsapp.com/send?phone=+5561994561273&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
+              href="https://api.whatsapp.com/send?phone=+5561999999999&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
               target="_blank"
               className="botao-whatsapp"
             >
@@ -141,7 +141,7 @@ export default function RootLayout({ children }) {
                 <div className="row pt-5">
                   <div className="col-md-6 d-flex justify-content-center justify-content-md-start aling-items-center p-0">
                     <small id="texto-localizacao">
-                      Brasília - DF 35.877.565/0001-36
+                      Brasília - DF
                     </small>
                   </div>
                   <div className="col-md-6 d-flex justify-content-center justify-content-md-end opacity-50">

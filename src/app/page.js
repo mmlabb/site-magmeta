@@ -277,7 +277,7 @@ export default function Home() {
                   </p>
 
                   <a
-                    href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     id="btn-port"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
@@ -315,7 +315,7 @@ export default function Home() {
                   </p>
 
                   <a
-                    href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     id="btn-port"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
@@ -701,7 +701,7 @@ export default function Home() {
                   <div className=" justify-content-center">
                     <a
                       className="texto-botao botao-nossa-ex botao-roxo btn-r"
-                      href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                      href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                       target="_blank"
                     >
                       <span className="txt-b-or">
