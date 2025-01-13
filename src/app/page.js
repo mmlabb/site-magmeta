@@ -478,7 +478,13 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} className="icon-dep" />
+                      <div className="circle-image">
+                        <img
+                          src="/assets/img/foto-perfil-1.jpg"
+                          alt="seta-rodape"
+                          className="logo"
+                        />
+                      </div>
                       <h4 className="text-center">E-commerce de Moda</h4>
                       <small className="d-flex justify-content-center">
                         Ana S.
