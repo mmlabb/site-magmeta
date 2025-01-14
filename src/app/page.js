@@ -175,7 +175,7 @@ export default function Home() {
                       <LightbulbFill className=" icon-pop" />
                     </div>
                     <p className="d-none d-md-block">
-                      Ganhe tempo com a tecnologia trabalhando a seu favor
+                      Esteja a frente no mercado
                     </p>
                   </div>
                 </div>
