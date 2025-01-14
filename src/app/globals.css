@@ -1264,9 +1264,11 @@ main {
   }
 }
 .circle-image {
-  border-radius: 50%; 
-  background-size: cover; 
-  background-position: center; 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat; /* Evita repetição da imagem */
   overflow: hidden; /* Garante que partes fora do círculo não apareçam */
 }

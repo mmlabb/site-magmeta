@@ -478,11 +478,12 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <div className="circle-image">
+                      <div className="circle-image icon-dep">
                         <img
-                          src="/assets/img/foto-perfil-1.jpg"
-                          alt="seta-rodape"
+                          src="/assets/img/perfil1.jpg"
+                          alt=""
                           className="logo"
+                          width="100%"
                         />
                       </div>
                       <h4 className="text-center">E-commerce de Moda</h4>
@@ -503,7 +504,14 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} className="icon-dep" />
+                      <div className="circle-image icon-dep">
+                        <img
+                          src="/assets/img/perfil3.jpg"
+                          alt=""
+                          className="logo"
+                          width="100%"
+                        />
+                      </div>
                       <h4 className="text-center">Startup de Tecnologia</h4>
                       <small className="d-flex justify-content-center">
                         Lucas M.
@@ -524,7 +532,14 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} className="icon-dep" />
+                      <div className="circle-image icon-dep">
+                        <img
+                          src="/assets/img/perfil2.jpg"
+                          alt=""
+                          className="logo"
+                          width="100%"
+                        />
+                      </div>
                       <h4 className="text-center">Empreendedor de Serviços</h4>
                       <small className="d-flex justify-content-center">
                         Rafael T.
