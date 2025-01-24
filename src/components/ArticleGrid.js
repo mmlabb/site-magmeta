@@ -27,7 +27,7 @@ const ArticleGrid = ({ articles }) => {
       <h2 className="text-center mb-5">Nossos Últimos Artigos</h2>
       <div className="row gy-4">
         {articles.map((article) => (
-          <div className="col-md-4" key={article.id} onClick={()=> goArticle(article.slug)}>
+          <div className="col-md-4"  key={article.id} onClick={()=> goArticle(article.slug)}>
             <div className="card h-100 text-center p-3 shadow-sm">
               <div className="d-flex justify-content-between">
                 <img

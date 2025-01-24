@@ -5,7 +5,7 @@ import { ArrowDown, ArrowDownLeft, ArrowDownRight, ArrowUpRight } from "react-fe
 
 const Banner = () => {
   return (
-    <div className="container container-banner">
+    <div className="container  container-banner">
       <div className="row align-items-center p-5 ">
         <div className="col-md-6 box-artigo-principal">
           <h2>Aprenda React do Zero</h2>
