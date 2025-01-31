@@ -4,10 +4,10 @@
 
 /*Css Blog*/
 .container-banner {
-  margin-top: 16% !important;
-  margin-bottom: 10% !important;
-  border-radius: 50px;
-  background-color: #1c1c1c;
+  margin-top: 14% !important;
+  margin-bottom: 14% !important;
+  border-radius: 6px;
+  background-color: #181717bf;
 }
 
 .box-artigos {
@@ -20,9 +20,9 @@
   display: flex;
   flex-direction: column;
   margin-top: 10% !important;
-  margin-bottom: 20% !important;
-  border-radius: 50px;
-  background-color: #1c1c1c;
+  margin-bottom: 10% !important;
+  border-radius: 6px;
+  background-color: #181717bf;
 }
 
 .box-artigo-principal {
@@ -64,6 +64,11 @@ h3 {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
+}
+
+#box-5-min {
+  border-left: 4px solid #5D2E9A !important;
+  height: 24px;
 }
 
 @media (max-width: 768px) {

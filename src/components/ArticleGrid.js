@@ -1,39 +1,34 @@
-"use client"
-
+"use client";
 import { useRouter } from "next/navigation";
-import {
-  Arrow90degRight,
-  ArrowRightShort,
-  ArrowRightSquare,
-} from "react-bootstrap-icons";
-import {
-  ArrowDown,
-  ArrowDownLeft,
-  ArrowDownRight,
-  ArrowLeft,
-  ArrowRight,
-  ArrowUpRight,
-} from "react-feather";
+import { ArrowUpRight } from "react-feather";
 
 const ArticleGrid = ({ articles }) => {
- const router = useRouter()
+  const router = useRouter();
 
-  const goArticle = (slug) =>{
-    router.push(`/blog/${slug}`)
-  }
+  const goArticle = (slug) => {
+    console.log("🚀 ~ goArticle ~ slug:", slug)
+    router.push(`/blog/${slug}`);
+  };
 
   return (
     <div className="container box-artigos">
       <h2 className="text-center mb-5">Nossos Últimos Artigos</h2>
       <div className="row gy-4">
         {articles.map((article) => (
-          <div className="col-md-4"  key={article.id} onClick={()=> goArticle(article.slug)}>
+          <div
+            className="col-md-4"
+            key={article.id}
+            onClick={() => goArticle(article.slug)}
+            style={{ cursor: "pointer" }}
+          >
             <div className="card h-100 text-center p-3 shadow-sm">
               <div className="d-flex justify-content-between">
                 <img
-                  src={article.cover}
-                  
-                  className="card-img-top rounded mb-3"
+                  src="/assets/img/logo-magmeta-p-black.svg"
+                  alt="logo-mag"
+                  width={40}
+                  height={40}
+                  className="rounded mb-3 img-fluid rounded"
                 />
                 <ArrowUpRight />
               </div>
@@ -42,8 +37,10 @@ const ArticleGrid = ({ articles }) => {
                 alt={article.title}
                 className="card-img-top rounded mb-3"
               />
-              <h5>{article.title}</h5>
-              <div className="fs-1">{article.icon}</div>
+              <div className="gap-1 d-flex flex-column">
+                <h4>{article.slug}</h4>
+                <span className="fs-5">{article.summary}</span>
+              </div>
             </div>
           </div>
         ))}
