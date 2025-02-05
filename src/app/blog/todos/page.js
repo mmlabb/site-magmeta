@@ -2,13 +2,13 @@
 import { useRouter } from "next/navigation";
 import { ArrowUpRight } from "react-feather";
 import { useEffect, useState } from "react";
+import { articles } from "@/data/articles";
 
-const ArticleGrid = ({ articles }) => {
+const AllArticles = () => {
   const router = useRouter();
-  const [theme, setTheme] = useState("light"); // Começa com light
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    // Verifica qual tema está ativo no <html>
     const currentTheme = document.documentElement.classList.contains(
       "theme-dark"
     )
@@ -18,13 +18,12 @@ const ArticleGrid = ({ articles }) => {
   }, []);
 
   const goArticle = (slug) => {
-    console.log("🚀 ~ goArticle ~ slug:", slug);
     router.push(`/blog/${slug}`);
   };
 
   return (
     <div className="container box-artigos">
-      <h2 className="text-center mb-5">Nossos Últimos Artigos</h2>
+      <h2 className="text-center mb-5">Todos os Artigos</h2>
       <div className="row gy-4">
         {articles.map((article) => (
           <div
@@ -68,19 +67,8 @@ const ArticleGrid = ({ articles }) => {
           </div>
         ))}
       </div>
-      <div className="row pt-5 ">
-        <div className="d-flex mt-4 justify-content-center">
-          <a
-            href="/quem-somos"
-            className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
-            target="_blank"
-          >
-            <span id="txt-blog">MAIS ARTIGOS</span>
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default ArticleGrid;
+export default AllArticles;
