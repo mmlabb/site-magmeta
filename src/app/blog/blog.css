@@ -7,7 +7,6 @@
   margin-top: 14% !important;
   margin-bottom: 14% !important;
   border-radius: 6px;
-  background-color: #181717bf;
 }
 
 .box-artigos {
@@ -19,8 +18,8 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  margin-top: 10% !important;
-  margin-bottom: 10% !important;
+  margin-top: 5% !important;
+  margin-bottom: 5% !important;
   border-radius: 6px;
   background-color: #181717bf;
 }
@@ -67,8 +66,37 @@ h3 {
 }
 
 #box-5-min {
-  border-left: 4px solid #5D2E9A !important;
+  border-left: 4px solid #5d2e9a !important;
   height: 24px;
+}
+
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 9 10 / var(--tw-bg-opacity));
+}
+
+/* Tema escuro para o Banner */
+.theme-dark .container-banner {
+  background-color: #181717bf; /* Cor de fundo escura */
+  color: #fff;
+}
+
+/* Tema claro para o Banner */
+.theme-light .container-banner {
+  background-color: #e9d9ff; /* Cor de fundo clara */
+  color: #000 !important;
+}
+
+/* Tema escuro para os cards */
+.theme-dark .card {
+  background-color: #181717bf !important; /* Cinza escuro */
+  color: #fff !important;
+}
+
+/* Tema claro para os cards */
+.theme-light .card {
+  background-color: #e9d9ff !important; /* Branco gelo */
+  color: #000 !important;
 }
 
 @media (max-width: 768px) {

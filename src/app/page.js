@@ -529,7 +529,7 @@ export default function Home() {
               </div>
 
               <div className="col-sm-12 col-md-4 col-lg-4 flex-direction: column depoimento depoimento-3">
-                <div class="d-flex justify-content-center align-items-center ">
+                <div className="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
                       <div className="circle-image icon-dep">
@@ -546,7 +546,7 @@ export default function Home() {
                       </small>
                     </div>
                     <p className="pb-3 px-3 text-center">
-                      &quot; A Magmeta entendeu exatamente o que precisávamos e
+                      &quot;A Magmeta entendeu exatamente o que precisávamos e
                       criou um protótipo funcional que atraiu nossos primeiros
                       clientes. A equipe é incrível!&quot;
                     </p>

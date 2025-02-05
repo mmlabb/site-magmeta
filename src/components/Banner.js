@@ -2,20 +2,19 @@
 import Link from "next/link";
 import { ArrowUpRight } from "react-feather";
 import { useEffect, useState } from "react";
-import { articles } from "../data/articles"; // Certifique-se de importar corretamente seus artigos
+import { articles } from "../data/articles";
 
 const Banner = () => {
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
-    // Seleciona o primeiro artigo como destaque
     setArticle(articles[0]);
   }, []);
 
-  if (!article) return null; // Evita renderização se não houver artigo carregado
+  if (!article) return null;
 
   return (
-    <div className="container ralative container-banner">
+    <div className="container relative container-banner">
       <div className="row align-items-center p-3">
         <div className="col-md-6 relative box-artigo-principal">
           <h2>{article.title}</h2>
