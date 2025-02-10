@@ -10,7 +10,7 @@ const Blog = () => {
     <>
       <SiteNavbar />
       <Banner />
-      <ArticleGrid articles={articles} />
+      <ArticleGrid articles={articles} limit={6} />
       <CTA />
     </>
   );

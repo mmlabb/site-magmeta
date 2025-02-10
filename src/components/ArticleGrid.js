@@ -1,24 +1,15 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { ArrowUpRight } from "react-feather";
-import { useEffect, useState } from "react";
+import { useTheme } from "@/providers/ThemeProvider";
 
-const ArticleGrid = ({ articles }) => {
+const ArticleGrid = ({ articles, limit }) => {
   const router = useRouter();
-  const [theme, setTheme] = useState("light"); // Começa com light
+  const { darkMode } = useTheme();
 
-  useEffect(() => {
-    // Verifica qual tema está ativo no <html>
-    const currentTheme = document.documentElement.classList.contains(
-      "theme-dark"
-    )
-      ? "dark"
-      : "light";
-    setTheme(currentTheme);
-  }, []);
+  const lista = !!limit ? articles.slice(0, limit) : articles;
 
   const goArticle = (slug) => {
-    console.log("🚀 ~ goArticle ~ slug:", slug);
     router.push(`/blog/${slug}`);
   };
 
@@ -26,7 +17,7 @@ const ArticleGrid = ({ articles }) => {
     <div className="container box-artigos">
       <h2 className="text-center mb-5">Nossos Últimos Artigos</h2>
       <div className="row gy-4">
-        {articles.map((article) => (
+        {lista.map((article) => (
           <div
             className="col-md-4"
             key={article.id}
@@ -35,7 +26,7 @@ const ArticleGrid = ({ articles }) => {
           >
             <div
               className={`card h-100 text-center d-flex justify-content-between p-3 shadow-sm ${
-                theme === "dark" ? "card-dark" : "card-light"
+                darkMode ? "card-dark" : "card-light"
               }`}
             >
               <img
@@ -68,17 +59,19 @@ const ArticleGrid = ({ articles }) => {
           </div>
         ))}
       </div>
-      <div className="row pt-5 ">
-        <div className="d-flex mt-4 justify-content-center">
-          <a
-            href="/quem-somos"
-            className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
-            target="_blank"
-          >
-            <span id="txt-blog">MAIS ARTIGOS</span>
-          </a>
+      {!!limit ? (
+        <div className="row pt-5 ">
+          <div className="d-flex mt-4 justify-content-center">
+            <a
+              href="/quem-somos"
+              className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
+              target="_blank"
+            >
+              <span id="txt-blog">MAIS ARTIGOS</span>
+            </a>
+          </div>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 };
