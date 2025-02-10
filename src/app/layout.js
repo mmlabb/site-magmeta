@@ -3,8 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/SiteNavbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Facebook } from "react-feather";
 
+// Metadados para ranqueamento de pesquisa & SEO
 export const metadata = {
   title: "Magmeta digital",
   description:
