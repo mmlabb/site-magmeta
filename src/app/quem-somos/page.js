@@ -1,7 +1,20 @@
+import Image from "next/image";
 import Clientes from "@/containers/Customers";
 import "./sobre.css";
 import CardsSection from "@/containers/sobre/CardsSection";
 
+const CheckIcon = () => {
+  return (
+    <Image
+      src="/assets/img/icone-check-white.svg"
+      alt=""
+      width={0}
+      height={0}
+      sizes="100%"
+      style={{ width: "auto", height: "auto" }} // optional
+    />
+  );
+};
 export default function Sobre() {
   return (
     <>
@@ -13,11 +26,13 @@ export default function Sobre() {
             data-aos-duration="3000"
           >
             <div className="col-md-12 col-lg-5 d-flex justify-content-center mascot-magmeta align-items-center">
-              <img
-                className="mas-magmeta img-fluid"
+              <Image
                 src="/assets/img/img-magmeta-atualizado.png"
                 alt=""
-                data-aos="zoom-in"
+                width={0}
+                height={0}
+                sizes="100%"
+                style={{ width: "auto", height: "auto" }} // optional
               />
             </div>
 
@@ -70,7 +85,7 @@ export default function Sobre() {
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Aplicativos mobile (android e iOS)</p>
               </div>
 
@@ -79,7 +94,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="300"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Desenvolvimento personalizado de sistema</p>
               </div>
 
@@ -88,7 +103,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="300"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Chat bot com I.A</p>
               </div>
 
@@ -97,7 +112,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Uso de stacks modernas</p>
               </div>
 
@@ -106,7 +121,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="500"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Suporte e desenho de projeto</p>
               </div>
 
@@ -115,7 +130,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="300"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Acompanhamento e implantação</p>
               </div>
 
@@ -124,7 +139,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="300"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Suporte dedicado</p>
               </div>
 
@@ -132,7 +147,7 @@ export default function Sobre() {
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Dashboard e relatórios personalizados</p>
               </div>
 
@@ -141,7 +156,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Consultoria para construção de softwares</p>
               </div>
 
@@ -149,7 +164,7 @@ export default function Sobre() {
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">MVP</p>
               </div>
             </div>
@@ -159,28 +174,28 @@ export default function Sobre() {
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Desenvolvimento de APIs</p>
               </div>
               <div
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">SEO e Otimização de Sites</p>
               </div>
               <div
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Gestão de Projetos Ágeis</p>
               </div>
               <div
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">IOTs -Internet das coisas</p>
               </div>
 
@@ -189,7 +204,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="300"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Cloud computing</p>
               </div>
 
@@ -198,7 +213,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Design de Interface (UI)</p>
               </div>
               <div
@@ -206,7 +221,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Experiência do Usuário (UX)</p>
               </div>
 
@@ -215,7 +230,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="500"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Protótipos</p>
               </div>
 
@@ -224,7 +239,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="300"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">Metodologia ágil</p>
               </div>
 
@@ -233,7 +248,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="300"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">High-fidelity Design</p>
               </div>
 
@@ -242,7 +257,7 @@ export default function Sobre() {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                <img src="/assets/img/icone-check-white.svg" alt="" />
+                <CheckIcon />
                 <p className="m-0">
                   Consultoria para construção <br />
                   de softwares
@@ -251,11 +266,14 @@ export default function Sobre() {
             </div>
 
             <div className="col-lg-3 col-md-4 box-yes-we justify-content-center align-items-center d-flex">
-              <img
+              <Image
                 src="/assets/img/img-yes-white.svg"
                 alt=""
+                width={0}
+                height={0}
+                sizes="100%"
                 className="img-fluid logo yes-we-do"
-                style={{ height: "100%" }}
+                style={{ width: "auto", height: "auto" }} // optional
               />
             </div>
           </div>
@@ -266,13 +284,14 @@ export default function Sobre() {
 
       <section>
         <div className="container text-center">
-          <img
-            className="img-fluid pb-5rem"
+          <Image
             src="/assets/img/about_mag.png"
-            width="400px"
-            height="400px"
-            id="mascote-magmeta"
             alt=""
+            width={0}
+            height={0}
+            sizes="100%"
+            id="mascote-magmeta"
+            style={{ width: "auto", height: "auto" }} // optional
           />
         </div>
       </section>
@@ -304,12 +323,13 @@ export default function Sobre() {
 
             <div className="col-sm-12 col-md-6 d-flex img-vamos-conversar">
               <div>
-                <img
-                  className="img-fluid pb-5rem"
+                <Image
                   src="/assets/img/img-vamos-conversar.png"
-                  width="400px"
-                  id="mascote-magmeta"
                   alt=""
+                  width={0}
+                  height={0}
+                  sizes="100%"
+                  style={{ width: "auto", height: "auto" }} // optional
                 />
               </div>
             </div>
