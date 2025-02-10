@@ -419,9 +419,9 @@ header.floating {
   height: 100%;
 }
 
-  .icon-dep {
-    margin: 12px;
-  }
+.icon-dep {
+  margin: 12px;
+}
 
 .container-portifolio img {
   object-fit: contain !important;
@@ -1262,6 +1262,15 @@ main {
   #texto-localizacao {
     padding-top: 0.5rem !important;
   }
+}
+.circle-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  overflow: hidden; /* Garante que partes fora do círculo não apareçam */
 }
 
 @media (min-width: 1024px) {

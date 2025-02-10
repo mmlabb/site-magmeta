@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*Css Blog*/
+.container-banner {
+  margin-top: 14% !important;
+  margin-bottom: 14% !important;
+  border-radius: 6px;
+}
+
+.box-artigos {
+  margin-top: 20% !important;
+  margin-bottom: 20% !important;
+}
+
+.box-cta {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5% !important;
+  margin-bottom: 5% !important;
+  border-radius: 6px;
+  background-color: #181717bf;
+}
+
+.box-artigo-principal {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#txt-blog {
+  .theme-light {
+    color: #fff !important;
+  }
+}
+
+.theme-light .btn-blog-roxo {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+.txt-blog h1,
+h2,
+h3 {
+  .theme-light {
+    color: #fff;
+  }
+}
+.theme-light h1,
+.txt-blog h2,
+h3 {
+  color: #fff !important;
+}
+
+.custom-image-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.custom-image-container img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+#box-5-min {
+  border-left: 4px solid #5d2e9a !important;
+  height: 24px;
+}
+
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 9 10 / var(--tw-bg-opacity));
+}
+
+/* Tema escuro para o Banner */
+.theme-dark .container-banner {
+  background-color: #181717bf; /* Cor de fundo escura */
+  color: #fff;
+}
+
+/* Tema claro para o Banner */
+.theme-light .container-banner {
+  background-color: #e9d9ff; /* Cor de fundo clara */
+  color: #000 !important;
+}
+
+/* Tema escuro para os cards */
+.theme-dark .card {
+  background-color: #181717bf !important; /* Cinza escuro */
+  color: #fff !important;
+}
+
+/* Tema claro para os cards */
+.theme-light .card {
+  background-color: #e9d9ff !important; /* Branco gelo */
+  color: #000 !important;
+}
+
+@media (max-width: 768px) {
+  .box-artigo-principal {
+    display: flex;
+    text-align: center !important;
+  }
+
+  .box-btn-blog {
+    justify-content: center !important;
+  }
+
+  .container-banner {
+    margin-top: 34% !important;
+  }
+}
+
+@media (max-width: 2200px) {
+  .theme-light {
+    #txt-blog {
+      color: #fff !important;
+    }
+  }
+}

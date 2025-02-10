@@ -175,7 +175,7 @@ export default function Home() {
                       <LightbulbFill className=" icon-pop" />
                     </div>
                     <p className="d-none d-md-block">
-                      Ganhe tempo com a tecnologia trabalhando a seu favor
+                      Esteja a frente no mercado
                     </p>
                   </div>
                 </div>
@@ -478,7 +478,14 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} className="icon-dep" />
+                      <div className="circle-image icon-dep">
+                        <img
+                          src="/assets/img/perfil1.jpg"
+                          alt=""
+                          className="logo"
+                          width="100%"
+                        />
+                      </div>
                       <h4 className="text-center">E-commerce de Moda</h4>
                       <small className="d-flex justify-content-center">
                         Ana S.
@@ -497,7 +504,14 @@ export default function Home() {
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} className="icon-dep" />
+                      <div className="circle-image icon-dep">
+                        <img
+                          src="/assets/img/perfil3.jpg"
+                          alt=""
+                          className="logo"
+                          width="100%"
+                        />
+                      </div>
                       <h4 className="text-center">Startup de Tecnologia</h4>
                       <small className="d-flex justify-content-center">
                         Lucas M.
@@ -515,17 +529,24 @@ export default function Home() {
               </div>
 
               <div className="col-sm-12 col-md-4 col-lg-4 flex-direction: column depoimento depoimento-3">
-                <div class="d-flex justify-content-center align-items-center ">
+                <div className="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
-                      <CircleFill size={36} className="icon-dep" />
+                      <div className="circle-image icon-dep">
+                        <img
+                          src="/assets/img/perfil2.jpg"
+                          alt=""
+                          className="logo"
+                          width="100%"
+                        />
+                      </div>
                       <h4 className="text-center">Empreendedor de Serviços</h4>
                       <small className="d-flex justify-content-center">
                         Rafael T.
                       </small>
                     </div>
                     <p className="pb-3 px-3 text-center">
-                      &quot; A Magmeta entendeu exatamente o que precisávamos e
+                      &quot;A Magmeta entendeu exatamente o que precisávamos e
                       criou um protótipo funcional que atraiu nossos primeiros
                       clientes. A equipe é incrível!&quot;
                     </p>
