@@ -3,7 +3,11 @@
 const { createContext, useState, useContext } = require("react");
 import themeSwitch from "@/utils/theme";
 
-const ThemeContext = createContext({});
+// Valor inicial do contexto
+const ThemeContext = createContext({
+  darkMode: true,
+  alternateTheme: null,
+});
 
 export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);
