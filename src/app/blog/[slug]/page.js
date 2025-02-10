@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import SiteNavbar from "@/components/SiteNavbar";
@@ -8,6 +7,13 @@ import { articles } from "@/data/articles";
 // Função para carregar dados no momento da renderização estática
 export function getData(slug) {
   return articles.find((artigo) => artigo.slug === slug);
+}
+
+export async function generateStaticParams() {
+  // Return an array of params for static generation
+  return articles.map((article) => ({
+    slug: article.slug, // this matches the dynamic [slug] part in the URL
+  }));
 }
 
 // Renderers personalizados para ReactMarkdown
