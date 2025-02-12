@@ -4,6 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   // assetPrefix: "https://magmeta.com.br"
   images: {
+    unoptimized: true,
     domains: ["images.unsplash.com"], // Adicione o domínio aqui
   },
 };

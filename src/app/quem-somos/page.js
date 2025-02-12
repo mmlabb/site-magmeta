@@ -32,7 +32,7 @@ export default function Sobre() {
                 width={0}
                 height={0}
                 sizes="100%"
-                style={{ width: "auto", height: "auto" }} // optional
+                style={{ width: "100%", height: "auto" }} // optional
               />
             </div>
 
@@ -291,7 +291,7 @@ export default function Sobre() {
             height={0}
             sizes="100%"
             id="mascote-magmeta"
-            style={{ width: "auto", height: "auto" }} // optional
+            style={{ width: "100%", height: "auto" }} // optional
           />
         </div>
       </section>
@@ -329,7 +329,7 @@ export default function Sobre() {
                   width={0}
                   height={0}
                   sizes="100%"
-                  style={{ width: "auto", height: "auto" }} // optional
+                  style={{ width: "100%", height: "auto" }} // optional
                 />
               </div>
             </div>

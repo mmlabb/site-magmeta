@@ -1,7 +1,7 @@
 "use client";
 import WordAnimation from "@/components/WordAnimation";
 import Clientes from "@/containers/Customers";
-
+import Image from "next/image";
 import { useEffect } from "react";
 import {
   ArrowLeftSquareFill,
@@ -16,6 +16,8 @@ import {
   Rocket,
   RocketFill,
 } from "react-bootstrap-icons";
+
+
 
 export default function Home() {
   useEffect(() => {
@@ -149,11 +151,15 @@ export default function Home() {
 
             <div className="col-md-12 col-lg-6 d-flex justify-content-end container-img-app-magmeta">
               <div className="img-app-magmeta">
-                <img
+                <Image
                   className="app-magmeta"
                   src="/assets/img/meta-faça-magmeta.svg"
-                  alt=""
                   data-aos="zoom-in"
+                  alt=""
+                  width={0}
+                  height={0}
+                  sizes="100%"
+                  style={{ width: "auto", height: "auto" }} // optional
                 />
 
                 <div className="pop-up" id="pop-up-1">
@@ -259,11 +265,13 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <img
+                    <Image
                       src="/assets/img/mockup-net.png"
-                      max-width="100%"
-                      height="auto"
                       alt=""
+                      width={0}
+                      height={0}
+                      sizes="100%"
+                      style={{ width: "auto", height: "auto" }} // optional
                     />
                   </div>
                 </div>
@@ -303,7 +311,14 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <img src="/assets/img/mockup-funil.png" alt="" />
+                    <Image
+                      src="/assets/img/mockup-funil.png"
+                      alt=""
+                      width={0}
+                      height={0}
+                      sizes="100%"
+                      style={{ width: "auto", height: "auto" }} // optional
+                    />
                   </div>
                 </div>
                 <div className="box-texto-p1">
@@ -345,7 +360,14 @@ export default function Home() {
                     <h4 className="texto-h4-port">Aplicativo mobile</h4>
                   </div>
 
-                  <img src="/assets/img/mockup-net.png" alt="" />
+                  <Image
+                    src="/assets/img/mockup-net.png"
+                    alt=""
+                    width={0}
+                    height={0}
+                    sizes="100%"
+                    style={{ width: "auto", height: "auto" }} // optional
+                  />
                 </div>
 
                 <div className="box-texto-p1">
@@ -382,7 +404,14 @@ export default function Home() {
                     <h4 className="texto-h4-port">Ui/Ux Design</h4>
                   </div>
 
-                  <img src="/assets/img/mockup-funil.png" alt="" />
+                  <Image
+                    src="/assets/img/mockup-funil.png"
+                    alt=""
+                    width={0}
+                    height={0}
+                    sizes="100%"
+                    style={{ width: "auto", height: "auto" }} // optional
+                  />
                 </div>
                 <div className="box-texto-p1">
                   <p>
@@ -479,11 +508,14 @@ export default function Home() {
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
                       <div className="circle-image icon-dep">
-                        <img
+                        <Image
                           src="/assets/img/perfil1.jpg"
                           alt=""
                           className="logo"
-                          width="100%"
+                          width={0}
+                          height={0}
+                          sizes="100%"
+                          style={{ width: "100%", height: "100%" }} // optional
                         />
                       </div>
                       <h4 className="text-center">E-commerce de Moda</h4>
@@ -501,15 +533,18 @@ export default function Home() {
               </div>
 
               <div className="col-sm-12 col-md-4 col-lg-4 flex-direction: column depoimento depoimento-2">
-                <div class="d-flex justify-content-center align-items-center ">
+                <div className="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
                       <div className="circle-image icon-dep">
-                        <img
+                        <Image
                           src="/assets/img/perfil3.jpg"
                           alt=""
                           className="logo"
-                          width="100%"
+                          width={0}
+                          height={0}
+                          sizes="100%"
+                          style={{ width: "100%", height: "100%" }} // optional
                         />
                       </div>
                       <h4 className="text-center">Startup de Tecnologia</h4>
@@ -533,11 +568,14 @@ export default function Home() {
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
                       <div className="circle-image icon-dep">
-                        <img
+                        <Image
                           src="/assets/img/perfil2.jpg"
                           alt=""
                           className="logo"
-                          width="100%"
+                          width={0}
+                          height={0}
+                          sizes="100%"
+                          style={{ width: "100%", height: "100%" }} // optional
                         />
                       </div>
                       <h4 className="text-center">Empreendedor de Serviços</h4>
@@ -558,10 +596,14 @@ export default function Home() {
 
           <div className="row pt-5 pb-5 mt-5  ">
             <div className="col-md-6 d-md-flex d-none justify-content-start align-items-center">
-              <img
+              <Image
                 className="img-fluid"
                 src="/assets/img/sabemos-caminho.svg"
                 alt=""
+                width={0}
+                height={0}
+                sizes="100%"
+                style={{ width: "auto", height: "auto" }} // optional
               />
             </div>
 
@@ -637,12 +679,15 @@ export default function Home() {
 
             <div className="col-sm-12 col-md-6 col-lg-6">
               <div>
-                <img
+                <Image
                   className="img-fluid logo"
+                  alt=""
                   src="/assets/img/img-neon-white.svg"
                   id="img-mag"
-                  width="100%"
-                  alt=""
+                  width={0}
+                  height={0}
+                  sizes="100%"
+                  style={{ width: "auto", height: "auto" }} // optional
                 />
               </div>
             </div>
@@ -702,11 +747,14 @@ export default function Home() {
         <div className="container box-t-ideia text-center">
           <div className="row align-items-center gap-5 gap-md-0">
             <div className="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
-              <img
+              <Image
                 className="img-fluid"
                 src="/assets/img/img-ideia.svg"
-                width="400px"
                 alt=""
+                width={0}
+                height={0}
+                sizes="100%"
+                style={{ width: "auto", height: "auto" }} // optional
               />
             </div>
 
