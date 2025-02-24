@@ -41,14 +41,14 @@
   color: #fff !important;
   border-color: #fff !important;
 }
-.txt-blog h1,
+.txt-blog,
 h2,
 h3 {
   .theme-light {
     color: #fff;
   }
 }
-.theme-light h1,
+.theme-light,
 .txt-blog h2,
 h3 {
   color: #fff !important;
