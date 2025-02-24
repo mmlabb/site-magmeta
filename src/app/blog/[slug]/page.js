@@ -10,9 +10,8 @@ export function getData(slug) {
 }
 
 export async function generateStaticParams() {
-  // Return an array of params for static generation
   return articles.map((article) => ({
-    slug: article.slug, // this matches the dynamic [slug] part in the URL
+    slug: article.slug,
   }));
 }
 
@@ -23,8 +22,8 @@ const customRenderers = {
       <Image
         src={src}
         alt={alt}
-        width={1250} // Ajuste a largura
-        height={850} // Ajuste a altura
+        width={1250}
+        height={850}
         className="img-fluid rounded"
       />
       {alt && <p className="mt-2 text-muted">{alt}</p>}
@@ -38,7 +37,7 @@ const customRenderers = {
     ) {
       return <>{children}</>;
     }
-    return <p className="fs-4">{children}</p>; // Ajustando tamanho da fonte dos parágrafos
+    return <p className="fs-4">{children}</p>;
   },
 };
 
@@ -55,7 +54,6 @@ const Page = ({ params }) => {
       <SiteNavbar />
       <div className="container pt-3 mt-5">
         <div className="row pt-5 mt-5 flex-column align-items-center mb-4">
-          {/* Título e informações do artigo */}
           <div className="col-md-10 flex-column d-flex box-titulo-blog">
             <h1 className="display-5">{article.title}</h1>
             <div className="d-flex gap-3 align-items-center">
@@ -71,9 +69,15 @@ const Page = ({ params }) => {
               </div>
               <div id="box-5-min">5 Min leitura</div>
             </div>
+            <div className="d-flex flex-wrap gap-2 mt-2">
+              {article.tags.map((tag) => (
+                <span key={tag} className="badge bg-primary">
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
 
-          {/* Imagem de capa */}
           <div className="col-md-10 pt-3 justify-content-center d-flex align-items-center flex-column gap-2">
             <Image
               src={article.cover}
@@ -84,8 +88,7 @@ const Page = ({ params }) => {
             />
           </div>
 
-          {/* Conteúdo do artigo em Markdown */}
-          <div className="pt-5  pb-5 mb-5 col-md-10 flex-column d-flex">
+          <div className="pt-5 pb-5 mb-5 col-md-10 flex-column d-flex">
             <ReactMarkdown components={customRenderers}>
               {article.content}
             </ReactMarkdown>
