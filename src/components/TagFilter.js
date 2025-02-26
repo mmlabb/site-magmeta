@@ -1,9 +1,9 @@
-import { useRouter } from "next/navigation";
+
 import { Button } from "react-bootstrap";
 
 const TagFilter = ({ tags, selectedTag }) => {
   return (
-    <div className="d-flex gap-2 flex-wrap mb-4">
+    <div className="d-flex gap-2 justify-content-center flex-wrap mb-4">
       <Button
         as="a"
         className={`${!selectedTag ? "btn-primary" : "btn-outline-primary"}`}
