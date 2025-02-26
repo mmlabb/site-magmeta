@@ -504,7 +504,7 @@ export default function Home() {
             </div>
             <div className="d-flex linha-depoimentos text-white gap-2">
               <div className="col-sm-12 col-md-4 col-lg-4  depoimento depoimento-1">
-                <div class="d-flex justify-content-center align-items-center ">
+                <div className="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
                       <div className="circle-image icon-dep">
