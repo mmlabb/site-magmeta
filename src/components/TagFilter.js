@@ -1,4 +1,4 @@
-
+"use client"
 import { Button } from "react-bootstrap";
 
 const TagFilter = ({ tags, selectedTag }) => {
