@@ -19,8 +19,8 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
   };
 
   return (
-    <div className="container box-artigos">
-      <h2 className="text-center mb-5">Nossos Últimos Artigos</h2>
+    <div id="grid-artigos" className="container box-artigos ">
+      
       <div className="row gy-4">
         {lista.length > 0 ? (
           lista.map((article) => (

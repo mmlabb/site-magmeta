@@ -9,9 +9,9 @@
   border-radius: 6px;
 }
 
-.box-artigos {
-  margin-top: 20% !important;
-  margin-bottom: 20% !important;
+#grid-artigos {
+  padding-top: 6% !important;
+  padding-bottom: 6% !important;
 }
 
 .box-cta {
@@ -102,6 +102,11 @@
   background-color: #f0f0f0 !important;
   border-color: #f0f0f0;
   color: #000;
+}
+
+.box-artigos {
+  padding-top: 20% !important;
+  padding-bottom: 20% !important;
 }
 
 @media (max-width: 768px) {
