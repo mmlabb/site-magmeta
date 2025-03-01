@@ -148,7 +148,7 @@ export default function SiteNavbar() {
                   </Nav.Link>
 
                   <a
-                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                    href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-light rounded-pill"
