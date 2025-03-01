@@ -25,12 +25,14 @@ const AllArticles = () => {
 
       {/* Botão para limpar o filtro e voltar para todos os artigos */}
       {selectedTag && (
-        <button
-          className="btn btn-outline-primary mb-3"
-          onClick={() => router.push("/blog/todos")}
-        >
-          Ver Todos
-        </button>
+        <div className="d-flex justify-content-center mt-3 mb-3">
+          <button
+            className="btn btn-primary"
+            onClick={() => router.push("/blog/todos")}
+          >
+            Ver Todos
+          </button>
+        </div>
       )}
 
       <div className="row gy-4">

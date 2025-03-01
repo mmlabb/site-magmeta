@@ -9,10 +9,6 @@
   border-radius: 6px;
 }
 
-#grid-artigos {
-  padding-top: 6% !important;
-  padding-bottom: 6% !important;
-}
 
 .box-cta {
   justify-content: space-between;
@@ -105,8 +101,8 @@
 }
 
 .box-artigos {
-  padding-top: 20% !important;
-  padding-bottom: 20% !important;
+  padding-top: 10% !important;
+  padding-bottom: 10% !important;
 }
 
 @media (max-width: 768px) {
