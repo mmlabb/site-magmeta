@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/SiteNavbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Image from "next/image";
 
 // Metadados para ranqueamento de pesquisa & SEO
 export const metadata = {
@@ -83,7 +84,14 @@ export default function RootLayout({ children }) {
               target="_blank"
               className="botao-whatsapp"
             >
-              <img src="/assets/img/logo-wpp.svg" alt="IconeWpp" />
+              <Image
+                src="/assets/img/logo-wpp.svg"
+                alt="IconeWpp"
+                width={0}
+                height={0}
+                sizes="100%"
+                style={{ width: "auto", height: "auto" }} // optional
+              />
             </a>
             <main>{children}</main>
 
@@ -91,11 +99,14 @@ export default function RootLayout({ children }) {
               <div className="container text-center rodape">
                 <div className="d-flex linha-rodape flex-wrap justify-content-between">
                   <div className="col-md-2" id="logo-rodape">
-                    <img
+                    <Image
                       src="/assets/img/logo-magmeta-white.svg"
                       alt="logo-rodape"
+                      width={0}
+                      height={0}
+                      sizes="100%"
                       className="logo img-fluid"
-                      style={{ height: "3rem" }}
+                      style={{ width: "auto", height: "3rem" }}
                     />
                   </div>
 
@@ -106,10 +117,14 @@ export default function RootLayout({ children }) {
                       className="back-to-top"
                       title="Voltar ao topo"
                     >
-                      <img
+                      <Image
                         src="/assets/img/logo-seta-rodape-white.svg"
                         alt="seta-rodape"
                         className="logo"
+                        width={0}
+                        height={0}
+                        sizes="100%"
+                        style={{ width: "auto", height: "auto" }} // optional
                       />
                     </a>
                   </div>
@@ -118,20 +133,27 @@ export default function RootLayout({ children }) {
                   <div className="col d-flex justify-content-center  align-items-center">
                     <div className="mx-2 my-2 d-flex">
                       <a href="https://www.facebook.com/profile.php?id=100089418330403">
-                        <img
+                        <Image
                           src="/assets/img/icon-face-white.svg"
                           alt="logo-instagram"
                           className="logo"
+                          width={0}
+                          height={0}
+                          sizes="100%"
+                          style={{ width: "auto", height: "auto" }} // optional
                         />
                       </a>
                     </div>
                     <div className="mx-2 my-2">
                       <a href="https://www.instagram.com/magmetadigital">
-                        <img
+                        <Image
                           src="/assets/img/logo-instagram-white.svg"
                           alt="logo-instagram"
                           className="logo"
-                          width="24px"
+                          width={0}
+                          height={0}
+                          sizes="100%"
+                          style={{ width: "auto", height: "auto" }} // optional
                         />
                       </a>
                     </div>
@@ -140,9 +162,7 @@ export default function RootLayout({ children }) {
 
                 <div className="row pt-5">
                   <div className="col-md-6 d-flex justify-content-center justify-content-md-start aling-items-center p-0">
-                    <small id="texto-localizacao">
-                      Brasília - DF
-                    </small>
+                    <small id="texto-localizacao">Brasília - DF</small>
                   </div>
                   <div className="col-md-6 d-flex justify-content-center justify-content-md-end opacity-50">
                     <small id="copyright">

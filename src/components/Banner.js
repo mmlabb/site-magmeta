@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "react-feather";
 import { useEffect, useState } from "react";
 import { articles } from "../data/articles";
+import Image from "next/image";
 
 const Banner = () => {
   const [article, setArticle] = useState(null);
@@ -29,10 +30,14 @@ const Banner = () => {
           </div>
         </div>
         <div className="col-md-6 relative d-flex">
-          <img
+          <Image
             src={article.cover}
             alt={article.title}
             className="img-fluid rounded"
+            width={0}
+            height={0}
+            sizes="100%"
+            style={{ width: "auto", height: "auto" }} // optional
           />
         </div>
       </div>

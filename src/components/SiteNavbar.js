@@ -11,6 +11,7 @@ import {
   Offcanvas,
 } from "react-bootstrap";
 import { Moon, Sun } from "react-feather";
+import Image from "next/image";
 
 export default function SiteNavbar() {
   const { alternateTheme } = useTheme();
@@ -41,12 +42,16 @@ export default function SiteNavbar() {
       <Navbar expand="lg" className="bg-transparent">
         <Container>
           <Navbar.Brand as={Link} href="/">
-            <img
+            <Image
               src="/assets/img/logo-magmeta-white.svg"
               alt="logo-magmeta"
               id="logo-magmeta"
               className="logo"
               data-aos="fade"
+              width={0}
+              height={0}
+              sizes="100%"
+              style={{ width: "auto", height: "auto" }} // optional
             />
           </Navbar.Brand>
 
@@ -112,10 +117,14 @@ export default function SiteNavbar() {
               aria-controls={`offcanvasNavbar-expand-lg`}
               onClick={toggleOffcanvas}
             >
-              <img
+              <Image
                 src="/assets/img/logo-menu-white.svg"
                 className="logo"
                 alt=""
+                width={0}
+                height={0}
+                sizes="100%"
+                style={{ width: "auto", height: "auto" }} // optional
               />
             </Navbar.Toggle>
 

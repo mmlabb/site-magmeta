@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { ArrowUpRight } from "react-feather";
 import { useTheme } from "@/providers/ThemeProvider";
+import Image from "next/image";
 
 const ArticleGrid = ({ articles, limit, selectedTag }) => {
   const router = useRouter();
@@ -20,7 +21,6 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
 
   return (
     <div id="grid-artigos" className="container box-artigos ">
-      
       <div className="row gy-4">
         {lista.length > 0 ? (
           lista.map((article) => (
@@ -35,10 +35,14 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
                   darkMode ? "card-dark" : "card-light"
                 }`}
               >
-                <img
+                <Image
                   src={article.cover}
                   alt={article.title}
                   className="card-img-top rounded mb-3"
+                  width={0}
+                  height={0}
+                  sizes="100%"
+                  style={{ width: "auto", height: "auto" }} // optional
                 />
                 <div className="d-flex justify-content-end">
                   <ArrowUpRight />
@@ -56,12 +60,13 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
                 </div>
                 <div className="d-flex gap-2 align-items-center mt-3">
                   <div>
-                    <img
+                    <Image
                       src="/assets/img/logo-magmeta-p-black.svg"
                       alt="logo-mag"
                       width={40}
                       height={40}
                       className="rounded img-fluid logo"
+                      sizes="100%"
                     />
                   </div>
                   <div>

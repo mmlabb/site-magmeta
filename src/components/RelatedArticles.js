@@ -3,6 +3,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { articles } from "@/data/articles";
+import Image from "next/image";
 
 const RelatedArticles = ({ currentArticle }) => {
   const router = useRouter();
@@ -28,10 +29,14 @@ const RelatedArticles = ({ currentArticle }) => {
             onClick={() => router.push(`/blog/${article.slug}`)}
           >
             <div className="card h-100 shadow-sm">
-              <img
+              <Image
                 src={article.cover}
                 alt={article.title}
                 className="card-img-top rounded"
+                width={0}
+                height={0}
+                sizes="100%"
+                style={{ width: "auto", height: "auto" }} // optional
               />
               <div className="card-body">
                 <h5 className="card-title">{article.title}</h5>
