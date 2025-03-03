@@ -9,7 +9,6 @@
   border-radius: 6px;
 }
 
-
 .box-cta {
   justify-content: space-between;
   display: flex;
@@ -27,12 +26,10 @@
   gap: 18px;
 }
 
-.theme-light  {
+.theme-light {
   color: #fff !important;
   border-color: #fff !important;
 }
-
-
 
 .custom-image-container {
   margin: 20px 0;
@@ -83,9 +80,17 @@
 }
 
 .btn-primary {
-  background-color: #f0f0f0;
-  border-color: #f0f0f0;
-  color: #000;
+  display: flex;
+  height: 8px;
+  border-color:  rgb(98, 33, 162);
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 0% !important;
+  align-items: center;
+  border-radius: 18px;
+  background-color: rgb(98, 33, 162);
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -94,15 +99,24 @@
   color: #000;
 }
 
+
+
 .bg-primary {
-  background-color: #f0f0f0 !important;
-  border-color: #f0f0f0;
-  color: #000;
+  background-color: rgb(98, 33, 162) !important;
+  border-color: rgb(98, 33, 162);
+  color: #fff;
 }
 
 .box-artigos {
   padding-top: 10% !important;
   padding-bottom: 10% !important;
+}
+.cover-image {
+  width: 100%; /* Faz a imagem ocupar todo o container */
+  height: auto; /* Mantém a proporção */
+  max-height: 500px; /* Ajuste conforme necessário */
+  object-fit: cover; /* Garante que a imagem cubra sem distorcer */
+  border-radius: 10px; /* Opcional, para manter a estética arredondada */
 }
 
 @media (max-width: 768px) {

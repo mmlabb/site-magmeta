@@ -1,29 +1,37 @@
 "use client";
 
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { articles } from "@/data/articles";
 import ArticleGrid from "@/components/ArticleGrid";
-import { useTheme } from "@/providers/ThemeProvider";
 import "../blog.css";
 
-const AllArticles = () => {
+const ArticlesContent = () => {
   const router = useRouter();
-  const { darkMode } = useTheme();
   const searchParams = useSearchParams();
-  const selectedTag = searchParams.get("tag"); // Captura a tag da URL
+  const [selectedTag, setSelectedTag] = useState(null);
+  const [filteredArticles, setFilteredArticles] = useState(articles);
 
-  // Filtra os artigos com base na tag da URL, se houver
-  const filteredArticles = selectedTag
-    ? articles.filter((article) => article.tags.includes(selectedTag))
-    : articles;
+  // Captura a tag da URL de forma segura após o carregamento
+  useEffect(() => {
+    const tag = searchParams.get("tag");
+    setSelectedTag(tag);
+
+    if (tag) {
+      setFilteredArticles(
+        articles.filter((article) => article.tags.includes(tag))
+      );
+    } else {
+      setFilteredArticles(articles);
+    }
+  }, [searchParams, setSelectedTag]);
 
   return (
-    <div className="container box-artigos ">
+    <>
       <h2 className="text-center">
         {selectedTag ? `Artigos sobre "${selectedTag}"` : "Todos os Artigos"}
       </h2>
 
-      {/* Botão para limpar o filtro e voltar para todos os artigos */}
       {selectedTag && (
         <div className="d-flex justify-content-center mt-3 mb-3">
           <button
@@ -38,6 +46,16 @@ const AllArticles = () => {
       <div className="row gy-4">
         <ArticleGrid articles={filteredArticles} />
       </div>
+    </>
+  );
+};
+
+const AllArticles = () => {
+  return (
+    <div className="container box-artigos">
+      <Suspense fallback={<p>Carregando artigos...</p>}>
+        <ArticlesContent />
+      </Suspense>
     </div>
   );
 };
