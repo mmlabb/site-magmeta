@@ -150,8 +150,8 @@ export default function RootLayout({ children }) {
                           src="/assets/img/logo-instagram-white.svg"
                           alt="logo-instagram"
                           className="logo"
-                          width={0}
-                          height={0}
+                          width={200}
+                          height={200}
                           sizes="100%"
                           style={{ width: "auto", height: "auto" }} // optional
                         />
