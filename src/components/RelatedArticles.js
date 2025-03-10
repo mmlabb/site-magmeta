@@ -8,12 +8,24 @@ import Image from "next/image";
 const RelatedArticles = ({ currentArticle }) => {
   const router = useRouter();
 
-  // Filtra artigos com pelo menos uma tag em comum, excluindo o atual
-  const relatedArticles = articles.filter(
-    (article) =>
-      article.slug !== currentArticle.slug &&
-      article.tags.some((tag) => currentArticle.tags.includes(tag))
-  );
+  // Filtra artigos relacionados de forma case-insensitive
+  let relatedArticles = articles.filter((article) => {
+    if (article.slug === currentArticle.slug) return false;
+
+    const currentTags = currentArticle.tags.map((t) => t.toLowerCase());
+    const articleTags = article.tags.map((t) => t.toLowerCase());
+    return articleTags.some((tag) => currentTags.includes(tag));
+  });
+
+  // Se forem encontrados menos de 3 artigos relacionados, adiciona outros artigos para completar
+  if (relatedArticles.length < 3) {
+    const additionalArticles = articles.filter(
+      (article) =>
+        article.slug !== currentArticle.slug &&
+        !relatedArticles.some((ra) => ra.slug === article.slug)
+    );
+    relatedArticles = [...relatedArticles, ...additionalArticles].slice(0, 3);
+  }
 
   if (relatedArticles.length === 0) return null;
 
@@ -36,7 +48,7 @@ const RelatedArticles = ({ currentArticle }) => {
                 width={0}
                 height={0}
                 sizes="100%"
-                style={{ width: "auto", height: "auto" }} // optional
+                style={{ width: "auto", height: "auto" }}
               />
               <div className="card-body">
                 <h5 className="card-title">{article.title}</h5>

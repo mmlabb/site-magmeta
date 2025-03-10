@@ -27,7 +27,7 @@ const Blog = () => {
           selectedTag={selectedTag}
           onSelectTag={setSelectedTag}
         />
-        <ArticleGrid articles={filteredArticles} limit={6} />
+        <ArticleGrid articles={filteredArticles}/>
       </div>
       <CTA />
     </>

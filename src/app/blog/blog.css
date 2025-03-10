@@ -82,7 +82,7 @@
 .btn-primary {
   display: flex;
   height: 8px;
-  border-color:  rgb(98, 33, 162);
+  border-color: rgb(98, 33, 162);
   color: #fff;
   padding: 1rem;
   margin-bottom: 0% !important;
@@ -91,6 +91,8 @@
   background-color: rgb(98, 33, 162);
   justify-content: center;
   white-space: nowrap;
+  --bs-btn-active-bg: #ba7dd4;
+  --bs-btn-active-border-color: #ba7dd4;
 }
 
 .btn-primary:hover {
@@ -99,12 +101,15 @@
   color: #000;
 }
 
-
-
 .bg-primary {
   background-color: rgb(98, 33, 162) !important;
   border-color: rgb(98, 33, 162);
   color: #fff;
+}
+
+.btn-outline-primary {
+  --bs-btn-active-bg: #ba7dd4 !important;
+  --bs-btn-active-border-color: #ba7dd4 !important;
 }
 
 .box-artigos {
@@ -118,7 +123,6 @@
   object-fit: cover; /* Garante que a imagem cubra sem distorcer */
   border-radius: 10px; /* Opcional, para manter a estética arredondada */
 }
-
 
 @media (max-width: 768px) {
   .box-artigo-principal {
