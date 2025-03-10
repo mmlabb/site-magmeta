@@ -15,7 +15,7 @@ const Banner = () => {
   if (!article) return null;
 
   return (
-    <div className="container relative container-banner">
+    <div className="container relative mx-5 container-banner">
       <div className="row align-items-center">
         <div className="col-md-5 relative box-artigo-principal">
           <div className="box-artigo-banner p-3">
@@ -31,7 +31,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-7 relative d-flex">
+        <div className="col-md-7 relative d-flex p-0">
           <Image
             src={article.cover}
             alt={article.title}

@@ -119,6 +119,7 @@
   border-radius: 10px; /* Opcional, para manter a estética arredondada */
 }
 
+
 @media (max-width: 768px) {
   .box-artigo-principal {
     display: flex;

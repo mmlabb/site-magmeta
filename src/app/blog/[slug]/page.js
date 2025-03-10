@@ -56,7 +56,46 @@ const Page = ({ params }) => {
 
           {/* Conteúdo do artigo */}
           <div className="pt-5 pb-5 mb-5 col-md-10 flex-column d-flex">
-            <ReactMarkdown>{article.content}</ReactMarkdown>
+            <ReactMarkdown
+              components={{
+                h1: ({ node, ...props }) => (
+                  <h1
+                    style={{ paddingTop: "20px", paddingBottom: "20px" }}
+                    {...props}
+                  />
+                ),
+                p: ({ node, ...props }) => (
+                  <p
+                    style={{ paddingTop: "16px", marginBottom: "16px" }}
+                    {...props}
+                  />
+                ),
+                ul: ({ node, ...props }) => (
+                  <ul
+                    style={{ paddingTop: "16px", paddingBottom: "16px" }}
+                    {...props}
+                  />
+                ),
+                ol: ({ node, ...props }) => (
+                  <ol
+                    style={{ paddingTop: "16px", paddingBottom: "16px" }}
+                    {...props}
+                  />
+                ),
+
+                img: ({ node, ...props }) => (
+                  <Image
+                    src={props.src}
+                    alt={props.alt || ""}
+                    width={100} // Defina uma largura padrão ou calcule conforme necessário
+                    height={100} // Defina uma altura padrão para manter a proporção
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                ),
+              }}
+            >
+              {article.content}
+            </ReactMarkdown>
           </div>
         </div>
 
