@@ -102,11 +102,11 @@ export default function RootLayout({ children }) {
                     <Image
                       src="/assets/img/logo-magmeta-white.svg"
                       alt="logo-rodape"
-                      width={0}
-                      height={0}
+                      width={100}
+                      height={100}
                       sizes="100%"
                       className="logo img-fluid"
-                      style={{ width: "auto", height: "3rem" }}
+                     
                     />
                   </div>
 
@@ -150,8 +150,8 @@ export default function RootLayout({ children }) {
                           src="/assets/img/logo-instagram-white.svg"
                           alt="logo-instagram"
                           className="logo"
-                          width={200}
-                          height={200}
+                          width={0}
+                          height={0}
                           sizes="100%"
                           style={{ width: "auto", height: "auto" }} // optional
                         />

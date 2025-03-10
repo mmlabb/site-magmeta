@@ -16,20 +16,22 @@ const Banner = () => {
 
   return (
     <div className="container relative container-banner">
-      <div className="row align-items-center p-3">
-        <div className="col-md-6 relative box-artigo-principal">
-          <h2>{article.title}</h2>
-          <p id="txt-blog">{article.summary}</p>
-          <div className="d-flex box-btn-blog">
-            <Link
-              href={`/blog/${article.slug}`}
-              className="btn btn-outline-light rounded-pill btn-blog-roxo"
-            >
-              Artigo Completo <ArrowUpRight />
-            </Link>
+      <div className="row align-items-center">
+        <div className="col-md-5 relative box-artigo-principal">
+          <div className="box-artigo-banner p-3">
+            <h2>{article.title}</h2>
+            <p id="txt-blog">{article.summary}</p>
+            <div className="d-flex box-btn-blog">
+              <Link
+                href={`/blog/${article.slug}`}
+                className="btn btn-outline-light rounded-pill btn-blog-roxo"
+              >
+                Artigo Completo <ArrowUpRight />
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="col-md-6 relative d-flex">
+        <div className="col-md-7 relative d-flex">
           <Image
             src={article.cover}
             alt={article.title}

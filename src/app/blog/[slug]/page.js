@@ -31,11 +31,10 @@ const Page = ({ params }) => {
                 <Image
                   src="/assets/img/logo-magmeta-p-white.svg"
                   alt="logo-mag"
-                  width={0}
-                  height={0}
+                  width={24}
+                  height={24}
                   className="img-fluid rounded logo"
                   sizes="100%"
-                  style={{ width: "auto", height: "auto" }}
                 />
                 <p> Magmeta</p>
               </div>
@@ -43,7 +42,7 @@ const Page = ({ params }) => {
             </div>
           </div>
 
-          <div className="col-md-10 pt-3 justify-content-center d-flex align-items-center flex-column gap-2">
+          <div className="col-md-10 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
             <Image
               src={article.cover}
               alt="Imagem de capa do artigo"
