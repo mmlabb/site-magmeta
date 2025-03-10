@@ -46,8 +46,8 @@ const Page = ({ params }) => {
             <Image
               src={article.cover}
               alt="Imagem de capa do artigo"
-              width={1250}
-              height={850}
+              width={0}
+              height={0}
               className="img-fluid rounded cover-image"
               sizes="100%"
               style={{ width: "auto", height: "auto" }}

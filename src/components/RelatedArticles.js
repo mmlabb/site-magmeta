@@ -18,7 +18,7 @@ const RelatedArticles = ({ currentArticle }) => {
   if (relatedArticles.length === 0) return null;
 
   return (
-    <div className="container mt-5">
+    <div className="container">
       <h3 className="mb-4">Artigos Relacionados</h3>
       <div className="row">
         {relatedArticles.map((article) => (
