@@ -5,6 +5,7 @@ import ArticleGrid from "@/components/ArticleGrid";
 import CTA from "@/components/Cta";
 import TagFilter from "@/components/TagFilter";
 import "./blog.css";
+import "../../app/globals.css";
 import { useState } from "react";
 import { articles } from "@/data/articles";
 

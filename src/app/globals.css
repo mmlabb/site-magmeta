@@ -55,7 +55,7 @@ p {
 h5 {
   font-weight: bold !important;
   font-size: 20px !important;
-  line-height: 0% !important;
+  
 }
 
 h6 {
@@ -125,6 +125,30 @@ h6 {
   filter: blur(50px);
   left: -50px;
 } */
+
+/* Tema escuro para o Banner blog */
+.theme-dark .container-banner {
+  background-color: #181717bf; /* Cor de fundo escura */
+  color: #fff;
+}
+
+/* Tema claro para o Banner */
+.theme-light .container-banner {
+  background-color: #e9d9ff; /* Cor de fundo clara */
+  color: #000 !important;
+}
+
+/* Tema escuro para os cards */
+.theme-dark .card {
+  background-color: #181717bf !important; /* Cinza escuro */
+  color: #fff !important;
+}
+
+/* Tema claro para os cards */
+.theme-light .card {
+  background-color: #e9d9ff !important; /* Branco gelo */
+  color: #000 !important;
+}
 
 .checkbox {
   opacity: 0;

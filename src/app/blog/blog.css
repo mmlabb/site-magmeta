@@ -55,29 +55,7 @@
   background-color: rgb(9 9 10 / var(--tw-bg-opacity));
 }
 
-/* Tema escuro para o Banner */
-.theme-dark .container-banner {
-  background-color: #181717bf; /* Cor de fundo escura */
-  color: #fff;
-}
 
-/* Tema claro para o Banner */
-.theme-light .container-banner {
-  background-color: #e9d9ff; /* Cor de fundo clara */
-  color: #000 !important;
-}
-
-/* Tema escuro para os cards */
-.theme-dark .card {
-  background-color: #181717bf !important; /* Cinza escuro */
-  color: #fff !important;
-}
-
-/* Tema claro para os cards */
-.theme-light .card {
-  background-color: #e9d9ff !important; /* Branco gelo */
-  color: #000 !important;
-}
 
 .btn-primary {
   display: flex;
@@ -110,6 +88,12 @@
 .btn-outline-primary {
   --bs-btn-active-bg: #ba7dd4 !important;
   --bs-btn-active-border-color: #ba7dd4 !important;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(98, 33, 162) !important;
+  --bs-bg-opacity: 1 !important;
 }
 
 .box-artigos {
