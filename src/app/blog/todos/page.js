@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { articles } from "@/data/articles";
 import ArticleGrid from "@/components/ArticleGrid";
 import "../blog.css";
-import "../../app/globals.css";
+
 
 const ArticlesContent = () => {
   const router = useRouter();

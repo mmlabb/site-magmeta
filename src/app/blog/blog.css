@@ -26,10 +26,6 @@
   gap: 18px;
 }
 
-.theme-light {
-  color: #fff !important;
-  border-color: #fff !important;
-}
 
 .custom-image-container {
   margin: 20px 0;
@@ -83,10 +79,12 @@
   background-color: rgb(98, 33, 162) !important;
   border-color: rgb(98, 33, 162);
   color: #fff;
+  
 }
 
 .btn-outline-primary {
-  --bs-btn-active-bg: #ba7dd4 !important;
+  --bs-btn-active-bg: #
+  7dd4 !important;
   --bs-btn-active-border-color: #ba7dd4 !important;
 }
 
