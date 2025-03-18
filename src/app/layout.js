@@ -4,10 +4,10 @@ import Navbar from "@/components/SiteNavbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Image from "next/image";
-
+import Footer from "@/components/Footer";
 // Metadados para ranqueamento de pesquisa & SEO
 export const metadata = {
-  title: "Magmeta digital",
+  title: "Magmeta Soluções",
   description:
     "Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento.",
   applicationName: "Magmeta digital",
@@ -78,9 +78,8 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <div id="app-theme" className="theme-dark">
             <Navbar />
-
             <a
-              href="https://api.whatsapp.com/send?phone=+5561994561273&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
+              href="https://api.whatsapp.com/send?phone=+5561981689203&text=Olá equipe Magmeta%20vim pelo site e gostaria de orçar meu projeto com vocês!"
               target="_blank"
               className="botao-whatsapp"
             >
@@ -93,90 +92,12 @@ export default function RootLayout({ children }) {
                 style={{ width: "auto", height: "auto" }} // optional
               />
             </a>
-            <main>{children}</main>
-
-            <footer>
-              <div className="container text-center rodape">
-                <div className="d-flex linha-rodape flex-wrap justify-content-between">
-                  <div className="col-md-2" id="logo-rodape">
-                    <Image
-                      src="/assets/img/logo-magmeta-white.svg"
-                      alt="logo-rodape"
-                      width={100}
-                      height={100}
-                      sizes="100%"
-                      className="logo img-fluid"
-                     
-                    />
-                  </div>
-
-                  <div className="col-md-2" id="seta-rodape">
-                    <a
-                      href="#"
-                      id="btn-scroll-top"
-                      className="back-to-top"
-                      title="Voltar ao topo"
-                    >
-                      <Image
-                        src="/assets/img/logo-seta-rodape-white.svg"
-                        alt="seta-rodape"
-                        className="logo"
-                        width={0}
-                        height={0}
-                        sizes="100%"
-                        style={{ width: "auto", height: "auto" }} // optional
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div className="row pt-4">
-                  <div className="col d-flex justify-content-center  align-items-center">
-                    <div className="mx-2 my-2 d-flex">
-                      <a href="https://www.facebook.com/profile.php?id=100089418330403">
-                        <Image
-                          src="/assets/img/icon-face-white.svg"
-                          alt="logo-instagram"
-                          className="logo"
-                          width={0}
-                          height={0}
-                          sizes="100%"
-                          style={{ width: "auto", height: "auto" }} // optional
-                        />
-                      </a>
-                    </div>
-                    <div className="mx-2 my-2">
-                      <a href="https://www.instagram.com/magmetadigital">
-                        <Image
-                          src="/assets/img/logo-instagram-white.svg"
-                          alt="logo-instagram"
-                          className="logo"
-                          width={0}
-                          height={0}
-                          sizes="100%"
-                          style={{ width: "auto", height: "auto" }} // optional
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="row pt-5">
-                  <div className="col-md-6 d-flex justify-content-center justify-content-md-start aling-items-center p-0">
-                    <small id="texto-localizacao">Brasília - DF</small>
-                  </div>
-                  <div className="col-md-6 d-flex justify-content-center justify-content-md-end opacity-50">
-                    <small id="copyright">
-                      © &nbsp;<span id="ano-atual"></span>&nbsp; Magmeta
-                      Tecnologia - Todos os direitos reservados
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </footer>
+            <main>{children}</main> {/* O conteúdo principal aqui */}
+            <Footer /> {/* Agora o Footer está dentro do ThemeProvider */}
           </div>
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-T8V8KCT7DP" />
       </body>
-      <GoogleAnalytics gaId="G-T8V8KCT7DP" />
     </html>
   );
 }
