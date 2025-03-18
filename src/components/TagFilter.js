@@ -14,7 +14,7 @@ const TagFilter = ({ tags, selectedTag }) => {
   ];
 
   return (
-    <div className="box-tgas d-flex gap-2 justify-content-center flex-wrap mb-4">
+    <div className="box-tags d-flex gap-2 justify-content-center flex-wrap mb-4">
       <Button
         as="a"
         className={`${!selectedTag ? "btn-primary" : "btn-outline-primary"}`}
