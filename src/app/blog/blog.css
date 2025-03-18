@@ -51,6 +51,11 @@
   background-color: rgb(9 9 10 / var(--tw-bg-opacity));
 }
 
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+} 
 
 
 .btn-primary {
@@ -106,6 +111,10 @@
   border-radius: 10px; /* Opcional, para manter a estética arredondada */
 }
 
+.badge {
+  background-color: rgb(98, 33, 162) !important;
+}
+
 @media (max-width: 768px) {
   .box-artigo-principal {
     display: flex;
@@ -114,10 +123,11 @@
 
   .box-btn-blog {
     justify-content: center !important;
-    padding-bottom: 24px;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
   }
 
   .container-banner {
     margin-top: 34% !important;
-  }
+  } 
 }

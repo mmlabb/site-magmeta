@@ -64,6 +64,7 @@ h6 {
   font-size: 24px !important;
 }
 
+
 .txt-b-or {
   font-size: 20px;
   font-family: "Roboto" !important;
@@ -146,6 +147,17 @@ h6 {
 
 /* Tema claro para os cards */
 .theme-light .card {
+  background-color: #e9d9ff !important; /* Branco gelo */
+  color: #000 !important;
+}
+
+.theme-dark .box-cta{
+  background-color: #181717bf !important; /* Cinza escuro */
+  color: #fff !important;
+}
+
+/* Tema claro para os cta */
+.theme-light .box-cta{
   background-color: #e9d9ff !important; /* Branco gelo */
   color: #000 !important;
 }
