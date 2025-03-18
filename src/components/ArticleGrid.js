@@ -49,7 +49,7 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
                 </div>
                 <div className="gap-1 d-flex flex-column">
                   <h4>{article.title}</h4>
-                  <span className="fs-5">{article.summary}</span>
+                  <small>{article.summary}</small>
                 </div>
                 <div className="d-flex gap-2 flex-wrap mt-2">
                   {article.tags.map((tag) => (
@@ -84,7 +84,7 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
         <div className="row pt-5">
           <div className="d-flex mt-4 justify-content-center">
             <a
-              href="/quem-somos"
+              href="/blog/todos"
               className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
               target="_blank"
             >

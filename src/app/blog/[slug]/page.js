@@ -55,7 +55,7 @@ const Page = ({ params }) => {
           </div>
 
           {/* Conteúdo do artigo */}
-          <div className="pt-5 pb-5 mb-5 col-md-10 flex-column d-flex">
+          <div className="pt-5 pb-5  col-md-10 flex-column d-flex">
             <ReactMarkdown
               components={{
                 h1: ({ node, ...props }) => (
@@ -96,6 +96,18 @@ const Page = ({ params }) => {
             >
               {article.content}
             </ReactMarkdown>
+
+            <div className="row pt-2">
+              <div className="d-flex mt-4 justify-content-center">
+                <a
+                  href="/blog/todos"
+                  className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
+                  target="_blank"
+                >
+                  <span id="txt-blog">TODOS ARTIGOS</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
