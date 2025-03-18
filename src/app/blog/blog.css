@@ -130,4 +130,16 @@
   .container-banner {
     margin-top: 34% !important;
   } 
+
+  .primeiro-artigo {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px ) {
+  .box-btn-blog {
+    justify-content: start !important;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
 }
