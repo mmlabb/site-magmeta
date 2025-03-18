@@ -16,7 +16,7 @@ const Banner = () => {
 
   return (
     <div className="container relative container-banner">
-      <div className="row align-items-center">
+      <div className="row primeiro-artigo align-items-center">
         <div className="col-md-5 relative box-artigo-principal">
           <div className="box-artigo-banner p-3">
             <h2>{article.title}</h2>
