@@ -4,6 +4,7 @@ import Image from "next/image";
 import { articles } from "@/data/articles";
 import RelatedArticles from "@/components/RelatedArticles";
 import ReactMarkdown from "react-markdown";
+import TagFilter from "@/components/TagFilter";
 
 export async function generateStaticParams() {
   return articles.map((article) => ({
@@ -22,7 +23,7 @@ const Page = ({ params }) => {
   return (
     <>
       <SiteNavbar />
-      <div className="container pt-3 mt-5">
+      <div className="container  pt-3 mt-5">
         <div className="row pt-5 mt-5 flex-column align-items-center mb-4">
           <div className="col-md-10 flex-column d-flex box-titulo-blog">
             <h1 className="display-5">{article.title}</h1>
@@ -41,7 +42,10 @@ const Page = ({ params }) => {
               <div id="box-5-min">5 Min leitura</div>
             </div>
           </div>
-
+          {/* Componente TagFilter colocado abaixo do título */}
+          <div className="pt-5 pb-5">
+            <TagFilter tags={article.tags} selectedTag={article.tags[0]} />
+          </div>
           <div className="col-md-10 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
             <Image
               src={article.cover}
@@ -102,7 +106,7 @@ const Page = ({ params }) => {
                 <a
                   href="/blog/todos"
                   className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
-                  target="_blank"
+                  target=""
                 >
                   <span id="txt-blog">TODOS ARTIGOS</span>
                 </a>
