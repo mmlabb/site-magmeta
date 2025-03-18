@@ -86,7 +86,7 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
             <a
               href="/blog/todos"
               className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
-              target="_blank"
+              target=""
             >
               <span id="txt-blog">MAIS ARTIGOS</span>
             </a>
