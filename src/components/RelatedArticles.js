@@ -8,30 +8,29 @@ import Image from "next/image";
 const RelatedArticles = ({ currentArticle }) => {
   const router = useRouter();
 
-  // Filtra artigos relacionados de forma case-insensitive
+  const currentTags = currentArticle.tags.map((t) => t.toLowerCase());
+
+  // Filtra artigos relacionados com pelo menos 1 tag em comum
   let relatedArticles = articles.filter((article) => {
     if (article.slug === currentArticle.slug) return false;
 
-    const currentTags = currentArticle.tags.map((t) => t.toLowerCase());
     const articleTags = article.tags.map((t) => t.toLowerCase());
-    return articleTags.some((tag) => currentTags.includes(tag));
+    const hasCommonTag = articleTags.some((tag) => currentTags.includes(tag));
+
+    return hasCommonTag;
   });
 
-  // Se forem encontrados menos de 3 artigos relacionados, adiciona outros artigos para completar
-  if (relatedArticles.length < 3) {
-    const additionalArticles = articles.filter(
-      (article) =>
-        article.slug !== currentArticle.slug &&
-        !relatedArticles.some((ra) => ra.slug === article.slug)
-    );
-    relatedArticles = [...relatedArticles, ...additionalArticles].slice(0, 3);
-  }
+  // Limita a no máximo 3 artigos diretamente relacionados
+  relatedArticles = relatedArticles.slice(0, 3);
+
+  // Se tiver menos de 3, adiciona outros aleatórios (não relacionados) para completar
+  
 
   if (relatedArticles.length === 0) return null;
 
   return (
     <div className="container pt-5 pb-5 mb-5">
-      <h3 className="mb-4">Artigos Relacionados</h3>
+      <h3 className="mb-4 d-flex justify-content-center">Artigos Relacionados</h3>
       <div className="row">
         {relatedArticles.map((article) => (
           <div

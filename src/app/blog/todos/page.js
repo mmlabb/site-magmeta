@@ -6,7 +6,6 @@ import { articles } from "@/data/articles";
 import ArticleGrid from "@/components/ArticleGrid";
 import "../blog.css";
 
-
 const ArticlesContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -46,6 +45,18 @@ const ArticlesContent = () => {
 
       <div className="row gy-4">
         <ArticleGrid articles={filteredArticles} />
+      </div>
+
+      <div className="row pt-2">
+        <div className="d-flex mt-4 justify-content-center">
+          <a
+            href="/blog"
+            className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
+            target="_blank"
+          >
+            <span id="txt-blog">VOLTAR PARA BLOG</span>
+          </a>
+        </div>
       </div>
     </>
   );
