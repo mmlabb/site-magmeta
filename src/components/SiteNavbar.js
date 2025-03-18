@@ -51,7 +51,6 @@ export default function SiteNavbar() {
               width={100}
               height={100}
               sizes="100%"
-              
             />
           </Navbar.Brand>
 
@@ -156,8 +155,12 @@ export default function SiteNavbar() {
                     Quem somos
                   </Nav.Link>
 
+                  <Nav.Link as={Link} href="/blog" onClick={closeOffcanvas}>
+                    Blog
+                  </Nav.Link>
+
                   <a
-                    href="https://wa.me/5561994561273?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                    href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-light rounded-pill"
