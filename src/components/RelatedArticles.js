@@ -31,7 +31,7 @@ const RelatedArticles = ({ currentArticle }) => {
   return (
     <div className="container pt-5 pb-5 mb-5">
       <h3 className="mb-4 d-flex justify-content-center">Artigos Relacionados</h3>
-      <div className="row">
+      <div className="row d-flex row-artigos-relacionados">
         {relatedArticles.map((article) => (
           <div
             key={article.slug}
@@ -52,11 +52,11 @@ const RelatedArticles = ({ currentArticle }) => {
               <div className="card-body">
                 <h5 className="card-title">{article.title}</h5>
                 <p className="card-text">{article.summary}</p>
-                <div className="d-flex flex-wrap gap-2">
+                <div className="d-flex flex-wrap gap-2 mt-3 mb-3 ">
                   {article.tags.map((tag) => (
-                    <span key={tag} className="badge bg-primary">
+                    <small key={tag} className="badge bg-primary">
                       {tag}
-                    </span>
+                    </small>
                   ))}
                 </div>
               </div>
