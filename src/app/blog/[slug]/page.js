@@ -5,6 +5,7 @@ import { articles } from "@/data/articles";
 import RelatedArticles from "@/components/RelatedArticles";
 import ReactMarkdown from "react-markdown";
 import TagFilter from "@/components/TagFilter";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   return articles.map((article) => ({
@@ -103,13 +104,12 @@ const Page = ({ params }) => {
 
             <div className="row pt-2">
               <div className="d-flex mt-4 justify-content-center">
-                <a
-                  href="/blog/todos"
+                <Link
+                  href="/blog"
                   className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
-                  target=""
                 >
-                  <span id="txt-blog">TODOS ARTIGOS</span>
-                </a>
+                  <span id="txt-blog">VOLTAR PARA BLOG</span>
+                </Link>
               </div>
             </div>
           </div>
