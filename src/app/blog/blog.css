@@ -40,6 +40,7 @@
 
 #box-5-min {
   border-left: 4px solid #5d2e9a !important;
+  padding-left: 0.4rem;
   height: 24px;
 }
 
@@ -87,11 +88,7 @@
   
 }
 
-.btn-outline-primary {
-  --bs-btn-active-bg: #
-  7dd4 !important;
-  --bs-btn-active-border-color: #ba7dd4 !important;
-}
+
 
 .bg-primary {
   --bs-bg-opacity: 1;
@@ -133,6 +130,24 @@
 
   .primeiro-artigo {
     display: none !important;
+  }
+
+  .box-titulo-blog {
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  h1 {
+    text-align: center !important;
+  }
+
+  .row-artigos-relacionados {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .titulo-todos-art {
+    padding-top: 18%;
   }
 }
 
