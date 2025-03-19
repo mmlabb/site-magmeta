@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer
       style={{
-        backgroundColor: darkMode ? "#000000" : "#ffffff",
+        backgroundColor: darkMode ? "#000000" : "#f1e6ff",
         transition: "background-color 0.3s ease",
       }}
     >

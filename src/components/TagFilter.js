@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "react-bootstrap";
 import { articles } from "@/data/articles"; // Certifique-se de importar corretamente
+import "../app/blog/blog.css";
 
 const TagFilter = ({ tags, selectedTag }) => {
   // Pegando apenas as tags de artigos com UMA ÚNICA tag
@@ -14,7 +15,7 @@ const TagFilter = ({ tags, selectedTag }) => {
   ];
 
   return (
-    <div className="box-tags d-flex gap-2 justify-content-center flex-wrap mb-4">
+    <div className="box-tags d-flex gap-3 justify-content-center flex-wrap mb-4">
       <Button
         as="a"
         className={`${!selectedTag ? "btn-primary" : "btn-outline-primary"}`}

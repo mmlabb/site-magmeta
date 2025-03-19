@@ -28,7 +28,7 @@ const ArticlesContent = () => {
 
   return (
     <>
-      <h2 className="text-center">
+      <h2 className="text-center titulo-todos-art">
         {selectedTag ? `Artigos sobre "${selectedTag}"` : "Todos os Artigos"}
       </h2>
 
