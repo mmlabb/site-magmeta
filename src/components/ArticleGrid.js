@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import { ArrowUpRight } from "react-feather";
 import { useTheme } from "@/providers/ThemeProvider";
 import Image from "next/image";
+import Link from "next/link";
 
 const ArticleGrid = ({ articles, limit, selectedTag }) => {
   const router = useRouter();
@@ -47,21 +48,25 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
                 <div className="d-flex justify-content-end">
                   <ArrowUpRight />
                 </div>
-                <div className="gap-1 d-flex flex-column">
+                <div className="gap-1 d-flex flex-column text-start">
                   <h4>{article.title}</h4>
                   <small>{article.summary}</small>
                 </div>
-                <div className="d-flex gap-2 flex-wrap mt-2">
+                <div className="d-flex gap-2 flex-wrap mt-3 mb-3">
                   {article.tags.map((tag) => (
-                    <span key={tag} className="badge bg-primary">
+                    <small key={tag} className="badge bg-primary">
                       {tag}
-                    </span>
+                    </small>
                   ))}
                 </div>
                 <div className="d-flex gap-2 align-items-center mt-3">
                   <div>
                     <Image
-                      src="/assets/img/logo-magmeta-p-black.svg"
+                      src={
+                        darkMode
+                          ? "/assets/img/logo-magmeta-p-white.svg"
+                          : "/assets/img/logo-magmeta-p-black.svg"
+                      }
                       alt="logo-mag"
                       width={40}
                       height={40}
@@ -83,13 +88,12 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
       {!!limit && filteredArticles.length > limit ? (
         <div className="row pt-5">
           <div className="d-flex mt-4 justify-content-center">
-            <a
+            <Link
               href="/blog/todos"
               className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
-              target=""
             >
-              <span id="txt-blog">MAIS ARTIGOS</span>
-            </a>
+              <span id="txt-blog">VER TODOS</span>
+            </Link>
           </div>
         </div>
       ) : null}
