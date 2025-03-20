@@ -36,30 +36,32 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
                   darkMode ? "card-dark" : "card-light"
                 }`}
               >
-                <Image
-                  src={article.cover}
-                  alt={article.title}
-                  className="card-img-top rounded mb-3"
-                  width={0}
-                  height={0}
-                  sizes="100%"
-                  style={{ width: "auto", height: "auto" }} // optional
-                />
-                <div className="d-flex justify-content-end">
-                  <ArrowUpRight />
+                <div className="d-flex justify-content-start flex-column">
+                  <Image
+                    src={article.cover}
+                    alt={article.title}
+                    className="card-img-top rounded mb-3"
+                    width={0}
+                    height={0}
+                    sizes="100%"
+                    style={{ width: "auto", height: "auto" }} // optional
+                  />
+                  <div className="d-flex justify-content-end">
+                    <ArrowUpRight />
+                  </div>
+                  <div className="gap-1 d-flex flex-column text-start">
+                    <h4>{article.title}</h4>
+                    <small>{article.summary}</small>
+                  </div>
+                  <div className="d-flex gap-2 flex-wrap mt-3 mb-3">
+                    {article.tags.map((tag) => (
+                      <small key={tag} className="badge bg-primary">
+                        {tag}
+                      </small>
+                    ))}
+                  </div>
                 </div>
-                <div className="gap-1 d-flex flex-column text-start">
-                  <h4>{article.title}</h4>
-                  <small>{article.summary}</small>
-                </div>
-                <div className="d-flex gap-2 flex-wrap mt-3 mb-3">
-                  {article.tags.map((tag) => (
-                    <small key={tag} className="badge bg-primary">
-                      {tag}
-                    </small>
-                  ))}
-                </div>
-                <div className="d-flex gap-2 align-items-center mt-3">
+                <div className="d-flex gap-2 align-items-start mt-3">
                   <div>
                     <Image
                       src={
@@ -73,9 +75,6 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
                       className="rounded img-fluid logo"
                       sizes="100%"
                     />
-                  </div>
-                  <div>
-                    <span className="fw-bold font-monospace">MAGMETA</span>
                   </div>
                 </div>
               </div>
