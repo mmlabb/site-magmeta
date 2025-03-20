@@ -6,7 +6,19 @@
 .container-banner {
   margin-top: 10% !important;
   margin-bottom: 10% !important;
-  border-radius: 6px;
+  border-radius: 44px;
+}
+
+.tag-destaque {
+  display: flex;
+  width: 84px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #db00ff 0%, #6221a2 100%) !important;
+  font-weight: 500;
+  font-family: roboto;
 }
 
 .box-cta {
@@ -15,7 +27,7 @@
   flex-direction: column;
   margin-top: 5% !important;
   margin-bottom: 5% !important;
-  border-radius: 6px;
+  border-radius: 44px;
   background-color: #181717bf;
 }
 
@@ -25,7 +37,6 @@
   flex-direction: column;
   gap: 18px;
 }
-
 
 .custom-image-container {
   margin: 20px 0;
@@ -56,19 +67,18 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-} 
-
+}
 
 .btn-primary {
   display: flex;
   height: 8px;
-  border-color: rgb(98, 33, 162);
+  border-color: #18171724;
   color: #fff;
   padding: 1rem;
   margin-bottom: 0% !important;
   align-items: center;
   border-radius: 18px;
-  background-color: rgb(98, 33, 162);
+  background: linear-gradient(135deg, #db00ff 0%, #6221a2 100%) !important;
   justify-content: center;
   white-space: nowrap;
   --bs-btn-active-bg: #ba7dd4;
@@ -76,19 +86,16 @@
 }
 
 .btn-primary:hover {
-  background-color: #d3d3d3;
-  border-color: #d3d3d3;
-  color: #000;
+  background: linear-gradient(135deg, #6221a2 0%, #db00ff 100%) !important;
+  border-color: #18171724;
+  color: #fff;
 }
 
 .bg-primary {
   background-color: rgb(98, 33, 162) !important;
   border-color: rgb(98, 33, 162);
   color: #fff;
-  
 }
-
-
 
 .bg-primary {
   --bs-bg-opacity: 1;
@@ -126,7 +133,7 @@
 
   .container-banner {
     margin-top: 34% !important;
-  } 
+  }
 
   .primeiro-artigo {
     display: none !important;
@@ -151,10 +158,28 @@
   }
 }
 
-@media (min-width: 769px ) {
+@media (min-width: 769px) {
   .box-btn-blog {
     justify-content: start !important;
     padding-top: 18px !important;
     padding-bottom: 18px !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 998px) {
+  .sub-titulo {
+    font-size: 34px !important;
+    margin-top: 10px;
+  }
+
+  .primeiro-artigo {
+    display: none !important;
+  }
+}
+@media (min-width: 999px) {
+  .box-artigo-banner {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
   }
 }
