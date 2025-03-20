@@ -7,11 +7,11 @@ const CTA = () => {
       <h3>Aprenda programação do zero e DE GRAÇA!</h3>
       <div className="d-flex mt-4 justify-content-center">
         <a
-          href="/quem-somos"
+          href="https://onboarding.magmeta.com.br/onboarding/lead"
           className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
           target="_blank"
         >
-          <span id="txt-blog">NOSSA EXPETISE</span>
+          <span id="txt-blog">ORÇAMENTO RÁPIDO</span>
           <ArrowRight/>
         </a>
       </div>
