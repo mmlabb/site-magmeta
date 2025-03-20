@@ -1,7 +1,7 @@
 export const articles = [
   {
     id: 1,
-    title: "Segredos das meta tags: Alcançe mais clientes para ",
+    title: "Segredos das meta tags",
     content: `
     
 -Atualizar versões, aplicar patches e seguir boas práticas são passos essenciais para qualquer linguagem, incluindo o PHP.
@@ -26,7 +26,7 @@ O que frequentemente ocorre é que sites antigos, sem atualizações, tornam-se 
       "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "segredos-das-meta-tags",
     summary:
-      "Já imaginou transformar seu site em uma máquina de performance, atração e engajamento...",
+      "Já imaginou transformar seu site em uma máquina de performance, atração e engajamento... O código é interpretado no lado do servidor pelo módulo PHP, que também gera a página",
   },
 
   {
@@ -299,7 +299,6 @@ O que frequentemente ocorre é que sites antigos, sem atualizações, tornam-se 
     summary:
       "Já imaginou transformar seu site em uma máquina de performance, atração e engajamento...",
   },
-
 
   {
     id: 11,

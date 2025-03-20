@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Navbar from "@/components/SiteNavbar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
