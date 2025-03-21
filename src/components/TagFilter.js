@@ -1,21 +1,11 @@
 "use client";
 import { Button } from "react-bootstrap";
-import { articles } from "@/data/articles"; // Certifique-se de importar corretamente
 import "../app/blog/blog.css";
 
 const TagFilter = ({ tags, selectedTag }) => {
-  // Pegando apenas as tags de artigos com UMA ÚNICA tag
-  const singleTagArticles = articles.filter(
-    (article) => article.tags.length === 1
-  );
-
-  // Extraindo apenas as tags únicas desses artigos
-  const singleTags = [
-    ...new Set(singleTagArticles.flatMap((article) => article.tags)),
-  ];
-
   return (
     <div className="box-tags d-flex gap-3 justify-content-center flex-wrap mb-4">
+      {/* Botão 'Todos' */}
       <Button
         as="a"
         className={`${!selectedTag ? "btn-primary" : "btn-outline-primary"}`}
@@ -24,7 +14,8 @@ const TagFilter = ({ tags, selectedTag }) => {
         Todos
       </Button>
 
-      {singleTags.map((tag) => (
+      {/* Botões de tags */}
+      {tags.map((tag) => (
         <Button
           as="a"
           key={tag}
