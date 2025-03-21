@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { ArrowUpRight, Clock } from "react-feather";
+import { ArrowUpRight } from "react-feather";
 import { useEffect, useState } from "react";
 import { articles } from "../data/articles";
 import Image from "next/image";
@@ -9,7 +9,11 @@ const Banner = () => {
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
-    setArticle(articles[0]);
+    // Verifica e pega o artigo com a data mais recente
+    const latestArticle = articles.reduce((latest, current) => {
+      return new Date(current.date) > new Date(latest.date) ? current : latest;
+    }, articles[0]);
+    setArticle(latestArticle);
   }, []);
 
   if (!article) return null;
@@ -19,7 +23,7 @@ const Banner = () => {
       <div className="row primeiro-artigo align-items-center">
         <div className="col-md-5 col-sm-6 relative box-artigo-principal">
           <div className="box-artigo-banner p-3">
-            <div className=" d-flex justify-content-between">
+            <div className="d-flex justify-content-between">
               <div className="tag-destaque text-center">
                 <small>DESTAQUE</small>
               </div>
@@ -42,7 +46,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-7 col-sm-6  relative d-flex p-0">
+        <div className="col-md-7 col-sm-6 relative d-flex p-0">
           <Image
             src={article.cover}
             alt={article.title}
