@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { articles } from "@/data/articles";
 import ArticleGrid from "@/components/ArticleGrid";
 import "../blog.css";
+import TagFilter from "@/components/TagFilter";
 
 const ArticlesContent = () => {
   const router = useRouter();
@@ -12,7 +13,6 @@ const ArticlesContent = () => {
   const [selectedTag, setSelectedTag] = useState(null);
   const [filteredArticles, setFilteredArticles] = useState(articles);
 
-  // Captura a tag da URL de forma segura após o carregamento
   useEffect(() => {
     const tag = searchParams.get("tag");
     setSelectedTag(tag);
@@ -24,13 +24,28 @@ const ArticlesContent = () => {
     } else {
       setFilteredArticles(articles);
     }
-  }, [searchParams, setSelectedTag]);
+  }, [searchParams]);
+
+  // Extração das tags únicas de artigos com uma única tag
+  const singleTagArticles = articles.filter(
+    (article) => article.tags.length === 1
+  );
+
+  const allTags = [
+    ...new Set(singleTagArticles.flatMap((article) => article.tags)),
+  ];
 
   return (
     <>
+      {/* Título */}
       <h2 className="text-center titulo-todos-art">
         {selectedTag ? `Artigos sobre "${selectedTag}"` : "Todos os Artigos"}
       </h2>
+
+      {/* Aqui o box-tags (TagFilter) ficará logo abaixo do título */}
+      <div className="pt-4">
+        <TagFilter tags={allTags} selectedTag={selectedTag} />
+      </div>
 
       {selectedTag && (
         <div className="d-flex justify-content-center mt-3 mb-3">
@@ -43,6 +58,7 @@ const ArticlesContent = () => {
         </div>
       )}
 
+      {/* Grid dos artigos */}
       <div className="row gy-4">
         <ArticleGrid articles={filteredArticles} />
       </div>
