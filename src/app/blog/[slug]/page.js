@@ -28,6 +28,12 @@ const Page = ({ params }) => {
         <div className="row pt-5 mt-5 flex-column align-items-center mb-4">
           <div className="col-md-10 flex-column d-flex box-titulo-blog">
             <h1 className="display-5">{article.title}</h1>
+            {/* TAG ÚNICA ABAIXO DO TÍTULO */}
+            {article.tags.length > 0 && (
+              <div className="mt-3 mb-3">
+                <span className="badge bg-primary">{article.tags[0]}</span>
+              </div>
+            )}
             <div className="d-flex gap-3 align-items-center">
               <div className="d-flex flex-row gap-2 align-items-center">
                 <Image
@@ -43,10 +49,7 @@ const Page = ({ params }) => {
               <div id="box-5-min">5 Min leitura</div>
             </div>
           </div>
-          {/* Componente TagFilter colocado abaixo do título */}
-          <div className="pt-5 pb-5">
-            <TagFilter tags={article.tags} selectedTag={article.tags[0]} />
-          </div>
+
           <div className="col-md-10 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
             <Image
               src={article.cover}
