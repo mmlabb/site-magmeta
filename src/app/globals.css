@@ -706,6 +706,11 @@ main {
   margin: 0 !important;
 }
 
+.cont-logos {
+  padding-top: 6%;
+  padding-bottom: 6%;
+} 
+
 /*RODAPÉ*/
 
 #logo-rodape {
@@ -1350,5 +1355,8 @@ canvas#3d {
     padding-top: 0 !important;
   }
   
-  
+  #texto-projetos {
+    padding-top: 0% !important;
+    
+  }
 }
