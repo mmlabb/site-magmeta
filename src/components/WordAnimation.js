@@ -3,16 +3,15 @@ import { motion } from "framer-motion";
 import "./wordAnimation.css"; // Import CSS for styling and animation
 const words = [
   "#Aplicativo",
-  "#Loja virtual",
-  "#Funil",
-  "#ui/ux",
   "#Website",
-  "#Landing page",
   "#Chatbot",
   "#Cloud",
   "#SaaS",
   "#Automação",
   "#ERP",
+  "#IoT",
+  "#A.I",
+  "#ConsultoriaTI",
 ];
 
 const colors = [
