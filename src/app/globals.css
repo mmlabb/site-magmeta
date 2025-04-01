@@ -55,7 +55,6 @@ p {
 h5 {
   font-weight: bold !important;
   font-size: 20px !important;
-  
 }
 
 h6 {
@@ -63,7 +62,6 @@ h6 {
   font-weight: 400 !important;
   font-size: 24px !important;
 }
-
 
 .txt-b-or {
   font-size: 20px;
@@ -108,7 +106,6 @@ h6 {
 #primeira-sessao .container {
   position: relative;
   z-index: 1;
-  
 }
 .theme-dark #primeira-sessao::before {
   background: #0e0c10;
@@ -152,13 +149,13 @@ h6 {
   color: #000 !important;
 }
 
-.theme-dark .box-cta{
+.theme-dark .box-cta {
   background-color: #181717bf !important; /* Cinza escuro */
   color: #fff !important;
 }
 
 /* Tema claro para os cta */
-.theme-light .box-cta{
+.theme-light .box-cta {
   background-color: #e9d9ff !important; /* Branco gelo */
   color: #000 !important;
 }
@@ -298,17 +295,18 @@ header.floating {
   align-items: center;
 }
 
-.container-img-app-magmeta {
+.img-app-magmeta {
   position: relative;
 }
 
 .img-app-magmeta::after {
   content: "";
   position: absolute;
-  top: 94px;
-  left: 202px;
-  width: 315px;
-  height: 326px;
+  top: 7%;
+  left: 2%;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
   background-color: #6221a2;
   filter: blur(100px) !important;
   z-index: -1; /* Posicione a sombra atrás da imagem */
@@ -709,7 +707,7 @@ main {
 .cont-logos {
   padding-top: 6%;
   padding-bottom: 6%;
-} 
+}
 
 /*RODAPÉ*/
 
@@ -949,11 +947,11 @@ main {
 
   .img-app-magmeta {
     width: 100% !important;
-    padding-top: 14%;
+    padding-top: 8%;
   }
 
   #texto-projetos {
-    padding-top: 14% !important;
+    padding-top: 8% !important;
   }
 
   .box-portifolio {
@@ -1329,11 +1327,11 @@ main {
   }
 }
 
-@media (min-width: 1400px) {
+/*@media (min-width: 1400px) {
   .app-magmeta {
     padding-top: 5rem !important;
   }
-}
+}*/
 
 canvas#3d {
   position: absolute;
@@ -1345,7 +1343,7 @@ canvas#3d {
   z-index: 1000;
 }
 
-@media (min-width: 1100px) and (max-width: 2000px) {
+@media (min-width: 1920px) {
   #primeira-sessao {
     padding-top: 11% !important;
     padding-bottom: 10% !important;
@@ -1354,9 +1352,8 @@ canvas#3d {
   .linha-1 {
     padding-top: 0 !important;
   }
-  
+
   #texto-projetos {
     padding-top: 0% !important;
-    
   }
 }
