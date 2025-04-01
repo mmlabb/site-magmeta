@@ -498,7 +498,7 @@ export default function Home() {
       <Clientes />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
-          <div className="row  pt-5 pb-5 mb-5">
+          <div className="row  pt-5 pb-5 mb-5 d-none">
             <div className="col-12 d-flex pt-5 pb-5 justify-content-center text-center">
               <h2>O que nossos clientes dizem</h2>
             </div>
