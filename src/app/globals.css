@@ -108,6 +108,7 @@ h6 {
 #primeira-sessao .container {
   position: relative;
   z-index: 1;
+  
 }
 .theme-dark #primeira-sessao::before {
   background: #0e0c10;
@@ -1337,4 +1338,17 @@ canvas#3d {
   height: 100vh;
   pointer-events: none;
   z-index: 1000;
+}
+
+@media (min-width: 1100px) and (max-width: 2000px) {
+  #primeira-sessao {
+    padding-top: 11% !important;
+    padding-bottom: 10% !important;
+  }
+
+  .linha-1 {
+    padding-top: 0 !important;
+  }
+  
+  
 }
