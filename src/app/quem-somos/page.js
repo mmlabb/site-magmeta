@@ -291,7 +291,7 @@ export default function Sobre() {
             height={0}
             sizes="100%"
             id="mascote-magmeta"
-            style={{ width: "100%", height: "auto" }} // optional
+            style={{ width: "50%", height: "auto" }} // optional
           />
         </div>
       </section>
@@ -309,7 +309,7 @@ export default function Sobre() {
                 <div className="d-flex pb-2 pt-2 btn-or">
                   <div className="botao-roxo botao-nossa-ex btn-or">
                     <a
-                      href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                      href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-mobile-orcam texto-botao"
