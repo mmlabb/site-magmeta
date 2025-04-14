@@ -308,8 +308,8 @@ header.floating {
   height: 100%;
   border-radius: 100%;
   background-color: rgba(98, 33, 162, 0.5);
-  filter: blur(100px) !important;
-  z-index: -1; /* Posicione a sombra atrás da imagem */
+  filter: blur(200px) !important;
+  z-index: -1;
 }
 
 .texto-botao {
@@ -425,8 +425,8 @@ header.floating {
   padding: 1rem;
   margin-bottom: 0% !important;
   align-items: center;
-  border-radius: 18px;
-  background-color: #6221a2;
+  border-radius: 38px;
+  background-color: #6221a257;
   justify-content: center;
   white-space: nowrap;
 }
@@ -452,6 +452,30 @@ header.floating {
   transition: transform 0.1s ease-in;
   gap: 16px;
   height: 100%;
+}
+
+.card-solu {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0px 18px 33px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.card-solu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08); /* camada translúcida */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 0;
+  border-radius: 18px;
+}
+
+.card-solu > * {
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo fique visível acima do blur */
 }
 
 .icon-dep {
@@ -646,9 +670,30 @@ main {
   overflow: hidden;
 }
 
+#segunda-sessao {
+  position: relative;
+  z-index: 1;
+}
+
+#segunda-sessao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/img/blur-grid.png"); /* Substitua pelo caminho correto */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
 #segunda-sessao .carousel .carousel-item img {
   z-index: 1;
   transition: 300ms;
+}
+
+.btn-light {
+  border-radius: 18px !important;
+  color: #6221A2 !important;
 }
 
 .carousel-indicators {
