@@ -266,7 +266,10 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="mb-4 pt-3">
+                  <p
+                    className="mb-4 pt-3"
+                    style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                  >
                     Automatize e simplifique o contato com seus clientes com um
                     ChatBot capaz... Nam in elementum libero. Vivamus tristique
                     justo ornare, pretium quam et, condimentum libero. Nam
@@ -304,7 +307,10 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="mb-4 pt-3">
+                  <p
+                    className="mb-4 pt-3"
+                    style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                  >
                     Leve sua mensagem direto ao seu público! Com a mídia indoor,
                     sua marca ganha visibilidade em locais estratégicos do dia a
                     dia das pessoas. Impacte seu cliente no momento certo, em
@@ -341,7 +347,10 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="mb-4 pt-3">
+                  <p
+                    className="mb-4 pt-3"
+                    style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                  >
                     Com o Digital Boost, analisamos sua operação e identificamos
                     oportunidades para tornar seu negócio mais eficiente com
                     tecnologia. Nosso objetivo é ajudar você a simplificar o dia
@@ -379,7 +388,10 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p className="mb-4 pt-3">
+                  <p
+                    className="mb-4 pt-3"
+                    style={{ color: "rgba(255, 255, 255, 0.7)" }}
+                  >
                     Desenvolva sua ideia com agilidade e foco! Criamos MVPs
                     (Mínimo Produto Viável) sob medida para validar seu conceito
                     no mercado. Lance sua solução inicial rapidamente, colete
