@@ -497,7 +497,7 @@ Após a instalação, **treine seus colaboradores** e **monitore o uso real** do
 
 > “Implementar tecnologia é fácil. Integrar, escalar e gerar valor com ela exige estratégia, equipe e visão.”
 
-**[📲 Clique aqui e agende sua consultoria estratégica](href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.")**
+**[📲 Clique aqui e agende sua consultoria estratégica](https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
     `,
     tags: ["Escalabilidade", "Inovação", "Tecnologia"],
     date: "2025-06-25",
