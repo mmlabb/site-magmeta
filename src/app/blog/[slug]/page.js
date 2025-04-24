@@ -30,8 +30,11 @@ const Page = ({ params }) => {
             <h1 className="display-5">{article.title}</h1>
             {/* TAG ÚNICA ABAIXO DO TÍTULO */}
             {article.tags.length > 0 && (
-              <div className="mt-3 mb-3">
-                <span className="badge bg-primary">{article.tags[0]}</span>
+              <div className="mt-3 mb-3 d-flex">
+                <span className="badge bg-primary m-1">{article.tags[0]}</span>
+                <span className="badge bg-primary m-1">{article.tags[1]}</span>
+                <span className="badge bg-primary m-1">{article.tags[2]}</span>
+                <span className="badge bg-primary m-1">{article.tags[3]}</span>
               </div>
             )}
             <div className="d-flex gap-3 align-items-center">
