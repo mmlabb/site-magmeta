@@ -576,10 +576,10 @@ Esses números demonstram que a automação não é apenas uma tendência  é um
 
 ### Quem Já Fez Acontecer
 
-🔹 Nubank — Reduziu em mais de 70% os custos operacionais com processos 100% digitais e foco em automação desde o primeiro cliente.  
-🔹 Magazine Luiza — Integração omnichannel e sistemas internos conectados resultaram em um crescimento de 243% no digital em apenas 3 anos.  
-🔹 iFood — Com o uso de inteligência artificial, otimizou rotas e aumentou a eficiência logística em mais de 50%.  
-🔹 Amazon — Investe 12 bilhões de dólares por ano em tecnologia, garantindo escalabilidade sem perder a experiência do cliente.
+🔹 Nubank — Reduziu em mais de 70% os custos operacionais com processos 100% digitais e foco em automação desde o primeiro cliente. (Fonte: Exame, 2021)  
+🔹 Magazine Luiza — Integração omnichannel e sistemas internos conectados resultaram em um crescimento de 243% no digital em apenas 3 anos. (Fonte: Valor Econômico, 2022)  
+🔹 iFood — Com o uso de inteligência artificial, otimizou rotas e aumentou a eficiência logística em mais de 50%. (Fonte: Época Negócios, 2021)  
+🔹 Amazon — Investe 12 bilhões de dólares por ano em tecnologia, garantindo escalabilidade sem perder a experiência do cliente. (Fonte: CNBC, 2023)  
 
 ### Crescimento Não É Sorte — É Estrutura
 
