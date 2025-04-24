@@ -541,7 +541,7 @@ Crescimento sustentável não acontece por acaso. Ele exige estrutura, planejame
     date: "2025-12-30",
     cover:
       "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    slug: "crescer-inteligência",
+    slug: "crescer-inteligencia",
     summary:
       "Empresas que automatizam processos reduzem em até 30% os custos operacionais e aumentam a produtividade em 40%, negócios que tratam a estrutura como prioridade crescem com mais confiança e menos retrabalho.",
   },
@@ -620,7 +620,7 @@ Se você quer **acelerar seu crescimento** e encontrar as melhores soluções pa
     date: "2025-03-30",
     cover:
       "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    slug: "trazer-inovação",
+    slug: "trazer-inovacao",
     summary:
       "Enquanto muitas empresas ainda enxergam a tecnologia como um custo, as que mais crescem já entenderam que inovação é um dos seus maiores diferenciais. Digitalização, automação e análise de dados deixaram de ser apenas tendências.",
   },
@@ -693,7 +693,7 @@ Você não precisa ser uma gigante do Vale do Silício para construir um ecossis
     date: "2025-04-27",
     cover:
       "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    slug: "crescer-inteligencia",
+    slug: "ecossistemas-dgitais",
     summary:
       "Empresas que automatizam processos reduzem em até 30% os custos operacionais e aumentam a produtividade em 40% em negócios que tratam a estrutura como prioridade crescem com mais confiança e menos retrabalho.",
   },
