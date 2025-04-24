@@ -26,7 +26,7 @@ const Page = ({ params }) => {
       <SiteNavbar />
       <div className="container  pt-3 mt-5">
         <div className="row pt-5 mt-5 flex-column align-items-center mb-4">
-          <div className="col-md-10 flex-column d-flex box-titulo-blog">
+          <div className="col-md-8 flex-column d-flex box-titulo-blog">
             <h1 className="display-5">{article.title}</h1>
             {/* TAG ÚNICA ABAIXO DO TÍTULO */}
             {article.tags.length > 0 && (
@@ -50,7 +50,7 @@ const Page = ({ params }) => {
             </div>
           </div>
 
-          <div className="col-md-10 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
+          <div className="col-md-8 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
             <Image
               src={article.cover}
               alt="Imagem de capa do artigo"
@@ -63,7 +63,7 @@ const Page = ({ params }) => {
           </div>
 
           {/* Conteúdo do artigo */}
-          <div className="pt-5 pb-5  col-md-10 flex-column d-flex">
+          <div className="pt-5 pb-5  col-md-8 flex-column d-flex">
             <ReactMarkdown
               components={{
                 h1: ({ node, ...props }) => (
