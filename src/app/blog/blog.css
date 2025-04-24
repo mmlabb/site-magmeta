@@ -110,9 +110,7 @@
 .cover-image {
   width: 100%; /* Faz a imagem ocupar todo o container */
   height: auto; /* Mantém a proporção */
-  max-height: 500px; /* Ajuste conforme necessário */
-  object-fit: cover; /* Garante que a imagem cubra sem distorcer */
-  border-radius: 10px; /* Opcional, para manter a estética arredondada */
+  border-radius: 10px;
 }
 
 .badge {

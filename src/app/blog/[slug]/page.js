@@ -26,7 +26,7 @@ const Page = ({ params }) => {
       <SiteNavbar />
       <div className="container  pt-3 mt-5">
         <div className="row pt-5 mt-5 flex-column align-items-center mb-4">
-          <div className="col-md-8 flex-column d-flex box-titulo-blog">
+          <div className="col-md-8 col-lg-8 flex-column d-flex box-titulo-blog">
             <h1 className="display-5">{article.title}</h1>
             {/* TAG ÚNICA ABAIXO DO TÍTULO */}
             {article.tags.length > 0 && (
@@ -35,13 +35,13 @@ const Page = ({ params }) => {
               </div>
             )}
             <div className="d-flex gap-3 align-items-center">
-              <div className="d-flex flex-row gap-2 align-items-center">
+              <div className="d-flex flex-row gap-2 align-items-center rounded-3 ">
                 <Image
                   src="/assets/img/logo-magmeta-p-white.svg"
                   alt="logo-mag"
                   width={24}
                   height={24}
-                  className="img-fluid rounded logo"
+                  className="img-fluid logo"
                   sizes="100%"
                 />
                 <p> Magmeta</p>
@@ -50,7 +50,7 @@ const Page = ({ params }) => {
             </div>
           </div>
 
-          <div className="col-md-8 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
+          <div className="col-md-8 col-lg-8 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
             <Image
               src={article.cover}
               alt="Imagem de capa do artigo"
@@ -58,35 +58,35 @@ const Page = ({ params }) => {
               height={0}
               className="img-fluid rounded cover-image"
               sizes="100%"
-              style={{ width: "auto", height: "auto" }}
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
 
           {/* Conteúdo do artigo */}
-          <div className="pt-5 pb-5  col-md-8 flex-column d-flex">
+          <div className="pt-5 pb-5  col-md-8 col-lg-8 flex-column d-flex">
             <ReactMarkdown
               components={{
-                h1: ({ node, ...props }) => (
-                  <h1
+                h2: ({ node, ...props }) => (
+                  <h2
                     style={{ paddingTop: "20px", paddingBottom: "20px" }}
                     {...props}
                   />
                 ),
                 p: ({ node, ...props }) => (
                   <p
-                    style={{ paddingTop: "16px", marginBottom: "16px" }}
+                    style={{ paddingTop: "12px", paddingBottom: "12px" }}
                     {...props}
                   />
                 ),
                 ul: ({ node, ...props }) => (
                   <ul
-                    style={{ paddingTop: "16px", paddingBottom: "16px" }}
+                    style={{ paddingTop: "12px", paddingBottom: "12px" }}
                     {...props}
                   />
                 ),
                 ol: ({ node, ...props }) => (
                   <ol
-                    style={{ paddingTop: "16px", paddingBottom: "16px" }}
+                    style={{ paddingTop: "12px", paddingBottom: "12px" }}
                     {...props}
                   />
                 ),
@@ -97,7 +97,7 @@ const Page = ({ params }) => {
                     alt={props.alt || ""}
                     width={100} // Defina uma largura padrão ou calcule conforme necessário
                     height={100} // Defina uma altura padrão para manter a proporção
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ width: "94%", height: "auto" }}
                   />
                 ),
               }}
