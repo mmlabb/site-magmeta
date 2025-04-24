@@ -97,7 +97,7 @@ const Page = ({ params }) => {
                     alt={props.alt || ""}
                     width={100} // Defina uma largura padrão ou calcule conforme necessário
                     height={100} // Defina uma altura padrão para manter a proporção
-                    style={{ width: "94%", height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                   />
                 ),
               }}
