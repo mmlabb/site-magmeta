@@ -16,8 +16,7 @@ import {
   Rocket,
   RocketFill,
 } from "react-bootstrap-icons";
-
-
+import { Zap } from "react-feather";
 
 export default function Home() {
   useEffect(() => {
@@ -463,7 +462,7 @@ export default function Home() {
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
                   </button> */}
-          {/*</div>
+        {/*</div>
               </div>
             </div>
             <div
@@ -492,7 +491,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div> 
         </div>
       </section>
       <Clientes />
@@ -770,7 +769,7 @@ export default function Home() {
                   <div className=" justify-content-center">
                     <a
                       className="texto-botao botao-nossa-ex botao-roxo btn-r"
-                      href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                      href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
                       target="_blank"
                     >
                       <span className="txt-b-or">
