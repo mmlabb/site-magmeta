@@ -526,7 +526,7 @@ Esses números demonstram que a automação não é apenas uma tendência — é
 
 Negócios que tratam a estrutura como prioridade crescem com mais confiança e menos retrabalho. A tecnologia não é só um suporte: é o motor que garante eficiência e escalabilidade.
 
-💡 Empresas que automatizam processos reduzem em até 30% os custos operacionais e aumentam a produtividade em 40% (fonte: PwC).
+💡 Empresas que automatizam processos reduzem em até 30% os custos operacionais e aumentam a produtividade em 40% (PwC).
 
 ## Conclusão: Crescer com Inteligência é o Novo Normal
 
@@ -559,7 +559,6 @@ Segundo a McKinsey, 70% das iniciativas de crescimento falham por falta de plane
 Empresas que tentam escalar sem apoio da tecnologia acabam presas a processos manuais, planilhas dispersas e uma gestão reativa. Por outro lado, negócios que investem em inovação crescem com consistência e controle — mesmo com equipes enxutas.
 
 📊 Estudos apontam que empresas que investem em automação e inteligência artificial apresentam crescimento acelerado e maior eficiência. Segundo a McKinsey & Company, a automação pode aumentar em até 35% a eficiência operacional de uma organização. McKinsey & Company.(2023) Já a Deloitte destaca que companhias que adotam tecnologias emergentes, como IA, superam em até 12% o valor de mercado em relação às que não investem nesse tipo de inovação.(Deloitte, 2020)
-
 Esses números demonstram que a automação não é apenas uma tendência  é um diferencial competitivo decisivo para quem deseja escalar com consistência e domínio de mercado.
 
 ### Os Erros Mais Comuns ao Crescer
@@ -576,16 +575,16 @@ Esses números demonstram que a automação não é apenas uma tendência  é um
 
 ### Quem Já Fez Acontecer
 
-🔹 Nubank — Reduziu em mais de 70% os custos operacionais com processos 100% digitais e foco em automação desde o primeiro cliente. (Fonte: Exame, 2021)  
-🔹 Magazine Luiza — Integração omnichannel e sistemas internos conectados resultaram em um crescimento de 243% no digital em apenas 3 anos. (Fonte: Valor Econômico, 2022)  
-🔹 iFood — Com o uso de inteligência artificial, otimizou rotas e aumentou a eficiência logística em mais de 50%. (Fonte: Época Negócios, 2021)  
-🔹 Amazon — Investe 12 bilhões de dólares por ano em tecnologia, garantindo escalabilidade sem perder a experiência do cliente. (Fonte: CNBC, 2023)  
+🔹 Nubank — Reduziu em mais de 70% os custos operacionais com processos 100% digitais e foco em automação desde o primeiro cliente. (Exame, 2021)  
+🔹 Magazine Luiza — Integração omnichannel e sistemas internos conectados resultaram em um crescimento de 243% no digital em apenas 3 anos. (Valor Econômico, 2022)  
+🔹 iFood — Com o uso de inteligência artificial, otimizou rotas e aumentou a eficiência logística em mais de 50%. (Época Negócios, 2021)  
+🔹 Amazon — Investe 12 bilhões de dólares por ano em tecnologia, garantindo escalabilidade sem perder a experiência do cliente. (CNBC, 2023)  
 
 ### Crescimento Não É Sorte — É Estrutura
 
 Negócios que tratam a estrutura como prioridade crescem com mais confiança e menos retrabalho. A tecnologia não é só um suporte: é o motor que garante eficiência e escalabilidade.
 
-💡 Empresas que automatizam processos reduzem em até 30% os custos operacionais e aumentam a produtividade em 40% (fonte: PwC).
+💡 Empresas que automatizam processos reduzem em até 30% os custos operacionais e aumentam a produtividade em 40% (PwC).
 
 ## Conclusão: Crescer com Inteligência é o Novo Normal
 
