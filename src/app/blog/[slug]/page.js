@@ -46,7 +46,7 @@ const Page = ({ params }) => {
                 />
                 <p> Magmeta</p>
               </div>
-              <div id="box-5-min">5 Min leitura</div>
+              <div id="box-3-min">3 Min leitura</div>
             </div>
           </div>
 
