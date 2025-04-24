@@ -496,9 +496,9 @@ Segundo a McKinsey, 70% das iniciativas de crescimento falham por falta de plane
 
 ### Escalar com Caos ou com Inteligência?
 
-📊 Estudos apontam que empresas que investem em automação e inteligência artificial apresentam crescimento acelerado e maior eficiência. Segundo a McKinsey & Company, a automação pode aumentar em até 35% a eficiência operacional de uma organização. Já a Deloitte destaca que companhias que adotam tecnologias emergentes, como IA, superam em até 12% o valor de mercado em relação às que não investem nesse tipo de inovação.
 
-Esses números demonstram que a automação não é apenas uma tendência — é um diferencial competitivo decisivo para quem deseja escalar com consistência e domínio de mercado.
+📊 Estudos apontam que empresas que investem em automação e inteligência artificial apresentam crescimento acelerado e maior eficiência. Segundo a McKinsey & Company, a automação pode aumentar em até 35% a eficiência operacional de uma organização. McKinsey & Company.(2023) Já a Deloitte destaca que companhias que adotam tecnologias emergentes, como IA, superam em até 12% o valor de mercado em relação às que não investem nesse tipo de inovação.(Deloitte, 2020)
+Esses números demonstram que a automação não é apenas uma tendência  é um diferencial competitivo decisivo para quem deseja escalar com consistência e domínio de mercado.
 
 ### Os Erros Mais Comuns ao Crescer
 
@@ -516,10 +516,11 @@ Esses números demonstram que a automação não é apenas uma tendência — é
 
 ![Mulher pedindo delivery](https://images.unsplash.com/photo-1717467192309-75c85e12085c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
-🔹 iFood — Com o uso de inteligência artificial, otimizou rotas e aumentou a eficiência logística em mais de 50%.  
-🔹 Nubank — Reduziu em mais de 70% os custos operacionais com processos 100% digitais e foco em automação desde o primeiro cliente.  
-🔹 Magazine Luiza — Integração omnichannel e sistemas internos conectados resultaram em um crescimento de 243% no digital em apenas 3 anos.  
-🔹 Amazon — Investe 12 bilhões de dólares por ano em tecnologia, garantindo escalabilidade sem perder a experiência do cliente.
+🔹 Nubank — Reduziu em mais de 70% os custos operacionais com processos 100% digitais e foco em automação desde o primeiro cliente. (Exame, 2021)  
+🔹 Magazine Luiza — Integração omnichannel e sistemas internos conectados resultaram em um crescimento de 243% no digital em apenas 3 anos. (Valor Econômico, 2022)  
+🔹 iFood — Com o uso de inteligência artificial, otimizou rotas e aumentou a eficiência logística em mais de 50%. (Época Negócios, 2021)  
+🔹 Amazon — Investe 12 bilhões de dólares por ano em tecnologia, garantindo escalabilidade sem perder a experiência do cliente. (CNBC, 2023)  
+
 
 
 ### Crescimento Não É Sorte — É Estrutura
