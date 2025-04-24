@@ -29,7 +29,7 @@ const Banner = () => {
               </div>
               <div className="d-flex align-items-center gap-1">
                 <i className="bi bi-clock"></i>
-                <small>5 minutos de leitura</small>
+                <small>3 minutos de leitura</small>
               </div>
             </div>
             <div className="justify-content-between d-flex flex-column">
