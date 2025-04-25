@@ -204,7 +204,7 @@ export default function Home() {
       <section id="segunda-sessao">
         <div className="container" id="texto-projetos">
           <div className="row text-center" id="linha-txt-projetos">
-            <h2>Soluções Magmeta</h2>
+            <h3>Soluções Magmeta</h3>
           </div>
           <div className="row gx-2 gy-2 tag-portifolio">
             <div className="col">
@@ -253,15 +253,15 @@ export default function Home() {
                   <Image
                     src="/assets/img/icon-chat.png"
                     alt="Ícone Chat"
-                    width={40}
-                    height={40}
+                    width={64}
+                    height={64}
                     className=""
                   />
                   <div className="d-flex flex-column ms-3">
                     <p className="mb-0 d-flex align-items-center small">
                       Atendimento & captação de leads
                     </p>
-                    <h4 className="fw-bold">Magnet Chat</h4>
+                    <h5 className="fw-light">Magnet Chat</h5>
                   </div>
                 </div>
 
@@ -294,15 +294,15 @@ export default function Home() {
                   <Image
                     src="/assets/img/logo_midia_indoor.png"
                     alt="Ícone Chat"
-                    width={40}
-                    height={40}
+                    width={64}
+                    height={64}
                     className="rounded-3"
                   />
                   <div className="d-flex flex-column ms-3">
                     <p className="mb-0 d-flex align-items-center small">
                       Propaganda e Checkout
                     </p>
-                    <h4 className="fw-bold">Mídia indoor</h4>
+                    <h5 className="fw-light">Mídia indoor</h5>
                   </div>
                 </div>
 
@@ -334,15 +334,15 @@ export default function Home() {
                   <Image
                     src="/assets/img/icon-chat.png"
                     alt="Ícone Chat"
-                    width={40}
-                    height={40}
+                    width={64}
+                    height={64}
                     className=""
                   />
                   <div className="d-flex flex-column ms-3">
                     <p className="mb-0 d-flex align-items-center small">
                       Comece por aqui!
                     </p>
-                    <h4 className="fw-bold">Digital Boost</h4>
+                    <h5 className="fw-light">Digital Boost</h5>
                   </div>
                 </div>
 
@@ -375,15 +375,15 @@ export default function Home() {
                   <Image
                     src="/assets/img/icon-chat.png"
                     alt="Ícone Chat"
-                    width={40}
-                    height={40}
+                    width={64}
+                    height={64}
                     className=""
                   />
                   <div className="d-flex flex-column ms-3">
                     <p className="mb-0 d-flex align-items-center small">
                       Valide sua ideia agora!
                     </p>
-                    <h4 className="fw-bold">Lançamento MVP </h4>
+                    <h5 className="fw-light">Lançamento MVP </h5>
                   </div>
                 </div>
 
