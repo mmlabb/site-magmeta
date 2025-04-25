@@ -679,10 +679,12 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/assets/img/blur-grid.png"); /* Substitua pelo caminho correto */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  top: 264px;
+  width: 600px;
+  height: 600px;
+  border-radius: 600px;
+  background: #6221a2;
+  filter: blur(400px);
   z-index: 0;
 }
 
@@ -693,7 +695,7 @@ main {
 
 .btn-light {
   border-radius: 18px !important;
-  color: #6221A2 !important;
+  color: #6221a2 !important;
 }
 
 .carousel-indicators {
