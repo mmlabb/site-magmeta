@@ -87,6 +87,10 @@ h6 {
   color: #5d2e9a;
 }
 
+.theme-light p, .theme-light h3  {
+  color: #000000;
+}
+
 .tema-dark-ativo {
   color: #53385c;
 }
