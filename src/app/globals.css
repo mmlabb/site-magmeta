@@ -679,9 +679,12 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  top: 264px;
+  width: 600px;
+  height: 600px;
+  border-radius: 600px;
+  background: #6221a2;
+  filter: blur(400px);
   z-index: 0;
 }
 
