@@ -245,7 +245,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container solucoes-magmeta py-5">
+        {/* <div className="container solucoes-magmeta py-5">
           <div className="row g-4">
             <div className="col-12 col-md-6 box-solu">
               <div className="p-4 rounded card-solu text-white h-100">
@@ -409,7 +409,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/*<div
           className="container-fluid"
@@ -663,7 +663,7 @@ export default function Home() {
       <Clientes />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
-          <div className="row  pt-5 pb-5 mb-5">
+          {/* <div className="row  pt-5 pb-5 mb-5">
             <div className="col-12 d-flex pt-5 pb-5 justify-content-center text-center">
               <h2>O que nossos clientes dizem</h2>
             </div>
@@ -757,7 +757,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="row pt-5 pb-5 mt-5  ">
             <div className="col-md-6 d-md-flex d-none justify-content-start align-items-center">
