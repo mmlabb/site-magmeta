@@ -59,7 +59,7 @@ const Page = ({ params }) => {
               alt="Imagem de capa do artigo"
               width={0}
               height={0}
-              className="img-fluid rounded cover-image"
+              className="img-fluid img-capa rounded cover-image"
               sizes="100%"
               style={{ width: "100%", height: "auto" }}
             />
@@ -96,6 +96,7 @@ const Page = ({ params }) => {
 
                 img: ({ node, ...props }) => (
                   <Image
+                    className="img-capa"
                     src={props.src}
                     alt={props.alt || ""}
                     width={100} // Defina uma largura padrão ou calcule conforme necessário
