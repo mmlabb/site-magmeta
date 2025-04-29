@@ -6,7 +6,8 @@ import { ThemeProvider } from "@/providers/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-// Metadados para ranqueamento de pesquisa & SEO
+import SolucoesMagmeta from '@/components/SolucoesMagmeta'
+
 export const metadata = {
   title: "Magmeta Soluções",
   description:
@@ -94,6 +95,7 @@ export default function RootLayout({ children }) {
               />
             </a>
             <main>{children}</main> {/* O conteúdo principal aqui */}
+            <SolucoesMagmeta />
             <Footer /> {/* Agora o Footer está dentro do ThemeProvider */}
           </div>
         </ThemeProvider>
