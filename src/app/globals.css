@@ -675,7 +675,7 @@ main {
   z-index: 1;
 }
 
-#segunda-sessao::before {
+/* #segunda-sessao::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -686,7 +686,7 @@ main {
   background: #6221a2;
   filter: blur(400px);
   z-index: 0;
-}
+} */
 
 #segunda-sessao .carousel .carousel-item img {
   z-index: 1;
