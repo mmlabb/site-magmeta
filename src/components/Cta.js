@@ -4,7 +4,7 @@ import { ArrowDown, ArrowDownLeft, ArrowDownRight, ArrowLeft, ArrowRight, ArrowU
 const CTA = () => {
   return (
     <div className=" container box-cta py-5 text-center">
-      <h3>Aprenda programação do zero e DE GRAÇA!</h3>
+      <h3>Transforme ideias em soluções tecnológicas que geram resultados. Fale com a Magmeta Soluções e leve seu negócio para o próximo nível.</h3>
       <div className="d-flex mt-4 justify-content-center">
         <a
           href="https://onboarding.magmeta.com.br/onboarding/lead"
