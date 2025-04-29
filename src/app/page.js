@@ -16,7 +16,8 @@ import {
   Rocket,
   RocketFill,
 } from "react-bootstrap-icons";
-import { Zap } from "react-feather";
+
+
 
 export default function Home() {
   useEffect(() => {
@@ -284,7 +285,7 @@ export default function Home() {
                   </p>
 
                   <a
-                    href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     id="btn-port"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
@@ -329,7 +330,7 @@ export default function Home() {
                   </p>
 
                   <a
-                    href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     id="btn-port"
                     className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
                     width="100%"
@@ -462,7 +463,7 @@ export default function Home() {
                     Explorar
                     <img src="/assets/img/setinha-portifolio.svg" alt="" />
                   </button> */}
-        {/*</div>
+          {/*</div>
               </div>
             </div>
             <div
@@ -491,19 +492,19 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div> 
+          </div> */}
         </div>
       </section>
       <Clientes />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
-          <div className="row  pt-5 pb-5 mb-5 d-none">
+          <div className="row  pt-5 pb-5 mb-5">
             <div className="col-12 d-flex pt-5 pb-5 justify-content-center text-center">
               <h2>O que nossos clientes dizem</h2>
             </div>
             <div className="d-flex linha-depoimentos text-white gap-2">
               <div className="col-sm-12 col-md-4 col-lg-4  depoimento depoimento-1">
-                <div className="d-flex justify-content-center align-items-center ">
+                <div class="d-flex justify-content-center align-items-center ">
                   <div>
                     <div className="d-flex justify-content-between flex-column pt-4 pb-4  align-items-center">
                       <div className="circle-image icon-dep">
@@ -769,7 +770,7 @@ export default function Home() {
                   <div className=" justify-content-center">
                     <a
                       className="texto-botao botao-nossa-ex botao-roxo btn-r"
-                      href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
+                      href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                       target="_blank"
                     >
                       <span className="txt-b-or">
