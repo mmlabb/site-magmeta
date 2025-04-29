@@ -95,7 +95,6 @@ export default function RootLayout({ children }) {
               />
             </a>
             <main>{children}</main> {/* O conteúdo principal aqui */}
-            <SolucoesMagmeta />
             <Footer /> {/* Agora o Footer está dentro do ThemeProvider */}
           </div>
         </ThemeProvider>
