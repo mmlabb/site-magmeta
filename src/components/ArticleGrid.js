@@ -40,7 +40,7 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
                   <Image
                     src={article.cover}
                     alt={article.title}
-                    className="card-img-top rounded mb-3"
+                    className="card-img-top rounded mb-3 img-capa"
                     width={0}
                     height={0}
                     sizes="100%"
@@ -84,7 +84,7 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
           <p className="text-center">Nenhum artigo encontrado para essa tag.</p>
         )}
       </div>
-      {!!limit && filteredArticles.length > limit ? (
+      {!!limit && filteredArticles.length >= limit ? (
         <div className="row pt-5">
           <div className="d-flex mt-4 justify-content-center">
             <Link
