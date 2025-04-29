@@ -26,7 +26,7 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
         {lista.length > 0 ? (
           lista.map((article) => (
             <div
-              className="col-md-4"
+              className="col-md-6"
               key={article.slug}
               onClick={() => goArticle(article.slug)}
               style={{ cursor: "pointer" }}
@@ -84,7 +84,7 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
           <p className="text-center">Nenhum artigo encontrado para essa tag.</p>
         )}
       </div>
-      {!!limit && filteredArticles.length >= limit ? (
+      {!!limit ? (
         <div className="row pt-5">
           <div className="d-flex mt-4 justify-content-center">
             <Link
