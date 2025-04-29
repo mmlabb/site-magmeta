@@ -175,6 +175,16 @@ h4 {
   border-radius: 10px;
 }
 
+
+.img-capa-banner {
+  width: 712px !important;
+  height: auto;
+  max-height: 492px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
 @media (min-width: 769px) {
   .box-btn-blog {
     justify-content: start !important;

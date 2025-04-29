@@ -50,7 +50,7 @@ const Banner = () => {
           <Image
             src={article.cover}
             alt={article.title}
-            className="img-fluid"
+            className="img-fluid img-capa-banner"
             width={0}
             height={0}
             sizes="100%"
