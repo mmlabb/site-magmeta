@@ -204,7 +204,7 @@ export default function Home() {
       <section id="segunda-sessao">
         <div className="container" id="texto-projetos">
           <div className="row text-center" id="linha-txt-projetos">
-            <h3>Soluções Magmeta</h3>
+            <h2>Soluções Magmeta</h2>
           </div>
           <div className="row gx-2 gy-2 tag-portifolio">
             <div className="col">
