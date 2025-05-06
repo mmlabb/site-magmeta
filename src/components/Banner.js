@@ -46,7 +46,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-7 col-sm-6 relative d-flex p-0">
+        <div className="col-md-7 col-banner-bl col-sm-6 relative d-flex">
           <Image
             src={article.cover}
             alt={article.title}
@@ -55,8 +55,8 @@ const Banner = () => {
             height={0}
             sizes="100%"
             style={{
-              width: "auto",
-              height: "auto",
+              width: "100%",
+              height: "100%",
               borderTopRightRadius: "44px",
               borderBottomRightRadius: "44px",
             }}
