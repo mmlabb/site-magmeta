@@ -26,15 +26,7 @@ const ArticlesContent = () => {
     }
   }, [searchParams]);
 
-  // Extração das tags únicas de artigos com uma única tag
-  const singleTagArticles = articles.filter(
-    (article) => article.tags.length === 1
-  );
-
-  const allTags = [
-    ...new Set(singleTagArticles.flatMap((article) => article.tags)),
-  ];
-
+  const allTags = [...new Set(articles.flatMap((article) => article.tags))];
   return (
     <>
       {/* Título */}
