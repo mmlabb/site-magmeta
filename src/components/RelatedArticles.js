@@ -47,7 +47,8 @@ const RelatedArticles = ({ currentArticle }) => {
                 width={0}
                 height={0}
                 sizes="100%"
-                style={{ width: "auto", height: "auto" }}
+                style={{ width: "100%", height: "auto", objectFit: "cover", aspectRatio: "16 / 9", }}
+                
               />
               <div className="card-body">
                 <h5 className="card-title">{article.title}</h5>
