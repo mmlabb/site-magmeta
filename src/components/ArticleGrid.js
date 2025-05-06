@@ -22,19 +22,25 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
 
   return (
     <div id="grid-artigos" className="container box-artigos ">
-      <div className="row gy-4">
+      <div className="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {lista.length > 0 ? (
           lista.map((article) => (
             <div
-              className="col-md-6"
+              className=""
               key={article.slug}
               onClick={() => goArticle(article.slug)}
               style={{ cursor: "pointer" }}
             >
               <div
-                className={`card h-100 text-center d-flex justify-content-between p-3 shadow-sm ${
+                className={`card  text-center d-flex justify-content-between p-3 shadow-sm ${
                   darkMode ? "card-dark" : "card-light"
                 }`}
+                style={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
               >
                 <div className="d-flex justify-content-start flex-column">
                   <Image
