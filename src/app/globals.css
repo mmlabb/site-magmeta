@@ -459,7 +459,6 @@ header.floating {
   overflow: hidden;
   border-radius: 18px;
   box-shadow: 0px 18px 33px rgba(0, 0, 0, 0.25);
-  color: white;
 }
 
 .card-solu::before {

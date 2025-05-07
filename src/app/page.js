@@ -180,7 +180,8 @@ export default function Home() {
                       <LightbulbFill className=" icon-pop" />
                     </div>
                     <p className="d-none d-md-block">
-                      Esteja a frente no mercado com o melhor que a tecnologia tem a oferecer
+                      Esteja a frente no mercado com o melhor que a tecnologia
+                      tem a oferecer
                     </p>
                   </div>
                 </div>
@@ -248,7 +249,7 @@ export default function Home() {
         <div className="container solucoes-magmeta py-5">
           <div className="row g-4">
             <div className="col-12 col-md-6 box-solu">
-              <div className="p-4 rounded card-solu text-white h-100">
+              <div className="p-4 rounded card-solu h-100">
                 <div className="d-flex  flex-colunm">
                   <Image
                     src="/assets/img/icon-chat.png"
@@ -266,15 +267,13 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p
-                    className="mb-4 pt-3"
-                    style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                  >
-                    Automatize e simplifique o contato com seus clientes com um
-                    ChatBot capaz... Nam in elementum libero. Vivamus tristique
-                    justo ornare, pretium quam et, condimentum libero. Nam
-                    vulputate magna non ligula molestie, a sagittis felis
-                    vulputate.
+                  <p className="mb-4 pt-3">
+                    O Magnet Chat é uma consultoria de automação de atendimento
+                    focada em elevar o nível de relacionamento das empresas com
+                    seus clientes, organizando fluxos, captando dados
+                    estratégicos e utilizando automações inteligentes para
+                    transformar cada conversa em uma oportunidade de
+                    crescimento.
                   </p>
                 </div>
                 <div>
@@ -289,7 +288,7 @@ export default function Home() {
             </div>
 
             <div className="col-12 col-md-6 box-solu">
-              <div className="p-4 rounded card-solu text-white h-100">
+              <div className="p-4 rounded card-solu  h-100">
                 <div className="d-flex  flex-colunm">
                   <Image
                     src="/assets/img/logo_midia_indoor.png"
@@ -307,10 +306,7 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p
-                    className="mb-4 pt-3"
-                    style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                  >
+                  <p className="mb-4 pt-3">
                     Leve sua mensagem direto ao seu público! Com a mídia indoor,
                     sua marca ganha visibilidade em locais estratégicos do dia a
                     dia das pessoas. Impacte seu cliente no momento certo, em
@@ -329,7 +325,7 @@ export default function Home() {
             </div>
 
             <div className="col-12 col-md-6 box-solu">
-              <div className="p-4 rounded card-solu text-white h-100">
+              <div className="p-4 rounded card-solu  h-100">
                 <div className="d-flex  flex-colunm">
                   <Image
                     src="/assets/img/icon-chat.png"
@@ -347,10 +343,7 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p
-                    className="mb-4 pt-3"
-                    style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                  >
+                  <p className="mb-4 pt-3">
                     Com o Digital Boost, analisamos sua operação e identificamos
                     oportunidades para tornar seu negócio mais eficiente com
                     tecnologia. Nosso objetivo é ajudar você a simplificar o dia
@@ -370,7 +363,7 @@ export default function Home() {
             </div>
 
             <div className="col-12 col-md-6 box-solu">
-              <div className="p-4 rounded card-solu text-white h-100">
+              <div className="p-4 rounded card-solu  h-100">
                 <div className="d-flex  flex-colunm">
                   <Image
                     src="/assets/img/icon-chat.png"
@@ -388,10 +381,7 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <p
-                    className="mb-4 pt-3"
-                    style={{ color: "rgba(255, 255, 255, 0.7)" }}
-                  >
+                  <p className="mb-4 pt-3">
                     Desenvolva sua ideia com agilidade e foco! Criamos MVPs
                     (Mínimo Produto Viável) sob medida para validar seu conceito
                     no mercado. Lance sua solução inicial rapidamente, colete
@@ -667,7 +657,7 @@ export default function Home() {
             <div className="col-12 d-flex pt-5 pb-5 justify-content-center text-center">
               <h2>O que nossos clientes dizem</h2>
             </div>
-            <div className="d-flex linha-depoimentos text-white gap-2">
+            <div className="d-flex linha-depoimentos  gap-2">
               <div className="col-sm-12 col-md-4 col-lg-4  depoimento depoimento-1">
                 <div className="d-flex justify-content-center align-items-center ">
                   <div>
