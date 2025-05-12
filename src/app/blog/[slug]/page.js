@@ -4,6 +4,7 @@ import Image from "next/image";
 import { articles } from "@/data/articles";
 import RelatedArticles from "@/components/RelatedArticles";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw"; // Adicione esta importação
 import TagFilter from "@/components/TagFilter";
 import Link from "next/link";
 
@@ -68,6 +69,7 @@ const Page = ({ params }) => {
           {/* Conteúdo do artigo */}
           <div className="pt-5 pb-5  col-md-7 col-lg-7 flex-column d-flex">
             <ReactMarkdown
+              rehypePlugins={[rehypeRaw]}
               components={{
                 h2: ({ node, ...props }) => (
                   <h2
@@ -104,6 +106,23 @@ const Page = ({ params }) => {
                     style={{ width: "100%", height: "auto" }}
                   />
                 ),
+                a: ({ node, ...props }) => {
+                  // Verifica se é um botão do seu conteúdo
+                  if (props.className && props.className.includes("btn-")) {
+                    return (
+                      <a
+                        {...props}
+                        className={`${props.className} d-inline-block mt-4 mb-4`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      />
+                    );
+                  }
+                  // Links normais
+                  return (
+                    <a {...props} target="_blank" rel="noopener noreferrer" />
+                  );
+                },
               }}
             >
               {article.content}

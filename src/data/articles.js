@@ -459,13 +459,12 @@ A automação permite que seu cliente receba uma resposta rápida com opções d
 
 ### Benefícios diretos para seu negócio:
 
-- Redução de perdas por esquecimento  
-- Experiência rápida e moderna para o cliente  
-- Mais tempo para focar no que importa: entregar seu serviço  
-- Controle centralizado da sua agenda  
+1. Redução de perdas por esquecimento  
+2. Experiência rápida e moderna para o cliente  
+3. Mais tempo para focar no que importa: entregar seu serviço  
+4. Controle centralizado da sua agenda
 
 ### Como começar agora?
-
 Se você ainda agenda tudo "no dedo" ou por WhatsApp, está perdendo tempo e dinheiro. Comece com o básico: automatize suas respostas iniciais e ofereça uma experiência de agendamento automatizada.
 
 🎁 **Quer um passo a passo prático para aplicar isso no seu negócio?**  
@@ -479,8 +478,7 @@ Automatizar agendamentos é uma forma direta de profissionalizar seu atendimento
     `,
     tags: ["Automação", "IA", "AtendimentoEficiente"],
     date: "2025-04-23",
-    cover:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    cover: "/assets/img/capa-tablet.jpeg",
     slug: "como-automatizar-seu-agendamento",
     summary:
       "Se você ainda agenda tudo no dedo ou por WhatsApp, está perdendo tempo e dinheiro. Comece com o básico: automatize suas respostas iniciais e ofereça uma experiência de agendamento automatizada.",
@@ -506,23 +504,22 @@ Esse é um dos principais motivos da queda no retorno de clientes: a falta de re
 Fidelizar não depende só da qualidade do serviço — depende de constância, atenção e proximidade, e isso pode (e deve) ser automatizado.
 
 ### Como criar uma jornada que fideliza
-
+![Aperto de maos](https://images.unsplash.com/photo-1521790797524-b2497295b8a0?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 Com processos automatizados, você pode:
 
-- Agendar mensagens de pós-venda e acompanhamento  
-- Enviar lembretes personalizados de retorno  
-- Criar campanhas de “cliente VIP” com recompensas automáticas  
-- Coletar feedbacks para melhorar ainda mais seu serviço  
+1. Agendar mensagens de pós-venda e acompanhamento  
+2. Enviar lembretes personalizados de retorno  
+3. Criar campanhas de “cliente VIP” com recompensas automáticas  
+4. Coletar feedbacks para melhorar ainda mais seu serviço  
 
 Tudo isso sem depender 100% do “tempo do dono”.
 
 ### Exemplo prático: Estética, Clínica, Consultório
-
 Imagine uma clínica de estética com agenda lotada em um mês, mas vazia no outro. Ela implementa:
 
-- Um formulário digital para cadastro de novos leads  
-- Uma sequência de mensagens automáticas com dicas, lembretes e benefícios  
-- Um sistema de recompensas simples para quem retorna em até 30 dias  
+1. Um formulário digital para cadastro de novos leads  
+2. Uma sequência de mensagens automáticas com dicas, lembretes e benefícios  
+3. Um sistema de recompensas simples para quem retorna em até 30 dias  
 
 **Resultado:** +37% de fidelização no trimestre seguinte.
 
@@ -530,16 +527,16 @@ Imagine uma clínica de estética com agenda lotada em um mês, mas vazia no out
 
 Não é sobre ferramentas complexas — é sobre estratégia inteligente. E para facilitar, preparamos um passo a passo completo, direto ao ponto, para aplicar isso hoje mesmo.
 
-👉 **[Baixe agora o Guia Gratuito: Como Automatizar e Otimizar Seu Negócio](https://exemplo.com/guia-automatizacao)**
+**[👉 Baixe agora o Guia Gratuito: Como Automatizar e Otimizar Seu Negócio](https://exemplo.com/guia-automatizacao)**
 
-[CTA com botão ou banner direcionando para a página de captura]
-
+<a class="texto-botao botao-roxo" href="https://guiapratico.magmeta.com.br/" target="_blank" rel="noopener noreferrer"> 
+  <span id="txt-blog">Quero Fidelizar Clientes</span>
+</a>
 
     `,
     tags: ["Automação", "Fidelização", "IA"],
-    date: "2025-04-24",
-    cover:
-      "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "2025-05-12",
+    cover: "/assets/img/capa-app.jpeg",
     slug: "como-aumentar-a-fidelizacao-de-clientes",
     summary:
       "Neste artigo, você vai entender como pequenos e médios negócios podem transformar a experiência do cliente com estratégias simples — e o melhor: aplicáveis rapidamente com automações e tecnologia acessível.",
