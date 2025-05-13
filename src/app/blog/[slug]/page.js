@@ -7,6 +7,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw"; // Adicione esta importação
 import TagFilter from "@/components/TagFilter";
 import Link from "next/link";
+import PopupBlog from "@/components/PopupBlog";
 
 export async function generateStaticParams() {
   return articles.map((article) => ({
@@ -127,6 +128,7 @@ const Page = ({ params }) => {
             >
               {article.content}
             </ReactMarkdown>
+            <PopupBlog />
 
             <div className="row pt-2">
               <div className="d-flex mt-4 justify-content-center">
