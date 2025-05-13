@@ -9,12 +9,9 @@
   border-radius: 44px;
 }
 
-
-
 h3 {
   margin-top: 3.5rem !important;
 }
-
 
 .tag-destaque {
   display: flex;
@@ -175,13 +172,74 @@ h3 {
   border-radius: 10px;
 }
 
-@media (min-width: 769px) {
-  .box-btn-blog {
-    justify-content: start !important;
-    padding-top: 18px !important;
-    padding-bottom: 18px !important;
+.popupContainer {
+  position: fixed;
+  bottom: 24px;
+  left: 20px;
+  width: 100%;
+  max-width: 280px;
+  background-color: rgba(168, 85, 247, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid #7e22ce;
+  border-radius: 12px;
+  padding: 12px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popupContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.popupLogo {
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+}
+
+.popupTextGroup {
+  flex: 1;
+}
+
+.popupTitle {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.popupText {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+}
+
+.popupButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #7e22ce;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.popupButton:hover {
+  background-color: #6b21a8;
+  transform: translateX(2px);
+}
+
+@media (max-width: 576px) {
+  .popupContainer {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
   }
 }
+
 
 @media (min-width: 800px) and (max-width: 998px) {
   .sub-titulo {
