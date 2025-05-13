@@ -8,6 +8,7 @@ import "./blog.css";
 import "../../app/globals.css";
 import { useState } from "react";
 import { articles } from "@/data/articles";
+import PopupBlog from "@/components/PopupBlog"
 
 const Blog = () => {
   const [selectedTag, setSelectedTag] = useState(null);
@@ -37,6 +38,7 @@ const Blog = () => {
           onSelectTag={setSelectedTag}
         />
         <ArticleGrid articles={filteredArticles} limit={7} />
+        <PopupBlog />
       </div>
       <CTA />
     </>
