@@ -7,15 +7,15 @@ const PopupBlog = () => {
     <div className="popupContainer">
       <div className="popupContent">
         <Image
-          src="/assets/img/logo-magmeta-p-white.svg"
+          src="/assets/img/book.png"
           alt="Logo Magmeta"
-          width={32}
-          height={32}
-          className="popupLogo"
+          width={44}
+          height={44}
+          
         />
         <div className="popupTextGroup">
-          <h5 className="popupTitle">Quer saber mais?</h5>
-          <span className="popupText">Fale com nossos especialistas</span>
+          <h5 className="popupTitle fs-6">Já conferiu o conteúdo exclusivo?</h5>
+          <span className="popupText">Acesse gratuitamente</span>
         </div>
         <Link
           href="https://guiapratico.magmeta.com.br/"
