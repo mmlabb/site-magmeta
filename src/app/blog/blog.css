@@ -232,6 +232,34 @@ h3 {
   transform: translateX(2px);
 }
 
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.share-buttons a,
+.share-buttons button {
+  width: 40px;
+  height: 40px;
+  background-color: #7e22ce;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.share-buttons a:hover,
+.share-buttons button:hover {
+  background-color: #6b21a8;
+}
+
 @media (max-width: 576px) {
   .popupContainer {
     left: 10px;
@@ -239,7 +267,6 @@ h3 {
     bottom: 10px;
   }
 }
-
 
 @media (min-width: 800px) and (max-width: 998px) {
   .sub-titulo {
