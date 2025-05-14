@@ -8,6 +8,7 @@ import rehypeRaw from "rehype-raw"; // Adicione esta importação
 import TagFilter from "@/components/TagFilter";
 import Link from "next/link";
 import PopupBlog from "@/components/PopupBlog";
+import ShareButtons from "@/components/ShareButtons";
 
 export async function generateStaticParams() {
   return articles.map((article) => ({
@@ -142,7 +143,12 @@ const Page = ({ params }) => {
             </div>
           </div>
         </div>
-
+        <div className="d-flex justify-content-center">
+          <ShareButtons
+            url={`https:/magmeta.com.br/blog/${article.slug}`}
+            title={article.title}
+          />
+        </div>
         {/* Seção de Artigos Relacionados */}
         <RelatedArticles currentArticle={article} />
       </div>
