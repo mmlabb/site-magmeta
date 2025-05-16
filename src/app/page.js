@@ -17,6 +17,9 @@ import {
   RocketFill,
 } from "react-bootstrap-icons";
 import { Zap } from "react-feather";
+import PopupBlog from "@/components/PopupBlog";
+
+
 
 export default function Home() {
   useEffect(() => {
@@ -116,7 +119,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
+              <PopupBlog />
               {/*<div className="d-none d-md-block">
                 <ul className="d-flex">
                   <li className="mx-2 my-2">
@@ -180,7 +183,8 @@ export default function Home() {
                       <LightbulbFill className=" icon-pop" />
                     </div>
                     <p className="d-none d-md-block">
-                      Esteja a frente no mercado com o melhor que a tecnologia tem a oferecer
+                      Esteja a frente no mercado com o melhor que a tecnologia
+                      tem a oferecer
                     </p>
                   </div>
                 </div>
@@ -244,7 +248,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
 
         {/*<div
           className="container-fluid"
