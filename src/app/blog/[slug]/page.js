@@ -62,7 +62,7 @@ const Page = ({ params }) => {
               alt="Imagem de capa do artigo"
               width={0}
               height={0}
-              className="img-fluid img-capa rounded cover-image"
+              className="img-fluid img-banner-post rounded cover-image"
               sizes="100%"
               style={{ width: "100%", height: "auto" }}
             />
