@@ -23,7 +23,7 @@ const ShareButtons = ({ url, title }) => {
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(url);
+    navigator.clipboard.writeText("https://magmeta.com.br/");
     alert("Link copiado!");
   };
 
