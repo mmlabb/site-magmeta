@@ -1,21 +1,33 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 const PopupBlog = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  if (!isVisible) return null;
   return (
     <div className="popupContainer">
       <div className="popupContent">
+        <button
+          onClick={() => setIsVisible(false)}
+          className="closeButton"
+          aria-label="Fechar pop-up"
+        >
+          ×
+        </button>
+
         <Image
           src="/assets/img/book.png"
-          alt="Logo Magmeta"
-          width={44}
-          height={44}
-          
+          alt="Img book"
+          width={60}
+          height={60}
         />
         <div className="popupTextGroup">
-          <h5 className="popupTitle fs-6">Já conferiu o conteúdo exclusivo?</h5>
-          <span className="popupText">Acesse gratuitamente</span>
+          <h5 className="popupTitle fs-6">Acesse gratuitamente</h5>
+          <span className="popupText">Por tempo limitado!</span>
         </div>
         <Link
           href="https://guiapratico.magmeta.com.br/"
