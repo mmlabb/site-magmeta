@@ -2,6 +2,8 @@ import Image from "next/image";
 import Clientes from "@/containers/Customers";
 import "./sobre.css";
 import CardsSection from "@/containers/sobre/CardsSection";
+import PopupBlog from "@/components/PopupBlog";
+
 
 const CheckIcon = () => {
   return (
@@ -281,7 +283,7 @@ export default function Sobre() {
       </section>
 
       <Clientes />
-
+      <PopupBlog />
       <section>
         <div className="container text-center">
           <Image
