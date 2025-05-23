@@ -429,7 +429,7 @@ Adotar práticas básicas de segurança, utilizar ferramentas acessíveis e mant
 [📲 Clique aqui e fale com um especialista!](https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20ciberseguran%C3%A7a%20para%20meu%20neg%C3%B3cio%20digital.)
 
     `,
-    tags: ["Cibersegurança", "Proteção"],
+    tags: ["Segurança", "Proteção"],
     date: "2025-05-10",
     cover:
       "https://images.unsplash.com/photo-1618060931775-18ed14951776?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -474,7 +474,7 @@ Se você ainda agenda tudo "no dedo" ou por WhatsApp, está perdendo tempo e din
 
 Automatizar agendamentos é uma forma direta de profissionalizar seu atendimento, aumentar conversão e ganhar tempo. Pequenas mudanças tecnológicas podem trazer grandes resultados. Comece hoje e sinta a diferença ainda essa semana.
     `,
-    tags: ["Automação", "IA", "AtendimentoEficiente"],
+    tags: ["Automação", "IA", "Atendimento"],
     date: "2025-04-23",
     cover: "/assets/img/capa-tablet.jpeg",
     slug: "como-automatizar-seu-agendamento",
