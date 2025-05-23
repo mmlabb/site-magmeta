@@ -189,10 +189,10 @@ h3 {
 }
 
 .share-buttons a,
-.share-buttons  button {
+.share-buttons  button, .WhatsappShareButton {
   width: 40px;
   height: 40px;
-  background-color: #7e22ce;
+  background-color: #7e22ce !important;
   color: #fff;
   border-radius: 50%;
   display: flex;
