@@ -6,7 +6,8 @@ import { ThemeProvider } from "@/providers/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import SolucoesMagmeta from '@/components/SolucoesMagmeta'
+import SolucoesMagmeta from "@/components/SolucoesMagmeta";
+import MetaPixel from "@/components/MetaPixel";
 
 export const metadata = {
   title: "Magmeta Soluções",
@@ -76,30 +77,33 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body>
-        <ThemeProvider>
-          <div id="app-theme" className="theme-dark">
-            <Navbar />
-            <a
-              href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
-              target="_blank"
-              className="botao-whatsapp"
-            >
-              <Image
-                src="/assets/img/logo-wpp.svg"
-                alt="IconeWpp"
-                width={0}
-                height={0}
-                sizes="100%"
-                style={{ width: "auto", height: "auto" }} // optional
-              />
-            </a>
-            <main>{children}</main> {/* O conteúdo principal aqui */}
-            <Footer /> {/* Agora o Footer está dentro do ThemeProvider */}
-          </div>
-        </ThemeProvider>
-        <GoogleAnalytics gaId="G-T8V8KCT7DP" />
-      </body>
+      <head>
+        <MetaPixel />
+        <body>
+          <ThemeProvider>
+            <div id="app-theme" className="theme-dark">
+              <Navbar />
+              <a
+                href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
+                target="_blank"
+                className="botao-whatsapp"
+              >
+                <Image
+                  src="/assets/img/logo-wpp.svg"
+                  alt="IconeWpp"
+                  width={0}
+                  height={0}
+                  sizes="100%"
+                  style={{ width: "auto", height: "auto" }} // optional
+                />
+              </a>
+              <main>{children}</main> {/* O conteúdo principal aqui */}
+              <Footer /> {/* Agora o Footer está dentro do ThemeProvider */}
+            </div>
+          </ThemeProvider>
+          <GoogleAnalytics gaId="G-T8V8KCT7DP" />
+        </body>
+      </head>
     </html>
   );
 }
