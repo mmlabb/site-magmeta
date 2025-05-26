@@ -1,14 +1,10 @@
 "use client";
-
-// components/MetaPixel.jsx
 import { useEffect } from "react";
 
 const MetaPixel = () => {
   useEffect(() => {
-    // Evita inserir o script mais de uma vez
-    if (window.fbq) return;
+    if (typeof window.fbq !== "undefined") return; // <-- impede múltiplas execuções
 
-    // Define o fbq no window
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
       n = f.fbq = function () {
@@ -33,9 +29,8 @@ const MetaPixel = () => {
       "https://connect.facebook.net/en_US/fbevents.js"
     );
 
-    // Inicializa o pixel com seu ID
-    fbq("init", "1043388424414934");
-    fbq("track", "PageView");
+    window.fbq("init", "1043388424414934");
+    window.fbq("track", "PageView");
   }, []);
 
   return (
@@ -45,7 +40,7 @@ const MetaPixel = () => {
         width="1"
         style={{ display: "none" }}
         src="https://www.facebook.com/tr?id=1043388424414934&ev=PageView&noscript=1"
-        alt="fb pixel"
+        alt=""
       />
     </noscript>
   );
