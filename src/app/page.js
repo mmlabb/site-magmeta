@@ -3,6 +3,7 @@ import WordAnimation from "@/components/WordAnimation";
 import Clientes from "@/containers/Customers";
 import Image from "next/image";
 import { useEffect } from "react";
+import SyncAccordionSlide from "@/components/SyncAccordionSlide";
 import {
   ArrowLeftSquareFill,
   ArrowRight,
@@ -18,8 +19,6 @@ import {
 } from "react-bootstrap-icons";
 import { Zap } from "react-feather";
 import PopupBlog from "@/components/PopupBlog";
-
-
 
 export default function Home() {
   useEffect(() => {
@@ -119,7 +118,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <PopupBlog />
+             
               {/*<div className="d-none d-md-block">
                 <ul className="d-flex">
                   <li className="mx-2 my-2">
@@ -498,6 +497,29 @@ export default function Home() {
           </div> 
         </div>*/}
       </section>
+      <section id="section-pacotes">
+        {/* Camada roxa com blur ao centro
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "400px",
+            height: "400px",
+            backgroundColor: "rgba(98, 33, 162, 0.5)",
+            filter: "blur(200px)",
+            borderRadius: "50%",
+            zIndex: 0,
+            pointerEvents: "none",
+          }}
+        /> */}
+
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <SyncAccordionSlide />
+        </div>
+      </section>
+
       <Clientes />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
