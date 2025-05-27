@@ -9,7 +9,11 @@ const PopupBlog = () => {
 
   if (!isVisible) return null;
   return (
-    <div className="popupContainer">
+    <div
+      className="popupContainer"
+      style={{ zIndex: 1000, position: "relative" }}
+    >
+      
       <div className="popupContent">
         <button
           onClick={() => setIsVisible(false)}
