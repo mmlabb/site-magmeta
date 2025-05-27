@@ -19,8 +19,6 @@ import {
 import { Zap } from "react-feather";
 import PopupBlog from "@/components/PopupBlog";
 
-
-
 export default function Home() {
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -119,7 +117,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <PopupBlog />
+
               {/*<div className="d-none d-md-block">
                 <ul className="d-flex">
                   <li className="mx-2 my-2">

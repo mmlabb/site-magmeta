@@ -8,6 +8,7 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import SolucoesMagmeta from "@/components/SolucoesMagmeta";
 import MetaPixel from "@/components/MetaPixel";
+import PopupBlog from "@/components/PopupBlog";
 
 export const metadata = {
   title: "Magmeta Soluções",
@@ -94,11 +95,12 @@ export default function RootLayout({ children }) {
                   width={0}
                   height={0}
                   sizes="100%"
-                  style={{ width: "auto", height: "auto" }} // optional
+                  style={{ width: "auto", height: "auto" }} 
                 />
               </a>
-              <main>{children}</main> {/* O conteúdo principal aqui */}
-              <Footer /> {/* Agora o Footer está dentro do ThemeProvider */}
+              <main>{children}</main> 
+              <Footer /> 
+              <PopupBlog />
             </div>
           </ThemeProvider>
           <GoogleAnalytics gaId="G-T8V8KCT7DP" />
