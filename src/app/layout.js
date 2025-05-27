@@ -8,6 +8,9 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import SolucoesMagmeta from "@/components/SolucoesMagmeta";
 import MetaPixel from "@/components/MetaPixel";
+import PopupBlog from "@/components/PopupBlog";
+
+
 
 export const metadata = {
   title: "Magmeta Soluções",
@@ -98,7 +101,8 @@ export default function RootLayout({ children }) {
                 />
               </a>
               <main>{children}</main> {/* O conteúdo principal aqui */}
-              <Footer /> {/* Agora o Footer está dentro do ThemeProvider */}
+              <Footer /> 
+              <PopupBlog />
             </div>
           </ThemeProvider>
           <GoogleAnalytics gaId="G-T8V8KCT7DP" />
