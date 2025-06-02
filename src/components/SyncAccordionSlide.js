@@ -9,34 +9,33 @@ const SyncAccordionSlide = () => {
   const pause_timeout_ref = useRef(null);
   const interval_ref = useRef(null);
   const progress_ref = useRef(null);
+  const container_ref = useRef(null);
 
   const items = [
     {
       title: "Magnet chat",
       content:
-        "rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      image: "/black-blues.jpg",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      image: "assets/img/test.png",
     },
-
     {
       title: "Produto 2",
       content:
-        "professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32",
-      image: "/img2.jpg",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      image: "assets/img/test.png",
     },
-
     {
       title: "Produto 3",
       content:
-        "professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32",
-      image: "/img3.jpg",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      image: "assets/img/test.png",
     },
   ];
 
   useEffect(() => {
     start_auto_advance();
     return () => clearInterval(interval_ref.current);
-  }, []);
+  },);
 
   const start_auto_advance = () => {
     clearInterval(interval_ref.current);
@@ -58,16 +57,39 @@ const SyncAccordionSlide = () => {
   };
 
   useEffect(() => {
-    if (progress_ref.current) {
-      const progressPercent = ((active_index + 1) / items.length) * 100;
-      progress_ref.current.style.height = `${progressPercent}%`;
+    if (progress_ref.current && container_ref.current) {
+      const containerHeight = container_ref.current.clientHeight;
+      const activeItem = container_ref.current.querySelector(
+        `.accordion-item[data-index='${active_index}']`
+      );
+      if (activeItem) {
+        const offsetTop = activeItem.offsetTop;
+        const height = activeItem.offsetHeight;
+        const progressTop = offsetTop;
+        const progressHeight = height;
+
+        progress_ref.current.style.top = `${progressTop}px`;
+        progress_ref.current.style.height = `20%`;
+
+        const timeout1 = setTimeout(() => {
+          progress_ref.current.style.height = `50%`;
+        }, 1500);
+
+        const timeout2 = setTimeout(() => {
+          progress_ref.current.style.height = `${progressHeight}px`;
+        }, 4000);
+
+        return () => {
+          clearTimeout(timeout1);
+          clearTimeout(timeout2);
+        };
+      }
     }
-  }, [active_index, items.length]);
+  }, [active_index]);
 
   return (
     <div className="container my-5">
       <div className="row">
-        {/* Slide de imagem sincronizado */}
         <div
           className="col-md-6 position-relative overflow-hidden"
           style={{ height: "300px" }}
@@ -75,7 +97,10 @@ const SyncAccordionSlide = () => {
           <div
             className="d-flex flex-column"
             style={{
-              transform: `translateY(-${active_index * 100}%)`,
+              transform:
+                active_index === 2
+                  ? `translateY(${(items.length - 1 - active_index) * 100}%)`
+                  : `translateY(-${active_index * 100}%)`,
               transition: is_paused ? "none" : "transform 1s ease-in-out",
               height: `${items.length * 100}%`,
               position: "absolute",
@@ -88,7 +113,10 @@ const SyncAccordionSlide = () => {
               <div
                 key={index}
                 className="d-flex justify-content-center align-items-center"
-                style={{ height: "300px" }}
+                style={{
+                  height: "300px",
+                  transition: "opacity 0.8s ease-in-out",
+                }}
               >
                 <Image
                   src={item.image}
@@ -102,15 +130,13 @@ const SyncAccordionSlide = () => {
           </div>
         </div>
 
-        {/* Accordion com títulos anteriores clicáveis */}
         <div className="col-md-6 position-relative">
-          {/* Barra de progresso vertical */}
           <div
             style={{
               position: "absolute",
               left: 0,
+              height: "100%",
               top: 0,
-              bottom: 0,
               width: "2px",
               backgroundColor: "#4f4b55",
               borderRadius: "10px",
@@ -121,34 +147,38 @@ const SyncAccordionSlide = () => {
             <div
               ref={progress_ref}
               style={{
+                position: "absolute",
                 width: "100%",
-                height: "0%", // começa em 0, vai crescer conforme active_index
+                height: "0%",
                 backgroundColor: "#6f42c1",
                 borderRadius: "10px",
-                transition: "height 0.5s ease",
+                transition: "height 0.5s ease, top 0.5s ease",
               }}
             ></div>
           </div>
-          <div className="my-accordion" id="syncAccordion">
+          <div
+            className="my-accordion position-relative"
+            id="syncAccordion"
+            ref={container_ref}
+          >
             {items.map((item, index) => {
               const isActive = index === active_index;
-              const isBefore = index < active_index;
-
-              if (!isActive && !isBefore) return null;
-
+              const isMagnetChatMoved = active_index === 2 && index === 0;
               return (
                 <div
                   key={index}
                   className="accordion-item"
-                  onClick={() => {
-                    if (!isActive) handle_click(index);
+                  data-index={index}
+                  onClick={() => handle_click(index)}
+                  style={{
+                    cursor: "pointer",
+                    transition: "all 0.6s ease",
                   }}
                 >
                   <h4
                     style={{
                       fontWeight: "600",
-                      marginBottom: isActive ? "0.5rem" : 0,
-                      color: "#fff",
+                      color: isActive ? "#fff" : "#aaa",
                     }}
                   >
                     {item.title}
