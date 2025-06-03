@@ -1,7 +1,20 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import { Arrow90degRight } from "react-bootstrap-icons";
+import {
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  ArrowRightCircle,
+} from "react-feather";
+import {
+  ArrowRightFromLine,
+  ArrowRightIcon,
+  ArrowUpRightIcon,
+} from "lucide-react";
 
 const SyncAccordionSlide = () => {
   const [active_index, set_active_index] = useState(0);
@@ -15,132 +28,93 @@ const SyncAccordionSlide = () => {
     {
       title: "Magnet chat",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      image: "assets/img/test.png",
+        "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      image: "/assets/img/test1.png",
     },
     {
-      title: "Produto 2",
+      title: "Vitrinne",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      image: "assets/img/test.png",
+        "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      image: "/assets/img/test2.png",
     },
     {
-      title: "Produto 3",
+      title: "Aplicativos",
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      image: "assets/img/test.png",
+        "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      image: "/assets/img/test3.png",
     },
   ];
 
-  useEffect(() => {
-    start_auto_advance();
-    return () => clearInterval(interval_ref.current);
-  },);
-
-  const start_auto_advance = () => {
-    clearInterval(interval_ref.current);
+  // useCallback para não recriar a função a cada render
+  const start_auto_advance = useCallback(() => {
+    if (interval_ref.current) clearInterval(interval_ref.current);
     interval_ref.current = setInterval(() => {
       set_active_index((prev) => (prev + 1) % items.length);
     }, 5000);
-  };
+  }, [items.length]);
+
+  // Inicia ou retoma o autoplay quando não estiver pausado
+  useEffect(() => {
+    if (!is_paused) {
+      start_auto_advance();
+    }
+    return () => {
+      if (interval_ref.current) clearInterval(interval_ref.current);
+    };
+  }, [is_paused, start_auto_advance]);
 
   const handle_click = (index) => {
     if (active_index === index) return;
     set_active_index(index);
     set_is_paused(true);
-    clearTimeout(pause_timeout_ref.current);
-    clearInterval(interval_ref.current);
+    if (pause_timeout_ref.current) clearTimeout(pause_timeout_ref.current);
+    if (interval_ref.current) clearInterval(interval_ref.current);
+
     pause_timeout_ref.current = setTimeout(() => {
       set_is_paused(false);
-      start_auto_advance();
     }, 5000);
   };
 
+  // Ajusta a barra de progresso para ficar ao lado do item ativo
   useEffect(() => {
     if (progress_ref.current && container_ref.current) {
-      const containerHeight = container_ref.current.clientHeight;
       const activeItem = container_ref.current.querySelector(
         `.accordion-item[data-index='${active_index}']`
       );
-      if (activeItem) {
-        const offsetTop = activeItem.offsetTop;
-        const height = activeItem.offsetHeight;
-        const progressTop = offsetTop;
-        const progressHeight = height;
+      if (!activeItem) return;
 
-        progress_ref.current.style.top = `${progressTop}px`;
-        progress_ref.current.style.height = `20%`;
+      const offsetTop = activeItem.offsetTop;
+      const height = activeItem.offsetHeight;
 
-        const timeout1 = setTimeout(() => {
-          progress_ref.current.style.height = `50%`;
-        }, 1500);
+      progress_ref.current.style.transition = "none";
+      progress_ref.current.style.top = `${offsetTop}px`;
+      progress_ref.current.style.height = "0px";
 
-        const timeout2 = setTimeout(() => {
-          progress_ref.current.style.height = `${progressHeight}px`;
-        }, 4000);
+      // Força reflow para aplicar transição em seguida
+      void progress_ref.current.offsetHeight;
 
-        return () => {
-          clearTimeout(timeout1);
-          clearTimeout(timeout2);
-        };
-      }
+      progress_ref.current.style.transition =
+        "height 4.5s linear, top 0.5s ease";
+      progress_ref.current.style.height = `${height}px`;
     }
   }, [active_index]);
 
   return (
-    <div className="container my-5">
-      <div className="row">
-        <div
-          className="col-md-6 position-relative overflow-hidden"
-          style={{ height: "300px" }}
-        >
-          <div
-            className="d-flex flex-column"
-            style={{
-              transform:
-                active_index === 2
-                  ? `translateY(${(items.length - 1 - active_index) * 100}%)`
-                  : `translateY(-${active_index * 100}%)`,
-              transition: is_paused ? "none" : "transform 1s ease-in-out",
-              height: `${items.length * 100}%`,
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-            }}
-          >
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  height: "300px",
-                  transition: "opacity 0.8s ease-in-out",
-                }}
-              >
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={400}
-                  height={250}
-                  style={{ objectFit: "cover", borderRadius: "0.5rem" }}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="col-md-6 position-relative">
+    <div className="container-fluid  justify-content-between">
+      <div className="row gx-5">
+        {/*Accordion*/}
+        <div className="col-md-5 col-sm-12 position-relative">
+          {/* Barra de progresso vertical fixa */}
           <div
             style={{
               position: "absolute",
               left: 0,
-              height: "100%",
               top: 0,
               width: "2px",
+              height: "100%",
               backgroundColor: "#4f4b55",
               borderRadius: "10px",
-              overflow: "hidden",
+
               zIndex: 1,
             }}
           >
@@ -149,13 +123,15 @@ const SyncAccordionSlide = () => {
               style={{
                 position: "absolute",
                 width: "100%",
-                height: "0%",
+                height: "0px",
+                top: "0px",
                 backgroundColor: "#6f42c1",
                 borderRadius: "10px",
-                transition: "height 0.5s ease, top 0.5s ease",
+                transition: "height 4.5s linear, top 0.5s ease",
               }}
             ></div>
           </div>
+
           <div
             className="my-accordion position-relative"
             id="syncAccordion"
@@ -163,7 +139,6 @@ const SyncAccordionSlide = () => {
           >
             {items.map((item, index) => {
               const isActive = index === active_index;
-              const isMagnetChatMoved = active_index === 2 && index === 0;
               return (
                 <div
                   key={index}
@@ -175,14 +150,15 @@ const SyncAccordionSlide = () => {
                     transition: "all 0.6s ease",
                   }}
                 >
-                  <h4
+                  <h3
                     style={{
                       fontWeight: "600",
-                      color: isActive ? "#fff" : "#aaa",
+                      color: isActive ? "#fff" : "#e9d9ffe3",
+                      paddingTop: "12px",
                     }}
                   >
-                    {item.title}
-                  </h4>
+                    {item.title} <ArrowDown size={16} />
+                  </h3>
                   {isActive && (
                     <p style={{ color: "#fff", fontWeight: "400" }}>
                       {item.content}
@@ -192,6 +168,36 @@ const SyncAccordionSlide = () => {
               );
             })}
           </div>
+        </div>
+
+        <div className="col-md-7 col-sm-12 position-relative  d-flex justify-content-center align-items-center">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={active_index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -30 }}
+              transition={{ duration: 0.6 }}
+              className="position-absolute"
+            >
+              <div id="box-img-accord">
+                <Image
+                  src={items[active_index].image}
+                  alt={items[active_index].title}
+                  width={0}
+                  height={0}
+                  style={{
+                    objectFit: "cover",
+                    borderRadius: "1rem",
+                    width: "100%",
+                    height: "100%",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                />
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>
