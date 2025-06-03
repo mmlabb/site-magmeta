@@ -262,6 +262,7 @@ header.floating {
   margin-left: 1.8rem;
 }
 
+
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -830,6 +831,16 @@ main {
   font-size: 18px;
   cursor: pointer;
   color: #fff;
+}
+
+#section-pacotes {
+ 
+  background-color: #2f104f3b;
+}
+
+#box-img-accord {
+  width: 94%;
+  border-radius: 34px;
 }
 /*RODAPÉ*/
 
