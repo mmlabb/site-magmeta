@@ -118,7 +118,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-             
+
               {/*<div className="d-none d-md-block">
                 <ul className="d-flex">
                   <li className="mx-2 my-2">
@@ -497,7 +497,7 @@ export default function Home() {
           </div> 
         </div>*/}
       </section>
-      <section id="section-pacotes">
+      <section id="section-pacotes" className="p-5 ">
         {/* Camada roxa com blur ao centro
         <div
           style={{
