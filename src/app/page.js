@@ -19,6 +19,7 @@ import {
 } from "react-bootstrap-icons";
 import { Zap } from "react-feather";
 import PopupBlog from "@/components/PopupBlog";
+import Portifolio from "@/components/Portifolio";
 
 export default function Home() {
   useEffect(() => {
@@ -247,256 +248,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/*<div
-          className="container-fluid"
-          id="portifolio-desktop"
-          data-aos="fade"
-        >
-          <div className="d-flex flex-wrap portifolio">
-            <div
-              className="box-portifolio text-center"
-              id="container-portifolio-1"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">Clube de vantagens</h6>
-                    <h4 className="texto-h4-port">Aplicativo mobile</h4>
-                  </div>
-
-                  <div>
-                    <Image
-                      src="/assets/img/mockup-net.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100%"
-                      style={{ width: "auto", height: "auto" }} // optional
-                    />
-                  </div>
-                </div>
-
-                <div className="box-texto-p1">
-                  <p>
-                    Nossa solução de UI/UX Design para Clube de Vantagens white
-                    label é personalizável e pronta para uso, com foco em uma
-                    experiência intuitiva e eficiente. Entre em contato para
-                    adquiri-la!
-                  </p>
-
-                  <a
-                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
-                    id="btn-port"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
-                    width="100%"
-                    rel="noopener noreferrer" // Segurança adicional para links externos
-                    target="_blank"
-                  >
-                    QUERO ESSA IDEIA
-                    <ArrowRight />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="box-portifolio text-center"
-              id="container-portifolio-2"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">NFT Marketplace</h6>
-                    <h4 className="texto-h4-port">Ui/Ux Design</h4>
-                  </div>
-
-                  <div>
-                    <Image
-                      src="/assets/img/mockup-funil.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100%"
-                      style={{ width: "auto", height: "auto" }} // optional
-                    />
-                  </div>
-                </div>
-                <div className="box-texto-p1">
-                  <p>
-                    Nosso Funil de Captação de Leads oferece um design intuitivo
-                    e uma experiência fluida, maximizando conversões. Com
-                    automação de marketing e integrações, otimizamos a geração
-                    de leads qualificados de forma eficiente.
-                  </p>
-
-                  <a
-                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
-                    id="btn-port"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
-                    width="100%"
-                    rel="noopener noreferrer" // Segurança adicional para links externos
-                    target="_blank"
-                  >
-                    QUERO VENDER
-                    <ArrowRight />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid" id="portifolio-mobile">
-          <div className="d-flex flex-wrap portifolio">
-            <div
-              className="box-portifolio"
-              id="container-portifolio-1"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">Clube de vantagens</h6>
-                    <h4 className="texto-h4-port">Aplicativo mobile</h4>
-                  </div>
-
-                  <Image
-                    src="/assets/img/mockup-net.png"
-                    alt=""
-                    width={0}
-                    height={0}
-                    sizes="100%"
-                    style={{ width: "auto", height: "auto" }} // optional
-                  />
-                </div>
-
-                <div className="box-texto-p1">
-                  <p>
-                    Nossa solução de UI/UX Design para Clube de Vantagens white
-                    label é personalizável e pronta para uso, com foco em uma
-                    experiência intuitiva e eficiente. Entre em contato para
-                    adquiri-la!
-                  </p>
-
-                  <a
-                    href="https://onboarding.magmeta.com.br/onboarding/lead"
-                    id="btn-port"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
-                    width="100%"
-                    rel="noopener noreferrer" // Segurança adicional para links externos
-                    target="_blank"
-                  >
-                    QUERO ESSA IDEIA
-                    <ArrowRight />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="box-portifolio"
-              id="container-portifolio-2"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">NFT Marketplace</h6>
-                    <h4 className="texto-h4-port">Ui/Ux Design</h4>
-                  </div>
-
-                  <Image
-                    src="/assets/img/mockup-funil.png"
-                    alt=""
-                    width={0}
-                    height={0}
-                    sizes="100%"
-                    style={{ width: "auto", height: "auto" }} // optional
-                  />
-                </div>
-                <div className="box-texto-p1">
-                  <p>
-                    Nosso Funil de Captação de Leads oferece um design intuitivo
-                    e uma experiência fluida, maximizando conversões. Com
-                    automação de marketing e integrações, otimizamos a geração
-                    de leads qualificados de forma eficiente.
-                  </p>
-
-                  <a
-                    href="https://onboarding.magmeta.com.br/onboarding/lead"
-                    id="btn-port"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
-                    width="100%"
-                    rel="noopener noreferrer" // Segurança adicional para links externos
-                    target="_blank"
-                  >
-                    QUERO VENDER
-                    <ArrowRight />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*<div className="d-flex portifolio align-items-center">
-            <div
-              className="box-portifolio"
-              id="container-portifolio-3"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">V Telecom</h6>
-                  <h4 className="texto-h4-port">Aplicativo</h4>
-                </div>
-
-                <img src="/assets/img/app-mclove.png" alt="" />
-
-                <div className="box-texto-p1">
-                  <p>
-                    Para agilizar seus atendimentos e focar no que mais importa,
-                    criamos ferramentas de gestão para seu negócio.
-                  </p>
-
-                  {/* <button
-                    type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
-                  >
-                    Explorar
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
-        {/*</div>
-              </div>
-            </div>
-            <div
-              className="box-portifolio"
-              id="container-portifolio-4"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">NFT Marketplace</h6>
-                  <h4 className="texto-h4-port">Ui/Ux Design</h4>
-                </div>
-
-                <img src="/assets/img/blog-klubi.png" alt="" />
-
-                <div className="d-flex box-texto-p1 text justify-content-between">
-                  <p></p>
-
-                  {/* <button
-                    type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
-                  >
-                    Explorar
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> 
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>*/}
       </section>
+
       <section id="section-pacotes" className="p-5 ">
         {/* Camada roxa com blur ao centro
         <div
@@ -660,6 +413,13 @@ export default function Home() {
         </div>
       </section>
 
+      <section>
+        <div className="col p-5 mt-5 d-flex text-center justify-content-center">
+          <h2>Projetos </h2>
+        </div>
+        <Portifolio />
+      </section>
+      
       <section>
         <div className="container">
           <div className="row">
