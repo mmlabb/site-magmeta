@@ -19,7 +19,7 @@ import {
 } from "react-bootstrap-icons";
 import { Zap } from "react-feather";
 import PopupBlog from "@/components/PopupBlog";
-import Portifolio from "@/components/Portifolio";
+import PortifolioProjetos from "@/components/PortifolioProjetos";
 
 export default function Home() {
   useEffect(() => {
@@ -417,9 +417,11 @@ export default function Home() {
         <div className="col p-5 mt-5 d-flex text-center justify-content-center">
           <h2>Projetos </h2>
         </div>
-        <Portifolio />
+        <div>
+          <PortifolioProjetos />
+        </div>
       </section>
-      
+
       <section>
         <div className="container">
           <div className="row">
