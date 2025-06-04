@@ -101,9 +101,9 @@ const SyncAccordionSlide = () => {
 
   return (
     <div className="container-fluid  justify-content-between">
-      <div className="row gx-5">
-        {/*Accordion*/}
-        <div className="col-md-5 col-sm-12 position-relative">
+      <div className="d-flex flex-column-reverse flex-md-row gap-4">
+        {/* Accordion */}
+        <div className="w-100 w-md-50 position-relative">
           {/* Barra de progresso vertical fixa */}
           <div
             style={{
@@ -114,7 +114,6 @@ const SyncAccordionSlide = () => {
               height: "100%",
               backgroundColor: "#4f4b55",
               borderRadius: "10px",
-
               zIndex: 1,
             }}
           >
@@ -133,7 +132,7 @@ const SyncAccordionSlide = () => {
           </div>
 
           <div
-            className="my-accordion position-relative"
+            className="my-accordion position-relative px-4"
             id="syncAccordion"
             ref={container_ref}
           >
@@ -170,17 +169,31 @@ const SyncAccordionSlide = () => {
           </div>
         </div>
 
-        <div className="col-md-7 col-sm-12 position-relative  d-flex justify-content-center align-items-center">
+        {/* Slide */}
+        <div className="w-100 w-md-50 d-flex justify-content-center align-items-center position-relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={active_index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -30 }}
+              exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.6 }}
-              className="position-absolute"
+              className="w-100"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                minHeight: "250px", // Garante altura constante
+              }}
             >
-              <div id="box-img-accord">
+              <div
+                id="box-img-accord"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxWidth: "600px",
+                }}
+              >
                 <Image
                   src={items[active_index].image}
                   alt={items[active_index].title}
@@ -191,8 +204,7 @@ const SyncAccordionSlide = () => {
                     borderRadius: "1rem",
                     width: "100%",
                     height: "100%",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    maxHeight: "350px",
                   }}
                 />
               </div>
