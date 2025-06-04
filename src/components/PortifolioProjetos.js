@@ -63,7 +63,7 @@ export default function PortifolioProjetos() {
     const carousel = carouselRef.current;
 
     const scrollStep = 1;
-    const scrollDelay = 20;
+    const scrollDelay = 40;
     let intervalId;
 
     const startAutoplay = () => {
