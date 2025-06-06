@@ -66,7 +66,7 @@ export default function PortifolioProjetos() {
     const carousel = carouselRef.current;
 
     const scrollStep = 1;
-    const scrollDelay = 40;
+    const scrollDelay = 20;
     let intervalId;
 
     const startAutoplay = () => {
@@ -110,22 +110,18 @@ export default function PortifolioProjetos() {
           {images.map((src, index) => (
             <div
               key={index}
-              className="col-12 col-sm-6 col-md-4 col-lg-3 rounded p-2"
+              className="col-12 col-sm-6 col-md-4 col-lg-3 p-2"
               style={{ flex: "0 0 auto" }}
             >
               <div
-                className="portfolio-card w-100 position-relative"
-                style={{
-                  height: "60vh",
-                  overflow: "hidden",
-                  borderRadius: "16px",
-                }}
+                className="w-100 position-relative"
+                style={{ height: "70vh" }}
               >
                 <Image
                   src={src}
                   alt={`Projeto ${index + 1}`}
-                  fill
-                  style={{ objectFit: "contain" }}
+                  layout="fill"
+                  objectFit="cover"
                   className="rounded"
                   draggable={false}
                 />
