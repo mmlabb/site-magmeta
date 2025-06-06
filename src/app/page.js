@@ -443,15 +443,27 @@ export default function Home() {
                 <h1 className="texto-sobre-nos-1">Sobre nós</h1>
                 <div className="d-flex justify-content-between gap-4 valores">
                   <div className="d-flex align-items-center gap-2">
-                    <CheckCircleFill size={24} />
+                    <CheckCircleFill
+                      size={24}
+                      weight="fill"
+                      color={darkMode ? "#fff" : "#000"}
+                    />
                     <h4 className="logo-check m-0">Estratégia</h4>
                   </div>
                   <div className="d-flex align-items-center gap-2">
-                    <CheckCircleFill size={24} />
+                    <CheckCircleFill
+                      size={24}
+                      weight="fill"
+                      color={darkMode ? "#fff" : "#000"}
+                    />
                     <h4 className="logo-check m-0">Velocidade</h4>
                   </div>
                   <div className="d-flex align-items-center gap-2">
-                    <CheckCircleFill size={24} />
+                    <CheckCircleFill
+                      size={24}
+                      weight="fill"
+                      color={darkMode ? "#fff" : "#000"}
+                    />
                     <h4 className="logo-check m-0">Fidelização</h4>
                   </div>
                 </div>
