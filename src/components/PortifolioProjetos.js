@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const images = [
   "/assets/img/pin.jpg",
@@ -18,6 +17,10 @@ const images = [
 export default function PortifolioProjetos() {
   const carouselRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle.min");
+  }, []);
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -104,30 +107,25 @@ export default function PortifolioProjetos() {
             msOverflowStyle: "none", // IE
           }}
         >
-          <style jsx>{`
-            #carouselPortfolio .carousel-item::-webkit-scrollbar {
-              display: none; /* Chrome/Safari */
-            }
-            .dragging {
-              cursor: grabbing !important;
-            }
-          `}</style>
-
           {images.map((src, index) => (
             <div
               key={index}
-              className="col-12 col-sm-6 col-md-4 col-lg-3 p-2"
+              className="col-12 col-sm-6 col-md-4 col-lg-3 rounded p-2"
               style={{ flex: "0 0 auto" }}
             >
               <div
-                className="w-100 position-relative"
-                style={{ height: "70vh" }}
+                className="portfolio-card w-100 position-relative"
+                style={{
+                  height: "60vh",
+                  overflow: "hidden",
+                  borderRadius: "16px",
+                }}
               >
                 <Image
                   src={src}
                   alt={`Projeto ${index + 1}`}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: "contain" }}
                   className="rounded"
                   draggable={false}
                 />
