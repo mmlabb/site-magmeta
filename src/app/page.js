@@ -541,7 +541,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 sizes="100%"
-                style={{ width: "auto", height: "auto" }} // optional
+                style={{ width: "80%", height: "auto" }} // optional
               />
             </div>
 
