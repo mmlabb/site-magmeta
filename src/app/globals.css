@@ -80,14 +80,12 @@ h6 {
   background-color: #000;
   color: #fff;
   transition: 500ms;
-
 }
 
 .theme-light {
   background-color: #fff !important;
   color: #000;
   transition: 500ms;
-
 }
 
 .theme-light h1,
@@ -147,7 +145,6 @@ h6 {
   background-color: #e9d9ff !important;
   color: #000 !important;
 }
-
 
 #carouselPortfolio .carousel-item::-webkit-scrollbar {
   display: none;
@@ -539,6 +536,15 @@ header.floating {
 /* .box-portifolio.active {
   transition: width 0.2s;
 } */
+
+#app-theme.theme-light .icon-pop {
+  color: #000 !important;
+}
+
+/* Tema escuro */
+#app-theme.theme-dark .icon-pop {
+  color: #fff !important;
+}
 .theme-light {
   color: black;
 }
@@ -898,8 +904,8 @@ main {
   }
 
   .botao-whatsapp {
-    right: 1rem;
-    bottom: 1rem;
+    left: 21rem;
+    bottom: 8rem;
   }
 
   .texto-botao {

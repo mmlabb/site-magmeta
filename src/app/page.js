@@ -18,10 +18,11 @@ import {
   RocketFill,
 } from "react-bootstrap-icons";
 import { Zap } from "react-feather";
-import PopupBlog from "@/components/PopupBlog";
+import { useTheme } from "@/providers/ThemeProvider";
 import PortifolioProjetos from "@/components/PortifolioProjetos";
 
 export default function Home() {
+  const { darkMode } = useTheme();
   useEffect(() => {
     if (typeof window === "undefined") return;
     // loadModel();
@@ -168,7 +169,11 @@ export default function Home() {
                   <div className="d-flex  flex-column pop-up-content pop-up-1">
                     <div className="d-flex justify-content-between">
                       <h6 className="txt-pop-up">Velocidade</h6>
-                      <RocketFill className=" icon-pop" />
+                      <RocketFill
+                        className="icon-pop"
+                        weight="fill"
+                        color={darkMode ? "#fff" : "#000"}
+                      />
                     </div>
                     <p className="d-none d-md-block txt-up">
                       Ganhe tempo com a tecnologia trabalhando a seu favor
@@ -180,7 +185,11 @@ export default function Home() {
                   <div className="d-flex  flex-column pop-up-content">
                     <div className="d-flex justify-content-between">
                       <h6 className="txt-pop-up">Estratégia</h6>
-                      <LightbulbFill className=" icon-pop" />
+                      <LightbulbFill
+                        className=" icon-pop"
+                        weight="fill"
+                        color={darkMode ? "#fff" : "#000"}
+                      />
                     </div>
                     <p className="d-none d-md-block">
                       Esteja a frente no mercado com o melhor que a tecnologia
@@ -192,7 +201,11 @@ export default function Home() {
                   <div className="d-flex justify-content-between flex-column">
                     <h6 className="txt-pop-up">
                       Fidelização
-                      <FunnelFill className="icon-pop" />
+                      <FunnelFill
+                        className="icon-pop"
+                        weight="fill"
+                        color={darkMode ? "#fff" : "#000"}
+                      />
                     </h6>
                     <p className="d-none d-md-block">
                       Experiência dos clientes elevada garantindo fidelidade
