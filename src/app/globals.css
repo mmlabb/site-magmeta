@@ -94,7 +94,8 @@ h6 {
 }
 
 .theme-light p,
-.theme-light h3 {
+.theme-light h3,
+.theme-light h5 {
   color: #000 !important;
 }
 
@@ -807,8 +808,8 @@ main {
 }
 
 .popupTitle {
-  color: white;
-  font-size: 13px;
+  color: #fff !important;
+  font-size: 13px !important;
   font-weight: 600 !important;
   margin: 0;
 }
