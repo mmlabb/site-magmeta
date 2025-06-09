@@ -149,7 +149,7 @@ export default function SiteNavbar() {
                   </Nav.Link>*/}
                   <Nav.Link
                     as={Link}
-                    href="quem-somos"
+                    href="/quem-somos"
                     onClick={closeOffcanvas}
                   >
                     Quem somos
