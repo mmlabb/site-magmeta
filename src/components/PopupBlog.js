@@ -26,7 +26,9 @@ const PopupBlog = () => {
           height={60}
         />
         <div className="popupTextGroup">
-          <p className="popupTitle ">Acesse gratuitamente</p>
+          <h6 className="popupTitle">
+            Acesse gratuitamente
+          </h6>
           <span className="popupText">Por tempo limitado!</span>
         </div>
         <Link

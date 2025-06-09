@@ -17,6 +17,8 @@ h3 {
   display: flex;
   width: 84px;
   height: 34px;
+  font-size: 12px;
+  color: #fff !important;
   align-items: center;
   justify-content: center;
   border-radius: 18px;
@@ -174,22 +176,22 @@ h3 {
 
 .img-banner-post {
   width: 100%;
-  height: 352px !important; 
+  height: 352px !important;
   object-fit: cover;
   border-radius: 10px;
 }
-
-
 
 .share-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 16px;
+  color: #fff !important;
 }
 
 .share-buttons a,
-.share-buttons  button, .WhatsappShareButton {
+.share-buttons button,
+.WhatsappShareButton {
   width: 40px;
   height: 40px;
   background-color: #7e22ce !important;
@@ -208,8 +210,6 @@ h3 {
 .share-buttons button:hover {
   background-color: #6b21a8;
 }
-
-
 
 @media (max-width: 576px) {
   .popupContainer {
