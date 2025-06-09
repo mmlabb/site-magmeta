@@ -16,8 +16,11 @@ export async function generateStaticParams() {
   }));
 }
 
-const Page = ({ params }) => {
-  const { slug } = params;
+export const dynamicParams = false;
+
+const Page = async ({ params }) => {
+  const { slug } = await params;
+
   const article = articles.find((art) => art.slug === slug);
 
   if (!article) {
@@ -29,7 +32,7 @@ const Page = ({ params }) => {
       <SiteNavbar />
       <div className="container  pt-3 mt-5">
         <div className="row pt-5 mt-5 flex-column align-items-center mb-4">
-          <div className="col-md-7 col-lg-7 flex-column d-flex box-titulo-blog">
+          <div className="col-md-8 col-lg-8 flex-column d-flex box-titulo-blog">
             <h1 className="display-5">{article.title}</h1>
             {/* TAG ÚNICA ABAIXO DO TÍTULO */}
             {article.tags.length > 0 && (
