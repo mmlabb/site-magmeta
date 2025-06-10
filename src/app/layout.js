@@ -68,6 +68,31 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <head>
         <MetaPixel />
+        <meta property="og:title" content="Magmeta Soluções" />
+        <meta
+          property="og:description"
+          content="Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento."
+        />
+        <meta
+          property="og:image"
+          content="https://magmeta.com.br/assets/img/ad-thumb.png"
+        />
+        <meta property="og:url" content="https://magmeta.com.br" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Magmeta" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Magmeta Soluções" />
+        <meta
+          name="twitter:description"
+          content="Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento."
+        />
+        <meta
+          name="twitter:image"
+          content="https://magmeta.com.br/assets/img/ad-thumb.png"
+        />
+        <meta name="twitter:site" content="@magmeta" />
+        <meta name="twitter:creator" content="@magmeta" />
       </head>
       <body>
         <ThemeProvider>
