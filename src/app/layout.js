@@ -57,7 +57,7 @@ export const metadata = {
     title: "Magmeta Soluções",
     description:
       "Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento.",
-    images: ["https://magmeta.com.br/assets/img/ad-thumb.jpg"],
+    images: ["https://magmeta.com.br/assets/img/ad-thumb.png"],
     site: "@magmeta",
     creator: "@magmeta",
   },
