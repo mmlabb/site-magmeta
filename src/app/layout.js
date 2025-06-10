@@ -88,7 +88,7 @@ export const metadata = {
     siteName: "Magmeta",
     images: [
       {
-        url: "/assets/img/ad-thumb.jpg",
+        url: "/assets/img/ad-thumb.png",
         width: 800,
         height: 600,
       },
