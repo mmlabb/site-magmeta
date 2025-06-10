@@ -93,6 +93,9 @@ export default function RootLayout({ children }) {
         />
         <meta name="twitter:site" content="@magmeta" />
         <meta name="twitter:creator" content="@magmeta" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Imagem de capa Magmeta" />
       </head>
       <body>
         <ThemeProvider>
