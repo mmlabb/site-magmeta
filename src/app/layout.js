@@ -43,7 +43,7 @@ export const metadata = {
     siteName: "Magmeta",
     images: [
       {
-        url: "https://magmeta.com.br/assets/img/ad-thumb.jpg",
+        url: "https://magmeta.com.br/assets/img/ad-thumb.png",
         width: 1200,
         height: 630,
         alt: "Imagem de capa Magmeta",
