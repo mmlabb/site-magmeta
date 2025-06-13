@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/providers/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import SolucoesMagmeta from "@/components/SolucoesMagmeta";
+
 import MetaPixel from "@/components/MetaPixel";
 import PopupBlog from "@/components/PopupBlog";
 
