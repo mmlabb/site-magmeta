@@ -247,6 +247,161 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="container solucoes-magmeta py-5">
+          <div className="row g-4">
+            <div className="col-12 col-md-6 box-solu">
+              <div className="p-4 rounded card-solu h-100">
+                <div className="d-flex  flex-colunm">
+                  <Image
+                    src="/assets/img/icon-chat.png"
+                    alt="Ícone Chat"
+                    width={64}
+                    height={64}
+                    className=""
+                  />
+                  <div className="d-flex flex-column ms-3">
+                    <p className="mb-0 d-flex align-items-center small">
+                      Atendimento & captação de leads
+                    </p>
+                    <h5 className="fw-light">Magnet Chat</h5>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-4 pt-3">
+                    O Magnet Chat é uma consultoria de automação de atendimento
+                    focada em elevar o nível de relacionamento das empresas com
+                    seus clientes, organizando fluxos, captando dados
+                    estratégicos e utilizando automações inteligentes para
+                    transformar cada conversa em uma oportunidade de
+                    crescimento.
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
+                    className="btn btn-light w-100 fw-bold"
+                  >
+                    APLICAR NO MEU NEGÓCIO <Zap size={18} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 box-solu">
+              <div className="p-4 rounded card-solu  h-100">
+                <div className="d-flex  flex-colunm">
+                  <Image
+                    src="/assets/img/logo_midia_indoor.png"
+                    alt="Ícone Chat"
+                    width={64}
+                    height={64}
+                    className="rounded-3"
+                  />
+                  <div className="d-flex flex-column ms-3">
+                    <p className="mb-0 d-flex align-items-center small">
+                      Propaganda e Checkout
+                    </p>
+                    <h5 className="fw-light">Mídia indoor</h5>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-4 pt-3">
+                    Leve sua mensagem direto ao seu público! Com a mídia indoor,
+                    sua marca ganha visibilidade em locais estratégicos do dia a
+                    dia das pessoas. Impacte seu cliente no momento certo, em
+                    ambientes relevantes e com alto poder de atenção.
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
+                    className="btn btn-light w-100 fw-bold"
+                  >
+                    APLICAR NO MEU NEGÓCIO <Zap size={18} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 box-solu">
+              <div className="p-4 rounded card-solu  h-100">
+                <div className="d-flex  flex-colunm">
+                  <Image
+                    src="/assets/img/icon-chat.png"
+                    alt="Ícone Chat"
+                    width={64}
+                    height={64}
+                    className=""
+                  />
+                  <div className="d-flex flex-column ms-3">
+                    <p className="mb-0 d-flex align-items-center small">
+                      Comece por aqui!
+                    </p>
+                    <h5 className="fw-light">Digital Boost</h5>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-4 pt-3">
+                    Com o Digital Boost, analisamos sua operação e identificamos
+                    oportunidades para tornar seu negócio mais eficiente com
+                    tecnologia. Nosso objetivo é ajudar você a simplificar o dia
+                    a dia, melhorar a experiência do cliente e abrir novas
+                    possibilidades de crescimento.
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
+                    className="btn btn-light w-100 fw-bold"
+                  >
+                    APLICAR NO MEU NEGÓCIO <Zap size={18} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 box-solu">
+              <div className="p-4 rounded card-solu  h-100">
+                <div className="d-flex  flex-colunm">
+                  <Image
+                    src="/assets/img/icon-chat.png"
+                    alt="Ícone Chat"
+                    width={64}
+                    height={64}
+                    className=""
+                  />
+                  <div className="d-flex flex-column ms-3">
+                    <p className="mb-0 d-flex align-items-center small">
+                      Valide sua ideia agora!
+                    </p>
+                    <h5 className="fw-light">Lançamento MVP </h5>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="mb-4 pt-3">
+                    Desenvolva sua ideia com agilidade e foco! Criamos MVPs
+                    (Mínimo Produto Viável) sob medida para validar seu conceito
+                    no mercado. Lance sua solução inicial rapidamente, colete
+                    feedback valioso e itere com inteligência
+                  </p>
+                </div>
+                <div>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
+                    className="btn btn-light w-100 fw-bold"
+                  >
+                    APLICAR NO MEU NEGÓCIO <Zap size={18} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/*<div
           className="container-fluid"
           id="portifolio-desktop"
@@ -503,7 +658,7 @@ export default function Home() {
             <div className="col-12 d-flex pt-5 pb-5 justify-content-center text-center">
               <h2>O que nossos clientes dizem</h2>
             </div>
-            <div className="d-flex linha-depoimentos text-white gap-2">
+            <div className="d-flex linha-depoimentos  gap-2">
               <div className="col-sm-12 col-md-4 col-lg-4  depoimento depoimento-1">
                 <div class="d-flex justify-content-center align-items-center ">
                   <div>
