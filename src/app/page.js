@@ -263,7 +263,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="section-pacotes" className="p-5 ">
+      {/* <section id="section-pacotes" className="p-5 ">
         {/* Camada roxa com blur ao centro
         <div
           style={{
@@ -283,8 +283,8 @@ export default function Home() {
 
         {/*<div style={{ position: "relative", zIndex: 1 }}>
           <SyncAccordionSlide />
-        </div>*/}
-      </section>
+        </div>*
+      </section> */}
 
       <Clientes />
       <section id="terceira-sessao" className="pb-5">
