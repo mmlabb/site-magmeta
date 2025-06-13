@@ -31,10 +31,17 @@ export const metadata = {
     "Automação de Marketing",
     "ERP",
     "CMS",
+    "Blog",
+    "SaaS",
   ],
   authors: [{ name: "Magmeta", url: "https://magmeta.com.br" }],
   creator: "Magmeta",
-  publisher: "Magmeta",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+  metadataBase: new URL("https://magmeta.com.br"),
   openGraph: {
     title: "Magmeta Soluções",
     description:
@@ -43,23 +50,13 @@ export const metadata = {
     siteName: "Magmeta",
     images: [
       {
-        url: "https://magmeta.com.br/assets/img/ad-thumb.png",
-        width: 1200,
-        height: 630,
-        alt: "Imagem de capa Magmeta",
+        url: "/assets/img/ad-thumb.png",
+        width: 800,
+        height: 600,
       },
     ],
     locale: "pt_BR",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Magmeta Soluções",
-    description:
-      "Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento.",
-    images: ["https://magmeta.com.br/assets/img/ad-thumb.png"],
-    site: "@magmeta",
-    creator: "@magmeta",
   },
 };
 
@@ -68,34 +65,6 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <head>
         <MetaPixel />
-        <meta property="og:title" content="Magmeta Soluções" />
-        <meta
-          property="og:description"
-          content="Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento."
-        />
-        <meta
-          property="og:image"
-          content="https://magmeta.com.br/assets/img/ad-thumb.png"
-        />
-        <meta property="og:url" content="https://magmeta.com.br" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Magmeta" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Magmeta Soluções" />
-        <meta
-          name="twitter:description"
-          content="Tudo o que seu negócio precisa para dominar o digital! Ferramentas e estratégias otimizadas especialmente para o seu crescimento."
-        />
-        <meta
-          name="twitter:image"
-          content="https://magmeta.com.br/assets/img/ad-thumb.png"
-        />
-        <meta name="twitter:site" content="@magmeta" />
-        <meta name="twitter:creator" content="@magmeta" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Imagem de capa Magmeta" />
       </head>
       <body>
         <ThemeProvider>

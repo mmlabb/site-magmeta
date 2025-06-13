@@ -1,9 +1,10 @@
 import Image from "next/image";
 
+
 export default function Clientes() {
   return (
     <section id="quarta-sessao" className="pt-5 mb-5 pt-5 mt-5">
-      <div className="container text-center cont-logos">
+      <div className="container text-center cont-logos pb-5 mb-5">
         <div className="row texto-construimos-juntos ">
           <div className="col pb-5">
             <h2>Já construímos juntos com:</h2>

@@ -3,6 +3,7 @@ import WordAnimation from "@/components/WordAnimation";
 import Clientes from "@/containers/Customers";
 import Image from "next/image";
 import { useEffect } from "react";
+import SyncAccordionSlide from "@/components/SyncAccordionSlide";
 import {
   ArrowLeftSquareFill,
   ArrowRight,
@@ -17,9 +18,11 @@ import {
   RocketFill,
 } from "react-bootstrap-icons";
 import { Zap } from "react-feather";
-import PopupBlog from "@/components/PopupBlog";
+import { useTheme } from "@/providers/ThemeProvider";
+import PortifolioProjetos from "@/components/PortifolioProjetos";
 
 export default function Home() {
+  const { darkMode } = useTheme();
   useEffect(() => {
     if (typeof window === "undefined") return;
     // loadModel();
@@ -166,7 +169,11 @@ export default function Home() {
                   <div className="d-flex  flex-column pop-up-content pop-up-1">
                     <div className="d-flex justify-content-between">
                       <h6 className="txt-pop-up">Velocidade</h6>
-                      <RocketFill className=" icon-pop" />
+                      <RocketFill
+                        className="icon-pop"
+                        weight="fill"
+                        color={darkMode ? "#fff" : "#000"}
+                      />
                     </div>
                     <p className="d-none d-md-block txt-up">
                       Ganhe tempo com a tecnologia trabalhando a seu favor
@@ -178,7 +185,11 @@ export default function Home() {
                   <div className="d-flex  flex-column pop-up-content">
                     <div className="d-flex justify-content-between">
                       <h6 className="txt-pop-up">Estratégia</h6>
-                      <LightbulbFill className=" icon-pop" />
+                      <LightbulbFill
+                        className=" icon-pop"
+                        weight="fill"
+                        color={darkMode ? "#fff" : "#000"}
+                      />
                     </div>
                     <p className="d-none d-md-block">
                       Esteja a frente no mercado com o melhor que a tecnologia
@@ -190,7 +201,11 @@ export default function Home() {
                   <div className="d-flex justify-content-between flex-column">
                     <h6 className="txt-pop-up">
                       Fidelização
-                      <FunnelFill className="icon-pop" />
+                      <FunnelFill
+                        className="icon-pop"
+                        weight="fill"
+                        color={darkMode ? "#fff" : "#000"}
+                      />
                     </h6>
                     <p className="d-none d-md-block">
                       Experiência dos clientes elevada garantindo fidelidade
@@ -246,411 +261,31 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="container solucoes-magmeta py-5">
-          <div className="row g-4">
-            <div className="col-12 col-md-6 box-solu">
-              <div className="p-4 rounded card-solu h-100">
-                <div className="d-flex  flex-colunm">
-                  <Image
-                    src="/assets/img/icon-chat.png"
-                    alt="Ícone Chat"
-                    width={64}
-                    height={64}
-                    className=""
-                  />
-                  <div className="d-flex flex-column ms-3">
-                    <p className="mb-0 d-flex align-items-center small">
-                      Atendimento & captação de leads
-                    </p>
-                    <h5 className="fw-light">Magnet Chat</h5>
-                  </div>
-                </div>
+      <section id="section-pacotes" className="p-5 ">
+        {/* Camada roxa com blur ao centro
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "400px",
+            height: "400px",
+            backgroundColor: "rgba(98, 33, 162, 0.5)",
+            filter: "blur(200px)",
+            borderRadius: "50%",
+            zIndex: 0,
+            pointerEvents: "none",
+          }}
+        /> */}
 
-                <div>
-                  <p className="mb-4 pt-3">
-                    O Magnet Chat é uma consultoria de automação de atendimento
-                    focada em elevar o nível de relacionamento das empresas com
-                    seus clientes, organizando fluxos, captando dados
-                    estratégicos e utilizando automações inteligentes para
-                    transformar cada conversa em uma oportunidade de
-                    crescimento.
-                  </p>
-                </div>
-                <div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
-                    className="btn btn-light w-100 fw-bold"
-                  >
-                    APLICAR NO MEU NEGÓCIO <Zap size={18} />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 box-solu">
-              <div className="p-4 rounded card-solu  h-100">
-                <div className="d-flex  flex-colunm">
-                  <Image
-                    src="/assets/img/logo_midia_indoor.png"
-                    alt="Ícone Chat"
-                    width={64}
-                    height={64}
-                    className="rounded-3"
-                  />
-                  <div className="d-flex flex-column ms-3">
-                    <p className="mb-0 d-flex align-items-center small">
-                      Propaganda e Checkout
-                    </p>
-                    <h5 className="fw-light">Mídia indoor</h5>
-                  </div>
-                </div>
-
-                <div>
-                  <p className="mb-4 pt-3">
-                    Leve sua mensagem direto ao seu público! Com a mídia indoor,
-                    sua marca ganha visibilidade em locais estratégicos do dia a
-                    dia das pessoas. Impacte seu cliente no momento certo, em
-                    ambientes relevantes e com alto poder de atenção.
-                  </p>
-                </div>
-                <div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
-                    className="btn btn-light w-100 fw-bold"
-                  >
-                    APLICAR NO MEU NEGÓCIO <Zap size={18} />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 box-solu">
-              <div className="p-4 rounded card-solu  h-100">
-                <div className="d-flex  flex-colunm">
-                  <Image
-                    src="/assets/img/icon-chat.png"
-                    alt="Ícone Chat"
-                    width={64}
-                    height={64}
-                    className=""
-                  />
-                  <div className="d-flex flex-column ms-3">
-                    <p className="mb-0 d-flex align-items-center small">
-                      Comece por aqui!
-                    </p>
-                    <h5 className="fw-light">Digital Boost</h5>
-                  </div>
-                </div>
-
-                <div>
-                  <p className="mb-4 pt-3">
-                    Com o Digital Boost, analisamos sua operação e identificamos
-                    oportunidades para tornar seu negócio mais eficiente com
-                    tecnologia. Nosso objetivo é ajudar você a simplificar o dia
-                    a dia, melhorar a experiência do cliente e abrir novas
-                    possibilidades de crescimento.
-                  </p>
-                </div>
-                <div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
-                    className="btn btn-light w-100 fw-bold"
-                  >
-                    APLICAR NO MEU NEGÓCIO <Zap size={18} />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 box-solu">
-              <div className="p-4 rounded card-solu  h-100">
-                <div className="d-flex  flex-colunm">
-                  <Image
-                    src="/assets/img/icon-chat.png"
-                    alt="Ícone Chat"
-                    width={64}
-                    height={64}
-                    className=""
-                  />
-                  <div className="d-flex flex-column ms-3">
-                    <p className="mb-0 d-flex align-items-center small">
-                      Valide sua ideia agora!
-                    </p>
-                    <h5 className="fw-light">Lançamento MVP </h5>
-                  </div>
-                </div>
-
-                <div>
-                  <p className="mb-4 pt-3">
-                    Desenvolva sua ideia com agilidade e foco! Criamos MVPs
-                    (Mínimo Produto Viável) sob medida para validar seu conceito
-                    no mercado. Lance sua solução inicial rapidamente, colete
-                    feedback valioso e itere com inteligência
-                  </p>
-                </div>
-                <div>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
-                    className="btn btn-light w-100 fw-bold"
-                  >
-                    APLICAR NO MEU NEGÓCIO <Zap size={18} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/*<div
-          className="container-fluid"
-          id="portifolio-desktop"
-          data-aos="fade"
-        >
-          <div className="d-flex flex-wrap portifolio">
-            <div
-              className="box-portifolio text-center"
-              id="container-portifolio-1"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">Clube de vantagens</h6>
-                    <h4 className="texto-h4-port">Aplicativo mobile</h4>
-                  </div>
-
-                  <div>
-                    <Image
-                      src="/assets/img/mockup-net.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100%"
-                      style={{ width: "auto", height: "auto" }} // optional
-                    />
-                  </div>
-                </div>
-
-                <div className="box-texto-p1">
-                  <p>
-                    Nossa solução de UI/UX Design para Clube de Vantagens white
-                    label é personalizável e pronta para uso, com foco em uma
-                    experiência intuitiva e eficiente. Entre em contato para
-                    adquiri-la!
-                  </p>
-
-                  <a
-                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
-                    id="btn-port"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
-                    width="100%"
-                    rel="noopener noreferrer" // Segurança adicional para links externos
-                    target="_blank"
-                  >
-                    QUERO ESSA IDEIA
-                    <ArrowRight />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="box-portifolio text-center"
-              id="container-portifolio-2"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">NFT Marketplace</h6>
-                    <h4 className="texto-h4-port">Ui/Ux Design</h4>
-                  </div>
-
-                  <div>
-                    <Image
-                      src="/assets/img/mockup-funil.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100%"
-                      style={{ width: "auto", height: "auto" }} // optional
-                    />
-                  </div>
-                </div>
-                <div className="box-texto-p1">
-                  <p>
-                    Nosso Funil de Captação de Leads oferece um design intuitivo
-                    e uma experiência fluida, maximizando conversões. Com
-                    automação de marketing e integrações, otimizamos a geração
-                    de leads qualificados de forma eficiente.
-                  </p>
-
-                  <a
-                    href="https://wa.me/5561999999999?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
-                    id="btn-port"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
-                    width="100%"
-                    rel="noopener noreferrer" // Segurança adicional para links externos
-                    target="_blank"
-                  >
-                    QUERO VENDER
-                    <ArrowRight />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid" id="portifolio-mobile">
-          <div className="d-flex flex-wrap portifolio">
-            <div
-              className="box-portifolio"
-              id="container-portifolio-1"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">Clube de vantagens</h6>
-                    <h4 className="texto-h4-port">Aplicativo mobile</h4>
-                  </div>
-
-                  <Image
-                    src="/assets/img/mockup-net.png"
-                    alt=""
-                    width={0}
-                    height={0}
-                    sizes="100%"
-                    style={{ width: "auto", height: "auto" }} // optional
-                  />
-                </div>
-
-                <div className="box-texto-p1">
-                  <p>
-                    Nossa solução de UI/UX Design para Clube de Vantagens white
-                    label é personalizável e pronta para uso, com foco em uma
-                    experiência intuitiva e eficiente. Entre em contato para
-                    adquiri-la!
-                  </p>
-
-                  <a
-                    href="https://onboarding.magmeta.com.br/onboarding/lead"
-                    id="btn-port"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
-                    width="100%"
-                    rel="noopener noreferrer" // Segurança adicional para links externos
-                    target="_blank"
-                  >
-                    QUERO ESSA IDEIA
-                    <ArrowRight />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="box-portifolio"
-              id="container-portifolio-2"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="d-flex flex-column gap-4">
-                  <div className="texto-portifolio">
-                    <h6 className="texto-h6-port">NFT Marketplace</h6>
-                    <h4 className="texto-h4-port">Ui/Ux Design</h4>
-                  </div>
-
-                  <Image
-                    src="/assets/img/mockup-funil.png"
-                    alt=""
-                    width={0}
-                    height={0}
-                    sizes="100%"
-                    style={{ width: "auto", height: "auto" }} // optional
-                  />
-                </div>
-                <div className="box-texto-p1">
-                  <p>
-                    Nosso Funil de Captação de Leads oferece um design intuitivo
-                    e uma experiência fluida, maximizando conversões. Com
-                    automação de marketing e integrações, otimizamos a geração
-                    de leads qualificados de forma eficiente.
-                  </p>
-
-                  <a
-                    href="https://onboarding.magmeta.com.br/onboarding/lead"
-                    id="btn-port"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-primary"
-                    width="100%"
-                    rel="noopener noreferrer" // Segurança adicional para links externos
-                    target="_blank"
-                  >
-                    QUERO VENDER
-                    <ArrowRight />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*<div className="d-flex portifolio align-items-center">
-            <div
-              className="box-portifolio"
-              id="container-portifolio-3"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">V Telecom</h6>
-                  <h4 className="texto-h4-port">Aplicativo</h4>
-                </div>
-
-                <img src="/assets/img/app-mclove.png" alt="" />
-
-                <div className="box-texto-p1">
-                  <p>
-                    Para agilizar seus atendimentos e focar no que mais importa,
-                    criamos ferramentas de gestão para seu negócio.
-                  </p>
-
-                  {/* <button
-                    type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
-                  >
-                    Explorar
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> */}
-        {/*</div>
-              </div>
-            </div>
-            <div
-              className="box-portifolio"
-              id="container-portifolio-4"
-              width=""
-            >
-              <div className="container-portifolio">
-                <div className="texto-portifolio">
-                  <h6 className="texto-h6-port">NFT Marketplace</h6>
-                  <h4 className="texto-h4-port">Ui/Ux Design</h4>
-                </div>
-
-                <img src="/assets/img/blog-klubi.png" alt="" />
-
-                <div className="d-flex box-texto-p1 text justify-content-between">
-                  <p></p>
-
-                  {/* <button
-                    type="button"
-                    className="btn botao-portifolio white-space text-nowrap btn-outline-light"
-                  >
-                    Explorar
-                    <img src="/assets/img/setinha-portifolio.svg" alt="" />
-                  </button> 
-                </div>
-              </div>
-            </div>
-          </div> 
+        {/*<div style={{ position: "relative", zIndex: 1 }}>
+          <SyncAccordionSlide />
         </div>*/}
       </section>
+
       <Clientes />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
@@ -792,6 +427,15 @@ export default function Home() {
       </section>
 
       <section>
+        {/* <div className="col p-5  pb-5 d-flex text-center justify-content-center">
+          <h2>Cases De Sucesso </h2>
+        </div>
+        <div>
+          <PortifolioProjetos />
+        </div> */}
+      </section>
+
+      <section>
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6 mt-5 pt-5 mb-5">
@@ -799,15 +443,27 @@ export default function Home() {
                 <h1 className="texto-sobre-nos-1">Sobre nós</h1>
                 <div className="d-flex justify-content-between gap-4 valores">
                   <div className="d-flex align-items-center gap-2">
-                    <CheckCircleFill size={24} />
+                    <CheckCircleFill
+                      size={24}
+                      weight="fill"
+                      color={darkMode ? "#fff" : "#000"}
+                    />
                     <h4 className="logo-check m-0">Estratégia</h4>
                   </div>
                   <div className="d-flex align-items-center gap-2">
-                    <CheckCircleFill size={24} />
+                    <CheckCircleFill
+                      size={24}
+                      weight="fill"
+                      color={darkMode ? "#fff" : "#000"}
+                    />
                     <h4 className="logo-check m-0">Velocidade</h4>
                   </div>
                   <div className="d-flex align-items-center gap-2">
-                    <CheckCircleFill size={24} />
+                    <CheckCircleFill
+                      size={24}
+                      weight="fill"
+                      color={darkMode ? "#fff" : "#000"}
+                    />
                     <h4 className="logo-check m-0">Fidelização</h4>
                   </div>
                 </div>
@@ -910,7 +566,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 sizes="100%"
-                style={{ width: "auto", height: "auto" }} // optional
+                style={{ width: "80%", height: "auto" }} // optional
               />
             </div>
 
