@@ -7,6 +7,7 @@ import { FaCheck, FaCheckCircle } from "react-icons/fa";
 import { BsCheckCircleFill } from "react-icons/bs";
 import Lottie from "lottie-react";
 import appAnimation from "@/../public/lotties/chat.json";
+import faqAnimation from "@/../public/lotties/faq.json";
 
 const beneficios = [
   "Sem dor de cabeça para implementação.",
@@ -193,15 +194,15 @@ const Page = () => {
             ></div>
           </div>
           <div className="container py-5">
-            <div className="row align-items-center">
-              <div className="d-flex justify-content-center py-3">
+            <div className="row d-flex justify-content-center align-items-center">
+              <div className="d-flex justify-content-center py-5">
                 <h4>O que é o Magnet Chat?</h4>
               </div>
-              <div className="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+              <div className="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
                 <Lottie
                   animationData={appAnimation}
                   loop={true}
-                  className="w-100"
+                  className="w-100 box-lottie "
                   style={{ maxWidth: "74%", height: "100%" }}
                 />
               </div>
@@ -235,7 +236,7 @@ const Page = () => {
               <div className="col  tipo  " key={index}>
                 <div className="p-3">
                   <div className="mb-2 fs-3">{item.emoji}</div>
-                  <h6>{item.title}</h6>
+                  <h6 className="item-t">{item.title}</h6>
                 </div>
               </div>
             ))}
@@ -292,32 +293,36 @@ const Page = () => {
                 </div>
                 <div
                   className={`plano-box border-white ${
-                    plano.etiqueta ? "destaque" : ""
-                  }`}
+                    index === 1 ? "plano-destaque" : ""
+                  } ${plano.etiqueta ? "destaque" : ""}`}
                 >
-                  {plano.etiqueta && (
-                    <div className="etiqueta">{plano.etiqueta}</div>
-                  )}
-
-                  <div className="preco">{plano.preco}</div>
-                  <div className="descricao">{plano.descricao}</div>
-                  <ul className="beneficios">
-                    {plano.beneficios.map((item, idx) => (
-                      <li
-                        key={idx}
-                        className="d-flex align-items-start border-bottom pb-2 mb-2"
-                      >
-                        <FaCheckCircle
-                          className="me-2 mt-1"
-                          color="#0d6efd"
-                          style={{ minWidth: "16px", minHeight: "16px" }}
-                        />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div>
+                    {plano.etiqueta && (
+                      <div className="etiqueta">{plano.etiqueta}</div>
+                    )}
+                    <div className="preco pt-4">{plano.preco}</div>
+                    <div className="descricao">{plano.descricao}</div>
+                    <div className="d-flex flex-column justify-content-between">
+                      {" "}
+                      <ul className="beneficios">
+                        {plano.beneficios.map((item, idx) => (
+                          <li
+                            key={idx}
+                            className="d-flex align-items-start border-bottom pb-2 mb-2"
+                          >
+                            <FaCheckCircle
+                              className="me-2 mt-1"
+                              color="#0d6efd"
+                              style={{ minWidth: "16px", minHeight: "16px" }}
+                            />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                   <div className="text-center mt-3">
-                    <button className="btn btn-outline-primary btn-banner">
+                    <button className="btn btn-outline-primary btn-banner px-5">
                       Experimente grátis
                     </button>
                   </div>
@@ -328,40 +333,89 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="py-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <h4>Pronto para transformar sua comunicação?</h4>
+      <section className="py-5 my-4">
+        <div className="container faq-box">
+          <div className="row mb-4 p-5">
+            <div className="col-12 col-md-6">
+              <span className="py-2">FAQ</span>
+              <h3 className="">Perguntas e respostas mais frequentes</h3>
+              <div>
+                <Lottie
+                  animationData={faqAnimation}
+                  loop={true}
+                  className="w-100"
+                  style={{ maxWidth: "74%", height: "100%" }}
+                />
+              </div>
             </div>
-            <div className="col-md-6 text-md-end">
-              <button className="btn btn-outline-primary rounded-pill px-4">
-                Quero saber mais
-              </button>
+            <div className="col-12 col-md-6 pt-4">
+              <div className="border-bottom">
+                <h6>1. O que é o magnet chat?</h6>
+                <p>
+                  O Magnet Chat é uma plataforma de atendimento inteligente e
+                  automatizado que conecta sua empresa com seus clientes via
+                  WhatsApp, Instagram, site e outros canais. É uma solução
+                  pronta, fácil de configurar e usar, sem necessidade de
+                  desenvolvimento.
+                </p>
+              </div>
+
+              <div className="pt-2 border-bottom">
+                <h6>2. O que é o magnet chat?</h6>
+                <p>
+                  O Magnet Chat é uma plataforma de atendimento inteligente e
+                  automatizado que conecta sua empresa com seus clientes via
+                  WhatsApp, Instagram, site e outros canais.
+                </p>
+              </div>
+
+              <div className="pt-2 border-bottom">
+                <h6>3. O que é o magnet chat?</h6>
+                <p>
+                  O Magnet Chat é uma plataforma de atendimento inteligente e
+                  automatizado que conecta sua empresa com seus clientes via
+                  WhatsApp, Instagram, site e outros canais.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-5">
-        <div className="container">
-          <div className="row align-items-center mb-4">
+      <section className="py-3">
+        <div className="container py-5 mt-5">
+          <div className="row align-items-center">
+            {/* Coluna da esquerda */}
             <div className="col-md-6">
-              <p className="fs-4">
-                <Fire className="text-danger me-2" /> Aproveite agora!
-              </p>
+              <div className="py-4">
+                <h3>Pronto para automatizar seu atendimento? 🚀 </h3>
+                <p className="text-break">
+                  Automatize seu atendimento, gere mais negócios
+                  <br /> e aumente suas conversões.
+                  <br /> Tenha seu chat funcionando em poucos dias.
+                </p>
+                <button className="btn btn-banner btn-outline-primary rounded-pill px-4 mt-3">
+                  Quero saber mais
+                </button>
+              </div>
             </div>
-            <div className="col-md-6">
-              <p className="text-muted">
-                Confira nossos outros pacotes abaixo:
-              </p>
+
+            {/* Coluna da direita */}
+            <div className="col-md-5">
+              <div className="pt-4  text-md-end">
+                <h3>🔥 Comece agora!</h3>
+
+                <button className="btn btn-banner my-3 btn-outline-primary rounded-pill px-4 mt-3">
+                  Assinar plano
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ACCORDION */}
-      <section className="pb-5">
+      <section className="py-5 my-5">
         <div className="container">
           <SyncAccordionSlide />
         </div>
