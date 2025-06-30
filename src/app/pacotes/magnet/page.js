@@ -1,15 +1,19 @@
 "use client";
-import Image from "next/image";
-import { Fire } from "react-bootstrap-icons";
-import React from "react";
+
+import BannerPrincipal from "@/components/pacote/BannerPrincipal";
+import BeneficiosSection from "@/components/pacote/BeneficiosSection";
+import PublicoAlvoSection from "@/components/pacote/PublicoAlvoSection";
+import GridCard from "@/components/pacote/GridCard";
+import PlanosSection from "@/components/pacote/PlanosSection";
+import FaqSection from "@/components/pacote/FaqSection";
+import CtaAcao from "@/components/pacote/CtaAcao";
 import SyncAccordionSlide from "@/components/SyncAccordionSlide";
-import { FaCheck, FaCheckCircle } from "react-icons/fa";
-import { BsCheckCircleFill } from "react-icons/bs";
-import Lottie from "lottie-react";
+
 import appAnimation from "@/../public/lotties/chat.json";
 import faqAnimation from "@/../public/lotties/faq.json";
 
-const beneficios = [
+// BENEFÍCIOS
+const beneficiosMagnet = [
   "Sem dor de cabeça para implementação.",
   "Suporte.",
   "Crie fluxos inteligentes de conversa.",
@@ -20,7 +24,8 @@ const beneficios = [
   "Automatize seu atendimento sem precisar de desenvolvedores ou processos complexos.",
 ];
 
-const recursos = [
+// PÚBLICO-ALVO
+const recursosMagnet = [
   { emoji: "🧑🏻‍⚕️", title: "Clínicas e consultórios médicos" },
   { emoji: "🍔", title: "Restaurantes, lanchonetes e delivery" },
   { emoji: "💇🏻‍♀️", title: "Salões de beleza, estética e bem-estar" },
@@ -28,7 +33,8 @@ const recursos = [
   { emoji: "💻", title: "Prestadores de serviço em geral" },
 ];
 
-const passos = [
+// ETAPAS / PASSOS
+const passosMagnet = [
   {
     title: "Escolha seu plano",
     text: "Selecione o pacote que melhor atende seu negócio.",
@@ -55,7 +61,8 @@ const passos = [
   },
 ];
 
-const planos = [
+// PLANOS
+const planosMagnet = [
   {
     nome: "ESSENCIAL",
     preco: "R$ 129,00/mês",
@@ -115,313 +122,85 @@ const planos = [
   },
 ];
 
-const Page = () => {
+// FAQ
+const perguntasFaqMagnet = [
+  {
+    pergunta: "1. O que é o magnet chat?",
+    resposta:
+      "O Magnet Chat é uma plataforma de atendimento inteligente e automatizado que conecta sua empresa com seus clientes via WhatsApp, Instagram, site e outros canais. É uma solução pronta, fácil de configurar e usar, sem necessidade de desenvolvimento.",
+  },
+  {
+    pergunta: "2. Como funciona a integração?",
+    resposta:
+      "A integração é feita em poucos minutos, sem necessidade de conhecimento técnico.",
+  },
+  {
+    pergunta: "3. Posso personalizar os fluxos?",
+    resposta:
+      "Sim, você pode montar fluxos inteligentes e personalizados para seu atendimento.",
+  },
+];
+
+export default function Page() {
   return (
-    <>
-      {/* SECTION 1 */}
-      <section id="section-1" className="pt-5 mt-5 pb-5">
-        <div className="container c-txt-b py-5">
-          <div className="row row-banner w-100 p-4 my-">
-            <div className="col-md-6 py-4 col-12 d-flex justify-content-between flex-column">
-              <div className="start-0 py-3  z-3">
-                <Image
-                  src="/assets/img/logo-magnet.png"
-                  alt="Magnet Logo"
-                  width={100}
-                  height={100}
-                  className="img-fluid"
-                  sizes="100%"
-                  style={{ maxWidth: "100%", height: "auto" }}
-                />
-              </div>
+    <div className="container py-5">
+      <>
+        <BannerPrincipal
+          logo="/assets/img/logo-magnet.png"
+          titulo="Atendimento Inteligente"
+          descricao="Seu Atendimento 100% Automatizado Atenda. Converta. Escale. O Magnet Chat é uma plataforma de atendimento automatizado que transforma sua operação digital. Atenda seus clientes de forma rápida, inteligente e 100% automatizada, direto no WhatsApp, Instagram, Facebook e no seu site."
+          botoes={[
+            { label: "Ver Demonstração", href: "#" },
+            { label: "Falar com um Especialista", href: "#" },
+          ]}
+          backgroundImage="/assets/img/banner.png"
+        />
 
-              <div>
-                <h3>Atendimento Inteligente</h3>
-                <div className="pt-3">
-                  <div>
-                    <span>
-                      Seu Atendimento 100% Automatizado Atenda. Converta.
-                      Escale. O Magnet Chat é uma plataforma de atendimento
-                      automatizado que transforma sua operação digital. Atenda
-                      seus clientes de forma rápida, inteligente e 100%
-                      automatizada, direto no WhatsApp, Instagram, Facebook e no
-                      seu site.
-                    </span>
-                  </div>
-                  <div className="d-flex pt-4 pb-2  gap-3 flex-wrap">
-                    <a href="#" className="text-decoration-none text-white">
-                      Digital Boost
-                    </a>
-                    <span className="px-2">|</span>
-                    <a href="#" className="text-decoration-none text-white">
-                      Digital Boost
-                    </a>
-                    <span className="px-2">|</span>
-                    <a href="#" className="text-decoration-none text-white">
-                      Digital Boost
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="d-flex gap-3 pt-3 flex-wrap">
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline-primary btn-banner rounded-pill px-4 py-2"
-                  >
-                    Ver Demonstração
-                  </a>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline-primary btn-banner rounded-pill px-4 py-2"
-                  >
-                    Falar com um Especialista
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-12 col-md-6"
-              style={{
-                borderRadius: "12px",
-                height: "100%",
-                overflow: "hidden",
-              }}
-            ></div>
+        <BeneficiosSection
+          titulo="O que é o Magnet Chat?"
+          descricao="Sua plataforma de atendimento automatizado com muitos benefícios:"
+          beneficios={beneficiosMagnet}
+          animationData={appAnimation}
+          checkColor="#367CFF"
+        />
+
+        <PublicoAlvoSection
+          titulo="🎯 Para Quem É?"
+          descricao="O Magnet Chat é perfeito para empresas de todos os tamanhos e segmentos."
+          recursos={recursosMagnet}
+          customClass="publico-magnet"
+        />
+
+        <GridCard
+          titulo="🔧 Como Funciona?"
+          passos={passosMagnet}
+          ativoBgColor="rgba(54, 124, 255, 0.1)"
+        />
+
+        <PlanosSection planos={planosMagnet} />
+
+        <FaqSection
+          titulo="Perguntas e respostas mais frequentes"
+          perguntas={perguntasFaqMagnet}
+          animationData={faqAnimation}
+        />
+
+        <CtaAcao
+          titulo="Pronto para automatizar seu atendimento? 🚀"
+          descricao="Automatize seu atendimento, gere mais negócios e aumente suas conversões. Tenha seu chat funcionando em poucos dias."
+          botaoPrimario={{ label: "Quero saber mais" }}
+          botaoSecundario={{
+            titulo: "🔥 Comece agora!",
+            label: "Assinar plano",
+          }}
+        />
+
+        <section className="py-5 my-5">
+          <div className="container">
+            <SyncAccordionSlide />
           </div>
-          <div className="container py-5">
-            <div className="row d-flex justify-content-center align-items-center">
-              <div className="d-flex justify-content-center py-5">
-                <h4>O que é o Magnet Chat?</h4>
-              </div>
-              <div className="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
-                <Lottie
-                  animationData={appAnimation}
-                  loop={true}
-                  className="w-100 box-lottie "
-                  style={{ maxWidth: "74%", height: "100%" }}
-                />
-              </div>
-              <div className="col-md-6">
-                <ul className="list-unstyled">
-                  {beneficios.map((item, index) => (
-                    <li key={index} className="d-flex align-items-start mb-2">
-                      <FaCheck
-                        className="me-2 mt-1"
-                        color="#0d6efd"
-                        style={{ minWidth: "16px", minHeight: "16px" }}
-                      />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="row pt-5 pb-3 text-center">
-            <h4>🎯 Para Quem É?</h4>
-            <p className="py-3">
-              O Magnet Chat é perfeito para empresas de todos os tamanhos e
-              segmentos.
-            </p>
-          </div>
-
-          <div className="row gap text-center mt-5">
-            {recursos.map((item, index) => (
-              <div className="col  tipo  " key={index}>
-                <div className="p-3">
-                  <div className="mb-2 fs-3">{item.emoji}</div>
-                  <h6 className="item-t">{item.title}</h6>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 2 */}
-      <section id="section-2" className="py-5 my-5">
-        <div className="container">
-          <div className="row text-center py-4 mb-4">
-            <h4>🔧 Como Funciona?</h4>
-          </div>
-          <div className="row d-flex row-cols-1 justify-conten-start row-cols-md-3 g-4">
-            {passos.map((item, i) => {
-              const isFirstRow = i < 3;
-              const isMiddle = i === 1 || i === 4;
-              const isAtivo =
-                (isFirstRow && !isMiddle) || (!isFirstRow && isMiddle);
-
-              return (
-                <div className="col" key={i}>
-                  <div className={`card-grid-bloco ${isAtivo ? "ativo" : ""}`}>
-                    <BsCheckCircleFill
-                      size={40}
-                      color="#ffffff"
-                      style={{
-                        backgroundColor: "#367CFF",
-                        borderRadius: "50%",
-                      }}
-                      className="mb-3"
-                    />
-                    <h4 className="mb-2">{item.title}</h4>
-                    <p className="mb-0">{item.text}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 3 */}
-      <section id="section-3" className="py-5 planos">
-        <div className="container">
-          <div className="row mb-4">
-            <h4 className="text-center">Planos</h4>
-          </div>
-          <div className="row">
-            {planos.map((plano, index) => (
-              <div className="col-12 col-md-4 mb-4" key={index}>
-                <div className="faixa-titulo">
-                  <h5 className="titulo-plano m-0">{plano.nome}</h5>
-                </div>
-                <div
-                  className={`plano-box border-white ${
-                    index === 1 ? "plano-destaque" : ""
-                  } ${plano.etiqueta ? "destaque" : ""}`}
-                >
-                  <div>
-                    {plano.etiqueta && (
-                      <div className="etiqueta">{plano.etiqueta}</div>
-                    )}
-                    <div className="preco pt-4">{plano.preco}</div>
-                    <div className="descricao">{plano.descricao}</div>
-                    <div className="d-flex flex-column justify-content-between">
-                      {" "}
-                      <ul className="beneficios">
-                        {plano.beneficios.map((item, idx) => (
-                          <li
-                            key={idx}
-                            className="d-flex align-items-start border-bottom pb-2 mb-2"
-                          >
-                            <FaCheckCircle
-                              className="me-2 mt-1"
-                              color="#0d6efd"
-                              style={{ minWidth: "16px", minHeight: "16px" }}
-                            />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="text-center mt-3">
-                    <button className="btn btn-outline-primary btn-banner px-5">
-                      Experimente grátis
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-5 my-4">
-        <div className="container faq-box">
-          <div className="row mb-4 p-5">
-            <div className="col-12 col-md-6">
-              <span className="py-2">FAQ</span>
-              <h3 className="">Perguntas e respostas mais frequentes</h3>
-              <div>
-                <Lottie
-                  animationData={faqAnimation}
-                  loop={true}
-                  className="w-100"
-                  style={{ maxWidth: "74%", height: "100%" }}
-                />
-              </div>
-            </div>
-            <div className="col-12 col-md-6 pt-4">
-              <div className="border-bottom">
-                <h6>1. O que é o magnet chat?</h6>
-                <p>
-                  O Magnet Chat é uma plataforma de atendimento inteligente e
-                  automatizado que conecta sua empresa com seus clientes via
-                  WhatsApp, Instagram, site e outros canais. É uma solução
-                  pronta, fácil de configurar e usar, sem necessidade de
-                  desenvolvimento.
-                </p>
-              </div>
-
-              <div className="pt-2 border-bottom">
-                <h6>2. O que é o magnet chat?</h6>
-                <p>
-                  O Magnet Chat é uma plataforma de atendimento inteligente e
-                  automatizado que conecta sua empresa com seus clientes via
-                  WhatsApp, Instagram, site e outros canais.
-                </p>
-              </div>
-
-              <div className="pt-2 border-bottom">
-                <h6>3. O que é o magnet chat?</h6>
-                <p>
-                  O Magnet Chat é uma plataforma de atendimento inteligente e
-                  automatizado que conecta sua empresa com seus clientes via
-                  WhatsApp, Instagram, site e outros canais.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-3">
-        <div className="container py-5 mt-5">
-          <div className="row align-items-center">
-            {/* Coluna da esquerda */}
-            <div className="col-md-6">
-              <div className="py-4">
-                <h3>Pronto para automatizar seu atendimento? 🚀 </h3>
-                <p className="text-break">
-                  Automatize seu atendimento, gere mais negócios
-                  <br /> e aumente suas conversões.
-                  <br /> Tenha seu chat funcionando em poucos dias.
-                </p>
-                <button className="btn btn-banner btn-outline-primary rounded-pill px-4 mt-3">
-                  Quero saber mais
-                </button>
-              </div>
-            </div>
-
-            {/* Coluna da direita */}
-            <div className="col-md-5">
-              <div className="pt-4  text-md-end">
-                <h3>🔥 Comece agora!</h3>
-
-                <button className="btn btn-banner my-3 btn-outline-primary rounded-pill px-4 mt-3">
-                  Assinar plano
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ACCORDION */}
-      <section className="py-5 my-5">
-        <div className="container">
-          <SyncAccordionSlide />
-        </div>
-      </section>
-    </>
+        </section>
+      </>
+    </div>
   );
-};
-
-export default Page;
+}
