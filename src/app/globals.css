@@ -697,7 +697,13 @@ main {
 }
 
 .row-banner {
-  background-image: url("/assets/img/banner.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+
+.row-banner2 {
+  background-image: url("/assets/img/banner2.png");
   background-size: cover;
   background-position: center;
   border-radius: 24px;
@@ -754,11 +760,21 @@ main {
   font-size: 12px;
   font-weight: bold;
   padding: 1rem;
-  border: 1px solid #003366;
-  background-color: rgba(54, 124, 255, 0.1); /* #367CFF com 10% */
   border-radius: 12px;
   backdrop-filter: blur(4px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Magnet Chat */
+.publico-magnet {
+  background-color: rgba(54, 124, 255, 0.1);
+  border: 1px solid #003366;
+}
+
+/* Sites */
+.publico-sites {
+  background-color: rgba(3, 209, 232, 0.1);
+  border: 1px solid #03d1e8;
 }
 
 .gap {
@@ -876,12 +892,12 @@ main {
   border-radius: 24px;
 }
 
-.btn-green  {
+.btn-green {
   border-color: #04d361 !important;
   color: #04d361 !important;
 }
 
-.btn-green:hover  {
+.btn-green:hover {
   background-color: #04d361 !important;
   border-color: #fff !important;
   color: #fff !important;
