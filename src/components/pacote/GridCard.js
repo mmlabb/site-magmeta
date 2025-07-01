@@ -1,7 +1,7 @@
 "use client";
 import { BsCheckCircleFill } from "react-icons/bs";
 
-export default function GridCard({ titulo, passos, ativoBgColor }) {
+export default function GridCard({ titulo, passos, ativoBgColor, iconColor }) {
   return (
     <section id="section-2" className="py-5 my-5">
       <div className="container">
@@ -25,9 +25,9 @@ export default function GridCard({ titulo, passos, ativoBgColor }) {
                 >
                   <BsCheckCircleFill
                     size={40}
-                    color="#ffffff"
+                    color={iconColor}
                     style={{
-                      backgroundColor: "#367CFF",
+                      backgroundColor: "#ffffff",
                       borderRadius: "50%",
                     }}
                     className="mb-3"
