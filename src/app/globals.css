@@ -710,9 +710,11 @@ main {
 }
 
 .btn-ver-mais {
-  background-color: white;
-  color: #333;
-  border: none;
+  background-color: #fff !important;
+  color: #000000 !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #000 !important;
+  border-radius: 24px !important;
   padding: 8px 18px;
   border-radius: 24px !important;
   font-weight: 500;
@@ -737,6 +739,27 @@ main {
   background-color: rgba(255, 255, 255, 0.1) !important;
   color: #ffffff !important;
   border: 1px solid #ffffff !important;
+}
+
+.btn-white {
+  background-color: #fff !important;
+  color: #000000 !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #000 !important;
+  border-radius: 24px !important;
+}
+
+.btn-white:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+}
+
+.btn-plano {
+  color: #fff !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #fdf8f8 !important;
+  border-radius: 24px !important;
 }
 
 .row-banner p {
@@ -858,20 +881,12 @@ main {
   justify-content: center;
   border-radius: 0 0 8px 8px;
 }
-.plano-destaque {
-  background-color: #367cff;
-  color: #fff;
-}
 
 .plano-box {
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
   border-radius: 0 0 16px 16px;
-}
-
-.plano-destaque .beneficios svg {
-  color: #fff !important;
 }
 
 .box-lottie {
@@ -881,7 +896,6 @@ main {
 }
 
 .faq-box {
-  background-color: rgba(54, 124, 255, 0.1);
   border-radius: 12px;
 }
 
@@ -901,6 +915,19 @@ main {
   background-color: #04d361 !important;
   border-color: #fff !important;
   color: #fff !important;
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-body {
+  background-color: transparent !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
 }
 
 #segunda-sessao .carousel .carousel-item img {
@@ -1806,6 +1833,44 @@ main {
     padding-top: 5rem !important;
   }
 }*/
+
+@media (max-width: 768px) {
+  .publico-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .publico-mobile {
+    display: none;
+  }
+  .lott {
+    max-width: 100% !important;
+  }
+
+  .col-lot {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .btn-white {
+    font-size: 12px !important;
+  }
+
+  .btn-succe {
+    font-size: 14px !important;
+  }
+
+  .col-lot {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .lott {
+    max-width: 100% !important;
+  }
+}
 
 canvas#3d {
   position: absolute;
