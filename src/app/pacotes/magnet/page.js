@@ -8,9 +8,10 @@ import PlanosSection from "@/components/pacote/PlanosSection";
 import FaqSection from "@/components/pacote/FaqSection";
 import CtaAcao from "@/components/pacote/CtaAcao";
 import SyncAccordionSlide from "@/components/SyncAccordionSlide";
-
+import Duvidas from "@/components/pacote/Duvidas";
 import appAnimation from "@/../public/lotties/chat.json";
 import faqAnimation from "@/../public/lotties/faq.json";
+import PublicoCarousel from "@/components/pacote/PublicoCarousel";
 
 // BENEFÍCIOS
 const beneficiosMagnet = [
@@ -25,7 +26,7 @@ const beneficiosMagnet = [
 ];
 
 // PÚBLICO-ALVO
-const recursosMagnet = [
+const recursosChat = [
   { emoji: "🧑🏻‍⚕️", title: "Clínicas e consultórios médicos" },
   { emoji: "🍔", title: "Restaurantes, lanchonetes e delivery" },
   { emoji: "💇🏻‍♀️", title: "Salões de beleza, estética e bem-estar" },
@@ -167,22 +168,45 @@ export default function Page() {
         <PublicoAlvoSection
           titulo="🎯 Para Quem É?"
           descricao="O Magnet Chat é perfeito para empresas de todos os tamanhos e segmentos."
-          recursos={recursosMagnet}
-          customClass="publico-magnet"
+          recursos={recursosChat}
+          customClass="publico-magnet publico-desktop"
+        />
+
+        <PublicoCarousel
+          recursos={recursosChat}
+          customClass="publico-mobile"
+          corBase="#367cff"
         />
 
         <GridCard
           titulo="🔧 Como Funciona?"
           passos={passosMagnet}
+          iconColor="#367CFF"
           ativoBgColor="rgba(54, 124, 255, 0.1)"
         />
 
-        <PlanosSection planos={planosMagnet} />
+        <PlanosSection
+          planos={planosMagnet}
+          destaqueBgColor="#367cff"
+          destaqueTextColor="#fff"
+          checkIconColor="#fff"
+          checkIconColorNaoDestaque="#0d6efd"
+        />
 
-        <FaqSection
-          titulo="Perguntas e respostas mais frequentes"
-          perguntas={perguntasFaqMagnet}
-          animationData={faqAnimation}
+        <div className="py-5">
+          {" "}
+          <FaqSection
+            titulo="Perguntas e respostas mais frequentes"
+            perguntas={perguntasFaqMagnet}
+            animationData={faqAnimation}
+            backgroundColor="rgba(54, 124, 255, 0.1)"
+          />
+        </div>
+
+        <Duvidas
+          backgroundImage="/assets/img/background-1.png"
+          textos={["Ficou com alguma dúvida?"]}
+          botaoLabel="Falar com Especialista"
         />
 
         <CtaAcao
