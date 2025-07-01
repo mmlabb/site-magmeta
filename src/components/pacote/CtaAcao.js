@@ -8,7 +8,7 @@ export default function CtaAcao({
 }) {
   return (
     <section className="py-3">
-      <div className="container py-5 mt-5">
+      <div className="container py-5 co-cta mt-5">
         <div className="row align-items-center">
           {/* Coluna da esquerda */}
           <div className="col-md-6">
