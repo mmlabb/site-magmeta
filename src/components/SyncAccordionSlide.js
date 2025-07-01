@@ -32,21 +32,21 @@ const SyncAccordionSlide = () => {
       slug: "magnet",
       content:
         "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
-      image: "/assets/img/magnet.png",
+      image: "/assets/img/magnet-1.png",
     },
     {
-      title: "Vitrinne",
+      title: "Sites",
       slug: "sites",
       content:
         "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
-      image: "/assets/img/test2.png",
+      image: "/assets/img/site.png",
     },
     {
       title: "Aplicativos",
       slug: "aplicativos",
       content:
         "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
-      image: "/assets/img/test3.png",
+      image: "/assets/img/app.png",
     },
   ];
 
@@ -202,7 +202,7 @@ const SyncAccordionSlide = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                minHeight: "250px", // Garante altura constante
+                minHeight: "auto", // Garante altura constante
               }}
             >
               <div
@@ -219,7 +219,7 @@ const SyncAccordionSlide = () => {
                   width={0}
                   height={0}
                   style={{
-                    objectFit: "cover",
+                    objectFit: "contain",
                     borderRadius: "1rem",
                     width: "100%",
                     height: "100%",
