@@ -1838,13 +1838,25 @@ main {
   .publico-desktop {
     display: none;
   }
+
+  .box-lott {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .lott {
+    max-width: 100% !important;
+  }
+
+  .box-ct {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
 }
 @media (min-width: 768px) {
   .publico-mobile {
     display: none;
-  }
-  .lott {
-    max-width: 100% !important;
   }
 
   .col-lot {

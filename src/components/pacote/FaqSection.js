@@ -60,7 +60,7 @@ export default function FaqSection({
           </div>
 
           <div className="col-12 col-md-6 col-lot">
-            <div className="d-flex justify-content-end">
+            <div className="d-flex box-lott justify-content-end">
               <Lottie
                 animationData={animationData}
                 loop={true}

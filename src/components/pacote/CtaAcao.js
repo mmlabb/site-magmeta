@@ -12,7 +12,7 @@ export default function CtaAcao({
         <div className="row align-items-center">
           {/* Coluna da esquerda */}
           <div className="col-md-6">
-            <div className="py-4">
+            <div className="py-4 box-ct">
               <h3>{titulo}</h3>
               <p className="text-break">{descricao}</p>
               {botaoPrimario && (
@@ -25,7 +25,7 @@ export default function CtaAcao({
 
           {/* Coluna da direita */}
           <div className="col-md-5">
-            <div className="pt-4 text-md-end">
+            <div className="pt-4 box-ct text-md-end">
               {botaoSecundario && (
                 <>
                   <h3>{botaoSecundario.titulo}</h3>
