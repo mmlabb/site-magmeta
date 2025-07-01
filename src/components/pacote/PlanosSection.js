@@ -8,7 +8,7 @@ export default function PlanosSection({ planos, destaqueBgColor, destaqueTextCol
         <div className="row mb-4">
           <h4 className="text-center">Planos</h4>
         </div>
-        <div className="row">
+        <div className="row r-gap">
           {planos.map((plano, index) => {
             const isDestaque = index === 1;
 
