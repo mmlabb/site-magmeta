@@ -1,68 +1,64 @@
 "use client";
-import { useEffect } from "react";
+
+import { useMemo } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function PublicoCarousel({ recursos, customClass, corBase }) {
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const carousel = document.querySelector("#carouselRecursos");
-      if (carousel) {
-        const items = carousel.querySelectorAll(".carousel-item");
-        let activeIndex = Array.from(items).findIndex((item) =>
-          item.classList.contains("active")
-        );
-        items[activeIndex].classList.remove("active");
-        activeIndex = (activeIndex + 1) % items.length;
-        items[activeIndex].classList.add("active");
-      }
-    }, 3000); // autoplay a cada 3s
+  const grupos = useMemo(() => {
+    const g = [];
+    for (let i = 0; i < recursos.length; i += 2) {
+      g.push(recursos.slice(i, i + 2));
+    }
+    return [...g, ...g]; // duplica para loop suave
+  }, [recursos]);
 
-    return () => clearInterval(interval);
-  }, []);
-
-  // Gera os slides de 2 em 2
-  const grupos = [];
-  for (let i = 0; i < recursos.length; i += 2) {
-    grupos.push(recursos.slice(i, i + 2));
-  }
+  const settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 6000,
+    cssEase: "linear",
+    infinite: true,
+    arrows: false,
+    pauseOnHover: false,
+  };
 
   return (
-    <div className={`container-fluid px-0 ${customClass}`}>
-      <div
-        id="carouselRecursos"
-        className="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="false"
-      >
-        <div className="carousel-inner">
-          {grupos.map((grupo, index) => (
-            <div
-              className={`carousel-item ${index === 0 ? "active" : ""}`}
-              key={index}
-            >
-              <div className="row g-0 justify-content-center">
-                {grupo.map((item, idx) => (
-                  <div
-                    className="col-6 text-center d-flex justify-content-center"
-                    key={idx}
-                  >
-                    <div
-                      className="p-3 m-2 w-100 rounded"
-                      style={{
-                        backgroundColor: `${corBase}1A`, // 10% opacity
-                        border: `1px solid ${corBase}`,
-                        borderRadius: "16px",
-                      }}
-                    >
-                      <div className="mb-2 fs-3">{item.emoji}</div>
-                      <h6 className="item-t">{item.title}</h6>
-                    </div>
-                  </div>
-                ))}
+    <div className={`container-fluid px-0 publico-carousel ${customClass}`}>
+      <Slider {...settings}>
+        {grupos.map((grupo, index) => (
+          <div key={index} className="d-flex justify-content-center">
+            {grupo.map((item, idx) => (
+              <div
+                key={idx}
+                className="d-flex flex-column justify-content-center align-items-center px-2"
+                style={{
+                  width: "50%", // garante dois por slide
+                  maxWidth: "300px", // controla o tamanho
+                  padding: "1rem 0",
+                }}
+              >
+                <div
+                  className="w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center"
+                  style={{
+                    backgroundColor: `${corBase}1A`,
+                    border: `1px solid ${corBase}`,
+                    borderRadius: "16px",
+                    padding: "1rem",
+                    minHeight: "180px",
+                  }}
+                >
+                  <div className="mb-2 fs-3">{item.emoji}</div>
+                  <h6 className="item-t m-0">{item.title}</h6>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
+            ))}
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 }

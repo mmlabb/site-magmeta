@@ -930,6 +930,15 @@ main {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
 }
 
+.publico-carousel .slick-slide > div {
+  display: flex !important;
+  justify-content: center;
+}
+
+.publico-carousel .slick-list {
+  padding: 0 !important;
+}
+
 #segunda-sessao .carousel .carousel-item img {
   z-index: 1;
   transition: 300ms;
@@ -1852,6 +1861,22 @@ main {
     display: flex;
     justify-content: center !important;
     flex-direction: column !important;
+  }
+  .co-cta {
+    text-align: center !important;
+  }
+
+  .acc {
+    margin: 0 !important;
+  }
+
+  .r-gap {
+    gap: 60px !important;
+  }
+
+  #btn-wp {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
 }
 @media (min-width: 768px) {
