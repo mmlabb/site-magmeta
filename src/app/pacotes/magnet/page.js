@@ -219,7 +219,7 @@ export default function Page() {
           }}
         />
 
-        <section className="py-5 my-5">
+        <section className="py-5 acc my-5">
           <div className="container">
             <SyncAccordionSlide />
           </div>
