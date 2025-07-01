@@ -10,7 +10,7 @@ export default function BannerPrincipal({
   backgroundImage,
 }) {
   return (
-    <section id="section-1" className="pt-5 mt-5 ">
+    <section id="section-1" className="pt-5">
       <div className="container  c-txt-b py-5">
         <div
           className="row row-banner w-100 p-4 my-"
