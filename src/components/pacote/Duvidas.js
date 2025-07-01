@@ -31,7 +31,7 @@ export default function Duvidas({ backgroundImage, textos, botaoLabel }) {
           </div>
 
           {/* Coluna do botão */}
-          <div className="col-md-6 text-md-end text-center p-5">
+          <div id="btn-wp" className="col-md-6 text-md-end text-center  p-5">
             <a
               href="#"
               className="btn btn-success btn-succe d-inline-flex align-items-center gap-2 px-4 py-2 rounded-pill"
