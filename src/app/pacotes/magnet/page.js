@@ -144,8 +144,8 @@ const perguntasFaqMagnet = [
 
 export default function Page() {
   return (
-    <div className="container py-5">
-      <>
+    <>
+      <div className="container py-5">
         <BannerPrincipal
           logo="/assets/img/logo-magnet.png"
           titulo="Atendimento Inteligente"
@@ -163,16 +163,17 @@ export default function Page() {
           beneficios={beneficiosMagnet}
           animationData={appAnimation}
           checkColor="#367CFF"
+          isMagnet={true}
         />
+      </div>
 
-        
+      <PublicoCarousel
+        recursos={recursosChat}
+        customClass="publico-mobile"
+        corBase="#367cff"
+      />
 
-        <PublicoCarousel
-          recursos={recursosChat}
-          customClass="publico-mobile"
-          corBase="#367cff"
-        />
-
+      <div className="container">
         <GridCard
           titulo="🔧 Como Funciona?"
           passos={passosMagnet}
@@ -213,13 +214,13 @@ export default function Page() {
             label: "Assinar plano",
           }}
         />
+      </div>
 
-        <section className="py-5 acc my-5">
-          <div className="container">
-            <SyncAccordionSlide />
-          </div>
-        </section>
-      </>
-    </div>
+      <section className="py-5 acc my-5">
+        <div className="container">
+          <SyncAccordionSlide />
+        </div>
+      </section>
+    </>
   );
 }
