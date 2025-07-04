@@ -144,8 +144,8 @@ const perguntasFaqMagnet = [
 
 export default function Page() {
   return (
-    <div className="container py-5">
-      <>
+    <>
+      <div className="container py-5">
         <BannerPrincipal
           logo="/assets/img/logo-site.png"
           titulo="Atendimento Inteligente"
@@ -164,13 +164,15 @@ export default function Page() {
           animationData={siteAnimation}
           checkColor="#03D1E8"
         />
+      </div>
 
-        <PublicoCarousel
-          recursos={recursosChat}
-          customClass="publico-mobile"
-          corBase="#03D1E8"
-        />
+      <PublicoCarousel
+        recursos={recursosChat}
+        customClass="publico-mobile"
+        corBase="#03D1E8"
+      />
 
+      <div className="container">
         <GridCard
           titulo="🔧 Como Funciona?"
           passos={passosMagnet}
@@ -211,13 +213,13 @@ export default function Page() {
             label: "Assinar plano",
           }}
         />
+      </div>
 
-        <section className="py-5 acc  my-5">
-          <div className="container">
-            <SyncAccordionSlide />
-          </div>
-        </section>
-      </>
-    </div>
+      <section className="py-5 acc  my-5">
+        <div className="container">
+          <SyncAccordionSlide />
+        </div>
+      </section>
+    </>
   );
 }
