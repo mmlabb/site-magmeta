@@ -8,6 +8,7 @@ export default function BeneficiosSection({
   beneficios,
   animationData,
   checkColor,
+  isMagnet,
 }) {
   return (
     <div className="container py-5">
@@ -20,9 +21,9 @@ export default function BeneficiosSection({
           <Lottie
             animationData={animationData}
             loop={true}
-            className="w-100 box-lottie"
+            className={`w-100 ${isMagnet ? "box-lottie" : ""}`}
             style={{
-              maxWidth: "74%",
+              maxWidth: "100%",
               height: "100%",
               borderRadius: "24px",
               overflow: "hidden",
