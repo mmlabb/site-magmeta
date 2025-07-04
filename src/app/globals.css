@@ -1880,10 +1880,6 @@ main {
   }
 }
 @media (min-width: 768px) {
-  .publico-mobile {
-    display: none;
-  }
-
   .col-lot {
     display: flex !important;
     justify-content: center !important;
