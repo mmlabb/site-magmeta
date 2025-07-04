@@ -10,7 +10,7 @@ import CtaAcao from "@/components/pacote/CtaAcao";
 import SyncAccordionSlide from "@/components/SyncAccordionSlide";
 import Duvidas from "@/components/pacote/Duvidas";
 import siteAnimation from "@/../public/lotties/apps.json";
-import faqAnimation from "@/../public/lotties/faq-2.json";
+import faqAnimation from "@/../public/lotties/faq-3.json";
 import PublicoCarousel from "@/components/pacote/PublicoCarousel";
 
 // BENEFÍCIOS
@@ -145,7 +145,7 @@ const perguntasFaqMagnet = [
 export default function Page() {
   return (
     <>
-      <div className="container py-5">
+      <div className="container pb-5">
         <BannerPrincipal
           logo="/assets/img/logo-site.png"
           titulo="Atendimento Inteligente"
@@ -194,12 +194,12 @@ export default function Page() {
             titulo="Perguntas e respostas mais frequentes"
             perguntas={perguntasFaqMagnet}
             animationData={faqAnimation}
-            backgroundColor="rgba(3, 209, 232, 0.1)"
+            backgroundColor="rgba(201, 0, 164, 0.1)"
           />
         </div>
 
         <Duvidas
-          backgroundImage="/assets/img/background-2.png"
+          backgroundImage="/assets/img/fundorosa.png"
           textos={["Ficou com alguma dúvida sobre nossos planos?"]}
           botaoLabel="Falar com Especialista"
         />
