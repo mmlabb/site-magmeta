@@ -165,13 +165,6 @@ export default function Page() {
           checkColor="#03D1E8"
         />
 
-        <PublicoAlvoSection
-          titulo="🎯 Para Quem É?"
-          descricao="O Magnet Chat é perfeito para empresas de todos os tamanhos e segmentos."
-          recursos={recursosChat}
-          customClass="publico-sites publico-desktop"
-        />
-
         <PublicoCarousel
           recursos={recursosChat}
           customClass="publico-mobile"
