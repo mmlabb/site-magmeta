@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 export default function PublicoCarousel({ recursos, corBase, customClass }) {
   const settings = {
     infinite: true,
-    speed: 5000,
+    speed: 4000,
     slidesToShow: 5, // desktop
     slidesToScroll: 1,
     autoplay: true,
@@ -26,7 +26,7 @@ export default function PublicoCarousel({ recursos, corBase, customClass }) {
   };
 
   return (
-    <div className={`container-fluid px-0 ${customClass}`}>
+    <div className={`container-fluid justify-content-center px-0 ${customClass}`}>
       <Slider {...settings}>
         {recursos.map((item, index) => (
           <div key={index} className="px-2">
