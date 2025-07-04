@@ -1888,6 +1888,7 @@ main {
 
 @media (min-width: 820px) and (max-width: 1180px) {
   .btn-white {
+    width: 100% !important;
     font-size: 12px !important;
   }
 
@@ -1913,6 +1914,12 @@ canvas#3d {
   height: 100vh;
   pointer-events: none;
   z-index: 1000;
+}
+
+@media (min-width: 1000px) {
+  .btn-white {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 1920px) {
