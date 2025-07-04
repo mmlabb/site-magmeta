@@ -9,7 +9,7 @@ import FaqSection from "@/components/pacote/FaqSection";
 import CtaAcao from "@/components/pacote/CtaAcao";
 import SyncAccordionSlide from "@/components/SyncAccordionSlide";
 import Duvidas from "@/components/pacote/Duvidas";
-import siteAnimation from "@/../public/lotties/pc.json";
+import siteAnimation from "@/../public/lotties/apps.json";
 import faqAnimation from "@/../public/lotties/faq-2.json";
 import PublicoCarousel from "@/components/pacote/PublicoCarousel";
 
@@ -144,8 +144,8 @@ const perguntasFaqMagnet = [
 
 export default function Page() {
   return (
-    <div className="container py-5">
-      <>
+    <>
+      <div className="container py-5">
         <BannerPrincipal
           logo="/assets/img/logo-site.png"
           titulo="Atendimento Inteligente"
@@ -162,32 +162,27 @@ export default function Page() {
           descricao="Sua plataforma de atendimento automatizado com muitos benefícios:"
           beneficios={beneficiosMagnet}
           animationData={siteAnimation}
-          checkColor="#03D1E8"
+          checkColor="#C900A4"
         />
+      </div>
 
-        <PublicoAlvoSection
-          titulo="🎯 Para Quem É?"
-          descricao="O Magnet Chat é perfeito para empresas de todos os tamanhos e segmentos."
-          recursos={recursosChat}
-          customClass="publico-sites publico-desktop"
-        />
+      <PublicoCarousel
+        recursos={recursosChat}
+        customClass="publico-mobile"
+        corBase="#C900A4"
+      />
 
-        <PublicoCarousel
-          recursos={recursosChat}
-          customClass="publico-mobile"
-          corBase="#03D1E8"
-        />
-
+      <div className="container">
         <GridCard
           titulo="🔧 Como Funciona?"
           passos={passosMagnet}
-          iconColor="#03D1E8"
-          ativoBgColor="rgba(3, 209, 232, 0.1)"
+          iconColor="#C900A4"
+          ativoBgColor="rgba(201, 0, 164, 0.1)"
         />
 
         <PlanosSection
           planos={planosMagnet}
-          destaqueBgColor="#03D1E8"
+          destaqueBgColor="#C900A4"
           destaqueTextColor="#000"
           checkIconColor="#000"
           checkIconColorNaoDestaque="#fff"
@@ -218,13 +213,13 @@ export default function Page() {
             label: "Assinar plano",
           }}
         />
+      </div>
 
-        <section className="py-5 acc  my-5">
-          <div className="container">
-            <SyncAccordionSlide />
-          </div>
-        </section>
-      </>
-    </div>
+      <section className="py-5 acc  my-5">
+        <div className="container">
+          <SyncAccordionSlide />
+        </div>
+      </section>
+    </>
   );
 }
