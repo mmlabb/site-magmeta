@@ -23,7 +23,7 @@ export default function PlanosSection({ planos, destaqueBgColor, destaqueTextCol
                   }`}
                   style={
                     isDestaque
-                      ? { backgroundColor: destaqueBgColor, color: destaqueTextColor, }
+                      ? { background: destaqueBgColor, color: destaqueTextColor, }
                       : undefined
                   }
                 >
