@@ -20,7 +20,7 @@ export default function FaqSection({
       style={{ backgroundColor, borderRadius: "24px" }}
     >
       <div className="container faq-box">
-        <div className="row  p-5">
+        <div id="row-faq" className="row  p-5">
           <div className="col-12 col-md-6">
             <div className="px-3 pt-4">
               <span className="pb-4">FAQ</span>
