@@ -163,6 +163,7 @@ export default function Page() {
           beneficios={beneficiosMagnet}
           animationData={siteAnimation}
           checkColor="#03D1E8"
+          lottieWidth="86%"
         />
       </div>
 
@@ -182,7 +183,7 @@ export default function Page() {
 
         <PlanosSection
           planos={planosMagnet}
-          destaqueBgColor="#03D1E8"
+          destaqueBgColor="linear-gradient(to bottom, #03D1E8 0%, #027582 100%)"
           destaqueTextColor="#000"
           checkIconColor="#000"
           checkIconColorNaoDestaque="#fff"
