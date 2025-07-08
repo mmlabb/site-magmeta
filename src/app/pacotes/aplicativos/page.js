@@ -147,7 +147,7 @@ export default function Page() {
     <>
       <div className="container pb-5">
         <BannerPrincipal
-          logo="/assets/img/logo-site.png"
+          logo="/assets/img/logo-app.svg"
           titulo="Atendimento Inteligente"
           descricao="Seu Atendimento 100% Automatizado Atenda. Converta. Escale. O Magnet Chat é uma plataforma de atendimento automatizado que transforma sua operação digital. Atenda seus clientes de forma rápida, inteligente e 100% automatizada, direto no WhatsApp, Instagram, Facebook e no seu site."
           botoes={[
@@ -163,6 +163,7 @@ export default function Page() {
           beneficios={beneficiosMagnet}
           animationData={siteAnimation}
           checkColor="#C900A4"
+          lottieWidth="100%"
         />
       </div>
 
@@ -182,7 +183,7 @@ export default function Page() {
 
         <PlanosSection
           planos={planosMagnet}
-          destaqueBgColor="#C900A4"
+          destaqueBgColor="linear-gradient(to bottom, #C900A4 0%, #630051 100%)"
           destaqueTextColor="#000"
           checkIconColor="#000"
           checkIconColorNaoDestaque="#fff"
