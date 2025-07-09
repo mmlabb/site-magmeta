@@ -1,9 +1,12 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Clientes from "@/containers/Customers";
 import "./sobre.css";
 import CardsSection from "@/containers/sobre/CardsSection";
 import PopupBlog from "@/components/PopupBlog";
-
+import Lottie from "lottie-react";
 
 const CheckIcon = () => {
   return (
@@ -13,35 +16,49 @@ const CheckIcon = () => {
       width={0}
       height={0}
       sizes="100%"
-      style={{ width: "auto", height: "auto" }} // optional
+      style={{ width: "auto", height: "auto" }}
     />
   );
 };
+
 export default function Sobre() {
+  const [animationData, setAnimationData] = useState(null);
+  const [team2, setTeam2] = useState(null);
+  const [talkk, setTalkk] = useState(null);
+
+  useEffect(() => {
+    fetch("/lotties/team1.json")
+      .then((res) => res.json())
+      .then(setAnimationData)
+      .catch((err) => console.error("Erro ao carregar o Lottie:", err));
+  }, []);
+
+  useEffect(() => {
+    fetch("/lotties/team.json")
+      .then((res) => res.json())
+      .then(setTeam2)
+      .catch((err) => console.error("Erro ao carregar team2:", err));
+  }, []);
+
+  useEffect(() => {
+    fetch("/lotties/talkk.json")
+      .then((res) => res.json())
+      .then(setTalkk)
+      .catch((err) => console.error("Erro ao carregar talk:", err));
+  }, []);
   return (
     <>
-      <section className="mt-5 pt-5">
-        <div className="container box-1 py-5 my-5">
+      <section className="mt-4 pt-5">
+        <div className="container box-1 pb-5 my-5">
           <div
             className="row gap-4 gap-lg-0 align-items-center"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
-            <div className="col-md-12 col-lg-5 d-flex justify-content-center mascot-magmeta align-items-center">
-              <Image
-                src="/assets/img/img-magmeta-atualizado.png"
-                alt=""
-                width={0}
-                height={0}
-                sizes="100%"
-                style={{ width: "100%", height: "auto" }} // optional
-              />
-            </div>
-
-            <div className="box-texto-somos-magmeta col-md-12 col-lg-7">
-              <div className="d-flex box-texto-sobre">
+            <div className="box-texto-somos-magmeta col-md-12 col-lg-6">
+              <div className="d-flex box-texto-sobre flex-column">
                 <div className="txt-1">
-                  <h2 className="text-bold">
+                  <h2  className="text-bold txt-s">
                     Olá, é um prazer te ver por aqui!
                   </h2>
                 </div>
@@ -58,20 +75,20 @@ export default function Sobre() {
                     aqui é sinal de que estamos prestes a conhecer mais uma!
                     Isso é Magmeta!
                   </h6>
-                  {/* <h6 className="text-center text-lg-start">
-                    A Magmeta nasceu com a meta de transformar nossas vidas.
-                    Acreditamos no poder digital de levar pessoas a descobrirem
-                    e se conectar ao seu propósito, e através disto magnetizar
-                    toda força necessária para realizar.
-                    <br />
-                    Assim encontramos e unimos pessoas que amam o que fazem e
-                    estão alinhadas numa mesma meta, dispostas a enfrentar
-                    grandes desafios e desenvolver soluções e produtos
-                    inovadores que vão além de uma entrega, mas impactam vidas
-                    positivamente. E com estas mentes formamos a Magmeta.
-                  </h6> */}
                 </div>
               </div>
+            </div>
+
+            <div className="col-md-12 col-lg-6 d-flex justify-content-center mascot-magmeta align-items-center">
+              {animationData ? (
+                <Lottie
+                  animationData={animationData}
+                  loop
+                  style={{ width: "100%", height: "auto" }}
+                />
+              ) : (
+                <p>Carregando animação...</p>
+              )}
             </div>
           </div>
         </div>
@@ -179,6 +196,7 @@ export default function Sobre() {
                 <CheckIcon />
                 <p className="m-0">Desenvolvimento de APIs</p>
               </div>
+
               <div
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
@@ -186,6 +204,7 @@ export default function Sobre() {
                 <CheckIcon />
                 <p className="m-0">SEO e Otimização de Sites</p>
               </div>
+
               <div
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
@@ -193,6 +212,7 @@ export default function Sobre() {
                 <CheckIcon />
                 <p className="m-0">Gestão de Projetos Ágeis</p>
               </div>
+
               <div
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
@@ -218,6 +238,7 @@ export default function Sobre() {
                 <CheckIcon />
                 <p className="m-0">Design de Interface (UI)</p>
               </div>
+
               <div
                 className="d-flex align-items-center gap-2"
                 data-aos="fade-down"
@@ -267,23 +288,20 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-4 box-yes-we justify-content-center align-items-center d-flex">
-              <Image
-                src="/assets/img/img-yes-white.svg"
-                alt=""
-                width={0}
-                height={0}
-                sizes="100%"
-                className="img-fluid logo yes-we-do"
-                style={{ width: "auto", height: "auto" }} // optional
+            {/* <div className="col-lg-3 col-md-4 box-yes-we justify-content-center align-items-center d-flex">
+              <Lottie
+                animationData={team2}
+                loop
+                style={{ width: "100%", maxWidth: "400px", height: "auto" }}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       <Clientes />
       <PopupBlog />
+
       <section>
         <div className="container text-center">
           <Image
@@ -293,16 +311,17 @@ export default function Sobre() {
             height={0}
             sizes="100%"
             id="mascote-magmeta"
-            style={{ width: "50%", height: "auto" }} // optional
+            style={{ width: "50%", height: "auto" }}
           />
         </div>
       </section>
+
       <section>
         <div className="container text-center">
           <div className="row pt-md-5 pb-md-5">
             <div className="col-sm-12 col-md-6 mt-5 mb-5">
               <div className="box-texto-caminho">
-                <h1 className="texto1 text-right">
+                <h1 className="texto-c  text-right txt-s">
                   Tem um Projeto?
                   <br />
                   Vamos conversar!
@@ -316,7 +335,7 @@ export default function Sobre() {
                       rel="noopener noreferrer"
                       className="btn-mobile-orcam texto-botao"
                     >
-                      <span className="txt-b-or">VAMOS CONVERSAR</span>
+                      <span className="txt-b-or">Vamos Conversar</span>
                     </a>
                   </div>
                 </div>
@@ -325,13 +344,10 @@ export default function Sobre() {
 
             <div className="col-sm-12 col-md-6 d-flex img-vamos-conversar">
               <div>
-                <Image
-                  src="/assets/img/img-vamos-conversar.png"
-                  alt=""
-                  width={0}
-                  height={0}
-                  sizes="100%"
-                  style={{ width: "100%", height: "auto" }} // optional
+                <Lottie
+                  animationData={talkk}
+                  loop
+                  style={{ width: "100%", maxWidth: "400px", height: "auto" }}
                 />
               </div>
             </div>
