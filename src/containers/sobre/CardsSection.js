@@ -17,7 +17,7 @@ export default function CardsSection() {
                 data-aos-delay="400"
                 className="overflow-hidden box-sobre-q"
               >
-                <span className="p-5 text-center text-white">
+                <span className="p-5 text-center">
                   <h3 className="txt-s">Customização</h3>
                   Nossa abordagem personalizada garante que cada solução seja
                   ajustada às necessidades específicas, criando uma experiência
@@ -32,7 +32,7 @@ export default function CardsSection() {
                 data-aos-delay="300"
                 className="overflow-hidden box-sobre-q"
               >
-                <span className="p-5 text-center text-white">
+                <span className="p-5 text-center ">
                   <h3 className="txt-s">Soluções integradas</h3>
                   Através de cada solução conseguimos formar um campo magnético
                   capaz de unir oportunidades e pessoas de sucesso.
@@ -45,7 +45,7 @@ export default function CardsSection() {
                 data-aos-delay="200"
                 className="overflow-hidden box-sobre-q"
               >
-                <span className="p-5 text-center text-white">
+                <span className="p-5 text-center ">
                   <h3 className="txt-s">Inovação contínua</h3>
                   Nossos produtos contam com as melhores tecnologias do mercado.
                   Com pessoas apaixonadas por inovar, estamos sempre atualizados
