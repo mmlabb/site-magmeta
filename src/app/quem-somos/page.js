@@ -59,11 +59,11 @@ export default function Sobre() {
               <div className="d-flex box-texto-sobre flex-column">
                 <div className="txt-1">
                   <h2  className="text-bold txt-s">
-                    Olá, é um prazer te ver por aqui!
+                    Sobre Nós
                   </h2>
                 </div>
                 <div id="txt-sobre-2">
-                  <h6 className="text-center text-lg-start">
+                  <h6 className="text-center text-lg-start pe-5">
                     A Magmeta nasceu para impulsionar o crescimento de negócios!
                     Aqui solucionamos problemas e transformamos nossa realidade
                     com tecnologia, unindo o conhecimento de especialistas e
