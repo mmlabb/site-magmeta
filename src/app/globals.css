@@ -960,6 +960,18 @@ main {
   font-weight: bold !important;
 }
 
+.texto-c {
+  font-size: 50px !important;
+}
+
+.txt-s {
+  background: linear-gradient(135deg, #5700D4 0%, #db00ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 .depoimento {
   position: relative;
   background-color: #191919;
@@ -1844,7 +1856,6 @@ main {
 }*/
 
 @media (max-width: 768px) {
-
   #row-faq {
     padding: 0 !important;
   }
