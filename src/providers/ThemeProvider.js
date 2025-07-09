@@ -1,7 +1,8 @@
 "use client";
 
-const { createContext, useState, useContext } = require("react");
+const { createContext, useState, useContext, useEffect } = require("react");
 import themeSwitch from "@/utils/theme";
+import { usePathname } from "next/navigation";
 
 // Valor inicial do contexto
 const ThemeContext = createContext({
@@ -10,12 +11,16 @@ const ThemeContext = createContext({
 });
 
 export const ThemeProvider = ({ children }) => {
+  const pathname = usePathname();
   const [darkMode, setDarkMode] = useState(true);
 
   const alternateTheme = () => {
     setDarkMode(!darkMode);
-    themeSwitch(darkMode);
   };
+
+  useEffect(() => {
+    themeSwitch(darkMode);
+  }, [darkMode, pathname]);
 
   return (
     <ThemeContext.Provider value={{ darkMode, alternateTheme }}>
