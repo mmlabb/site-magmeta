@@ -95,8 +95,7 @@ h6 {
 
 .theme-light p,
 .theme-light h3,
-.theme-light h5,
-.theme-light span {
+.theme-light h5 {
   color: #000 !important;
 }
 
@@ -985,7 +984,7 @@ main {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%; 
+  width: 50%;
   height: 4px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra */
 }
