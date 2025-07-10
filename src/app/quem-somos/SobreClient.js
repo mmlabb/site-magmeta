@@ -7,6 +7,7 @@ import "./sobre.css";
 import CardsSection from "@/containers/sobre/CardsSection";
 import PopupBlog from "@/components/PopupBlog";
 import Lottie from "lottie-react";
+import LogosSlider from "@/containers/sobre/LogosSlider";
 
 const CheckIcon = () => {
   return (
@@ -61,7 +62,7 @@ export default function Sobre() {
                   <h2 className="text-bold txt-s">Sobre Nós</h2>
                 </div>
                 <div id="txt-sobre-2">
-                  <h6 className="text-center text-lg-start pe-5">
+                  <p className="text-center text-lg-start pe-3">
                     A Magmeta nasceu para impulsionar o crescimento de negócios!
                     Aqui solucionamos problemas e transformamos nossa realidade
                     com tecnologia, unindo o conhecimento de especialistas e
@@ -72,7 +73,7 @@ export default function Sobre() {
                     atrair pessoas e oportunidades de sucesso. Então se chegou
                     aqui é sinal de que estamos prestes a conhecer mais uma!
                     Isso é Magmeta!
-                  </h6>
+                  </p>
                 </div>
               </div>
             </div>
@@ -94,225 +95,8 @@ export default function Sobre() {
 
       <CardsSection />
 
-      <section className="py-5 my-5">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-3 col-md-4 logos-checks d-flex flex-column gap-3">
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-              >
-                <CheckIcon />
-                <p className="m-0">Aplicativos mobile (android e iOS)</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="300"
-              >
-                <CheckIcon />
-                <p className="m-0">Desenvolvimento personalizado de sistema</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="300"
-              >
-                <CheckIcon />
-                <p className="m-0">Chat bot com I.A</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="400"
-              >
-                <CheckIcon />
-                <p className="m-0">Uso de stacks modernas</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="500"
-              >
-                <CheckIcon />
-                <p className="m-0">Suporte e desenho de projeto</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="300"
-              >
-                <CheckIcon />
-                <p className="m-0">Acompanhamento e implantação</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="300"
-              >
-                <CheckIcon />
-                <p className="m-0">Suporte dedicado</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-              >
-                <CheckIcon />
-                <p className="m-0">Dashboard e relatórios personalizados</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="400"
-              >
-                <CheckIcon />
-                <p className="m-0">Consultoria para construção de softwares</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-              >
-                <CheckIcon />
-                <p className="m-0">MVP</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-4 logos-checks d-flex flex-column gap-3">
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-              >
-                <CheckIcon />
-                <p className="m-0">Desenvolvimento de APIs</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-              >
-                <CheckIcon />
-                <p className="m-0">SEO e Otimização de Sites</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-              >
-                <CheckIcon />
-                <p className="m-0">Gestão de Projetos Ágeis</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-              >
-                <CheckIcon />
-                <p className="m-0">IOTs -Internet das coisas</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="300"
-              >
-                <CheckIcon />
-                <p className="m-0">Cloud computing</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="400"
-              >
-                <CheckIcon />
-                <p className="m-0">Design de Interface (UI)</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="400"
-              >
-                <CheckIcon />
-                <p className="m-0">Experiência do Usuário (UX)</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="500"
-              >
-                <CheckIcon />
-                <p className="m-0">Protótipos</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="300"
-              >
-                <CheckIcon />
-                <p className="m-0">Metodologia ágil</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="300"
-              >
-                <CheckIcon />
-                <p className="m-0">High-fidelity Design</p>
-              </div>
-
-              <div
-                className="d-flex align-items-center gap-2"
-                data-aos="fade-down"
-                data-aos-delay="400"
-              >
-                <CheckIcon />
-                <p className="m-0">
-                  Consultoria para construção <br />
-                  de softwares
-                </p>
-              </div>
-            </div>
-
-            {/* <div className="col-lg-3 col-md-4 box-yes-we justify-content-center align-items-center d-flex">
-              <Lottie
-                animationData={team2}
-                loop
-                style={{ width: "100%", maxWidth: "400px", height: "auto" }}
-              />
-            </div> */}
-          </div>
-        </div>
-      </section>
-
-      <Clientes />
+      <LogosSlider />
       <PopupBlog />
-
-      <section>
-        <div className="container text-center">
-          <Image
-            src="/assets/img/about_mag.png"
-            alt=""
-            width={0}
-            height={0}
-            sizes="100%"
-            id="mascote-magmeta"
-            style={{ width: "50%", height: "auto" }}
-          />
-        </div>
-      </section>
 
       <section>
         <div className="container text-center">
