@@ -11,7 +11,7 @@ export default function CardsSection() {
       <section className="py-5">
         <div className="container" id="boxs-sobre">
           <div className="row gx-2 gy-2 linha-box-sobre">
-            <div className="col flex-1">
+            <div className="col flex-1 box-color">
               <div
                 data-aos="fade-up"
                 data-aos-delay="400"
@@ -26,7 +26,7 @@ export default function CardsSection() {
               </div>
             </div>
 
-            <div className="col flex-1">
+            <div className="col flex-1 box-color">
               <div
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -39,7 +39,7 @@ export default function CardsSection() {
                 </span>
               </div>
             </div>
-            <div className="col flex-1">
+            <div className="col flex-1 box-color">
               <div
                 data-aos="fade-up"
                 data-aos-delay="200"

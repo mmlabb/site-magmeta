@@ -60,11 +60,11 @@ h6 {
   border-radius: 24px;
 
   /* Glassmorphism */
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(60px) !important;
-  box-shadow: 0px 18px 33px rgba(0, 0, 0, 0.25);
-
   border: 1px solid #5700d4; /* borda roxa */
+  background-color: rgba(175, 54, 255, 0.236);
+  border-radius: 12px;
+
+  
 }
 
 .img-box-sobre {
