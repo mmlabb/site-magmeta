@@ -4,7 +4,7 @@ import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const images = [
-  "/assets/img/pin.jpg",
+  "/assets/img/capa-cad.png",
   "/assets/img/pin.jpg",
   "/assets/img/pin.jpg",
   "/assets/img/pin.jpg",
