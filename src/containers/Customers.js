@@ -19,7 +19,7 @@ export default function Clientes() {
               width={0}
               height={0}
               sizes="100%"
-              style={{ width: "auto", height: "auto" }} // optional
+              style={{ width: "auto", height: "auto" }} 
             />
           </div>
           <div className="col-md-4 col-6">
@@ -30,7 +30,7 @@ export default function Clientes() {
               width={0}
               height={0}
               sizes="100%"
-              style={{ width: "auto", height: "auto" }} // optional
+              style={{ width: "auto", height: "auto" }} 
             />
           </div>
           <div className="col-md-4 col-6">
@@ -41,7 +41,7 @@ export default function Clientes() {
               width={0}
               height={0}
               sizes="100%"
-              style={{ width: "auto", height: "auto" }} // optional
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
         </div>
