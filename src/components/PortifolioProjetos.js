@@ -125,6 +125,12 @@ export default function PortifolioProjetos() {
                   className="rounded"
                   draggable={false}
                 />
+                <button
+                  className="btn-ver-mais my-2"
+                  onClick={() => router.push("#")}
+                >
+                  Ver mais
+                </button>
               </div>
             </div>
           ))}
