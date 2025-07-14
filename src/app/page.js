@@ -454,14 +454,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="col p-5  pb-5 d-flex text-center justify-content-center">
           <h2>Cases De Sucesso </h2>
         </div>
         <div>
           <PortifolioProjetos />
         </div>
-      </section>
+      </section> */}
 
       <section>
         <div className="container">
