@@ -20,9 +20,17 @@ import {
 import { Zap } from "react-feather";
 import { useTheme } from "@/providers/ThemeProvider";
 import PortifolioProjetos from "@/components/PortifolioProjetos";
+import { FaCheck } from "react-icons/fa";
 
 export default function Home() {
   const { darkMode } = useTheme();
+  const lista = [
+    "Atrair mais clientes certos",
+    "Automatizar o atendimento e ganhar tempo",
+    "Vender com consistência, mesmo fora do horário comercial",
+    "Ter clareza do que está funcionando e onde investir",
+  ];
+
   useEffect(() => {
     if (typeof window === "undefined") return;
     // loadModel();
@@ -91,21 +99,23 @@ export default function Home() {
       <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
         <div className="container box-1">
           <div className="row linha-1 align-items-center">
-            <div className="box-texto-magmetize col-md-12 col-lg-6">
+            <div className="box-texto-magmetize col-md-12 col-lg-7">
               <div className="text-center texto1 d-flex text-lg-start flex-column">
-                <h1 className="texto-magnetize-metas">
-                  Magnetize as metas do seu negócio com
-                </h1>
-                <WordAnimation />
-                {/* <p className="mt-2">
+                <div className="p-3">
+                  <h1 className="texto-magnetize-metas">
+                    Transformamos seu negócio em uma máquina de vendas com
+                  </h1>
+                  <WordAnimation />
+                  {/* <p className="mt-2">
                     Seu negócio merece uma atenção especial, com ferramentas
                     otimizadas especialmente para o seu crescimento.
                   </p> */}
-                <div className="justify-content-center">
-                  <p className="">
-                    Estratégia e ferramentas que trabalham especialmente para o
-                    seu crescimento.
-                  </p>
+                  <div className="justify-content-center">
+                    <p className="">
+                      A Magmeta conecta estratégia, tecnologia e inteligência
+                      digital para negócios locais crescerem com consistência
+                    </p>
+                  </div>
                 </div>
                 <div className="d-flex pb-2 pt-2 btn-or">
                   <div className=" botao-nossa-ex btn-or">
@@ -152,7 +162,7 @@ export default function Home() {
               </div>*/}
             </div>
 
-            <div className="col-md-12 col-lg-6 d-flex justify-content-end container-img-app-magmeta">
+            <div className="col-md-12 col-lg-5 d-flex justify-content-end container-img-app-magmeta">
               <div className="img-app-magmeta">
                 <Image
                   className="app-magmeta"
@@ -218,7 +228,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="segunda-sessao">
+      {/* <section id="segunda-sessao">
         <div className="container" id="texto-projetos">
           <div className="row text-center" id="linha-txt-projetos">
             <h2>Soluções Magmeta</h2>
@@ -261,7 +271,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section id="section-pacotes" className="p-5 ">
         {/* Camada roxa com blur ao centro
@@ -281,7 +291,7 @@ export default function Home() {
           }}
         /> */}
 
-        {/*<div style={{ position: "relative", zIndex: 1 }}>
+      {/*<div style={{ position: "relative", zIndex: 1 }}>
           <SyncAccordionSlide />
         </div>*
       </section> */}
@@ -386,31 +396,43 @@ export default function Home() {
           </div> */}
 
           <div className="row pt-5 pb-5 mt-5  ">
-            <div className="col-md-6 d-md-flex d-none justify-content-start align-items-center">
+            <div className="col-md-6 d-md-flex d-none justify-content-center align-items-center pe-5">
               <Image
                 className="img-fluid"
-                src="/assets/img/sabemos-caminho.svg"
+                src="/assets/img/img-sabemos-cam.svg"
                 alt=""
                 width={0}
                 height={0}
                 sizes="100%"
-                style={{ width: "auto", height: "auto" }} // optional
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 ps-5">
               <div className="box-texto-caminho d-flex flex-column gap-3 pt-5 align-items-center align-items-md-start">
-                <h1 className="texto1 text-right">
-                  Sabemos o caminho para dar vida à sua ideia
-                </h1>
-                <h6>
-                  Validamos a ideia, construímos do zero ou evoluímos produtos
-                  já existentes.
-                  <br />
-                  Estamos prontos para ajudar em qualquer etapa do ciclo de vida
-                  de seu produto.
-                </h6>
-                <div className="botao-nossa-ex justify-content-center btn-or  btn-r">
+                <h2 className="texto1 text-right">
+                  Crescimento de verdade, com tecnologia aplicada ao seu negócio
+                </h2>
+                <p>
+                  Desenhamos soluções personalizadas para que o seu negócio
+                  local consiga:
+                </p>
+                <ul className="list-unstyled">
+                  {lista.map((item, index) => (
+                    <li key={index} className="d-flex align-items-start mb-2">
+                      <FaCheck
+                        style={{
+                          color: "#5B19A9",
+                          marginRight: "0.5rem",
+                          marginTop: "0.25rem",
+                        }}
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* <div className="botao-nossa-ex justify-content-center btn-or  btn-r">
                   <a
                     className="texto-botao botao-roxo"
                     href="https://onboarding.magmeta.com.br/onboarding/lead"
@@ -419,7 +441,13 @@ export default function Home() {
                   >
                     <span className="txt-b-or">ORÇAMENTO RÁPIDO</span>
                   </a>
-                </div>
+                </div> */}
+              </div>
+              <div>
+                <p>
+                  Tudo isso sem complicações, promessas vazias ou pacotes
+                  engessados.
+                </p>
               </div>
             </div>
           </div>
@@ -427,12 +455,12 @@ export default function Home() {
       </section>
 
       <section>
-        {/* <div className="col p-5  pb-5 d-flex text-center justify-content-center">
+        <div className="col p-5  pb-5 d-flex text-center justify-content-center">
           <h2>Cases De Sucesso </h2>
         </div>
         <div>
           <PortifolioProjetos />
-        </div> */}
+        </div>
       </section>
 
       <section>
