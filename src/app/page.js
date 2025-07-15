@@ -178,15 +178,16 @@ export default function Home() {
                 <div className="pop-up" id="pop-up-1">
                   <div className="d-flex  flex-column pop-up-content pop-up-1">
                     <div className="d-flex justify-content-between">
-                      <h6 className="txt-pop-up">Velocidade</h6>
-                      <RocketFill
+                      <span className="txt-pop-up">Funil inteligente</span>
+                      <FunnelFill
                         className="icon-pop"
                         weight="fill"
                         color={darkMode ? "#fff" : "#000"}
                       />
                     </div>
                     <p className="d-none d-md-block txt-up">
-                      Ganhe tempo com a tecnologia trabalhando a seu favor
+                      Leads certos, mensagens certeiras e vendas acontecendo no
+                      tempo certo.
                     </p>
                   </div>
                 </div>
@@ -194,7 +195,7 @@ export default function Home() {
                 <div className="pop-up" id="pop-up-2">
                   <div className="d-flex  flex-column pop-up-content">
                     <div className="d-flex justify-content-between">
-                      <h6 className="txt-pop-up">Estratégia</h6>
+                      <span className="txt-pop-up">Estratégia aplicada</span>
                       <LightbulbFill
                         className=" icon-pop"
                         weight="fill"
@@ -202,23 +203,24 @@ export default function Home() {
                       />
                     </div>
                     <p className="d-none d-md-block">
-                      Esteja a frente no mercado com o melhor que a tecnologia
-                      tem a oferecer
+                      Criamos o caminho que leva o cliente certo até você, do
+                      interesse ao pagamento.
                     </p>
                   </div>
                 </div>
                 <div className="pop-up" id="pop-up-3">
                   <div className="d-flex justify-content-between flex-column">
-                    <h6 className="txt-pop-up">
-                      Fidelização
-                      <FunnelFill
+                    <span className="txt-pop-up">
+                      Estrutura de Vendas
+                      <RocketFill
                         className="icon-pop"
                         weight="fill"
                         color={darkMode ? "#fff" : "#000"}
                       />
-                    </h6>
+                    </span>
                     <p className="d-none d-md-block">
-                      Experiência dos clientes elevada garantindo fidelidade
+                      Sua operação digital vendendo 24h com acompanhamento,
+                      dados e otimização constante
                     </p>
                   </div>
                 </div>
