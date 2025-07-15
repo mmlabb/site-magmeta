@@ -1105,7 +1105,6 @@ main {
 
 /*ACCORDION STYLE*/
 .btn-ver-mais {
-  position: absolute !important;
   background-color: #fff !important;
   color: #000000 !important;
   transition: all 0.3s ease !important;
@@ -1115,9 +1114,8 @@ main {
   border-radius: 24px !important;
   font-weight: 500;
   transition: background-color 0.3s ease;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 88%;
+ 
+  
   z-index: 3;
 }
 
