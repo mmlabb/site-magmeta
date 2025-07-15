@@ -15,6 +15,7 @@ import {
   ArrowRightIcon,
   ArrowUpRightIcon,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const SyncAccordionSlide = () => {
   const [active_index, set_active_index] = useState(0);
@@ -24,24 +25,28 @@ const SyncAccordionSlide = () => {
   const progress_ref = useRef(null);
   const container_ref = useRef(null);
 
+  const router = useRouter();
   const items = [
     {
       title: "Magnet chat",
+      slug: "magnet",
       content:
-        "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      image: "/assets/img/test1.png",
+        "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
+      image: "/assets/img/magnet-1.png",
     },
     {
-      title: "Vitrinne",
+      title: "Sites",
+      slug: "sites",
       content:
-        "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      image: "/assets/img/test2.png",
+        "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
+      image: "/assets/img/site.png",
     },
     {
       title: "Aplicativos",
+      slug: "aplicativos",
       content:
-        "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      image: "/assets/img/test3.png",
+        "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
+      image: "/assets/img/app.png",
     },
   ];
 
@@ -159,9 +164,23 @@ const SyncAccordionSlide = () => {
                     {item.title} <ArrowDown size={16} />
                   </h3>
                   {isActive && (
-                    <p style={{ color: "#fff", fontWeight: "400" }}>
-                      {item.content}
-                    </p>
+                    <>
+                      <p style={{ color: "#fff", fontWeight: "400" }}>
+                        {item.content}
+                      </p>
+                      <button
+                        className="btn-ver-mais my-2"
+                        onClick={() => router.push(`/pacotes/${item.slug}`)}
+                        onMouseOver={(e) =>
+                          (e.target.style.backgroundColor = "#f1f1f1")
+                        }
+                        onMouseOut={(e) =>
+                          (e.target.style.backgroundColor = "#fff")
+                        }
+                      >
+                        Ver mais
+                      </button>
+                    </>
                   )}
                 </div>
               );
@@ -183,7 +202,7 @@ const SyncAccordionSlide = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                minHeight: "250px", // Garante altura constante
+                minHeight: "auto", // Garante altura constante
               }}
             >
               <div
@@ -200,7 +219,7 @@ const SyncAccordionSlide = () => {
                   width={0}
                   height={0}
                   style={{
-                    objectFit: "cover",
+                    objectFit: "contain",
                     borderRadius: "1rem",
                     width: "100%",
                     height: "100%",

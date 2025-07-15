@@ -293,11 +293,6 @@ export default function Home() {
           }}
         /> */}
 
-      {/*<div style={{ position: "relative", zIndex: 1 }}>
-          <SyncAccordionSlide />
-        </div>*
-      </section> */}
-
       <Clientes />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
@@ -456,14 +451,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section>
+      <div className="container py-5 ">
+        <div className="py-5">
+          <SyncAccordionSlide />
+        </div>
+      </div>
+
+      <section>
+        <div className="col p-5  pb-5 d-flex text-center justify-content-center">
+          {/* <section>
         <div className="col p-5  pb-5 d-flex text-center justify-content-center">
           <h2>Cases De Sucesso </h2>
         </div>
         <div>
           <PortifolioProjetos />
         </div>
-      </section> */}
+      </section>
 
       <section>
         <div className="container">

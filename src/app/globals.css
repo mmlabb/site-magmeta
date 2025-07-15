@@ -347,8 +347,8 @@ header.floating {
 .botao-whatsapp {
   position: fixed;
   bottom: 40px; /* Posição da parte inferior */
-  right: 44px; /* Posição da direita */
-  transition: transform 0.3s ease; /* Adicionar transição suave */
+  right: 44px;
+  transition: transform 0.3s ease;
   z-index: 1001;
 }
 
@@ -594,7 +594,7 @@ header.floating {
 
 .theme-light .btn-outline-light {
   color: #000 !important;
-  border-color: #000 !important; /* ou a cor de fundo que preferir */
+  border-color: #000 !important;
 }
 
 .btn-outline-light:hover {
@@ -695,6 +695,127 @@ main {
   z-index: 1;
 }
 
+.row-banner {
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+
+.row-banner2 {
+  background-image: url("/assets/img/banner2.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+
+.btn-ver-mais {
+  background-color: #fff !important;
+  color: #000000 !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #000 !important;
+  border-radius: 24px !important;
+  padding: 8px 18px;
+  border-radius: 24px !important;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ver-mais:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn-banner {
+  background-color: #fff !important;
+  color: #000000 !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #000 !important;
+  border-radius: 24px !important;
+}
+
+.btn-banner:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+}
+
+.btn-white {
+  background-color: #fff !important;
+  color: #000000 !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #000 !important;
+  border-radius: 24px !important;
+}
+
+.btn-white:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+}
+
+.btn-plano {
+  color: #fff !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #fdf8f8 !important;
+  border-radius: 24px !important;
+}
+
+.row-banner p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.card-grid-bloco {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  min-height: 120px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: transparent;
+}
+
+.card-grid-bloco.ativo {
+  background-color: rgba(54, 124, 255, 0.1);
+}
+
+.tipo {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Magnet Chat */
+.publico-magnet {
+  background-color: rgba(54, 124, 255, 0.1);
+  border: 1px solid #003366;
+}
+
+/* Sites */
+.publico-sites {
+  background-color: rgba(3, 209, 232, 0.1);
+  border: 1px solid #03d1e8;
+}
+
+.gap {
+  gap: 1rem !important;
+}
+
+.faixa-titulo {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: center;
+}
+
+.titulo-plano {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
 /* #segunda-sessao::before {
   content: "";
   position: absolute;
@@ -707,6 +828,115 @@ main {
   filter: blur(400px);
   z-index: 0;
 } */
+
+.plano-box {
+  padding: 1.5rem;
+  padding-top: 0% !important;
+  border: 1px solid white;
+  border-radius: 12px;
+  background-color: #111;
+  height: 100%;
+  color: white;
+}
+
+.plano-box .titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.plano-box .preco {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.plano-box .descricao {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.plano-box .beneficios {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+
+.plano-box .beneficios li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.etiqueta {
+  background-color: #69fe97;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.plano-box {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  border-radius: 0 0 16px 16px;
+}
+
+.box-lottie {
+  border: 1px solid #003366;
+  background-color: rgba(54, 124, 255, 0.1);
+  border-radius: 12px;
+}
+
+.faq-box {
+  border-radius: 12px;
+}
+
+.c-perguntas {
+  background-image: url("/assets/img/fundo-m.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+}
+
+.btn-green {
+  border-color: #04d361 !important;
+  color: #04d361 !important;
+}
+
+.btn-green:hover {
+  background-color: #04d361 !important;
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-body {
+  background-color: transparent !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+}
+
+.publico-carousel .slick-slide > div {
+  display: flex !important;
+  justify-content: center;
+}
+
+.publico-carousel .slick-list {
+  padding: 0 !important;
+}
 
 #segunda-sessao .carousel .carousel-item img {
   z-index: 1;
@@ -724,6 +954,23 @@ main {
   height: 4%;
 }
 
+.item-t {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+.texto-c {
+  font-size: 50px !important;
+}
+
+.txt-s {
+  background: linear-gradient(135deg, #5700d4 0%, #db00ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 .depoimento {
   position: relative;
   background-color: #191919;
@@ -736,7 +983,7 @@ main {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%; /* Ajuste a largura conforme necessário */
+  width: 50%;
   height: 4px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra */
 }
@@ -909,6 +1156,13 @@ main {
 /* RESPONSIVO */
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
+  .c-txt-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   h2 {
     font-size: 32px !important;
   }
@@ -1511,7 +1765,7 @@ main {
 
 /*TELAS DE COMPUTADOR GRANDES*/
 @media (min-width: 991.98px) {
-  main {
+  .main-home {
     background-image: url(/assets/img/img-m-magmeta.svg);
     background-repeat: no-repeat;
     background-position: right top;
@@ -1624,6 +1878,72 @@ main {
   }
 }*/
 
+@media (max-width: 768px) {
+  #row-faq {
+    padding: 0 !important;
+  }
+  .publico-desktop {
+    display: none;
+  }
+
+  .box-lott {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .lott {
+    max-width: 100% !important;
+  }
+
+  .box-ct {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  .co-cta {
+    text-align: center !important;
+  }
+
+  .acc {
+    margin: 0 !important;
+  }
+
+  .r-gap {
+    gap: 60px !important;
+  }
+
+  #btn-wp {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+@media (min-width: 768px) {
+  .col-lot {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .btn-white {
+    width: 100% !important;
+    font-size: 12px !important;
+  }
+
+  .btn-succe {
+    font-size: 14px !important;
+  }
+
+  .col-lot {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .lott {
+    max-width: 100% !important;
+  }
+}
+
 canvas#3d {
   position: absolute;
   top: 0;
@@ -1632,6 +1952,12 @@ canvas#3d {
   height: 100vh;
   pointer-events: none;
   z-index: 1000;
+}
+
+@media (min-width: 1000px) {
+  .btn-white {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 1920px) {

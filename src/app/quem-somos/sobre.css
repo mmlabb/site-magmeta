@@ -50,14 +50,19 @@ h6 {
   height: 100%;
 }
 
-#box-sobre-3 {
+.box-sobre-q {
   display: flex;
-  background-color: #a778e4;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 24px;
+
   height: 100%;
+  border-radius: 24px;
+
+  /* Glassmorphism */
+  border: 1px solid #5700d4; /* borda roxa */
+  background-color: rgba(175, 54, 255, 0.236);
+  border-radius: 12px;
 }
 
 .img-box-sobre {
@@ -92,6 +97,16 @@ h6 {
   justify-content: center;
   padding-top: 28%;
   padding-bottom: 48px;
+}
+
+.cards-home {
+  display: flex;
+  background-color: #e5e5e5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  height: 100%;
 }
 
 @media (max-width: 768px) {

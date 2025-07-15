@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 
 import MetaPixel from "@/components/MetaPixel";
 import PopupBlog from "@/components/PopupBlog";
+import LayoutClient from "@/components/LayoutClient";
 
 export const metadata = {
   title: "Magmeta Soluções",
@@ -84,7 +85,7 @@ export default function RootLayout({ children }) {
                 style={{ width: "auto", height: "auto" }}
               />
             </a>
-            <main>{children}</main>
+            <LayoutClient>{children}</LayoutClient>
             <Footer />
             <PopupBlog />
           </div>
