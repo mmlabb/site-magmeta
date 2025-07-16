@@ -5,7 +5,7 @@ export default function Clientes() {
     <section id="quarta-sessao" className="py-5 mt-5">
       <div className="container text-center cont-logos">
         <div className="row linha-logos  pb-5 align-items-center justify-content-center">
-          <div className="col-md-3 col-6">
+          <div className="col-md-4 col-6">
             <Image
               src="/assets/img/logo-cadcam-white.svg"
               alt="logo-usados-cad"
@@ -16,7 +16,7 @@ export default function Clientes() {
               style={{ width: "auto", height: "auto" }}
             />
           </div>
-          <div className="col-md-3 col-6">
+          <div className="col-md-4 col-6">
             <Image
               src="/assets/img/logo-mclove-white.svg"
               alt="logo-mclove"
@@ -27,7 +27,7 @@ export default function Clientes() {
               style={{ width: "auto", height: "auto" }}
             />
           </div>
-          <div className="col-md-3 col-6">
+          <div className="col-md-4 col-6">
             <Image
               src="/assets/img/logo-klubi-white.svg"
               alt="logo-klubi"
@@ -38,7 +38,7 @@ export default function Clientes() {
               style={{ width: "auto", height: "auto" }}
             />
           </div>
-          <div className="col-md-3 col-6">
+          {/* <div className="col-md-3 col-6">
             <Image
               src="/assets/img/logo-marq-black.svg"
               alt="logo-marq"
@@ -48,7 +48,7 @@ export default function Clientes() {
               sizes="100%"
               style={{ width: "auto", height: "auto" }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
