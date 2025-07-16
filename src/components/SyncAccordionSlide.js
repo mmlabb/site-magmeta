@@ -16,6 +16,7 @@ import {
   ArrowUpRightIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import BtnRoxo from "./botoes/BtnRoxo";
 
 const SyncAccordionSlide = () => {
   const [active_index, set_active_index] = useState(0);
@@ -28,25 +29,30 @@ const SyncAccordionSlide = () => {
   const router = useRouter();
   const items = [
     {
-      title: "Magnet chat",
+      title: "Site Que Vende",
+      slug: "sites",
+      content:
+        "Sua página com estrutura pronta para captar clientes via WhatsApp.",
+      image: "/assets/img/site.png",
+      cta: "Quero um site",
+    },
+
+    {
+      title: "Atendimento Automático 24h",
       slug: "magnet",
       content:
         "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
       image: "/assets/img/magnet-1.png",
+      cta: "Quero um chat",
     },
+
     {
-      title: "Sites",
-      slug: "sites",
-      content:
-        "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
-      image: "/assets/img/site.png",
-    },
-    {
-      title: "Aplicativos",
+      title: "Aplicativo Para Seus Clientes",
       slug: "aplicativos",
       content:
         "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
       image: "/assets/img/app.png",
+      cta: "Quero um app",
     },
   ];
 
@@ -106,19 +112,19 @@ const SyncAccordionSlide = () => {
 
   return (
     <div className="container-fluid  justify-content-between">
-      <div className="d-flex flex-column-reverse flex-md-row gap-4">
+      <div className="d-flex flex-column-reverse flex-md-row gap-4 row-accordion">
         {/* Accordion */}
-        <div className="w-100 w-md-50 position-relative">
+        <div className="w-100 w-md-50 position-relative my-2">
           {/* Barra de progresso vertical fixa */}
           <div
             style={{
               position: "absolute",
               left: 0,
               top: 0,
-              width: "2px",
+              width: "6px",
               height: "100%",
               backgroundColor: "#4f4b55",
-              borderRadius: "10px",
+              borderRadius: "24px",
               zIndex: 1,
             }}
           >
@@ -129,8 +135,8 @@ const SyncAccordionSlide = () => {
                 width: "100%",
                 height: "0px",
                 top: "0px",
-                backgroundColor: "#6f42c1",
-                borderRadius: "10px",
+                backgroundColor: "#5B19A9",
+                borderRadius: "24px",
                 transition: "height 4.5s linear, top 0.5s ease",
               }}
             ></div>
@@ -157,30 +163,34 @@ const SyncAccordionSlide = () => {
                   <h3
                     style={{
                       fontWeight: "600",
-                      color: isActive ? "#fff" : "#e9d9ffe3",
+                      color: isActive ? "#1C1C3C" : "#1C1C3C",
                       paddingTop: "12px",
                     }}
                   >
                     {item.title} <ArrowDown size={16} />
                   </h3>
                   {isActive && (
-                    <>
-                      <p style={{ color: "#fff", fontWeight: "400" }}>
-                        {item.content}
-                      </p>
-                      <button
-                        className="btn-ver-mais my-2"
-                        onClick={() => router.push(`/pacotes/${item.slug}`)}
-                        onMouseOver={(e) =>
-                          (e.target.style.backgroundColor = "#f1f1f1")
-                        }
-                        onMouseOut={(e) =>
-                          (e.target.style.backgroundColor = "#fff")
-                        }
-                      >
-                        Ver mais
-                      </button>
-                    </>
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, ease: "easeOut" }}
+                      style={{ overflow: "hidden" }}
+                    >
+                      <div>
+                        <span style={{ color: "#1C1C3C", fontWeight: "400" }}>
+                          {item.content}
+                        </span>
+                      </div>
+
+                      <div>
+                        <BtnRoxo
+                          className="py-2 px-4"
+                          style={{ fontSize: "0.9rem" }}
+                        >
+                          {item.cta}
+                        </BtnRoxo>
+                      </div>
+                    </motion.div>
                   )}
                 </div>
               );
@@ -209,7 +219,7 @@ const SyncAccordionSlide = () => {
                 id="box-img-accord"
                 style={{
                   width: "100%",
-                  height: "auto",
+                  height: "100%",
                   maxWidth: "600px",
                 }}
               >
@@ -223,7 +233,7 @@ const SyncAccordionSlide = () => {
                     borderRadius: "1rem",
                     width: "100%",
                     height: "100%",
-                    maxHeight: "350px",
+                    maxHeight: "450px",
                   }}
                 />
               </div>
