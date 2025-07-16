@@ -5,13 +5,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const images = [
   "/assets/img/capa-cad.png",
-  "/assets/img/pin.jpg",
-  "/assets/img/pin.jpg",
-  "/assets/img/pin.jpg",
-  "/assets/img/pin.jpg",
-  "/assets/img/pin.jpg",
-  "/assets/img/pin.jpg",
-  "/assets/img/pin.jpg",
+  "/assets/img/cad.png",
+  "/assets/img/snet.png",
+  "/assets/img/cad.png",
+  "/assets/img/snet.png",
+  "/assets/img/cad.png",
+  "/assets/img/snet.png",
+  "/assets/img/cad.png",
 ];
 
 export default function PortifolioProjetos() {
