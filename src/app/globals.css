@@ -1392,6 +1392,11 @@ main {
     justify-content: flex-end;
   }
 
+  .btn-colorido {
+    display: flex;
+    justify-content: center;
+  }
+
   #texto-localizacao {
     padding-top: 0.5rem !important;
   }
