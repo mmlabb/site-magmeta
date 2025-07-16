@@ -99,15 +99,7 @@ h6 {
   padding-bottom: 48px;
 }
 
-.cards-home {
-  display: flex;
-  background-color: #e5e5e5;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 24px;
-  height: 100%;
-}
+
 
 @media (max-width: 768px) {
   .linha-box-sobre {
