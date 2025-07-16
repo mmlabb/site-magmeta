@@ -95,7 +95,8 @@ export default function Sobre() {
 
       <CardsSection />
 
-      <LogosSlider />
+      <Clientes />
+      {/* <LogosSlider /> */}
       <PopupBlog />
 
       <section>
