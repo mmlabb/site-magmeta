@@ -94,19 +94,19 @@ h6 {
 
 .theme-light {
   background-color: #fff !important;
-  color: #1C1C3C;
+  color: #1c1c3c;
   transition: 500ms;
 }
 
 .theme-light h1,
 .theme-light h2 {
-  color: #1C1C3C;
+  color: #1c1c3c;
 }
 
 .theme-light p,
 .theme-light h3,
 .theme-light h5 {
-  color: #1C1C3C !important;
+  color: #1c1c3c !important;
 }
 
 /* Cores de destaque */
@@ -154,7 +154,7 @@ h6 {
 .theme-light .card,
 .theme-light .box-cta {
   background-color: #e9d9ff !important;
-  color: #1C1C3C !important;
+  color: #1c1c3c !important;
 }
 
 #carouselPortfolio .carousel-item::-webkit-scrollbar {
@@ -422,7 +422,7 @@ header.floating {
 .theme-light {
   .btn-colorido::before {
     background-color: #fff;
-    color: #1C1C3C;
+    color: #1c1c3c;
   }
 }
 
@@ -432,8 +432,6 @@ header.floating {
     color: #fff;
   }
 }
-
-
 
 .botao-roxo {
   justify-content: center !important;
@@ -617,7 +615,7 @@ header.floating {
 } */
 
 #app-theme.theme-light .icon-pop {
-  color: #1C1C3C !important;
+  color: #1c1c3c !important;
 }
 
 /* Tema escuro */
@@ -672,7 +670,7 @@ header.floating {
 }
 
 .theme-light .btn-outline-light {
-  color: #1C1C3C !important;
+  color: #1c1c3c !important;
   border-color: #000 !important;
 }
 
@@ -737,7 +735,7 @@ header.floating {
 }
 
 .theme-light .texto-h5-port {
-  color: #1C1C3C;
+  color: #1c1c3c;
 }
 .texto-h5-port {
   color: #fff;
@@ -1208,7 +1206,7 @@ main {
 /*ACCORDION STYLE*/
 
 .row-accordion {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   border-radius: 24px;
 }
 
@@ -1394,7 +1392,7 @@ main {
 
   .btn-colorido {
     display: flex;
-    justify-content: center;
+    justify-content: c;
   }
 
   #texto-localizacao {
@@ -1618,8 +1616,8 @@ main {
 
   .theme-light .btn-outline-light,
   .offcanvas .btn-outline-light {
-    color: #1C1C3C !important;
-    border-color: #1C1C3C !important; /* ou a cor de fundo que preferir */
+    color: #1c1c3c !important;
+    border-color: #1c1c3c !important; /* ou a cor de fundo que preferir */
   }
 
   .label .ball {
@@ -2004,6 +2002,7 @@ main {
 
   .box-ct {
     display: flex;
+    align-items: center !important;
     justify-content: center !important;
     flex-direction: column !important;
   }
