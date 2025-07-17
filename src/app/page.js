@@ -20,16 +20,22 @@ import {
 import { Zap } from "react-feather";
 import { useTheme } from "@/providers/ThemeProvider";
 import PortifolioProjetos from "@/components/PortifolioProjetos";
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaCheckCircle } from "react-icons/fa";
 import GridCard from "@/components/pacote/GridCard";
-import BtnColor from "@/components/botoes/BtnColor";
 import BtnColorido from "@/components/botoes/BtnColor";
 import BtnRoxo from "@/components/botoes/BtnRoxo";
 import CtaAcao from "@/components/pacote/CtaAcao";
+import BeneficiosSection from "@/components/pacote/BeneficiosSection";
 
 export default function Home() {
+  const beneficios = [
+    "Atrair mais clientes certos",
+    "Automatizar o atendimento e ganhar tempo",
+    "Vender com consistência, mesmo fora do horário comercial",
+    "Ter clareza do que está funcionando e onde investir",
+  ];
   // ETAPAS / PASSOS
-  const passosMagnet = [
+  const passos = [
     {
       title: "Diagnóstico personalizado",
       text: "Você agenda uma Sessão Estratégica gratuita com nosso time. Entendemos seu momento e objetivos.",
@@ -240,30 +246,24 @@ export default function Home() {
                 <h2 className="texto1 text-right">
                   Crescimento de verdade, com tecnologia aplicada ao seu negócio
                 </h2>
-                <p>
+                <span>
                   Desenhamos soluções personalizadas para que o seu negócio
                   local consiga:
-                </p>
-                <ul className="list-unstyled">
-                  {lista.map((item, index) => (
-                    <li key={index} className="d-flex align-items-start mb-2">
-                      <FaCheck
-                        style={{
-                          color: "#5B19A9",
-                          marginRight: "0.5rem",
-                          marginTop: "0.25rem",
-                        }}
-                      />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <p>
-                  Tudo isso sem complicações, promessas vazias ou pacotes
-                  engessados.
-                </p>
+                </span>
+                <BeneficiosSection
+                  beneficios={beneficios}
+                  checkColor="#9C5DD3"
+                  animationData={null}
+                  showLottie={false}
+                  isMagnet={false}
+                  compact={true}
+                />
+                <div className="d-flex fs-6 align-items-center align-items-md-start">
+                  <p>
+                    Tudo isso sem complicações, promessas vazias ou pacotes
+                    engessados.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function Home() {
 
       <GridCard
         titulo="🔧 Como Funciona?"
-        passos={passosMagnet}
+        passos={passos}
         iconColor="#000"
         ativoBgColor="#E5E5E5"
         modoHome={true}
