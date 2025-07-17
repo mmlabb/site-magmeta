@@ -10,37 +10,47 @@ export default function BeneficiosSection({
   checkColor,
   isMagnet,
   lottieWidth = "100%",
+  showLottie = true,
+  compact = false,
 }) {
   return (
-    <div className="container py-5">
-      <div className="row d-flex justify-content-center align-items-center">
-        <div className="d-flex justify-content-center py-5">
-          <h4>{titulo}</h4>
-        </div>
+    <div className={`container ${compact ? "" : "py-5"}`}>
+      <div
+        className={`row d-flex justify-content-center align-items-center ${
+          compact ? "" : "py-5"
+        }`}
+      >
+        {!compact && (
+          <div className="d-flex justify-content-center py-5">
+            <h4>{titulo}</h4>
+          </div>
+        )}
 
-        <div className="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
-          <Lottie
-            animationData={animationData}
-            loop={true}
-            className={` ${isMagnet ? "box-lottie" : ""}`}
-            style={{
-              width: lottieWidth,
-              height: "100%",
-              borderRadius: "24px",
-              overflow: "hidden",
-            }}
-          />
-        </div>
+        {showLottie && (
+          <div className="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              className={` ${isMagnet ? "box-lottie" : ""}`}
+              style={{
+                width: lottieWidth,
+                height: "100%",
+                borderRadius: "24px",
+                overflow: "hidden",
+              }}
+            />
+          </div>
+        )}
 
-        <div className="col-md-6">
-          <p className="pb-3">{descricao}</p>
-          <ul className="list-unstyled">
+        <div className={showLottie ? "col-md-6" : "col-12"}>
+          {!compact && <p className="pb-3">{descricao}</p>}
+          <ul className="list-unstyled mb-0 mt-0">
             {beneficios.map((item, index) => (
               <li key={index} className="d-flex align-items-start mb-2">
                 <FaCheck
                   className="me-2 mt-1"
                   color={checkColor}
-                  style={{ minWidth: "16px", minHeight: "16px" }}
+                  size={16}
                 />
                 <span>{item}</span>
               </li>
