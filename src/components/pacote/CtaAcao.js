@@ -18,7 +18,7 @@ export default function CtaAcao({
               <h3>{titulo}</h3>
               <p className="text-break">{descricao}</p>
 
-              <div>
+              <div className="box-ct d-flex">
                 {botaoCustomPrimario ? (
                   botaoCustomPrimario
                 ) : botaoPrimario ? (
