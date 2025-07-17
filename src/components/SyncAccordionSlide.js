@@ -35,24 +35,27 @@ const SyncAccordionSlide = () => {
         "Sua página com estrutura pronta para captar clientes via WhatsApp.",
       image: "/assets/img/site.png",
       cta: "Quero um site",
+      link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
     },
 
     {
       title: "Atendimento Automático 24h",
       slug: "magnet",
       content:
-        "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
+        "Automatize suas conversas com clientes usando chatbots no WhatsApp Responda dúvidas, colete dados e envie informações 24 horas por dia.",
       image: "/assets/img/magnet-1.png",
       cta: "Quero um chat",
+      link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
     },
 
     {
       title: "Aplicativo Para Seus Clientes",
       slug: "aplicativos",
       content:
-        "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem",
+        "Tenha um app exclusivo para seu negócio, com sua marca e funcionalidades. Facilite pedidos, agendamentos ou comunicação direta com seus clientes.",
       image: "/assets/img/app.png",
       cta: "Quero um app",
+      link: "https://wa.me/5511987654321?text=Olá%20equipe%20Magmeta,%20quero%20agendar%20uma%20reunião",
     },
   ];
 
@@ -143,7 +146,7 @@ const SyncAccordionSlide = () => {
           </div>
 
           <div
-            className="my-accordion position-relative px-4"
+            className="my-accordion position-relative px-4 d-flex flex-column gap-3"
             id="syncAccordion"
             ref={container_ref}
           >
@@ -160,28 +163,31 @@ const SyncAccordionSlide = () => {
                     transition: "all 0.6s ease",
                   }}
                 >
-                  <h3
-                    style={{
-                      fontWeight: "600",
-                      color: isActive ? "#1C1C3C" : "#1C1C3C",
-                      paddingTop: "12px",
-                    }}
-                  >
-                    {item.title} <ArrowDown size={16} />
-                  </h3>
-                  {isActive && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                      style={{ overflow: "hidden" }}
+                  <div>
+                    <h4
+                      style={{
+                        fontWeight: "600",
+                        color: isActive ? "#1C1C3C" : "#1C1C3C",
+                        paddingTop: "12px",
+                      }}
                     >
-                      <div>
-                        <span style={{ color: "#1C1C3C", fontWeight: "400" }}>
-                          {item.content}
-                        </span>
-                      </div>
-
+                      {item.title} <ArrowDown size={16} />
+                    </h4>
+                  </div>
+                  {isActive && (
+                    <div className="d-flex flex-column gap-3">
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        style={{ overflow: "hidden" }}
+                      >
+                        <div>
+                          <span style={{ color: "#1C1C3C", fontWeight: "400" }}>
+                            {item.content}
+                          </span>
+                        </div>
+                      </motion.div>
                       <div>
                         <BtnRoxo
                           className="py-2 px-4"
@@ -190,7 +196,7 @@ const SyncAccordionSlide = () => {
                           {item.cta}
                         </BtnRoxo>
                       </div>
-                    </motion.div>
+                    </div>
                   )}
                 </div>
               );
