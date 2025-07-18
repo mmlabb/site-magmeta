@@ -163,12 +163,11 @@ const SyncAccordionSlide = () => {
                     transition: "all 0.6s ease",
                   }}
                 >
-                  <div className="pb-2">
+                  <div className="pb-1 pt-2">
                     <h4
                       style={{
-                        fontWeight: "600",
                         color: isActive ? "#fff" : "#1C1C3C",
-                        paddingTop: "12px",
+                        fontSize: "24px",
                       }}
                     >
                       {item.title} <ArrowDown size={16} />
@@ -181,7 +180,7 @@ const SyncAccordionSlide = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       style={{ overflow: "hidden" }}
                     >
-                      <div className="d-flex flex-column gap-3">
+                      <div className="d-flex flex-column gap-4">
                         <span style={{ fontWeight: "400" }}>
                           {item.content}
                         </span>
