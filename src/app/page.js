@@ -26,6 +26,7 @@ import BtnColorido from "@/components/botoes/BtnColor";
 import BtnRoxo from "@/components/botoes/BtnRoxo";
 import LogosSlider from "@/containers/sobre/LogosSlider";
 import BeneficiosSection from "@/components/pacote/BeneficiosSection";
+import RedesSociais from "@/components/RedesSociais";
 
 export default function Home() {
   const beneficios = [
@@ -191,44 +192,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="row ">
-            <div className="d-none d-md-block">
-              <ul className="d-flex">
-                <li className=" my-2">
-                  <a href="https://www.instagram.com/magmetadigital">
-                    <img
-                      src="/assets/img/logo-instagram-white.svg"
-                      alt="LogoInsta"
-                      className="img-fluid mr-3 logo"
-                    />
-                  </a>
-                </li>
 
-                <li className="mx-2 my-2">
-                  <img
-                    src="/assets/img/logo-bolinha-white.svg"
-                    alt="LogoBolinha"
-                    className="img-fluid mr-3 logo"
-                  />
-                </li>
-
-                <li className="mx-2 my-2 logo-behance">
-                  <img
-                    src="/assets/img/logo-behance-white.svg"
-                    alt="LogoBehance"
-                    className="img-fluid mr-3 logo"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
+          <RedesSociais />
         </div>
       </section>
 
       <LogosSlider />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
-          <div className="row py-5">
+          <div className="row py-5" id="row-logos">
             <div className="col-md-6 d-md-flex d-none justify-content-center align-items-center pe-5">
               <Image
                 className="img-fluid"
