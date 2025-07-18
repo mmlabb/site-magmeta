@@ -2002,6 +2002,10 @@ main {
 }*/
 
 @media (max-width: 768px) {
+  #cases {
+    margin: 0% !important;
+  }
+
   #row-faq {
     padding: 0 !important;
   }
