@@ -18,11 +18,18 @@ a {
 
 h1,
 h2,
-h3,
 h4,
-h5,
 h6 {
   font-weight: 700 !important;
+  margin: 0% !important;
+  padding: 0% !important;
+}
+
+h4,
+h3 {
+  font-weight: 600 !important;
+  margin: 0% !important;
+  padding: 0% !important;
 }
 
 ul {
@@ -40,11 +47,13 @@ h1,
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 700 !important;
+  margin: 0% !important;
 }
 
 h2 {
   font-weight: 700 !important;
   font-size: 40px !important;
+  margin: 0% !important;
 }
 
 p {
@@ -53,7 +62,7 @@ p {
 }
 
 h5 {
-  font-weight: bold !important;
+  
   font-size: 20px !important;
 }
 
@@ -374,9 +383,8 @@ header.floating {
   position: relative;
   background: linear-gradient(to right, #9c5dd3 0%, #6221a2 33%, #03d1e8 100%);
   border: none;
-
   padding: 0;
-  width: 200px;
+  width: 100%;
   height: 46px;
   text-align: center;
   color: #000;
@@ -1090,7 +1098,6 @@ main {
 }
 
 .txt-pop-up {
-  font-family: Inter !important;
   font-weight: 700 !important;
   margin: 0 !important;
 }
@@ -1205,10 +1212,6 @@ main {
 
 /*ACCORDION STYLE*/
 
-.row-accordion {
-  background-color: #e5e5e5;
-  border-radius: 24px;
-}
 
 .btn-ver-mais {
   background-color: #fff !important;
@@ -1264,6 +1267,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .row-accordion {
+    margin-left: 14px !important;
+    padding-right: 14px !important;
   }
 
   h2 {
@@ -1359,7 +1367,15 @@ main {
 
   .box-texto-caminho {
     font-size: 54px !important;
-    text-align: center;
+  }
+
+  #quarta-sessao {
+    padding: 0% !important;
+  }
+
+  #co-cta {
+    padding: 0% !important;
+    margin-top: 0% !important;
   }
 
   .img-vamos-conversar {
@@ -1372,7 +1388,7 @@ main {
   }
 
   .texto-magnetize-metas {
-    font-size: 54px !important;
+    font-size: 40px !important;
   }
 
   .texto-construimos-juntos {
@@ -2003,11 +2019,23 @@ main {
   .box-ct {
     display: flex;
     align-items: center !important;
+    text-align: center !important;
     justify-content: center !important;
     flex-direction: column !important;
   }
-  .co-cta {
+  #co-cta {
     text-align: center !important;
+  }
+
+  #box-ctm {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    padding-top: 4rem;
+    gap: 1rem !important;
+  }
+
+  #box-ctamb {
+    gap: 1rem !important;
   }
 
   .acc {
