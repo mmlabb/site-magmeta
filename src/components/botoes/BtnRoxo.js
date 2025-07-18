@@ -4,7 +4,7 @@ import { CalendarCheck } from "react-bootstrap-icons";
 
 export default function BtnRoxo({
   children = "Agendar sessão estratégica",
-  icon = <CalendarCheck size={20} className="icon" />,
+  icon = <CalendarCheck size={16} className="icon" />,
   className = "",
   style = {},
 }) {
@@ -16,7 +16,7 @@ export default function BtnRoxo({
       className={`btn-purple ${className}`}
       style={style}
     >
-      <span>{children}</span>
+      <small>{children}</small>
       {icon}
     </a>
   );
