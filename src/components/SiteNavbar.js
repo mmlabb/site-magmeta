@@ -24,26 +24,20 @@ export default function SiteNavbar() {
   useEffect(() => {
     const navbarPosition = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 120 && floating === false) setFloating(true);
-      else setFloating(false);
+      setFloating(scrollY > 120);
     };
 
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", navbarPosition);
-    }
-
-    return () => {
-      window.removeEventListener("scroll", navbarPosition);
-    };
-  }, [floating]);
+    window.addEventListener("scroll", navbarPosition);
+    return () => window.removeEventListener("scroll", navbarPosition);
+  }, []);
 
   return (
     <header className={floating ? `floating` : ``}>
-      <Navbar expand="lg" className="bg-transparent">
-        <Container>
+      <Navbar expand="lg" className="bg-transparentnav">
+        <Container className="container-fluid">
           <Navbar.Brand as={Link} href="/">
             <Image
-              src="/assets/img/logo-magmeta-white.svg"
+              src="/assets/img/logo-magm-black.svg"
               alt="logo-magmeta"
               id="logo-magmeta"
               className="logo"
@@ -64,8 +58,8 @@ export default function SiteNavbar() {
               />
               <label className="label" htmlFor="chk-2">
                 <div className="ball"></div>
-                <Moon />
                 <Sun />
+                <Moon />
               </label>
             </div>
             <div className="botao-tema d-none d-lg-flex">
@@ -77,8 +71,8 @@ export default function SiteNavbar() {
               />
               <label className="label" htmlFor="chk-1">
                 <div className="ball"></div>
-                <Moon />
                 <Sun />
+                <Moon />
               </label>
             </div>
             <div
@@ -95,14 +89,14 @@ export default function SiteNavbar() {
                   />
                   <label className="label" htmlFor="chk-1">
                     <div className="ball"></div>
-                    <Moon />
                     <Sun />
+                    <Moon />
                   </label>
                 </div>
 
                 <div className="botao-conversar">
                   <a
-                    href="http://localhost:3001/onboarding/lead"
+                    href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
                     target="_blank"
                     className="btn btn-outline-info"
                   >
@@ -166,7 +160,7 @@ export default function SiteNavbar() {
                     className="btn btn-outline-light rounded-pill"
                     onClick={closeOffcanvas}
                   >
-                    Vamos conversar
+                    Orçamento rápido
                   </a>
                 </Nav>
               </Offcanvas.Body>
