@@ -18,10 +18,10 @@ export default function Footer() {
         <div className="d-flex linha-rodape flex-wrap justify-content-between">
           <div className="col-md-2" id="logo-rodape">
             <Image
-              src="/assets/img/logo-magmeta-white.svg"
+              src="/assets/img/logo-magm-black.svg"
               alt="logo-rodape"
-              width={100}
-              height={100}
+              width={50}
+              height={50}
               sizes="100%"
               className="logo img-fluid"
             />
