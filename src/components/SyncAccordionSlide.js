@@ -115,19 +115,19 @@ const SyncAccordionSlide = () => {
 
   return (
     <div className="container-fluid  justify-content-between">
-      <div className="d-flex flex-column-reverse flex-md-row gap-4">
+      <div className="d-flex flex-column-reverse flex-md-row gap-4 row-accordion">
         {/* Accordion */}
-        <div className="w-100 w-md-50 position-relative">
+        <div className="w-100 w-md-50 position-relative my-2">
           {/* Barra de progresso vertical fixa */}
           <div
             style={{
               position: "absolute",
               left: 0,
               top: 0,
-              width: "2px",
+              width: "6px",
               height: "100%",
               backgroundColor: "#4f4b55",
-              borderRadius: "10px",
+              borderRadius: "24px",
               zIndex: 1,
             }}
           >
@@ -138,15 +138,15 @@ const SyncAccordionSlide = () => {
                 width: "100%",
                 height: "0px",
                 top: "0px",
-                backgroundColor: "#6f42c1",
-                borderRadius: "10px",
+                backgroundColor: "#5B19A9",
+                borderRadius: "24px",
                 transition: "height 4.5s linear, top 0.5s ease",
               }}
             ></div>
           </div>
 
           <div
-            className="my-accordion position-relative px-4"
+            className="my-accordion   position-relative px-4"
             id="syncAccordion"
             ref={container_ref}
           >
@@ -157,45 +157,47 @@ const SyncAccordionSlide = () => {
                   key={index}
                   className="accordion-item"
                   data-index={index}
-                  style={{ cursor: "pointer" }}
+                  onClick={() => handle_click(index)}
+                  style={{
+                    cursor: "pointer",
+                    transition: "all 0.6s ease",
+                  }}
                 >
-                  <h4 className="accordion-header">
-                    <button
-                      className={`accordion-button ${
-                        !isActive ? "collapsed" : ""
-                      } bg-transparent text-light fw-semibold py-3 px-2`}
-                      type="button"
-                      onClick={() => handle_click(index)}
-                      aria-expanded={isActive}
-                      aria-controls={`collapse-${index}`}
+                  <div className="pb-2">
+                    <h4
                       style={{
-                        background: "transparent",
-                        boxShadow: "none",
-                        color: isActive ? "#fff" : "#e9d9ffe3",
+                        fontWeight: "600",
+                        color: isActive ? "#fff" : "#1C1C3C",
+                        paddingTop: "12px",
                       }}
                     >
-                      {item.title} <ArrowDown size={16} className="ms-2" />
-                    </button>
-                  </h4>
-                  <div
-                    id={`collapse-${index}`}
-                    className={`accordion-collapse collapse ${
-                      isActive ? "show" : ""
-                    }`}
-                  >
-                    <div className="accordion-body px-2 pt-0 pb-3 text-light">
+                      {item.title} <ArrowDown size={16} />
+                    </h4>
+                  </div>
+                  {isActive && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, ease: "easeOut" }}
+                      style={{ overflow: "hidden" }}
+                    >
                       <div className="d-flex flex-column gap-3">
-                        <p style={{ fontWeight: "400" }}>{item.content}</p>
+                        <span style={{ fontWeight: "400" }}>
+                          {item.content}
+                        </span>
+
                         <BtnRoxo
                           className="py-2 px-4"
-                          style={{ fontSize: "0.9rem", width: "50%", }}
-                          link={item.link}
+                          style={{
+                            fontSize: "0.9rem",
+                            width: "50%",
+                          }}
                         >
                           {item.cta}
                         </BtnRoxo>
                       </div>
-                    </div>
-                  </div>
+                    </motion.div>
+                  )}
                 </div>
               );
             })}
@@ -223,7 +225,7 @@ const SyncAccordionSlide = () => {
                 id="box-img-accord"
                 style={{
                   width: "100%",
-                  height: "auto",
+                  height: "100%",
                   maxWidth: "600px",
                 }}
               >
@@ -237,7 +239,7 @@ const SyncAccordionSlide = () => {
                     borderRadius: "1rem",
                     width: "100%",
                     height: "100%",
-                    maxHeight: "350px",
+                    maxHeight: "450px",
                   }}
                 />
               </div>
