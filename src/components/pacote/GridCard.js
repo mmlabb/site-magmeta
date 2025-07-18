@@ -12,7 +12,7 @@ export default function GridCard({
     <section id="section-2" className="pt-5 my-5">
       <div className="container">
         <div className="row text-center py-3 mb-4">
-          <h4>{titulo}</h4>
+          <h3>{titulo}</h3>
         </div>
         <div className="row d-flex row-cols-1 justify-conten-start row-cols-md-3 g-4">
           {passos.map((item, i) => {
