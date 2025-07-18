@@ -24,7 +24,6 @@ h6 {
   padding: 0% !important;
 }
 
-
 h3 {
   font-weight: 600 !important;
   margin: 0% !important;
@@ -75,6 +74,7 @@ h6 {
   font-size: 24px !important;
 }
 
+
 .cards-home {
   display: flex;
   background-color: #e5e5e5;
@@ -123,16 +123,16 @@ h6 {
 
 /* Cores de destaque */
 .tema-dark-ativo {
-  color: #53385c;
+  color: #1c1c3c;
 }
 
 .tema-light-ativo {
-  color: #fff;
+  color: #1c1c3c;
 }
 
 /* Navegação */
 .theme-dark .nav-link {
-  color: #e9d9ff !important;
+  color: #fff !important;
 }
 
 /* Se quiser ativar para light: */
@@ -273,7 +273,7 @@ header.floating {
   background-color: #0e0c10a8;
 }
 .theme-light header.floating {
-  background-color: rgba(241, 230, 255, 0.774);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #logo-magmeta {
@@ -394,7 +394,6 @@ header.floating {
   display: block;
   cursor: pointer;
   border-radius: 24px;
-  font: normal bold 25px / 32px "Inter", sans-serif;
 }
 
 .btn-colorido::before {
@@ -425,7 +424,7 @@ header.floating {
   border-radius: 24px;
   filter: blur(5px);
   transition: all 0.2s ease-in-out;
-  z-index: 0; 
+  z-index: 0;
 }
 
 /* Tema escuro */
@@ -434,6 +433,10 @@ header.floating {
   .btn-colorido::before {
     background-color: #fff;
     color: #1c1c3c;
+  }
+
+  .rodape {
+    border-top: 1px solid rgba(23, 22, 22, 0.208);
   }
 }
 
@@ -1059,38 +1062,6 @@ main {
   color: transparent;
 }
 
-.depoimento {
-  position: relative;
-  background-color: #191919;
-  border-radius: 8px;
-}
-
-.depoimento::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
-  height: 4px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra */
-}
-
-.depoimento-1::before {
-  background-color: #db00ff;
-  box-shadow: 0px 0px 8px 4px rgba(219, 0, 255, 0.6); /* Efeito de luz  */
-}
-
-.depoimento-2::before {
-  background-color: #07bcce;
-  box-shadow: 0px 0px 8px 4px rgba(7, 188, 206, 0.6); /* Efeito de luz */
-}
-
-.depoimento-3::before {
-  background-color: #69ff97;
-  box-shadow: 0px 0px 8px 4px rgba(105, 255, 151, 0.6); /* Efeito de luz */
-}
-
 .img-caminho {
   margin-top: 1rem;
   padding-top: 5rem;
@@ -1264,6 +1235,10 @@ main {
 /* RESPONSIVO */
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
+  #row-logos {
+    padding-top: 0% !important;
+  }
+
   .c-txt-b {
     display: flex;
     flex-direction: column;
@@ -2002,6 +1977,10 @@ main {
 }*/
 
 @media (max-width: 768px) {
+  #smz {
+    font-size: 8px !important;
+  }
+
   #cases {
     margin: 0% !important;
   }
