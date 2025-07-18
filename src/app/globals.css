@@ -18,18 +18,21 @@ a {
 
 h1,
 h2,
-h4,
 h6 {
   font-weight: 700 !important;
   margin: 0% !important;
   padding: 0% !important;
 }
 
-h4,
+
 h3 {
   font-weight: 600 !important;
   margin: 0% !important;
   padding: 0% !important;
+}
+
+h4 {
+  font-weight: 500 !important;
 }
 
 ul {
@@ -62,8 +65,8 @@ p {
 }
 
 h5 {
-  
   font-size: 20px !important;
+  font-weight: 400 !important;
 }
 
 h6 {
@@ -422,7 +425,7 @@ header.floating {
   border-radius: 24px;
   filter: blur(5px);
   transition: all 0.2s ease-in-out;
-  z-index: -1;
+  z-index: 0; 
 }
 
 /* Tema escuro */
@@ -1211,7 +1214,6 @@ main {
 }
 
 /*ACCORDION STYLE*/
-
 
 .btn-ver-mais {
   background-color: #fff !important;
