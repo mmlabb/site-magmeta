@@ -52,7 +52,7 @@ const SyncAccordionSlide = () => {
       title: "Aplicativo Para Seus Clientes",
       slug: "aplicativos",
       content:
-        "Tenha um app exclusivo para seu negócio, com sua marca e funcionalidades. Facilite pedidos, agendamentos ou comunicação direta com seus clientes. Desenvolvemos aplicativos sob medida para facilitar agendamentos, pedidos ou suporte.Com visual profissional e funcionalidades pensadas no seu público.Integração com sistemas e atualizações sempre que você precisar. É mais praticidade para seus clientes e mais presença digital para o seu negócio.",
+        "Tenha um app exclusivo para seu negócio, com sua marca e funcionalidades. Facilite pedidos, agendamentos ou comunicação direta com seus clientes. Desenvolvemos aplicativos sob medida para facilitar agendamentos, pedidos ou suporte.Com visual profissional e funcionalidades pensadas no seu público.Integração com sistemas e atualizações sempre que você precisar.",
       image: "/assets/img/app.png",
       cta: "Quero um app",
       link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
@@ -117,17 +117,17 @@ const SyncAccordionSlide = () => {
     <div className="container-fluid  justify-content-between">
       <div className="d-flex flex-column-reverse flex-md-row gap-4">
         {/* Accordion */}
-        <div className="w-100 w-md-50 position-relative my-2 row-accordion">
+        <div className="w-100 w-md-50 position-relative">
           {/* Barra de progresso vertical fixa */}
           <div
             style={{
               position: "absolute",
               left: 0,
               top: 0,
-              width: "6px",
-              height: "96%",
+              width: "2px",
+              height: "100%",
               backgroundColor: "#4f4b55",
-              borderRadius: "24px",
+              borderRadius: "10px",
               zIndex: 1,
             }}
           >
@@ -138,15 +138,15 @@ const SyncAccordionSlide = () => {
                 width: "100%",
                 height: "0px",
                 top: "0px",
-                backgroundColor: "#5B19A9",
-                borderRadius: "24px",
+                backgroundColor: "#6f42c1",
+                borderRadius: "10px",
                 transition: "height 4.5s linear, top 0.5s ease",
               }}
             ></div>
           </div>
 
           <div
-            className="my-accordion position-relative px-4 "
+            className="my-accordion position-relative px-4"
             id="syncAccordion"
             ref={container_ref}
           >
@@ -157,44 +157,45 @@ const SyncAccordionSlide = () => {
                   key={index}
                   className="accordion-item"
                   data-index={index}
-                  onClick={() => handle_click(index)}
-                  style={{
-                    cursor: "pointer",
-                    transition: "all 0.6s ease",
-                  }}
+                  style={{ cursor: "pointer" }}
                 >
-                  <h4
-                    style={{
-                      fontWeight: "600",
-                      color: isActive ? "#1C1C3C" : "#1C1C3C",
-                      paddingTop: "12px",
-                    }}
-                  >
-                    {item.title} <ArrowDown size={16} />
-                  </h4>
-                  {isActive && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                      style={{ overflow: "hidden" }}
+                  <h4 className="accordion-header">
+                    <button
+                      className={`accordion-button ${
+                        !isActive ? "collapsed" : ""
+                      } bg-transparent text-light fw-semibold py-3 px-2`}
+                      type="button"
+                      onClick={() => handle_click(index)}
+                      aria-expanded={isActive}
+                      aria-controls={`collapse-${index}`}
+                      style={{
+                        background: "transparent",
+                        boxShadow: "none",
+                        color: isActive ? "#fff" : "#e9d9ffe3",
+                      }}
                     >
-                      <div>
-                        <span style={{ color: "#1C1C3C", fontWeight: "400" }}>
-                          {item.content}
-                        </span>
-                      </div>
-
-                      <div>
+                      {item.title} <ArrowDown size={16} className="ms-2" />
+                    </button>
+                  </h4>
+                  <div
+                    id={`collapse-${index}`}
+                    className={`accordion-collapse collapse ${
+                      isActive ? "show" : ""
+                    }`}
+                  >
+                    <div className="accordion-body px-2 pt-0 pb-3 text-light">
+                      <div className="d-flex flex-column gap-3">
+                        <p style={{ fontWeight: "400" }}>{item.content}</p>
                         <BtnRoxo
                           className="py-2 px-4"
-                          style={{ fontSize: "0.9rem" }}
+                          style={{ fontSize: "0.9rem", width: "50%", }}
+                          link={item.link}
                         >
                           {item.cta}
                         </BtnRoxo>
                       </div>
-                    </motion.div>
-                  )}
+                    </div>
+                  </div>
                 </div>
               );
             })}
@@ -222,7 +223,7 @@ const SyncAccordionSlide = () => {
                 id="box-img-accord"
                 style={{
                   width: "100%",
-                  height: "100%",
+                  height: "auto",
                   maxWidth: "600px",
                 }}
               >
@@ -236,7 +237,7 @@ const SyncAccordionSlide = () => {
                     borderRadius: "1rem",
                     width: "100%",
                     height: "100%",
-                    maxHeight: "450px",
+                    maxHeight: "350px",
                   }}
                 />
               </div>
