@@ -2,38 +2,28 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./wordAnimation.css"; // Import CSS for styling and animation
 const words = [
-  "#Aplicativo",
-  "#Website",
-  "#Chatbot",
-  "#Cloud",
-  "#SaaS",
+  "#Tecnologia",
   "#Automação",
-  "#ERP",
-  "#IoT",
+  "#Marketing",
   "#A.I",
-  "#ConsultoriaTI",
+  "#Tecnologia",
+  "#Automação",
+  "#Marketing",
+  "#A.I",
 ];
 
 const colors = [
-  "#FF5733", // Cor para #SaaS
-  "#33FF57", // Cor para #Automação
-  "#3357FF", // Cor para #Funil
-  "#FF33A1", // Cor para #Aplicativo
-  "#33FFF5", // Cor para #CRM
-  "#ffd333", // Cor para #ERP
-  "#A133FF", // Cor para #Blog
-  "#FF8633", // Cor para #Cloud
-  "#33FF86", // Cor para #ui/ux
-
-  "#FF5733", // Cor para #SaaS
-  "#33FF57", // Cor para #Automação
-  "#3357FF", // Cor para #Funil
-  "#FF33A1", // Cor para #Aplicativo
-  "#33FFF5", // Cor para #CRM
-  "#ffd333", // Cor para #ERP
-  "#A133FF", // Cor para #Blog
-  "#FF8633", // Cor para #Cloud
-  "#33FF86", // Cor para #ui/ux
+  "#03d1e89", // Cor para #Tecnologia
+  "#00F6FF", // Cor para #Automação
+  "#9c5dd3 ",
+  "#00F6FF", // Cor para #Aplicativo
+  "##03d1e8",
+  "#5B19A9", // Cor para #Tecnologia
+  "#00F6FF", // Cor para #Automação
+  "#9c5dd3 ",
+  "#00F6FF", // Cor para #Aplicativo
+  "#03d1e8", // Cor para #Marketing
+  "#00F6FF",
 ];
 
 const WordSlider = ({}) => {
