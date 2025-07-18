@@ -17,8 +17,10 @@ import {
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import BtnRoxo from "./botoes/BtnRoxo";
+import { useTheme } from "@/providers/ThemeProvider";
 
 const SyncAccordionSlide = () => {
+  const { darkMode } = useTheme();
   const [active_index, set_active_index] = useState(0);
   const [is_paused, set_is_paused] = useState(false);
   const pause_timeout_ref = useRef(null);
@@ -113,6 +115,29 @@ const SyncAccordionSlide = () => {
     }
   }, [active_index]);
 
+  useEffect(() => {
+    const container = container_ref.current;
+    if (!container) return;
+
+    const handleMouseEnter = () => {
+      set_is_paused(true);
+      if (interval_ref.current) clearInterval(interval_ref.current);
+    };
+
+    const handleMouseLeave = () => {
+      set_is_paused(false);
+      start_auto_advance();
+    };
+
+    container.addEventListener("mouseenter", handleMouseEnter);
+    container.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      container.removeEventListener("mouseenter", handleMouseEnter);
+      container.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [start_auto_advance]);
+
   return (
     <div className="container-fluid  justify-content-between">
       <div className="d-flex flex-column-reverse flex-md-row gap-4 row-accordion">
@@ -149,9 +174,16 @@ const SyncAccordionSlide = () => {
             className="my-accordion   position-relative px-4"
             id="syncAccordion"
             ref={container_ref}
+            onMouseEnter={() => set_is_paused(true)}
+            onMouseLeave={() => set_is_paused(false)}
           >
             {items.map((item, index) => {
               const isActive = index === active_index;
+
+              // Cores baseadas no tema e no estado ativo
+              const activeColor = darkMode ? "#FFFFFF" : "#1C1C3C";
+              const inactiveColor = darkMode ? "#1C1C3C" : "#2725259c";
+
               return (
                 <div
                   key={index}
@@ -166,13 +198,14 @@ const SyncAccordionSlide = () => {
                   <div className="pb-1 pt-2">
                     <h4
                       style={{
-                        color: isActive ? "#fff" : "#1C1C3C",
+                        color: isActive ? activeColor : inactiveColor,
                         fontSize: "24px",
                       }}
                     >
                       {item.title} <ArrowDown size={16} />
                     </h4>
                   </div>
+
                   {isActive && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
@@ -181,7 +214,12 @@ const SyncAccordionSlide = () => {
                       style={{ overflow: "hidden" }}
                     >
                       <div className="d-flex flex-column gap-4">
-                        <span style={{ fontWeight: "400" }}>
+                        <span
+                          style={{
+                            fontWeight: "400",
+                            color: darkMode ? "#FFFFFF" : "#1C1C3C",
+                          }}
+                        >
                           {item.content}
                         </span>
 
@@ -192,7 +230,7 @@ const SyncAccordionSlide = () => {
                             width: "50%",
                           }}
                         >
-                          {item.cta}
+                          <small id="smz">{item.cta}</small>
                         </BtnRoxo>
                       </div>
                     </motion.div>
