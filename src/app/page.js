@@ -24,7 +24,7 @@ import { FaCheck, FaCheckCircle } from "react-icons/fa";
 import GridCard from "@/components/pacote/GridCard";
 import BtnColorido from "@/components/botoes/BtnColor";
 import BtnRoxo from "@/components/botoes/BtnRoxo";
-import CtaAcao from "@/components/pacote/CtaAcao";
+import LogosSlider from "@/containers/sobre/LogosSlider";
 import BeneficiosSection from "@/components/pacote/BeneficiosSection";
 
 export default function Home() {
@@ -225,7 +225,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Clientes />
+      <LogosSlider />
       <section id="terceira-sessao" className="pb-5">
         <div className="container">
           <div className="row py-5">
@@ -276,7 +276,7 @@ export default function Home() {
         <BtnRoxo />
       </div>
 
-      <div className="container py-5 ">
+      <div className="container py-5 mt-5 ">
         <div className="py-5 row">
           <div className=" d-flex justify-content-center text-center py-4 flex-column">
             <h3>Nossas soluções</h3>
@@ -288,7 +288,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-5 my-5">
+      <div className="py-5 my-5" id="cases">
         <div className=" d-flex justify-content-center text-center py-5 flex-column">
           <h3>Cases</h3>
         </div>
@@ -296,7 +296,7 @@ export default function Home() {
       </div>
 
       <section>
-        <div className="container pb-5 mb-5">
+        <div className="container py-5 my-5">
           <div className="row  d-flex d-flex text-center justify-content-center">
             <div className="d-flex gap-2 flex-column">
               <h3>Tem uma ideia? </h3>
