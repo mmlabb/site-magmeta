@@ -118,8 +118,8 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex  btn-or position-relative">
-                  <div className=" botao-nossa-ex">
+                <div className="d-flex row btn-or position-relative">
+                  <div className="botao-nossa-ex col-12 col-lg-6">
                     <BtnColorido />
                   </div>
                 </div>
@@ -241,7 +241,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-md-6 ps-5">
+            <div className="col-md-6 ">
               <div className="box-texto-caminho d-flex flex-column gap-3  align-items-center align-items-md-start">
                 <h2 className="texto1 text-right">
                   Crescimento de verdade, com tecnologia aplicada ao seu negócio
@@ -252,18 +252,12 @@ export default function Home() {
                 </span>
                 <BeneficiosSection
                   beneficios={beneficios}
-                  checkColor="#9C5DD3"
+                  checkColor="#5B19A9"
                   animationData={null}
                   showLottie={false}
                   isMagnet={false}
                   compact={true}
                 />
-                <div className="d-flex fs-6 align-items-center align-items-md-start">
-                  <p>
-                    Tudo isso sem complicações, promessas vazias ou pacotes
-                    engessados.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -271,7 +265,7 @@ export default function Home() {
       </section>
 
       <GridCard
-        titulo="🔧 Como Funciona?"
+        titulo="Como Funciona ?"
         passos={passos}
         iconColor="#000"
         ativoBgColor="#E5E5E5"
@@ -284,17 +278,20 @@ export default function Home() {
 
       <div className="container py-5 ">
         <div className="py-5 row">
-          <div className=" d-flex justify-content-center text-center py-5 flex-column">
+          <div className=" d-flex justify-content-center text-center py-4 flex-column">
             <h3>Nossas soluções</h3>
-            <p>Escolha seu próximo passo para crescer com a Magmeta</p>
+            <h5 className="txt-escolha">
+              Escolha seu próximo passo para crescer com a Magmeta
+            </h5>
           </div>
           <SyncAccordionSlide />
         </div>
       </div>
 
+
       <div className="pt-5 mt-5">
         <div className=" d-flex justify-content-center text-center py-5 flex-column">
-          <h3>Cases</h3>
+          <h2>Cases</h2>
         </div>
         <PortifolioProjetos />
       </div>
@@ -312,7 +309,7 @@ export default function Home() {
         </div>
       </section>
       <CtaAcao
-        titulo="Está em busca da solução ideal? 🚀"
+        titulo="Está em busca da solução ideal?"
         descricao="Descubra como podemos acelerar seu negócio com soluções inteligentes, prontas para escalar e fáceis de implementar.
 Fale com a gente e descubra qual solução pronta é ideal pro seu negócio."
         botaoCustomPrimario={
