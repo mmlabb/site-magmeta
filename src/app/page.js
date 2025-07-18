@@ -288,45 +288,28 @@ export default function Home() {
         </div>
       </div>
 
-
-      <div className="pt-5 mt-5">
+      <div className="py-5 my-5">
         <div className=" d-flex justify-content-center text-center py-5 flex-column">
-          <h2>Cases</h2>
+          <h3>Cases</h3>
         </div>
         <PortifolioProjetos />
       </div>
 
       <section>
-        <div className="col p-5  pb-5 d-flex text-center justify-content-center">
-          {/* <section>
-        <div className="col p-5  pb-5 d-flex text-center justify-content-center">
-          <h2>Cases De Sucesso </h2>
-        </div>
-        <div>
-          <PortifolioProjetos />
-        </div>
-      </section>*/}
+        <div className="container pb-5 mb-5">
+          <div className="row  d-flex d-flex text-center justify-content-center">
+            <div className="d-flex gap-2 flex-column">
+              <h3>Tem uma ideia? </h3>
+              <h5>Faça o orçamento dela agora!</h5>
+              <div className="d-flex row justify-content-center">
+                <div className="col-12 col-lg-3 position-relative">
+                  <BtnColorido />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <CtaAcao
-        titulo="Está em busca da solução ideal?"
-        descricao="Descubra como podemos acelerar seu negócio com soluções inteligentes, prontas para escalar e fáceis de implementar.
-Fale com a gente e descubra qual solução pronta é ideal pro seu negócio."
-        botaoCustomPrimario={
-          <button
-            className="btn-colorido"
-            data-content="Quero saber mais"
-          ></button>
-        }
-        botaoCustomSecundario={
-          <>
-            <h3>Tem uma ideia? Faça o orçamento dela agora!</h3>
-            <div>
-              <button className="btn-purple">Fazer orçamento</button>
-            </div>
-          </>
-        }
-      />
     </>
   );
 }
