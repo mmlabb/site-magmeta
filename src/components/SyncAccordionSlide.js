@@ -140,7 +140,7 @@ const SyncAccordionSlide = () => {
 
   return (
     <div className="container-fluid  justify-content-between">
-      <div className="d-flex flex-column-reverse flex-md-row gap-4 row-accordion">
+      <div className="d-flex flex-column-reverse flex-md-row  row-accordion">
         {/* Accordion */}
         <div className="w-100 w-md-50 position-relative my-2">
           {/* Barra de progresso vertical fixa */}
@@ -171,7 +171,7 @@ const SyncAccordionSlide = () => {
           </div>
 
           <div
-            className="my-accordion   position-relative px-4"
+            className="my-accordion  gap-2 d-flex flex-column position-relative px-4"
             id="syncAccordion"
             ref={container_ref}
             onMouseEnter={() => set_is_paused(true)}
@@ -187,7 +187,7 @@ const SyncAccordionSlide = () => {
               return (
                 <div
                   key={index}
-                  className="accordion-item"
+                  className="accordion-item "
                   data-index={index}
                   onClick={() => handle_click(index)}
                   style={{
@@ -195,7 +195,7 @@ const SyncAccordionSlide = () => {
                     transition: "all 0.6s ease",
                   }}
                 >
-                  <div className="pt-3">
+                  <div>
                     <h4
                       style={{
                         color: isActive ? activeColor : inactiveColor,
@@ -213,7 +213,7 @@ const SyncAccordionSlide = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       style={{ overflow: "hidden" }}
                     >
-                      <div className="d-flex flex-column gap-3">
+                      <div className="d-flex flex-column gap-2">
                         <span
                           style={{
                             fontWeight: "400",
