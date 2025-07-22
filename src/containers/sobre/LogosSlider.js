@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const logos = [
   { src: "/assets/img/us.svg", alt: "usados" },
-  { src: "/assets/img/Kl.svg", alt: "klubi" },
+  { src: "/assets/img/logo-klubi.svg", alt: "klubi" },
   { src: "/assets/img/mcl.svg", alt: "mc-love" },
   { src: "/assets/img/cadl.svg", alt: "marq" },
 ];
