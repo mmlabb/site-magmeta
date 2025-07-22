@@ -32,6 +32,7 @@ h3 {
 
 h4 {
   font-weight: 500 !important;
+  margin: 0% !important;
 }
 
 ul {
@@ -73,7 +74,6 @@ h6 {
   font-weight: 400 !important;
   font-size: 24px !important;
 }
-
 
 .cards-home {
   display: flex;
@@ -273,7 +273,7 @@ header.floating {
   background-color: #0e0c10a8;
 }
 .theme-light header.floating {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 #logo-magmeta {
@@ -1977,10 +1977,6 @@ main {
 }*/
 
 @media (max-width: 768px) {
-  #smz {
-    font-size: 8px !important;
-  }
-
   #cases {
     margin: 0% !important;
   }
