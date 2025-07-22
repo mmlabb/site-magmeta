@@ -142,7 +142,7 @@ const SyncAccordionSlide = () => {
     <div className="container-fluid  justify-content-between">
       <div className="d-flex flex-column-reverse flex-md-row  row-accordion">
         {/* Accordion */}
-        <div className="w-100 w-md-50 position-relative my-2">
+        <div className="w-100 w-md-50 d-flex flex-column justify-content-center position-relative my-2">
           {/* Barra de progresso vertical fixa */}
           <div
             style={{
