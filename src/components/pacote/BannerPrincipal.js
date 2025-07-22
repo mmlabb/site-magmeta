@@ -37,9 +37,9 @@ export default function BannerPrincipal({
             </div>
 
             <div>
-              <h3>{titulo}</h3>
+              <h3 className="text-white">{titulo}</h3>
               <div className="pt-3">
-                <span>{descricao}</span>
+                <span style={{ color: "#fff" }}>{descricao}</span>
               </div>
             </div>
 
