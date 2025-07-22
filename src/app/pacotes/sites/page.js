@@ -163,6 +163,15 @@ export default function Page() {
         />
       </div>
 
+      <div className="container">
+        <GridCard
+          titulo="Como Funciona?"
+          passos={passosMagnet}
+          iconColor="#03D1E8"
+          ativoBgColor="rgba(3, 209, 232, 0.1)"
+        />
+      </div>
+
       <PublicoCarousel
         recursos={recursosChat}
         customClass="publico-mobile"
@@ -170,13 +179,6 @@ export default function Page() {
       />
 
       <div className="container">
-        <GridCard
-          titulo="🔧 Como Funciona?"
-          passos={passosMagnet}
-          iconColor="#03D1E8"
-          ativoBgColor="rgba(3, 209, 232, 0.1)"
-        />
-
         <PlanosSection
           planos={planosMagnet}
           destaqueBgColor="linear-gradient(to bottom, #03D1E8 0%, #027582 100%)"
