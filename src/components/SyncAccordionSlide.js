@@ -195,7 +195,7 @@ const SyncAccordionSlide = () => {
                     transition: "all 0.6s ease",
                   }}
                 >
-                  <div className="pb-1 pt-2">
+                  <div className="pt-3">
                     <h4
                       style={{
                         color: isActive ? activeColor : inactiveColor,
@@ -213,7 +213,7 @@ const SyncAccordionSlide = () => {
                       transition={{ duration: 0.3, ease: "easeOut" }}
                       style={{ overflow: "hidden" }}
                     >
-                      <div className="d-flex flex-column gap-4">
+                      <div className="d-flex flex-column gap-3">
                         <span
                           style={{
                             fontWeight: "400",
@@ -230,7 +230,7 @@ const SyncAccordionSlide = () => {
                             width: "50%",
                           }}
                         >
-                          <small id="smz">{item.cta}</small>
+                          <small className="text-nowrap">{item.cta}</small>
                         </BtnRoxo>
                       </div>
                     </motion.div>
@@ -246,9 +246,9 @@ const SyncAccordionSlide = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={active_index}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
+              exit={{ opacity: 0, y: 50 }}
               transition={{ duration: 0.6 }}
               className="w-100"
               style={{
