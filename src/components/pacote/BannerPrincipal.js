@@ -14,7 +14,7 @@ export default function BannerPrincipal({
     <section id="section-1" className="pt-5">
       <div className="container c-txt-b py-5">
         <div
-          className="row-banner row p-0 pt-5"
+          className="row-banner row p-0 pt-2"
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: "cover",
