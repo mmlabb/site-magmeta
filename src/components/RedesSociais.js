@@ -8,7 +8,7 @@ export default function RedesSociais() {
       <div className="col d-flex justify-content-start align-items-center">
         <div className="mx-2 my-2 d-flex">
           <a
-            href="https://www.facebook.com/profile.php?id=100089418330403"
+            href="https://www.facebook.com/profile.php?id=61560382723312"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,7 +25,7 @@ export default function RedesSociais() {
         </div>
         <div className="mx-2 my-2">
           <a
-            href="https://www.instagram.com/magmetadigital"
+            href="https://www.instagram.com/magmetasolucoes/"
             target="_blank"
             rel="noopener noreferrer"
           >
