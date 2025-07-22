@@ -245,9 +245,9 @@ const SyncAccordionSlide = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={active_index}
-              initial={{ opacity: 0, y: -50 }}
+              initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 50 }}
+              exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.6 }}
               className="w-100"
               style={{
