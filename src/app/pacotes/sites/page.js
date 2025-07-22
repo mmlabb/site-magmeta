@@ -15,14 +15,12 @@ import PublicoCarousel from "@/components/pacote/PublicoCarousel";
 
 // BENEFÍCIOS
 const beneficiosMagnet = [
-  "Sem dor de cabeça para implementação.",
-  "Suporte.",
-  "Crie fluxos inteligentes de conversa.",
-  "Centralize seus atendimentos.",
-  "Chatbots inteligentes 24h.",
-  "Interface profissional e intuitiva.",
-  "Gere leads, qualifique clientes e feche mais vendas.",
-  "Automatize seu atendimento sem precisar de desenvolvedores ou processos complexos.",
+  "Site totalmente responsivo",
+  "Copywriting estratégico para vender",
+  "Integração com WhatsApp, Google Meu Negócio",
+  "Otimização para SEO local",
+  "Entrega rápida",
+  "Suporte e ajustes pós-entrega",
 ];
 
 // PÚBLICO-ALVO
@@ -148,18 +146,16 @@ export default function Page() {
       <div className="container py-5">
         <BannerPrincipal
           logo="/assets/img/logo-site.png"
-          titulo="Atendimento Inteligente"
-          descricao="Seu Atendimento 100% Automatizado Atenda. Converta. Escale. O Magnet Chat é uma plataforma de atendimento automatizado que transforma sua operação digital. Atenda seus clientes de forma rápida, inteligente e 100% automatizada, direto no WhatsApp, Instagram, Facebook e no seu site."
-          botoes={[
-            { label: "Ver Demonstração", href: "#" },
-            { label: "Falar com um Especialista", href: "#" },
-          ]}
-          backgroundImage="/assets/img/banner2.png"
+          titulo="Seu Site Precisa Gerar Clientes, Não Só Existir"
+          descricao="Criamos sites profissionais que transformam visitas em contatos no WhatsApp. Mais autoridade, mais vendas."
+          botoes={[{ label: "Quero um Site Que Vende", href: "#" }]}
+          backgroundImage="/assets/img/bgsite.png"
+          imagemCol="/assets/img/bgsit.png"
         />
 
         <BeneficiosSection
-          titulo="O que é o Magnet Chat?"
-          descricao="Sua plataforma de atendimento automatizado com muitos benefícios:"
+          titulo="O que está incluso"
+          descricao="Tudo o que seu negócio precisa para ter presença digital que realmente gera vendas:"
           beneficios={beneficiosMagnet}
           animationData={siteAnimation}
           checkColor="#03D1E8"
