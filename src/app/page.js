@@ -214,7 +214,7 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 ">
-              <div className="box-texto-caminho d-flex flex-column gap-3  align-items-center align-items-md-start">
+              <div className="box-texto-caminho d-flex flex-column gap-2  align-items-center align-items-md-start">
                 <h2 className="texto1 text-right">
                   Crescimento de verdade, com tecnologia aplicada ao seu negócio
                 </h2>
@@ -250,7 +250,7 @@ export default function Home() {
 
       <div className="container py-5 mt-5 ">
         <div className="py-5 row">
-          <div className=" d-flex justify-content-center text-center py-4 flex-column">
+          <div className=" d-flex justify-content-center text-center py-4 flex-column gap-2">
             <h3>Nossas soluções</h3>
             <h5 className="txt-escolha">
               Escolha seu próximo passo para crescer com a Magmeta
