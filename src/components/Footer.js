@@ -50,7 +50,7 @@ export default function Footer() {
         <div className="row pt-4">
           <div className="col d-flex justify-content-center align-items-center">
             <div className="mx-2 my-2 d-flex">
-              <a href="https://www.facebook.com/profile.php?id=100089418330403">
+              <a href="https://www.facebook.com/profile.php?id=61560382723312">
                 <Image
                   src="/assets/img/icon-face-white.svg"
                   alt="logo-facebook"
@@ -63,7 +63,7 @@ export default function Footer() {
               </a>
             </div>
             <div className="mx-2 my-2">
-              <a href="https://www.instagram.com/magmetadigital">
+              <a href="https://www.instagram.com/magmetasolucoes/">
                 <Image
                   src="/assets/img/logo-instagram-white.svg"
                   alt="logo-instagram"
