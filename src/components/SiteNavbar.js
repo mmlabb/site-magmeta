@@ -33,8 +33,8 @@ export default function SiteNavbar() {
 
   return (
     <header className={floating ? `floating` : ``}>
-      <Navbar expand="lg" className="bg-transparentnav">
-        <Container className="container-fluid">
+      <Navbar expand="lg" className="bg-transparentnav m-0">
+        <Container className="container-fluid m-0">
           <Navbar.Brand as={Link} href="/">
             <Image
               src="/assets/img/logo-magm-black.svg"
