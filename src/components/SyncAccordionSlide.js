@@ -171,7 +171,7 @@ const SyncAccordionSlide = () => {
           </div>
 
           <div
-            className="my-accordion  gap-2 d-flex flex-column position-relative px-4"
+            className="my-accordion  gap-2 d-flex flex-column justify-content-center position-relative px-4"
             id="syncAccordion"
             ref={container_ref}
             onMouseEnter={() => set_is_paused(true)}
@@ -199,7 +199,6 @@ const SyncAccordionSlide = () => {
                     <h4
                       style={{
                         color: isActive ? activeColor : inactiveColor,
-                        fontSize: "24px",
                       }}
                     >
                       {item.title} <ArrowDown size={16} />
