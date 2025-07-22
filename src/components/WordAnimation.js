@@ -13,7 +13,28 @@ const words = [
 ];
 
 const colors = [
-  "#03d1e89", // Cor para #Tecnologia
+  "#00F6FF", // Cor para #Automação
+  "#9c5dd3 ",
+  "#00F6FF", // Cor para #Aplicativo
+  "##03d1e8",
+  "#5B19A9", // Cor para #Tecnologia
+  "#00F6FF", // Cor para #Automação
+  "#9c5dd3 ",
+  "#00F6FF", // Cor para #Aplicativo
+  "#03d1e8", // Cor para #Marketing
+  "#00F6FF",
+
+  "#00F6FF", // Cor para #Automação
+  "#9c5dd3 ",
+  "#00F6FF", // Cor para #Aplicativo
+  "##03d1e8",
+  "#5B19A9", // Cor para #Tecnologia
+  "#00F6FF", // Cor para #Automação
+  "#9c5dd3 ",
+  "#00F6FF", // Cor para #Aplicativo
+  "#03d1e8", // Cor para #Marketing
+  "#00F6FF",
+
   "#00F6FF", // Cor para #Automação
   "#9c5dd3 ",
   "#00F6FF", // Cor para #Aplicativo
