@@ -11,7 +11,7 @@ export default function BannerPrincipal({
   imagemCol,
 }) {
   return (
-    <section id="section-1" className="pt-5">
+    <section id="section-1" className="py-5">
       <div className="container c-txt-b py-5">
         <div
           className="row-banner row p-0 pt-2"
