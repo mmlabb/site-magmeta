@@ -6,7 +6,7 @@ export default function PlanosSection({ planos, destaqueBgColor, destaqueTextCol
     <section id="section-3" className="py-5 planos">
       <div className="container py-5">
         <div className="row mb-4">
-          <h4 className="text-center">Planos</h4>
+          <h3 className="text-center">Planos</h3>
         </div>
         <div className="row r-gap">
           {planos.map((plano, index) => {
