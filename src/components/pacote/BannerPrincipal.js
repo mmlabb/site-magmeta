@@ -12,32 +12,32 @@ export default function BannerPrincipal({
 }) {
   return (
     <section id="section-1" className="py-5">
-      <div className="container c-txt-b py-5">
-        <div
-          className="row-banner row p-0 pt-2"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            borderRadius: "24px",
-          }}
-        >
+      <div
+        className="container c-txt-b py-5 mt-5"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          borderRadius: "24px",
+        }}
+      >
+        <div className="z-3 px-3">
+          <Image
+            src={logo}
+            alt="Logo"
+            width={100}
+            height={100}
+            className="img-fluid"
+            sizes="100%"
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
+        </div>
+
+        <div className="row-banner row p-0 pt-2">
           {/* Coluna da Esquerda */}
           <div className="col-12 col-md-6 d-flex flex-column justify-content-between p-4">
-            <div className="py-3 z-3">
-              <Image
-                src={logo}
-                alt="Logo"
-                width={100}
-                height={100}
-                className="img-fluid"
-                sizes="100%"
-                style={{ maxWidth: "100%", height: "auto" }}
-              />
-            </div>
-
             <div>
-              <h3 className="text-white">{titulo}</h3>
+              <h3 id="text-b-sites">{titulo}</h3>
               <div className="pt-3">
                 <span style={{ color: "#fff" }}>{descricao}</span>
               </div>
