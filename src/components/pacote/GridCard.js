@@ -14,7 +14,7 @@ export default function GridCard({
         <div className="row text-center py-3 mb-4">
           <h3>{titulo}</h3>
         </div>
-        <div className="row d-flex row-cols-1 justify-conten-start row-cols-md-3 g-4">
+        <div className="row row-cols-1 row-cols-md-3 g-3">
           {passos.map((item, i) => {
             const isFirstRow = i < 3;
             const isMiddle = i === 1 || i === 4;
@@ -24,47 +24,48 @@ export default function GridCard({
               (!isFirstRow && isMiddle);
 
             return (
-              <div
-                className={`card-grid-bloco px-4 col ${isAtivo ? "ativo" : ""}`}
-                style={{
-                  backgroundColor: isAtivo ? ativoBgColor : undefined,
-                  color: modoHome ? "#000" : undefined,
-                }}
-                key={i}
-              >
-                <div className="d-flex pb-3 justify-content-between">
-                  <div>
-                    <h4>{item.title}</h4>
+              <div className="col" key={i}>
+                <div
+                  className={`card-grid-bloco h-100 p-4 ${
+                    isAtivo ? "ativo" : ""
+                  }`}
+                  style={{
+                    backgroundColor: isAtivo ? ativoBgColor : undefined,
+                    color: modoHome ? "#000" : undefined,
+                  }}
+                >
+                  <div className="d-flex pb-3 justify-content-between">
+                    <div>
+                      <h4>{item.title}</h4>
+                    </div>
+                    <div>
+                      {modoHome ? (
+                        <BsCheckCircle
+                          size={30}
+                          color={iconColor}
+                          className="mb-3"
+                        />
+                      ) : (
+                        <BsCheckCircleFill
+                          size={30}
+                          color={iconColor}
+                          style={{ borderRadius: "50%" }}
+                          className="mb-3"
+                        />
+                      )}
+                    </div>
                   </div>
                   <div>
-                    {modoHome ? (
-                      <BsCheckCircle
-                        size={30}
-                        color={iconColor}
-                        className="mb-3"
-                      />
+                    {Array.isArray(item.text) ? (
+                      <ol className="text-start ps-3 d-flex flex-column gap-2">
+                        {item.text.map((line, idx) => (
+                          <li key={idx}>{line}</li>
+                        ))}
+                      </ol>
                     ) : (
-                      <BsCheckCircleFill
-                        size={30}
-                        color={iconColor}
-                        style={{
-                          borderRadius: "50%",
-                        }}
-                        className="mb-3"
-                      />
+                      <span>{item.text}</span>
                     )}
                   </div>
-                </div>
-                <div>
-                  {Array.isArray(item.text) ? (
-                    <ol className="text-start ps-3 d-flex flex-column gap-2">
-                      {item.text.map((line, idx) => (
-                        <li key={idx}>{line}</li>
-                      ))}
-                    </ol>
-                  ) : (
-                    <span>{item.text}</span>
-                  )}
                 </div>
               </div>
             );
