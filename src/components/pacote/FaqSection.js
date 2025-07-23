@@ -34,9 +34,9 @@ export default function FaqSection({
                 <div
                   className="accordion-item"
                   key={index}
-                  style={{ backgroundColor: "transparent" }}
+                  
                 >
-                  <h2 className="accordion-header">
+                  <h4 className="accordion-header">
                     <button
                       className={`accordion-button ${
                         activeIndex === index ? "" : "collapsed"
@@ -46,7 +46,7 @@ export default function FaqSection({
                     >
                       <h4 className="mb-0">{pergunta}</h4>
                     </button>
-                  </h2>
+                  </h4>
                   <div
                     className={`accordion-collapse collapse ${
                       activeIndex === index ? "show" : ""
