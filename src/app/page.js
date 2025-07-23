@@ -38,15 +38,15 @@ export default function Home() {
   // ETAPAS / PASSOS
   const passos = [
     {
-      title: "Diagnóstico personalizado",
+      title: "1. Diagnóstico personalizado",
       text: "Você agenda uma Sessão Estratégica gratuita com nosso time. Entendemos seu momento e objetivos.",
     },
     {
-      title: "Ativação da solução",
+      title: "2. Ativação da solução",
       text: "Montamos uma estrutura sob medida: landing page, automação, campanhas, funis, tudo o que for necessário para atrair e converter.",
     },
     {
-      title: "Acompanhamento e evolução",
+      title: "3. Acompanhamento e evolução",
       text: "Medimos resultados, otimizamos estratégias e escalamos o que funciona. Com foco no crescimento.",
     },
   ];
