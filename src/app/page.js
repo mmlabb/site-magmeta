@@ -244,7 +244,7 @@ export default function Home() {
         modoHome={true}
       />
 
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center py-5">
         <BtnRoxo />
       </div>
 
