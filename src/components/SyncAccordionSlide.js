@@ -66,7 +66,7 @@ const SyncAccordionSlide = () => {
     if (interval_ref.current) clearInterval(interval_ref.current);
     interval_ref.current = setInterval(() => {
       set_active_index((prev) => (prev + 1) % items.length);
-    }, 5000);
+    }, 3000);
   }, [items.length]);
 
   // Inicia ou retoma o autoplay quando não estiver pausado
@@ -88,7 +88,7 @@ const SyncAccordionSlide = () => {
 
     pause_timeout_ref.current = setTimeout(() => {
       set_is_paused(false);
-    }, 5000);
+    }, 3000);
   };
 
   // Ajusta a barra de progresso para ficar ao lado do item ativo
@@ -140,7 +140,7 @@ const SyncAccordionSlide = () => {
 
   return (
     <div className="container-fluid  justify-content-between">
-      <div className="d-flex flex-column-reverse flex-md-row  row-accordion">
+      <div className="d-flex flex-column-reverse flex-md-row  row-accordion gap-4">
         {/* Accordion */}
         <div className="w-100 w-md-50 d-flex flex-column justify-content-center position-relative my-2">
           {/* Barra de progresso vertical fixa */}
@@ -187,7 +187,7 @@ const SyncAccordionSlide = () => {
               return (
                 <div
                   key={index}
-                  className="accordion-item "
+                  className="accordion-item gap-2"
                   data-index={index}
                   onClick={() => handle_click(index)}
                   style={{
@@ -195,21 +195,22 @@ const SyncAccordionSlide = () => {
                     transition: "all 0.6s ease",
                   }}
                 >
-                  <div>
-                    <h4
-                      style={{
-                        color: isActive ? activeColor : inactiveColor,
-                      }}
-                    >
-                      {item.title} <ArrowDown size={16} />
-                    </h4>
+                  <div
+                    className="d-flex justify-content-between"
+                    style={{
+                      color: isActive ? activeColor : inactiveColor,
+                    }}
+                  >
+                    <h4>{item.title}</h4>
+                    <ArrowDown size={16} />
                   </div>
 
                   {isActive && (
                     <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
+                    initial={{ opacity: 0, y: 100 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -100 }}
+                      transition={{ duration: 0.5, ease: "easeOut" }}
                       style={{ overflow: "hidden" }}
                     >
                       <div className="d-flex flex-column gap-2">
@@ -223,10 +224,12 @@ const SyncAccordionSlide = () => {
                         </span>
 
                         <BtnRoxo
-                          className="py-2 px-4"
+                          className="py-2 px-2"
                           style={{
-                            fontSize: "0.9rem",
-                            width: "50%",
+                            fontSize: "0.8rem",
+                            width: "30%",
+                            alignItems: "center",
+                            justifyContent: "center",
                           }}
                         >
                           <small className="text-nowrap">{item.cta}</small>
@@ -245,10 +248,10 @@ const SyncAccordionSlide = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={active_index}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.1 }}
               className="w-100"
               style={{
                 display: "flex",
@@ -260,22 +263,18 @@ const SyncAccordionSlide = () => {
               <div
                 id="box-img-accord"
                 style={{
+                  position: "relative",
                   width: "100%",
-                  height: "100%",
-                  maxWidth: "600px",
+                  aspectRatio: "16 / 9",
                 }}
               >
                 <Image
                   src={items[active_index].image}
                   alt={items[active_index].title}
-                  width={0}
-                  height={0}
+                  fill
                   style={{
                     objectFit: "contain",
                     borderRadius: "1rem",
-                    width: "100%",
-                    height: "100%",
-                    maxHeight: "450px",
                   }}
                 />
               </div>
