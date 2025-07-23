@@ -22,7 +22,7 @@ export default function BeneficiosSection({
       >
         {!compact && (
           <div className="d-flex justify-content-center py-5">
-            <h4>{titulo}</h4>
+            <h3>{titulo}</h3>
           </div>
         )}
 
