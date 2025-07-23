@@ -14,7 +14,7 @@ import faqAnimation from "@/../public/lotties/faq-2.json";
 import PublicoCarousel from "@/components/pacote/PublicoCarousel";
 
 // BENEFÍCIOS
-const beneficiosMagnet = [
+const beneficiosSite = [
   "Site totalmente responsivo",
   "Copywriting estratégico para vender",
   "Integração com WhatsApp, Google Meu Negócio",
@@ -24,7 +24,7 @@ const beneficiosMagnet = [
 ];
 
 // PÚBLICO-ALVO
-const recursosChat = [
+const recursosSite = [
   { emoji: "🧑🏻‍⚕️", title: "Clínicas e consultórios médicos" },
   { emoji: "🍔", title: "Restaurantes, lanchonetes e delivery" },
   { emoji: "💇🏻‍♀️", title: "Salões de beleza, estética e bem-estar" },
@@ -33,35 +33,39 @@ const recursosChat = [
 ];
 
 // ETAPAS / PASSOS
-const passosMagnet = [
+const passosSite = [
   {
-    title: "Escolha seu plano",
-    text: "Selecione o pacote que melhor atende seu negócio.",
+    title: "1. Mais confiança e autoridade no mercado",
+    text: [
+      "Selecione o pacote ideal para seu negócio.",
+      "Seu negócio apresentado de forma profissional e moderna.",
+      "A primeira impressão do seu cliente será de organização e seriedade.",
+      "Você se destaca da concorrência que ainda usa redes sociais como única presença online.",
+      "Cria uma marca forte que transmite segurança para novos clientes.",
+    ],
   },
   {
-    title: "Integração fácil",
-    text: "Conectamos seu WhatsApp em minutos sem complicações.",
+    title: "2. Mais visitas se transformando em contatos no WhatsApp",
+    text: [
+      "Botões inteligentes para levar o visitante direto para seu WhatsApp.",
+      "Conversão rápida: menos cliques, mais contatos no seu celular.",
+      "Textos estratégicos guiando o cliente até a ação final.",
+      "Captação de leads direto no seu WhatsApp sem precisar investir em ferramentas caras.",
+    ],
   },
   {
-    title: "Crie mensagens",
-    text: "Monte fluxos inteligentes para atender clientes 24h.",
-  },
-  {
-    title: "Monitore resultados",
-    text: "Acompanhe relatórios de desempenho em tempo real.",
-  },
-  {
-    title: "Automatize tudo",
-    text: "Deixe os chatbots cuidarem do trabalho repetitivo.",
-  },
-  {
-    title: "Escale suas vendas",
-    text: "Com mais eficiência e agilidade no atendimento.",
+    title: "3. Mais clientes locais encontrando você no Google",
+    text: [
+      "Escolha seu visual ou template.",
+      "Conecte seus canais: WhatsApp, Instagram, localização.",
+      "Ative o Magnet Chat (se desejar automatizar).",
+      "Comece a divulgar e receba contatos de forma prática.",
+    ],
   },
 ];
 
 // PLANOS
-const planosMagnet = [
+const planosSite = [
   {
     nome: "ESSENCIAL",
     preco: "R$ 129,00/mês",
@@ -122,7 +126,7 @@ const planosMagnet = [
 ];
 
 // FAQ
-const perguntasFaqMagnet = [
+const perguntasFaqSite = [
   {
     pergunta: "1. O que é o magnet chat?",
     resposta:
@@ -156,7 +160,7 @@ export default function Page() {
         <BeneficiosSection
           titulo="O que está incluso"
           descricao="Tudo o que seu negócio precisa para ter presença digital que realmente gera vendas:"
-          beneficios={beneficiosMagnet}
+          beneficios={beneficiosSite}
           animationData={siteAnimation}
           checkColor="#03D1E8"
           lottieWidth="86%"
@@ -165,22 +169,25 @@ export default function Page() {
 
       <div className="container">
         <GridCard
-          titulo="Como Funciona?"
-          passos={passosMagnet}
+          titulo="O que você ganha com nosso site:"
+          passos={passosSite}
           iconColor="#03D1E8"
           ativoBgColor="rgba(3, 209, 232, 0.1)"
         />
       </div>
 
-      <PublicoCarousel
-        recursos={recursosChat}
-        customClass="publico-mobile"
-        corBase="#03D1E8"
-      />
+      <div className="py-5 my-5">
+        <PublicoCarousel
+          recursos={recursosSite}
+          customClass="publico-mobile"
+          corBase="#00000000"
+          corBorda="#03D1E8"
+        />
+      </div>
 
       <div className="container">
         <PlanosSection
-          planos={planosMagnet}
+          planos={planosSite}
           destaqueBgColor="linear-gradient(to bottom, #03D1E8 0%, #027582 100%)"
           destaqueTextColor="#000"
           checkIconColor="#000"
@@ -191,7 +198,7 @@ export default function Page() {
         <div className="py-5">
           <FaqSection
             titulo="Perguntas e respostas mais frequentes"
-            perguntas={perguntasFaqMagnet}
+            perguntas={perguntasFaqSite}
             animationData={faqAnimation}
             backgroundColor="rgba(3, 209, 232, 0.1)"
           />
