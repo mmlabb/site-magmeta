@@ -10,7 +10,7 @@ const BtnColorido = () => {
         rel="noopener noreferrer"
         data-content="Quero começar agora!"
       >
-        <span className="txt-botao-conversar"></span>
+        <span data-content></span>
       </a>
     </div>
   );
