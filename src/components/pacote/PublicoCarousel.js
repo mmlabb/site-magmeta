@@ -4,7 +4,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function PublicoCarousel({ recursos, corBase, customClass }) {
+export default function PublicoCarousel({
+  recursos,
+  corBase,
+  customClass,
+  corBorda,
+}) {
   const settings = {
     infinite: true,
     speed: 4000,
@@ -26,7 +31,13 @@ export default function PublicoCarousel({ recursos, corBase, customClass }) {
   };
 
   return (
-    <div className={`container-fluid justify-content-center px-0 ${customClass}`}>
+    <div
+      className={`container-fluid justify-content-center px-0 pt-5 ${customClass}`}
+    >
+      <div className="gap-2 d-flex justify-content-center flex-column text-center py-4">
+        <h3>Para quem é?</h3>
+        <h5>Somos parceiros de empresas que querem escalar suas vendas em ramos como:</h5>
+      </div>
       <Slider {...settings}>
         {recursos.map((item, index) => (
           <div key={index} className="px-2">
@@ -34,7 +45,7 @@ export default function PublicoCarousel({ recursos, corBase, customClass }) {
               className="text-center p-3"
               style={{
                 backgroundColor: `${corBase}1A`, // 10% opacity
-                border: `1px solid ${corBase}`,
+                border: `1px solid ${corBorda}`,
                 borderRadius: "16px",
                 minHeight: "180px",
               }}
