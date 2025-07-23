@@ -9,7 +9,7 @@ export default function GridCard({
   modoHome = false,
 }) {
   return (
-    <section id="section-2" className="pt-5 my-5">
+    <section id="section-2" className="pt-">
       <div className="container">
         <div className="row text-center py-3 mb-4">
           <h3>{titulo}</h3>
@@ -24,33 +24,47 @@ export default function GridCard({
               (!isFirstRow && isMiddle);
 
             return (
-              <div className="col" key={i}>
-                <div
-                  className={`card-grid-bloco ${isAtivo ? "ativo" : ""}`}
-                  style={{
-                    backgroundColor: isAtivo ? ativoBgColor : undefined,
-                    color: modoHome ? "#000" : undefined,
-                  }}
-                >
-                  {modoHome ? (
-                    <BsCheckCircle
-                      size={40}
-                      color={iconColor}
-                      className="mb-3"
-                    />
+              <div
+                className={`card-grid-bloco px-4 col ${isAtivo ? "ativo" : ""}`}
+                style={{
+                  backgroundColor: isAtivo ? ativoBgColor : undefined,
+                  color: modoHome ? "#000" : undefined,
+                }}
+                key={i}
+              >
+                <div className="d-flex pb-3 justify-content-between">
+                  <div>
+                    <h4>{item.title}</h4>
+                  </div>
+                  <div>
+                    {modoHome ? (
+                      <BsCheckCircle
+                        size={30}
+                        color={iconColor}
+                        className="mb-3"
+                      />
+                    ) : (
+                      <BsCheckCircleFill
+                        size={30}
+                        color={iconColor}
+                        style={{
+                          borderRadius: "50%",
+                        }}
+                        className="mb-3"
+                      />
+                    )}
+                  </div>
+                </div>
+                <div>
+                  {Array.isArray(item.text) ? (
+                    <ol className="text-start ps-3 d-flex flex-column gap-2">
+                      {item.text.map((line, idx) => (
+                        <li key={idx}>{line}</li>
+                      ))}
+                    </ol>
                   ) : (
-                    <BsCheckCircleFill
-                      size={40}
-                      color={iconColor}
-                      style={{
-                        backgroundColor: "#ffffff",
-                        borderRadius: "50%",
-                      }}
-                      className="mb-3"
-                    />
+                    <span>{item.text}</span>
                   )}
-                  <h4 className="mb-2">{item.title}</h4>
-                  <p className="mb-0">{item.text}</p>
                 </div>
               </div>
             );
