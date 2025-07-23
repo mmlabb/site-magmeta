@@ -16,7 +16,7 @@ export default function BtnRoxo({
       className={`btn-purple ${className}`}
       style={style}
     >
-      <small>{children}</small>
+      <span>{children}</span>
       {icon}
     </a>
   );
