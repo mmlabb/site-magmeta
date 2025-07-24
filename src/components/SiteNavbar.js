@@ -49,63 +49,6 @@ export default function SiteNavbar() {
           </Navbar.Brand>
 
           <div className="d-flex gap-3 align-items-center">
-            <div className="botao-tema btn-mobile">
-              <input
-                onClick={alternateTheme}
-                type="checkbox"
-                className="checkbox chk"
-                id="chk-2"
-              />
-              <label className="label" htmlFor="chk-2">
-                <div className="ball"></div>
-                <Sun />
-                <Moon />
-              </label>
-            </div>
-            <div className="botao-tema d-none d-lg-flex">
-              <input
-                onClick={alternateTheme}
-                type="checkbox"
-                className="checkbox chk"
-                id="chk-1"
-              />
-              <label className="label" htmlFor="chk-1">
-                <div className="ball"></div>
-                <Sun />
-                <Moon />
-              </label>
-            </div>
-            <div
-              className="text-center justify-content-between d-md-none"
-              id="menu-nav"
-            >
-              <div className="navbar-nav flex-row align-items-center gap-3">
-                <div className="botao-tema">
-                  <input
-                    onClick={alternateTheme}
-                    type="checkbox"
-                    className="checkbox chk"
-                    id="chk-1"
-                  />
-                  <label className="label" htmlFor="chk-1">
-                    <div className="ball"></div>
-                    <Sun />
-                    <Moon />
-                  </label>
-                </div>
-
-                <div className="botao-conversar">
-                  <a
-                    href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
-                    target="_blank"
-                    className="btn btn-outline-info"
-                  >
-                    Orçamento rápido
-                  </a>
-                </div>
-              </div>
-            </div>
-
             <div className="pe-3">
               {" "}
               <Navbar.Toggle
@@ -153,19 +96,55 @@ export default function SiteNavbar() {
                     <Nav.Link as={Link} href="/blog" onClick={closeOffcanvas}>
                       Blog
                     </Nav.Link>
-
-                    <a
-                      href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-outline-light rounded-pill"
-                      onClick={closeOffcanvas}
-                    >
-                      Orçamento rápido
-                    </a>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
+            </div>
+            <div className="botao-tema btn-mobile">
+              <input
+                onClick={alternateTheme}
+                type="checkbox"
+                className="checkbox chk"
+                id="chk-2"
+              />
+              <label className="label" htmlFor="chk-2">
+                <div className="ball"></div>
+                <Sun />
+                <Moon />
+              </label>
+            </div>
+            <div className="botao-tema d-none d-lg-flex">
+              <input
+                onClick={alternateTheme}
+                type="checkbox"
+                className="checkbox chk"
+                id="chk-1"
+              />
+              <label className="label" htmlFor="chk-1">
+                <div className="ball"></div>
+                <Sun />
+                <Moon />
+              </label>
+            </div>
+            <div
+              className="text-center justify-content-between d-md-none"
+              id="menu-nav"
+            >
+              <div className="navbar-nav flex-row align-items-center gap-3">
+                <div className="botao-tema">
+                  <input
+                    onClick={alternateTheme}
+                    type="checkbox"
+                    className="checkbox chk"
+                    id="chk-1"
+                  />
+                  <label className="label" htmlFor="chk-1">
+                    <div className="ball"></div>
+                    <Sun />
+                    <Moon />
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
