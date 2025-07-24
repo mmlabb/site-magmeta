@@ -126,19 +126,38 @@ const planosSite = [
 // FAQ
 const perguntasFaqSite = [
   {
-    pergunta: "1. O que é o magnet chat?",
+    pergunta: "1. Preciso ter domínio e hospedagem?",
     resposta:
-      "O Magnet Chat é uma plataforma de atendimento inteligente e automatizado que conecta sua empresa com seus clientes via WhatsApp, Instagram, site e outros canais. É uma solução pronta, fácil de configurar e usar, sem necessidade de desenvolvimento.",
+      "Sim. A hospedagem e o domínio são contratados diretamente pelo cliente. Nós ajudamos a escolher e configurar tudo sem custo extra.",
   },
   {
-    pergunta: "2. Como funciona a integração?",
+    pergunta: "2. O pagamento é à vista ou parcelado?",
     resposta:
-      "A integração é feita em poucos minutos, sem necessidade de conhecimento técnico.",
+      "Facilitamos o pagamento via PIX, boleto ou cartão, com possibilidade de parcelamento com juros da operadora.",
   },
+
   {
-    pergunta: "3. Posso personalizar os fluxos?",
+    pergunta: "3. Posso pedir alterações depois da entrega?",
     resposta:
-      "Sim, você pode montar fluxos inteligentes e personalizados para seu atendimento.",
+      "Sim. Incluímos rodadas de ajustes conforme o pacote escolhido. Após o prazo de garantia você pode contratar manutenção opcional.",
+  },
+
+  {
+    pergunta: "4. Vocês oferecem suporte?",
+    resposta:
+      "Sim. Após a entrega, oferecemos um pequeno período de suporte para garantir a operação do site, e após este período você pode contratar um pacote se suporte e manutenção do seu site.",
+  },
+
+  {
+    pergunta: "5. Qual o valor para fazer um site com vocês?",
+    resposta:
+      "Temos diferentes pacotes pensados para necessidades e níveis de investimento variados. O ideal é entender seu negócio antes de apresentar o valor. Fale com a gente no WhatsApp e vamos te mostrar o que faz mais sentido para você.",
+  },
+
+  {
+    pergunta: "6. Vocês atendem todo tipo de negócio?",
+    resposta:
+      "Atendemos especialmente negócios que querem se destacar no Google e atrair mais clientes. Se você vende serviços, produtos ou precisa mostrar autoridade, nós somos especialistas em te posicionar bem online.",
   },
 ];
 
@@ -200,6 +219,12 @@ export default function Page() {
           iconeCor={"#03D1E8"}
         />
 
+        <Duvidas
+          backgroundImage="/assets/img/background-2.png"
+          textos={["Quer consultar o pacote ideal?"]}
+          botaoLabel="Falar com Especialista"
+        />
+
         <div className="py-5">
           <FaqSection
             titulo="Perguntas e respostas mais frequentes"
@@ -208,26 +233,16 @@ export default function Page() {
             backgroundColor="rgba(3, 209, 232, 0.1)"
           />
         </div>
-
-        <Duvidas
-          backgroundImage="/assets/img/background-2.png"
-          textos={["Ficou com alguma dúvida sobre nossos planos?"]}
-          botaoLabel="Falar com Especialista"
-        />
-
-        <CtaAcao
-          titulo="Pronto para automatizar seu atendimento? 🚀"
-          descricao="Automatize seu atendimento, gere mais negócios e aumente suas conversões. Tenha seu chat funcionando em poucos dias."
-          botaoPrimario={{ label: "Quero saber mais" }}
-          botaoSecundario={{
-            titulo: "🔥 Comece agora!",
-            label: "Assinar plano",
-          }}
-        />
       </div>
 
-      <section className="py-5 acc  my-5">
-        <div className="container">
+      <section className="py-5 acc  ">
+        <div className=" d-flex justify-content-center text-center py-4 flex-column gap-2">
+          <h3>Nossas soluções</h3>
+          <h5 className="txt-escolha">
+            Escolha seu próximo passo para crescer com a Magmeta
+          </h5>
+        </div>
+        <div className="container py-5">
           <SyncAccordionSlide />
         </div>
       </section>
