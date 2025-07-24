@@ -35,16 +35,16 @@ export default function BannerPrincipal({
 
         <div className="row-banner row p-0 pt-2">
           {/* Coluna da Esquerda */}
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-between p-4">
+          <div className="col-12 col-md-6 g d-flex flex-column justify-content-between p-4">
             <div>
               <h3 id="text-b-sites">{titulo}</h3>
-              <div className="pt-3">
+              <div className="py-2">
                 <span style={{ color: "#fff" }}>{descricao}</span>
               </div>
             </div>
 
             {/* Botões */}
-            <div className="row pt-3 g-3">
+            <div className="row">
               {botoes.map((btn, index) => (
                 <div key={index} className="col-12 col-md-auto">
                   <a
