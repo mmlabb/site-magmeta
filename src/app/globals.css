@@ -154,16 +154,12 @@ h6 {
   background: #fff;
 }
 
-.theme-dark {
-  .item-t {
-    color: #fff !important;
-  }
+.theme-light .item-t {
+  color: #0e0c10 !important;
 }
 
-.theme-dark {
-  .item-t {
-    color: #000000 !important;
-  }
+.theme-dark .item-t {
+  color: #fff !important;
 }
 
 /* Banner */
@@ -490,7 +486,7 @@ header.floating {
 }
 
 .btn-outline-info:hover {
-  background: #000 !important;
+  background: #1c1c3c !important;
 }
 
 .btn-mobile-orcam {
@@ -696,7 +692,7 @@ header.floating {
 
 .theme-light .btn-outline-light {
   color: #1c1c3c !important;
-  border-color: #000 !important;
+  border-color: #1c1c3c !important;
 }
 
 .btn-outline-light:hover {
@@ -843,17 +839,15 @@ main {
 }
 
 .btn-white {
-  background-color: #fff !important;
-  color: #000000 !important;
   transition: all 0.3s ease !important;
   border: 1px solid #000 !important;
   border-radius: 24px !important;
 }
 
 .btn-white:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  color: #ffffff !important;
-  border: 1px solid #ffffff !important;
+  background-color: #03d1e855 !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
 }
 
 .btn-plano {
@@ -906,7 +900,8 @@ main {
 }
 
 .faixa-titulo {
-  background-color: #1C1C3C;
+  color: #fff !important;
+  background-color: #1c1c3c;
   padding: 1rem;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -914,9 +909,13 @@ main {
 }
 
 .titulo-plano {
-  color: #000000;
+  color: #fff !important;
   font-weight: 700;
   font-size: 1.25rem;
+}
+
+#txt-plan {
+  color: #fff !important;
 }
 /* #segunda-sessao::before {
   content: "";
@@ -934,11 +933,10 @@ main {
 .plano-box {
   padding: 1.5rem;
   padding-top: 0% !important;
-  border: 1px solid #1C1C3C;
+  border: 1px solid #1c1c3c;
   border-radius: 12px;
   background-color: #11111100;
   height: 100%;
-  color: #1C1C3C;
 }
 
 .plano-box .titulo {
@@ -950,9 +948,8 @@ main {
 .plano-box .preco {
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 28px;
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 
 .plano-box .descricao {
@@ -1022,13 +1019,22 @@ main {
 .accordion-button,
 .accordion-body {
   background-color: transparent !important;
-  color: #fff !important;
+
   box-shadow: none !important;
   border: none !important;
 }
 
-.accordion-button::after {
+body.dark .accordion-button::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+}
+
+/* Seta preta para modo claro */
+body.light .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+}
+
+#tex-faq {
+  color: #000 !important;
 }
 
 .publico-carousel .slick-slide > div {
@@ -1176,7 +1182,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 24px;
+  padding: 12px 24px !important;
   background: linear-gradient(90deg, #5b19a9 0%, #9c5dd3 100%);
   color: white;
   font-size: 1rem;
@@ -1203,7 +1209,7 @@ main {
 
 .btn-ver-mais {
   background-color: #fff !important;
-  color: #000000 !important;
+  color: #1c1c3c !important;
   transition: all 0.3s ease !important;
   border: 1px solid #fff !important;
   border-radius: 24px !important;
@@ -1527,6 +1533,23 @@ main {
   .theme-light {
     color: #000;
   }
+
+  .theme-dark .accordion-item .accordion-button {
+    color: #fff !important;
+  }
+
+  .theme-light .accordion-item .accordion-button {
+    color: #1c1c3c !important;
+  }
+
+  .theme-dark .accordion-item {
+    color: #fff !important;
+  }
+
+  .theme-light .accordion-item {
+    color: #1c1c3c !important;
+  }
+
   /*.box-portifolio:last-child .box-texto-p1 {
     color: black;
   }*/
