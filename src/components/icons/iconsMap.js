@@ -13,14 +13,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const icones = {
-  "fa-stethoscope": faStethoscope,
-  "fa-gavel": faGavel,
-  "fa-home": faHome,
-  "fa-cut": faCut,
-  "fa-utensils": faUtensils,
-  "fa-drafting-compass": faDraftingCompass,
-  "fa-car-side": faCarSide,
-  "fa-dumbbell": faDumbbell,
-  "fa-paw": faPaw,
-  "fa-camera-retro": faCameraRetro,
+  stethoscope: faStethoscope,
+  gavel: faGavel,
+  home: faHome,
+  cut: faCut,
+  utensils: faUtensils,
+  "drafting-compass": faDraftingCompass,
+  "car-side": faCarSide,
+  dumbbell: faDumbbell,
+  paw: faPaw,
+  "camera-retro": faCameraRetro,
 };
