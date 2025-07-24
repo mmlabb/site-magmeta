@@ -15,11 +15,11 @@ export default function FaqSection({
   };
 
   return (
-    <section
-      className="my-5 pt-5"
-      style={{ backgroundColor, borderRadius: "24px" }}
-    >
-      <div className="container faq-box">
+    <section className="my-5 pt-5">
+      <div
+        className="container faq-box"
+        style={{ backgroundColor, borderRadius: "24px" }}
+      >
         <div id="row-faq" className="row  p-5">
           <div className="col-12 col-md-6">
             <div className="px-3 pt-4">
@@ -31,11 +31,7 @@ export default function FaqSection({
               id="faqAccordion"
             >
               {perguntas.map(({ pergunta, resposta }, index) => (
-                <div
-                  className="accordion-item"
-                  key={index}
-                  
-                >
+                <div className="accordion-item" key={index}>
                   <h4 className="accordion-header">
                     <button
                       className={`accordion-button ${
@@ -44,7 +40,7 @@ export default function FaqSection({
                       type="button"
                       onClick={() => toggleIndex(index)}
                     >
-                      <h4 className="mb-0">{pergunta}</h4>
+                      <h5 className="mb-0  font-bold">{pergunta}</h5>
                     </button>
                   </h4>
                   <div
@@ -65,7 +61,7 @@ export default function FaqSection({
                 animationData={animationData}
                 loop={true}
                 className="w-100 lott"
-                style={{ maxWidth: "68%", height: "100%" }}
+                style={{ maxWidth: "100%", height: "100%" }}
               />
             </div>
           </div>
