@@ -85,6 +85,10 @@ h6 {
   height: 100%;
 }
 
+.font-bold {
+  font-weight: 500 !important;
+}
+
 .txt-b-or {
   font-size: 20px;
   font-family: "Montserrat" !important;
@@ -352,6 +356,10 @@ header.floating {
   background-color: rgba(98, 33, 162, 0.5);
   filter: blur(200px) !important;
   z-index: -1;
+}
+
+#txt-envie {
+  color: #fff !important;
 }
 
 .texto-botao {
@@ -845,7 +853,7 @@ main {
 }
 
 .btn-white:hover {
-  background-color: #03d1e855 !important;
+  background-color: #8a9a9c55 !important;
   color: #000 !important;
   border: 1px solid #000 !important;
 }
@@ -2045,6 +2053,15 @@ body.light .accordion-button::after {
   #co-cta {
     text-align: center !important;
   }
+
+.theme-light .text-cta {
+  color: #fff !important;
+}
+
+#txt-cta-wpp {
+  color: #fff !important;
+}
+
 
   #box-ctm {
     padding-left: 0% !important;
