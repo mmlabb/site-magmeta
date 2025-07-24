@@ -73,59 +73,52 @@ const passosSite = [
 const planosSite = [
   {
     nome: "ESSENCIAL",
-    preco: "R$ 129,00/mês",
-    descricao:
-      "Microempresas, autônomos, pequenos negócios e quem está começando no atendimento automatizado.",
+    preco: "Presença Profissional",
+
     beneficios: [
-      "1 canal integrado (WhatsApp ou site)",
-      "1 atendente humano",
-      "Templates prontos (saúde, delivery, estética, etc.)",
-      "Criação de fluxos básicos de atendimento",
-      "Relatórios simples de atendimento e leads",
-      "Suporte via e-mail e WhatsApp comercial",
-      "Dashboard intuitivo",
-      "Widget de chat para site",
-      "Taxa de implantação única: R$ 150,00",
-      "Implantação: Até 3 dias úteis",
+      "Até 4 páginas (Home, Sobre, Serviços, Contato)",
+      "Layout pronto personalizado com cores/marca do cliente",
+      "Copy básica (texto padrão otimizado com informações do cliente)",
+      "Integração com WhatsApp",
+      "Otimização para Google Meu Negócio",
+      "Instalação do site em domínio próprio",
+      "Prazo de entrega: até 10 dias úteis",
+      "1 rodada de ajustes simples pós-entrega",
     ],
   },
   {
     nome: "IMPULSO ",
-    preco: "R$ 249,00/mês",
+    preco: "Para gerar mais contatos",
     etiqueta: "Mais procurado",
-    descricao:
-      "Para Empresas em expansão que precisam de mais canais, mais atendentes e maior controle sobre os atendimentos.",
+
     beneficios: [
-      "Até 3 canais integrados (WhatsApp, Instagram e site)",
-      "Até 3 atendentes humanos",
-      "Templates prontos + possibilidade de personalização moderada",
-      "Criação de fluxos avançados de atendimento",
-      "Integração com CRM, API ou Webhooks",
-      "Relatórios detalhados com métricas de desempenho",
-      "Suporte prioritário via WhatsApp",
-      "Dashboard completo e fácil de usar",
-      "Widget de chat para site",
-      "Taxa de implantação única: R$ 250,00",
-      "Implantação: Até 2 dias úteis",
+      "Até 6 páginas (Home, Sobre, Serviços, Contato, Página de Captura, Landing Page de Produto/Serviço)",
+      "Layout semi-personalizado (adaptação de modelo com ajustes de estrutura)",
+      "Copywriting estratégico (escrita persuasiva básica para conversão)",
+      "Integração com WhatsApp, Formulários, Google Analytics e Pixel de Meta",
+      "SEO Local básico: configuração de palavras-chave para região/local",
+      "Integração com Google Meu Negócio",
+      "Instalação e otimização básica de carregamento",
+      "Prazo de entrega: até 15 dias úteis",
+      "2 rodadas de ajustes",
     ],
   },
   {
     nome: "PREMIUM ",
-    preco: "Sob consulta",
-    descricao:
-      "Para Grandes empresas, redes de franquias, grupos empresariais ou negócios que precisam de um atendimento altamente personalizado e escalável.",
+    preco: "Autoridade Online",
+
     beneficios: [
-      "Até 3 canais integrados (WhatsApp, Instagram e site)",
-      "Até 3 atendentes humanos",
-      "Templates prontos + possibilidade de personalização moderada",
-      "Criação de fluxos avançados de atendimento",
-      "Integração com CRM, API ou Webhooks",
-      "Relatórios detalhados com métricas de desempenho",
-      "Suporte prioritário via WhatsApp",
-      "Dashboard completo e fácil de usar",
-      "Widget de chat para site",
-      "Taxa de implantação única: R$ 250,00",
-      "Implantação: Sob consulta",
+      "Até 10 páginas (incluindo landing pages extras, blog, e páginas extras sob medida)",
+      "Layout 100% personalizado (Figma ou construído do zero)",
+      "Copywriting Profissional Completo (textos de alta conversão)",
+      "Integração com WhatsApp, CRM (se usar), automações básicas",
+      "SEO Estratégico: pesquisa de palavras-chave, textos otimizados, tags técnicas",
+      "Otimização de performance e carregamento",
+      "Instalação de Analytics avançado, Pixel, Hotjar (mapa de calor)",
+      "Configuração inicial de campanhas Google Ads ou Meta Ads (1 campanha simples)",
+      "Consultoria estratégica gratuita inicial para guiar a presença online",
+      "Prazo de entrega: até 20 dias úteis",
+      "3 rodadas de ajustes detalhados",
     ],
   },
 ];
@@ -199,6 +192,12 @@ export default function Page() {
           checkIconColor="#fff"
           checkIconColorNaoDestaque="#1C1C3C"
           destaqueBtnHoverColor="#000"
+          corIconeFaixa="#03D1E8"
+          corBotaoDestaque="#1C1C3C"
+          destaqueBtnColor="#1C1C3C"
+          corBotaoNaoDestaque="#03D1E8"
+          corTextoBotaoNaoDestaque="#000000"
+          iconeCor={"#03D1E8"}
         />
 
         <div className="py-5">
