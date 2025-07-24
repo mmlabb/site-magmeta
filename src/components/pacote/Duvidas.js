@@ -16,22 +16,29 @@ export default function Duvidas({ backgroundImage, textos, botaoLabel }) {
       <div className="container">
         <div className="row align-items-center text-white py-5">
           {/* Coluna de textos */}
-          <div className="col-md-6 mb-4 mb-md-0 px-5">
-            <div className="d-flex justify-content-start ">
-              <FaWhatsapp size={54} color="#25D366" className="mb-2" />
+          <div className="col-md-7 mb-4 mb-md-0 px-5">
+            <div className="d-flex flex-column gap-2">
+              <div className="d-flex justify-content-start ">
+                <FaWhatsapp size={54} color="#25D366" className="mb-2" />
+              </div>
+              {textos.map((texto, index) => (
+                <h4
+                  id="txt-cta-wpp"
+                  key={index}
+                  className="mb-3 duvidas-section text-cta fw-bold"
+                  style={{ color: "#fff" }}
+                >
+                  {texto}
+                </h4>
+              ))}
+              <p id="txt-envie" style={{ color: "#fff" }}>
+                Envie uma mensagem e converse com nosso time agora mesmo!
+              </p>
             </div>
-            {textos.map((texto, index) => (
-              <h3 key={index} className="mb-3 fw-bold">
-                {texto}
-              </h3>
-            ))}
-            <p className="mt-2">
-              Envie uma mensagem e converse com uma pessoa real.
-            </p>
           </div>
 
           {/* Coluna do botão */}
-          <div id="btn-wp" className="col-md-6 text-md-end text-center  p-5">
+          <div id="btn-wp" className="col-md-5 text-md-end text-center  p-5">
             <a
               href="#"
               className="btn btn-success btn-succe d-inline-flex align-items-center gap-2 px-4 py-2 rounded-pill"
