@@ -28,7 +28,7 @@ export default function GridCard({
             return (
               <div className="col" key={i}>
                 <div
-                  className={`card-grid-bloco h-100 p-4 ${
+                  className={`card-grid-bloco h-100 p-5 ${
                     isAtivo ? "ativo" : ""
                   }`}
                   style={{
@@ -38,7 +38,7 @@ export default function GridCard({
                 >
                   <div className="d-flex pb-3 justify-content-between">
                     <div>
-                      <h4>{item.title}</h4>
+                      <h4 id="txt-title-card">{item.title}</h4>
                     </div>
                     <div>
                       {modoHome ? (
