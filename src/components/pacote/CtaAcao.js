@@ -15,7 +15,7 @@ export default function CtaAcao({
           {/* Coluna da esquerda */}
           <div className="col-md-6">
             <div className=" gap-2 d-flex  flex-column box-ct" id="box-ctamb">
-              <h3>{titulo}</h3>
+              <h3 style={{ color: "#fff" }}>{titulo}</h3>
               <p className="text-break">{descricao}</p>
 
               <div className="box-ct d-flex w-100">
@@ -36,7 +36,10 @@ export default function CtaAcao({
 
           {/* Coluna da direita */}
           <div className="col-md-6">
-            <div className="box-ct d-flex flex-column gap-5 px-4 text-md-end" id="box-ctm">
+            <div
+              className="box-ct d-flex flex-column gap-5 px-4 text-md-end"
+              id="box-ctm"
+            >
               {botaoCustomSecundario ? (
                 botaoCustomSecundario
               ) : botaoSecundario ? (
