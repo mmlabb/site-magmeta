@@ -224,15 +224,15 @@ const SyncAccordionSlide = () => {
                         </span>
 
                         <BtnRoxo
-                          className="py-2 px-2"
+                          className="p-2 w-50"
                           style={{
                             fontSize: "0.8rem",
-                            width: "30%",
+                            
                             alignItems: "center",
                             justifyContent: "center",
                           }}
                         >
-                          <small className="text-nowrap">{item.cta}</small>
+                          <small className="text-nowrap p-2">{item.cta}</small>
                         </BtnRoxo>
                       </div>
                     </motion.div>
