@@ -40,7 +40,7 @@ export default function PublicoCarousel({
     <div
       className={`container-fluid justify-content-center px-0 pt-5 ${customClass}`}
     >
-      <div className="gap-2 d-flex justify-content-center flex-column text-center py-4">
+      <div className="gap-2 d-flex justify-content-center flex-column text-center py-5">
         <h3>Para quem é?</h3>
         <h5>
           Somos parceiros de empresas que querem escalar suas vendas em ramos
@@ -66,12 +66,7 @@ export default function PublicoCarousel({
                   style={{ fontSize: "28px", color: corIcone }}
                 />
               </div>
-              <h6
-                className="item-t p-2"
-                style={{ color: darkMode ? "#fff" : "#1c1c3c" }}
-              >
-                {item.nome}
-              </h6>
+              <h6 className="item-t p-2">{item.nome}</h6>
             </div>
           </div>
         ))}
