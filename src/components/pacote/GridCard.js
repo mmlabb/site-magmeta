@@ -1,6 +1,6 @@
 "use client";
 import { BsCheckCircleFill, BsCheckCircle } from "react-icons/bs";
-
+import { useTheme } from "@/providers/ThemeProvider";
 export default function GridCard({
   titulo,
   passos,
@@ -8,6 +8,8 @@ export default function GridCard({
   iconColor,
   modoHome = false,
 }) {
+  const { darkMode } = useTheme();
+  
   return (
     <section id="section-2" className="pt-">
       <div className="container">
@@ -31,7 +33,7 @@ export default function GridCard({
                   }`}
                   style={{
                     backgroundColor: isAtivo ? ativoBgColor : undefined,
-                    color: modoHome ? "#000" : undefined,
+                    color: modoHome ? (darkMode ? "#fff" : "#000") : undefined,
                   }}
                 >
                   <div className="d-flex pb-3 justify-content-between">
