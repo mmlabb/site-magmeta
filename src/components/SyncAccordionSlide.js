@@ -207,9 +207,9 @@ const SyncAccordionSlide = () => {
 
                   {isActive && (
                     <motion.div
-                    initial={{ opacity: 0, y: 100 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -100 }}
+                      initial={{ opacity: 0, y: 100 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -100 }}
                       transition={{ duration: 0.5, ease: "easeOut" }}
                       style={{ overflow: "hidden" }}
                     >
@@ -227,7 +227,7 @@ const SyncAccordionSlide = () => {
                           className="p-2 w-50"
                           style={{
                             fontSize: "0.8rem",
-                            
+
                             alignItems: "center",
                             justifyContent: "center",
                           }}
