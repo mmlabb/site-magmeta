@@ -15,10 +15,10 @@ export default function PlanosSection({ planos, destaqueBgColor, destaqueTextCol
             return (
               <div className="col-12 col-md-4 mb-4" key={index}>
                 <div className="faixa-titulo">
-                  <h5 className="titulo-plano m-0">{plano.nome}</h5>
+                  <h5 className="titulo-plano text-white m-0">{plano.nome}</h5>
                 </div>
                 <div
-                  className={`plano-box border-white ${
+                  className={`plano-box ${
                     isDestaque ? "plano-destaque" : ""
                   }`}
                   style={
