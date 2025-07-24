@@ -3,13 +3,19 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { icones } from "@/components/icons/iconsMap";
+import { useTheme } from "@/providers/ThemeProvider";
 
 export default function PublicoCarousel({
   recursos,
   corBase,
   customClass,
   corBorda,
+  corIcone,
 }) {
+  const { darkMode } = useTheme();
+
   const settings = {
     infinite: true,
     speed: 4000,
@@ -36,7 +42,10 @@ export default function PublicoCarousel({
     >
       <div className="gap-2 d-flex justify-content-center flex-column text-center py-4">
         <h3>Para quem é?</h3>
-        <h5>Somos parceiros de empresas que querem escalar suas vendas em ramos como:</h5>
+        <h5>
+          Somos parceiros de empresas que querem escalar suas vendas em ramos
+          como:
+        </h5>
       </div>
       <Slider {...settings}>
         {recursos.map((item, index) => (
@@ -44,14 +53,25 @@ export default function PublicoCarousel({
             <div
               className="text-center p-3"
               style={{
-                backgroundColor: `${corBase}1A`, // 10% opacity
+                backgroundColor: `${corBase}1A`,
                 border: `1px solid ${corBorda}`,
                 borderRadius: "16px",
                 minHeight: "180px",
+                color: corIcone,
               }}
             >
-              <div className="mb-2 fs-3">{item.emoji}</div>
-              <h6 className="item-t m-0">{item.title}</h6>
+              <div className="mb-2 fs-3">
+                <FontAwesomeIcon
+                  icon={icones[item.icone]}
+                  style={{ fontSize: "28px", color: corIcone }}
+                />
+              </div>
+              <h6
+                className="item-t p-2"
+                style={{ color: darkMode ? "#fff" : "#1c1c3c" }}
+              >
+                {item.nome}
+              </h6>
             </div>
           </div>
         ))}
