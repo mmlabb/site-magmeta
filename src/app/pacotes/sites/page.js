@@ -25,11 +25,16 @@ const beneficiosSite = [
 
 // PÚBLICO-ALVO
 const recursosSite = [
-  { emoji: "🧑🏻‍⚕️", title: "Clínicas e consultórios médicos" },
-  { emoji: "🍔", title: "Restaurantes, lanchonetes e delivery" },
-  { emoji: "💇🏻‍♀️", title: "Salões de beleza, estética e bem-estar" },
-  { emoji: "🛒", title: "E-commerce e lojas físicas" },
-  { emoji: "💻", title: "Prestadores de serviço em geral" },
+  { nome: "Clínicas e Consultórios", icone: "stethoscope" },
+  { nome: "Escritórios de Advocacia", icone: "gavel" },
+  { nome: "Imobiliárias", icone: "home" },
+  { nome: "Salões de Beleza e Barbearias", icone: "cut" },
+  { nome: "Restaurantes e Cafeterias", icone: "utensils" },
+  { nome: "Construtoras e Arquitetos", icone: "drafting-compass" },
+  { nome: "Autoescolas", icone: "car-side" },
+  { nome: "Academias e Personal Trainers", icone: "dumbbell" },
+  { nome: "Clínicas Veterinárias e Petshops", icone: "paw" },
+  { nome: "Fotógrafos e Filmagens", icone: "camera-retro" },
 ];
 
 // ETAPAS / PASSOS
@@ -182,6 +187,7 @@ export default function Page() {
           customClass="publico-mobile"
           corBase="#00000000"
           corBorda="#03D1E8"
+          corIcone="#03D1E8"
         />
       </div>
 
@@ -190,8 +196,8 @@ export default function Page() {
           planos={planosSite}
           destaqueBgColor="linear-gradient(to bottom, #03D1E8 0%, #027582 100%)"
           destaqueTextColor="#000"
-          checkIconColor="#000"
-          checkIconColorNaoDestaque="#fff"
+          checkIconColor="#fff"
+          checkIconColorNaoDestaque="#1C1C3C"
           destaqueBtnHoverColor="#000"
         />
 
