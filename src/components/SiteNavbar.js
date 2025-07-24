@@ -106,65 +106,67 @@ export default function SiteNavbar() {
               </div>
             </div>
 
-            <Navbar.Toggle
-              aria-controls={`offcanvasNavbar-expand-lg`}
-              onClick={toggleOffcanvas}
-            >
-              <Image
-                src="/assets/img/logo-menu-white.svg"
-                className="logo"
-                alt=""
-                width={0}
-                height={0}
-                sizes="100%"
-                style={{ width: "auto", height: "auto" }} // optional
-              />
-            </Navbar.Toggle>
-
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-lg`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
-              placement="end"
-              show={showOffcanvas}
-              onHide={closeOffcanvas}
-            >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-                  {/* Menu */}
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3 align-items-center gap-3">
-                  <Nav.Link as={Link} href="/" onClick={closeOffcanvas}>
-                    Início
-                  </Nav.Link>
-                  {/*<Nav.Link as={Link} href="/#segunda-sessao">
+            <div className="pe-3">
+              {" "}
+              <Navbar.Toggle
+                aria-controls={`offcanvasNavbar-expand-lg`}
+                onClick={toggleOffcanvas}
+              >
+                <Image
+                  src="/assets/img/logo-menu-white.svg"
+                  className="logo "
+                  alt=""
+                  width={0}
+                  height={0}
+                  sizes="100%"
+                  style={{ width: "auto", height: "auto" }} // optional
+                />
+              </Navbar.Toggle>
+              <Navbar.Offcanvas
+                id={`offcanvasNavbar-expand-lg`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+                placement="end"
+                show={showOffcanvas}
+                onHide={closeOffcanvas}
+              >
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                    {/* Menu */}
+                  </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                  <Nav className="justify-content-end flex-grow-1 pe-3 align-items-center gap-3">
+                    <Nav.Link as={Link} href="/" onClick={closeOffcanvas}>
+                      Início
+                    </Nav.Link>
+                    {/*<Nav.Link as={Link} href="/#segunda-sessao">
                     Soluções
                   </Nav.Link>*/}
-                  <Nav.Link
-                    as={Link}
-                    href="/quem-somos"
-                    onClick={closeOffcanvas}
-                  >
-                    Quem somos
-                  </Nav.Link>
+                    <Nav.Link
+                      as={Link}
+                      href="/quem-somos"
+                      onClick={closeOffcanvas}
+                    >
+                      Quem somos
+                    </Nav.Link>
 
-                  <Nav.Link as={Link} href="/blog" onClick={closeOffcanvas}>
-                    Blog
-                  </Nav.Link>
+                    <Nav.Link as={Link} href="/blog" onClick={closeOffcanvas}>
+                      Blog
+                    </Nav.Link>
 
-                  <a
-                    href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline-light rounded-pill"
-                    onClick={closeOffcanvas}
-                  >
-                    Orçamento rápido
-                  </a>
-                </Nav>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
+                    <a
+                      href="https://wa.me/5561981689203?text=Olá,%20equipe Magmeta%20vim pelo site e%20gostaria de fazer um orçamento%20com vocês."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-light rounded-pill"
+                      onClick={closeOffcanvas}
+                    >
+                      Orçamento rápido
+                    </a>
+                  </Nav>
+                </Offcanvas.Body>
+              </Navbar.Offcanvas>
+            </div>
           </div>
         </Container>
       </Navbar>
