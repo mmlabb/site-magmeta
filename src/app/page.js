@@ -52,6 +52,7 @@ export default function Home() {
   ];
 
   const { darkMode } = useTheme();
+
   const lista = [
     "Atrair mais clientes certos",
     "Automatizar o atendimento e ganhar tempo",
@@ -264,12 +265,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-5 my-5" id="cases">
-        <div className=" d-flex justify-content-center text-center py-5 flex-column">
-          <h3>Cases</h3>
+      {/* <section>
+        <div id="cases">
+          <div className=" d-flex justify-content-center text-center py-5 flex-column">
+            <h3>Cases</h3>
+          </div>
+          <PortifolioProjetos />
         </div>
-        <PortifolioProjetos />
-      </div>
+      </section> */}
 
       <section>
         <div className="container py-5 my-5">
