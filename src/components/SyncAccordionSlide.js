@@ -66,7 +66,7 @@ const SyncAccordionSlide = () => {
     if (interval_ref.current) clearInterval(interval_ref.current);
     interval_ref.current = setInterval(() => {
       set_active_index((prev) => (prev + 1) % items.length);
-    }, 3000);
+    }, 6000);
   }, [items.length]);
 
   // Inicia ou retoma o autoplay quando não estiver pausado
@@ -88,7 +88,7 @@ const SyncAccordionSlide = () => {
 
     pause_timeout_ref.current = setTimeout(() => {
       set_is_paused(false);
-    }, 3000);
+    }, 6000);
   };
 
   // Ajusta a barra de progresso para ficar ao lado do item ativo
@@ -171,7 +171,7 @@ const SyncAccordionSlide = () => {
           </div>
 
           <div
-            className="my-accordion  gap-2 d-flex flex-column justify-content-center position-relative px-4"
+            className="my-accordion  gap-4 d-flex flex-column justify-content-center position-relative px-4"
             id="syncAccordion"
             ref={container_ref}
             onMouseEnter={() => set_is_paused(true)}
@@ -187,7 +187,7 @@ const SyncAccordionSlide = () => {
               return (
                 <div
                   key={index}
-                  className="accordion-item gap-2"
+                  className="accordion-item gap-2 d-flex flex-column"
                   data-index={index}
                   onClick={() => handle_click(index)}
                   style={{
