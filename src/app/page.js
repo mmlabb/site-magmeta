@@ -27,6 +27,9 @@ import BtnRoxo from "@/components/botoes/BtnRoxo";
 import LogosSlider from "@/containers/sobre/LogosSlider";
 import BeneficiosSection from "@/components/pacote/BeneficiosSection";
 import RedesSociais from "@/components/RedesSociais";
+import TituloSecao from "@/components/TituloeSub";
+
+
 
 export default function Home() {
   const beneficios = [
@@ -104,7 +107,7 @@ export default function Home() {
   return (
     <>
       <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
-        <div className="container box-1">
+        <div className="container p-0 box-1">
           <div className="row gx-5 linha-1 align-items-center">
             <div className="box-texto-magmetize col-md-12 col-lg-6">
               <div className="text-center texto1 d-flex text-lg-start gap-4 flex-column">
@@ -255,12 +258,10 @@ export default function Home() {
 
       <div className="container py-5 mt-5 ">
         <div className="py-5 row">
-          <div className=" d-flex justify-content-center text-center py-4 flex-column gap-2">
-            <h3>Nossas soluções</h3>
-            <h5 className="txt-escolha">
-              Escolha seu próximo passo para crescer com a Magmeta
-            </h5>
-          </div>
+          <TituloSecao
+            titulo="Nossas soluções"
+            subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
+          />
           <SyncAccordionSlide />
         </div>
       </div>
