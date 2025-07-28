@@ -35,16 +35,17 @@ export default function SiteNavbar() {
     <header className={floating ? `floating` : ``}>
       <Navbar expand="lg" className="bg-transparentnav ">
         <Container className="container-fluid ">
-          <Navbar.Brand as={Link} href="/">
+          <Navbar.Brand as={Link} href="/" className="m-0">
             <Image
               src="/assets/img/logo-magm-black.svg"
               alt="logo-magmeta"
               id="logo-magmeta"
               className="logo"
               data-aos="fade"
-              width={100}
-              height={100}
+              width={0}
+              height={0}
               sizes="100%"
+              style={{ width: "auto", height: "36px" }}
             />
           </Navbar.Brand>
 
