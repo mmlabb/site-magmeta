@@ -1,6 +1,8 @@
 "use client";
-import { BsCheckCircleFill, BsCheckCircle } from "react-icons/bs";
+
+import { BsCheckCircleFill } from "react-icons/bs";
 import { useTheme } from "@/providers/ThemeProvider";
+
 export default function GridCard({
   titulo,
   passos,
@@ -9,7 +11,7 @@ export default function GridCard({
   modoHome = false,
 }) {
   const { darkMode } = useTheme();
-  
+
   return (
     <section id="section-2" className="pt-">
       <div className="container">
@@ -28,7 +30,7 @@ export default function GridCard({
             return (
               <div className="col" key={i}>
                 <div
-                  className={`card-grid-bloco h-100 p-5 ${
+                  className={`card-grid-bloco h-100 p-3 d-flex gap-2 flex-column ${
                     isAtivo ? "ativo" : ""
                   }`}
                   style={{
@@ -36,27 +38,32 @@ export default function GridCard({
                     color: modoHome ? (darkMode ? "#fff" : "#000") : undefined,
                   }}
                 >
-                  <div className="d-flex pb-3 justify-content-between">
-                    <div>
-                      <h4 id="txt-title-card">{item.title}</h4>
+                  <div className="d-flex gap-2 justify-content-between">
+                    <div className="flex-grow-1">
+                      <h4
+                        id="txt-title-card"
+                        style={{
+                          whiteSpace: "normal",
+                          wordBreak: "break-word",
+                          overflowWrap: "break-word",
+                          marginBottom: "0.5rem",
+                        }}
+                      >
+                        {item.title}
+                      </h4>
                     </div>
-                    <div>
-                      {modoHome ? (
-                        <BsCheckCircle
-                          size={30}
-                          color={iconColor}
-                          className="mb-3"
-                        />
-                      ) : (
+                    {!modoHome && (
+                      <div>
                         <BsCheckCircleFill
                           size={30}
                           color={iconColor}
                           style={{ borderRadius: "50%" }}
                           className="mb-3"
                         />
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
+
                   <div>
                     {Array.isArray(item.text) ? (
                       <ol className="text-start ps-3 d-flex flex-column gap-2">
