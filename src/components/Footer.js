@@ -16,18 +16,16 @@ export default function Footer() {
     >
       <div className="container text-center rodape">
         <div className="d-flex linha-rodape flex-wrap justify-content-between">
-          <div className="col-md-2" id="logo-rodape">
-            <Image
-              src="/assets/img/logo-magm-black.svg"
-              alt="logo-rodape"
-              width={50}
-              height={50}
-              sizes="100%"
-              className="logo img-fluid"
-            />
-          </div>
+          <Image
+            src="/assets/img/logo-magm-black.svg"
+            alt="logo-rodape"
+            width={50}
+            height={50}
+            sizes="100%"
+            className="logo img-fluid"
+          />
 
-          <div className="col-md-2" id="seta-rodape">
+          <div id="seta-rodape">
             <a
               href="#"
               id="btn-scroll-top"
