@@ -794,11 +794,9 @@ header.floating {
 
 main {
   overflow: hidden;
-}
-
-#segunda-sessao {
-  position: relative;
-  z-index: 1;
+  gap: 84px;
+  display: flex;
+  flex-direction: column;
 }
 
 .row-banner {
@@ -925,18 +923,12 @@ main {
 #txt-plan {
   color: #fff !important;
 }
-/* #segunda-sessao::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  top: 264px;
-  width: 600px;
-  height: 600px;
-  border-radius: 600px;
-  background: #6221a2;
-  filter: blur(400px);
-  z-index: 0;
-} */
+
+.gap-css {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 
 .plano-box {
   padding: 1.5rem;
@@ -1052,11 +1044,6 @@ body.light .accordion-button::after {
 
 .publico-carousel .slick-list {
   padding: 0 !important;
-}
-
-#segunda-sessao .carousel .carousel-item img {
-  z-index: 1;
-  transition: 300ms;
 }
 
 .btn-light {
@@ -1480,6 +1467,18 @@ body.light .accordion-button::after {
 @media (min-width: 769px) and (max-width: 991px) {
   .botao-tema {
     display: none !important;
+  }
+
+  .box-lott {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+
+  .lott {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -2054,14 +2053,13 @@ body.light .accordion-button::after {
     text-align: center !important;
   }
 
-.theme-light .text-cta {
-  color: #fff !important;
-}
+  .theme-light .text-cta {
+    color: #fff !important;
+  }
 
-#txt-cta-wpp {
-  color: #fff !important;
-}
-
+  #txt-cta-wpp {
+    color: #fff !important;
+  }
 
   #box-ctm {
     padding-left: 0% !important;
