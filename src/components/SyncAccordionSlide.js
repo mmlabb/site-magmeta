@@ -45,7 +45,7 @@ const SyncAccordionSlide = () => {
       slug: "magnet",
       content:
         "Automatize suas conversas com clientes usando chatbots no WhatsApp. Responda dúvidas, colete dados e envie informações 24 horas por dia. Chatbots inteligentes fazem triagens, tiram dúvidas e coletam informações dos clientes.Tudo isso com linguagem personalizada para o seu negócio. Mais agilidade, menos trabalho e mais vendas acontecendo mesmo fora do horário comercial.",
-      image: "/assets/img/magnet-1.png",
+      image: "/assets/img/atendimento24.png",
       cta: "Quero um chat",
       link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
     },
