@@ -792,11 +792,14 @@ header.floating {
   transition: 300ms;
 }
 
-main {
-  overflow: hidden;
+section {
   gap: 84px;
   display: flex;
   flex-direction: column;
+}
+
+main {
+  overflow: hidden;
 }
 
 .row-banner {
