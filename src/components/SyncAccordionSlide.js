@@ -139,10 +139,10 @@ const SyncAccordionSlide = () => {
   }, [start_auto_advance]);
 
   return (
-    <div className="container-fluid  justify-content-between">
-      <div className="d-flex flex-column-reverse flex-md-row  row-accordion gap-4">
+    <div className="container-fluid justify-content-between">
+      <div className="d-flex flex-column-reverse flex-lg-row row-accordion gap-4">
         {/* Accordion */}
-        <div className="w-100 w-md-50 d-flex flex-column justify-content-center position-relative my-2">
+        <div className="col-12 col-lg-6 d-flex flex-column justify-content-center position-relative my-2">
           {/* Barra de progresso vertical fixa */}
           <div
             style={{
@@ -171,7 +171,7 @@ const SyncAccordionSlide = () => {
           </div>
 
           <div
-            className="my-accordion  gap-4 d-flex flex-column justify-content-center position-relative px-4"
+            className="my-accordion gap-4 d-flex flex-column justify-content-center position-relative px-4"
             id="syncAccordion"
             ref={container_ref}
             onMouseEnter={() => set_is_paused(true)}
@@ -179,7 +179,6 @@ const SyncAccordionSlide = () => {
           >
             {items.map((item, index) => {
               const isActive = index === active_index;
-
               // Cores baseadas no tema e no estado ativo
               const activeColor = darkMode ? "#FFFFFF" : "#1C1C3C";
               const inactiveColor = darkMode ? "#1C1C3C" : "#2725259c";
@@ -227,7 +226,6 @@ const SyncAccordionSlide = () => {
                           className="p-2 w-50"
                           style={{
                             fontSize: "0.8rem",
-
                             alignItems: "center",
                             justifyContent: "center",
                           }}
@@ -244,7 +242,7 @@ const SyncAccordionSlide = () => {
         </div>
 
         {/* Slide */}
-        <div className="w-100 w-md-50 d-flex justify-content-center align-items-center position-relative">
+        <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center position-relative text-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={active_index}
@@ -257,7 +255,7 @@ const SyncAccordionSlide = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                minHeight: "auto", // Garante altura constante
+                minHeight: "auto",  // Garante altura constante
               }}
             >
               <div
