@@ -29,8 +29,6 @@ import BeneficiosSection from "@/components/pacote/BeneficiosSection";
 import RedesSociais from "@/components/RedesSociais";
 import TituloSecao from "@/components/TituloeSub";
 
-
-
 export default function Home() {
   const beneficios = [
     "Atrair mais clientes certos",
@@ -206,9 +204,9 @@ export default function Home() {
       </section>
 
       <LogosSlider />
-      <section id="terceira-sessao" className="pb-5">
+      <section id="segunda-sessao" className="pb-5">
         <div className="container">
-          <div className="row py-5" id="row-logos">
+          <div className="row py-5">
             <div className="col-md-6 d-md-flex d-none justify-content-center align-items-center pe-5">
               <Image
                 className="img-fluid"
@@ -244,27 +242,21 @@ export default function Home() {
         </div>
       </section>
 
-      <GridCard
-        titulo="Como Funciona ?"
-        passos={passos}
-        iconColor={darkMode ? "#fff" : "#000"}
-        ativoBgColor={darkMode ? "rgba(229,229,229,0.16)" : "#E5E5E5"}
-        modoHome={true}
-      />
-
-      <div className="d-flex justify-content-center py-5">
-        <BtnRoxo />
-      </div>
-
-      <div className="container py-5 mt-5 ">
-        <div className="py-5 row">
-          <TituloSecao
-            titulo="Nossas soluções"
-            subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
+      <section>
+        <div className="container gap-css">
+          <TituloSecao titulo="Como Funciona?" />
+          <GridCard
+            passos={passos}
+            iconColor={darkMode ? "#fff" : "#000"}
+            ativoBgColor={darkMode ? "rgba(229,229,229,0.16)" : "#E5E5E5"}
+            modoHome={true}
           />
-          <SyncAccordionSlide />
+
+          <div className="d-flex justify-content-center">
+            <BtnRoxo />
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* <section>
         <div id="cases">
@@ -276,6 +268,17 @@ export default function Home() {
       </section> */}
 
       <section>
+        <div className="container">
+          <div className="row gap-css">
+            <div>
+              <TituloSecao
+                titulo="Nossas soluções"
+                subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
+              />
+            </div>
+            <SyncAccordionSlide />
+          </div>
+        </div>
         <div className="container py-5 my-5">
           <div className="row  d-flex d-flex text-center justify-content-center">
             <div className="d-flex gap-2 flex-column">
