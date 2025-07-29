@@ -22,9 +22,12 @@ export default function FaqSection({
         className="container faq-box"
         style={{ backgroundColor, borderRadius: "24px" }}
       >
-        <div className="row p-4 p-md-5 gy-4" id="row-faq">
-          {/* FAQ Text + Perguntas */}
-          <div className="col-12 col-md-6">
+        <div
+          className="row p-4 p-md-5 gy-4 flex-lg-row flex-column"
+          id="row-faq"
+        >
+          {/* Accordion - sempre em cima no mobile/tablet */}
+          <div className="col-12 col-lg-6">
             <div className="px-3 pt-2 pt-md-4">
               <span className="pb-2 d-block">FAQ</span>
               <h3>{titulo}</h3>
@@ -81,9 +84,9 @@ export default function FaqSection({
             </div>
           </div>
 
-          {/* Lottie Animation */}
-          <div className="col-12 col-md-6">
-            <div className="d-flex justify-content-center justify-content-md-end">
+          {/* Lottie - sempre abaixo no mobile/tablet */}
+          <div className="col-12 col-lg-6">
+            <div className="d-flex justify-content-center justify-content-lg-end">
               <Lottie
                 animationData={animationData}
                 loop={true}
@@ -91,7 +94,7 @@ export default function FaqSection({
                 style={{
                   maxWidth: "100%",
                   height: "auto",
-                  aspectRatio: "1/1",
+                  aspectRatio: "1 / 1",
                 }}
               />
             </div>
