@@ -105,7 +105,7 @@ export default function Home() {
   return (
     <>
       <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
-        <div className="container p-0 box-1">
+        <div className="container py-0 box-1">
           <div className="row gx-5 linha-1 align-items-center">
             <div className="box-texto-magmetize col-md-12 col-lg-6">
               <div className="text-center texto1 d-flex text-lg-start gap-4 flex-column">
@@ -252,22 +252,13 @@ export default function Home() {
             modoHome={true}
           />
 
-          <div className="d-flex justify-content-center">
-            <BtnRoxo />
+          <div className="d-flex row justify-content-center">
+            <div className="col-12 col-lg-3 position-relative">
+              <BtnColorido />
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* <section>
-        <div id="cases">
-          <div className=" d-flex justify-content-center text-center py-5 flex-column">
-            <h3>Cases</h3>
-          </div>
-          <PortifolioProjetos />
-        </div>
-      </section> */}
-
-      <section>
         <div className="container">
           <div className="row gap-css">
             <div>
@@ -279,7 +270,8 @@ export default function Home() {
             <SyncAccordionSlide />
           </div>
         </div>
-        <div className="container py-5 my-5">
+
+        <div className="container py-5">
           <div className="row  d-flex d-flex text-center justify-content-center">
             <div className="d-flex gap-2 flex-column">
               <h3>Tem uma ideia? </h3>
@@ -293,6 +285,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* <section>
+        <div id="cases">
+          <div className=" d-flex justify-content-center text-center py-5 flex-column">
+            <h3>Cases</h3>
+          </div>
+          <PortifolioProjetos />
+        </div>
+      </section> */}
+
+
     </>
   );
 }
