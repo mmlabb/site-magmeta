@@ -105,7 +105,7 @@ export default function Home() {
   return (
     <>
       <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
-        <div className="container py-0 box-1">
+        <div className="container px-0 box-1">
           <div className="row gx-5 linha-1 align-items-center">
             <div className="box-texto-magmetize col-md-12 col-lg-6">
               <div className="text-center texto1 d-flex text-lg-start gap-4 flex-column">
@@ -205,7 +205,7 @@ export default function Home() {
 
       <LogosSlider />
       <section id="segunda-sessao" className="pb-5">
-        <div className="container">
+        <div className="container px-0">
           <div className="row py-5">
             <div className="col-md-6 d-md-flex d-none justify-content-center align-items-center pe-5">
               <Image
@@ -243,7 +243,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container gap-css">
+        <div className="container px-0 gap-css">
           <TituloSecao titulo="Como Funciona?" />
           <GridCard
             passos={passos}
@@ -259,7 +259,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container px-0">
           <div className="row gap-css">
             <div>
               <TituloSecao
@@ -271,7 +271,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container py-5">
+        <div className="container py-5 px-0">
           <div className="row  d-flex d-flex text-center justify-content-center">
             <div className="d-flex gap-2 flex-column">
               <h3>Tem uma ideia? </h3>
