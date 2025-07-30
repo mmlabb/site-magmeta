@@ -16,6 +16,11 @@ a {
   font-size: 16px;
 }
 
+h1, h2, h3, h4, h5, h6, p, strong, a {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 h1,
 h2,
 h6 {
@@ -258,7 +263,7 @@ h6 {
 } */
 
 header {
-  position: absolute;
+  
   width: 100%;
   top: 0;
   left: 0;
@@ -486,6 +491,8 @@ header.floating {
   border: 0;
 }
 
+
+
 .btn-outline-info {
   color: #ffff !important;
   border-radius: 1.5rem !important;
@@ -533,20 +540,9 @@ header.floating {
   color: #fff;
 }
 
-.tag {
-  h5 {
-    font-weight: 400 !important;
-    font-size: 14px !important;
-    margin-bottom: 0% !important;
-  }
-  display: flex;
-  padding: 1rem;
-  margin-bottom: 0% !important;
-  align-items: center;
-  border-radius: 38px;
-  background-color: #6221a257;
-  justify-content: center;
-  white-space: nowrap;
+.pc {
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 .tag-portifolio {
@@ -793,13 +789,13 @@ header.floating {
 }
 
 section {
-  gap: 84px;
+  gap: 44px;
   display: flex;
   flex-direction: column;
 }
 
 main {
-  gap: 84px;
+  gap: 44px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -933,7 +929,7 @@ main {
 .gap-css {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px !important;
 }
 
 .plano-box {

@@ -105,9 +105,9 @@ export default function Home() {
   return (
     <>
       <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
-        <div className="container px-0 box-1">
-          <div className="row gx-5 linha-1 align-items-center">
-            <div className="box-texto-magmetize col-md-12 col-lg-6">
+        <div className="container px-0 box-1 pc">
+          <div className="row align-items-center">
+            <div className="d-flex align-items-center col-md-12 col-lg-6">
               <div className="text-center texto1 d-flex text-lg-start gap-4 flex-column">
                 <div className="">
                   <h1 className="texto-magnetize-metas">
@@ -204,10 +204,10 @@ export default function Home() {
       </section>
 
       <LogosSlider />
-      <section id="segunda-sessao" className="pb-5">
-        <div className="container px-0">
-          <div className="row py-5">
-            <div className="col-md-6 d-md-flex d-none justify-content-center align-items-center pe-5">
+      <section id="segunda-sessao">
+        <div className="container px-0 pc">
+          <div className="row d-flex justify-content-between">
+            <div className="col-md-6 col-12 d-md-flex d-none justify-content-center align-items-center">
               <Image
                 className="img-fluid"
                 src="/assets/img/img-sabemos-cam.svg"
@@ -219,15 +219,14 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-md-6 ">
-              <div className="box-texto-caminho d-flex flex-column gap-2  align-items-center align-items-md-start">
-                <h2 className="texto1 text-right">
-                  Crescimento de verdade, com tecnologia aplicada ao seu negócio
-                </h2>
-                <span>
-                  Desenhamos soluções personalizadas para que o seu negócio
-                  local consiga:
-                </span>
+            <div className="col-md-6 col-12 d-flex justify-content-center">
+              <div className="box-texto-caminho d-flex flex-column gap-css justify-content-center">
+                <TituloSecao
+                  titulo="Crescimento de verdade, com tecnologia aplicada ao seu negócio"
+                  subtitulo="Desenhamos soluções personalizadas para que o seu negócio
+                  local consiga:"
+                />
+
                 <BeneficiosSection
                   beneficios={beneficios}
                   checkColor="#5B19A9"
@@ -243,8 +242,10 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container px-0 gap-css">
-          <TituloSecao titulo="Como Funciona?" />
+        <div className="container px-0 gap-css pc">
+          <div className="text-center px-0">
+            <TituloSecao titulo="Como Funciona?" />
+          </div>
           <GridCard
             passos={passos}
             iconColor={darkMode ? "#fff" : "#000"}
@@ -259,9 +260,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container px-0">
-          <div className="row gap-css">
-            <div>
+        <div className="container px-0 pc">
+          <div className="flex-row gap-css flex-column  align-items-center">
+            <div className="text-center px-0">
               <TituloSecao
                 titulo="Nossas soluções"
                 subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
@@ -271,16 +272,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container py-5 px-0">
-          <div className="row  d-flex d-flex text-center justify-content-center">
-            <div className="d-flex gap-2 flex-column">
-              <h3>Tem uma ideia? </h3>
-              <h5>Faça o orçamento dela agora!</h5>
-              <div className="d-flex row justify-content-center">
-                <div className="col-12 col-lg-3 position-relative">
-                  <BtnColorido />
-                </div>
-              </div>
+        <div className="container px-0 pc">
+          <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
+            <div className="col-12 col-lg-6">
+              <TituloSecao
+                titulo="Tem uma ideia?"
+                subtitulo="Faça o orçamento dela agora!"
+              />
+            </div>
+
+            <div className="col-12 col-lg-3 position-relative">
+              <BtnColorido />
             </div>
           </div>
         </div>
@@ -294,8 +296,6 @@ export default function Home() {
           <PortifolioProjetos />
         </div>
       </section> */}
-
-
     </>
   );
 }
