@@ -799,6 +799,9 @@ section {
 }
 
 main {
+  gap: 84px;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -1070,7 +1073,7 @@ body.light .accordion-button::after {
 }
 
 .txt-s {
-  background: linear-gradient(135deg, #5700d4 0%, #db00ff 100%);
+  background: linear-gradient(to right, #9c5dd3 0%, #6221a2 33%, #03d1e8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
