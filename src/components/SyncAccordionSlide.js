@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Arrow90degRight } from "react-bootstrap-icons";
 import {
   ArrowDown,
+  ArrowDownCircle,
   ArrowLeft,
   ArrowRight,
   ArrowRightCircle,
@@ -201,7 +202,7 @@ const SyncAccordionSlide = () => {
                     }}
                   >
                     <h4>{item.title}</h4>
-                    <ArrowDown size={16} />
+                    <ArrowDownCircle size={20} />
                   </div>
 
                   {isActive && (
