@@ -50,6 +50,19 @@ export default function SiteNavbar() {
           </Navbar.Brand>
 
           <div className="d-flex gap-3 align-items-center">
+            <div className="botao-tema btn-mobile">
+              <input
+                onClick={alternateTheme}
+                type="checkbox"
+                className="checkbox chk"
+                id="chk-2"
+              />
+              <label className="label" htmlFor="chk-2">
+                <div className="ball"></div>
+                <Sun />
+                <Moon />
+              </label>
+            </div>
             <div className="pe-3">
               {" "}
               <Navbar.Toggle
@@ -101,19 +114,7 @@ export default function SiteNavbar() {
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
             </div>
-            <div className="botao-tema btn-mobile">
-              <input
-                onClick={alternateTheme}
-                type="checkbox"
-                className="checkbox chk"
-                id="chk-2"
-              />
-              <label className="label" htmlFor="chk-2">
-                <div className="ball"></div>
-                <Sun />
-                <Moon />
-              </label>
-            </div>
+
             <div className="botao-tema d-none d-lg-flex">
               <input
                 onClick={alternateTheme}
