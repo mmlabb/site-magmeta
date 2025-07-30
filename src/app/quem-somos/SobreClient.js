@@ -8,6 +8,9 @@ import CardsSection from "@/containers/sobre/CardsSection";
 import PopupBlog from "@/components/PopupBlog";
 import Lottie from "lottie-react";
 import LogosSlider from "@/containers/sobre/LogosSlider";
+import GridCard from "@/components/pacote/GridCard";
+import { useTheme } from "@/providers/ThemeProvider";
+import BtnColorido from "@/components/botoes/BtnColor";
 
 const CheckIcon = () => {
   return (
@@ -23,6 +26,25 @@ const CheckIcon = () => {
 };
 
 export default function Sobre() {
+  const passos = [
+    {
+      title: "Customização",
+      text: "Nossa abordagem personalizada garante que cada solução seja ajustada às necessidades específicas, criando uma experiência única e satisfatória",
+    },
+
+    {
+      title: "Soluções integradas",
+      text: "Através de cada solução conseguimos formar um campo magnético de unir oportunidades e pessoas de sucesso.",
+    },
+
+    {
+      title: "Inovação contínua",
+      text: " Nossos produtos contam com as melhores tecnologias do mercado. Com pessoas apaixonadas por inovar, estamos sempre atualizados das melhores soluções para escalar.",
+    },
+  ];
+
+  const { darkMode } = useTheme();
+
   const [animationData, setAnimationData] = useState(null);
   const [team2, setTeam2] = useState(null);
   const [talkk, setTalkk] = useState(null);
@@ -49,15 +71,15 @@ export default function Sobre() {
   }, []);
   return (
     <>
-      <section className="mt-4 pt-5">
-        <div className="container box-1 pb-5 my-5">
+      <section className="mt-5 pt-5">
+        <div className="container px-0 box-1 gap-css">
           <div
             className="row gap-4 gap-lg-0 align-items-center"
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
             <div className="box-texto-somos-magmeta col-md-12 col-lg-6">
-              <div className="d-flex box-texto-sobre flex-column">
+              <div className="d-flex box-texto-sobre gap-3 flex-column">
                 <div className="txt-1">
                   <h2 className="text-bold txt-s">Sobre Nós</h2>
                 </div>
@@ -93,32 +115,31 @@ export default function Sobre() {
         </div>
       </section>
 
-      <CardsSection />
-
       <LogosSlider />
       <PopupBlog />
 
       <section>
-        <div className="container text-center">
-          <div className="row pt-md-5 pb-md-5">
-            <div className="col-sm-12 col-md-6 mt-5 mb-5">
-              <div className="box-texto-caminho">
-                <h1 className="texto-c  text-right txt-s">
+        <div className="container px-0 d-flex flex-column gap-css">
+          <GridCard
+            passos={passos}
+            iconColor={darkMode ? "#fff" : "#000"}
+            ativoBgColor={darkMode ? "rgba(229,229,229,0.16)" : "#E5E5E5"}
+            modoHome={true}
+          />
+        </div>
+        <div className="container px-0 text-center">
+          <div className="row py-5 d-flex align-items-center">
+            <div className="col-sm-12 col-md-6 ">
+              <div className="box-texto-caminho d-flex flex-column gap-css">
+                <h2 className="texto-c  text-right txt-s">
                   Tem um Projeto?
                   <br />
                   Vamos conversar!
-                </h1>
+                </h2>
 
-                <div className="d-flex pb-2 pt-2 btn-or">
-                  <div className="botao-roxo botao-nossa-ex btn-or">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-mobile-orcam texto-botao"
-                    >
-                      <span className="txt-b-or">Vamos Conversar</span>
-                    </a>
+                <div className="d-flex row justify-content-start">
+                  <div className="col-12 col-lg-6 position-relative">
+                    <BtnColorido />
                   </div>
                 </div>
               </div>
