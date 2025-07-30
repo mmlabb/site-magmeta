@@ -65,7 +65,7 @@ const LogosSlider = () => {
   };
 
   return (
-    <Container fluid className="py-5 my-5 px-0">
+    <Container fluid className="px-0">
       <Slider {...settings}>
         {sliderLogos.map((logo, index) => (
           <div
