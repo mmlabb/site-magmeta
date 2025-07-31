@@ -104,8 +104,12 @@ export default function Home() {
 
   return (
     <>
-      <section id="primeira-sessao" style={{ position: "relative", zIndex: 1 }}>
-        <div className="container px-0 box-1 pc">
+      <section
+        className="pc"
+        id="primeira-sessao"
+        style={{ position: "relative", zIndex: 1 }}
+      >
+        <div className="container px-0 box-1">
           <div className="row align-items-center">
             <div className="d-flex align-items-center col-md-12 col-lg-6">
               <div className="text-center texto1 d-flex text-lg-start gap-4 flex-column">
@@ -204,8 +208,8 @@ export default function Home() {
       </section>
 
       <LogosSlider />
-      <section id="segunda-sessao">
-        <div className="container px-0 pc">
+      <section className="pc" id="segunda-sessao">
+        <div className="container px-0 ">
           <div className="row d-flex justify-content-between">
             <div className="col-md-6 col-12 d-md-flex d-none justify-content-center align-items-center">
               <Image
@@ -241,8 +245,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="container px-0 gap-css pc">
+      <section className="pc">
+        <div className="container px-0 gap-css">
           <div className="text-center px-0">
             <TituloSecao titulo="Como Funciona?" />
           </div>
@@ -259,8 +263,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="container px-0 pc">
+      <section className="pc">
+        <div className="container px-0 ">
           <div className="flex-row gap-css flex-column  align-items-center">
             <div className="text-center px-0">
               <TituloSecao
@@ -271,8 +277,10 @@ export default function Home() {
             <SyncAccordionSlide />
           </div>
         </div>
+      </section>
 
-        <div className="container px-0 pc">
+      <section className="pc">
+        <div className="container px-0 ">
           <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
             <div className="col-12 col-lg-6">
               <TituloSecao
@@ -288,7 +296,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section>
+      {/* <section className="pc">
         <div id="cases">
           <div className=" d-flex justify-content-center text-center py-5 flex-column">
             <h3>Cases</h3>
