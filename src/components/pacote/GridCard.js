@@ -13,7 +13,7 @@ export default function GridCard({
   const { darkMode } = useTheme();
 
   return (
-    <div className="row row-cols-1 row-cols-md-3 g-3">
+    <div className="d-flex flex-column flex-md-row gap-2">
       {passos.map((item, i) => {
         const isFirstRow = i < 3;
         const isMiddle = i === 1 || i === 4;
@@ -21,7 +21,7 @@ export default function GridCard({
           modoHome || (isFirstRow && !isMiddle) || (!isFirstRow && isMiddle);
 
         return (
-          <div className="col" key={i}>
+          <div className="col m-0" key={i}>
             <div
               className={`card-grid-bloco h-100 p-4 d-flex gap-2 flex-column ${
                 isAtivo ? "ativo" : ""
