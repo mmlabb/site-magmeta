@@ -13,7 +13,7 @@ export default function GridCard({
   const { darkMode } = useTheme();
 
   return (
-    <div className="d-flex flex-column flex-md-row gap-2">
+    <div className="d-flex flex-column text-center flex-md-row gap-2">
       {passos.map((item, i) => {
         const isFirstRow = i < 3;
         const isMiddle = i === 1 || i === 4;
