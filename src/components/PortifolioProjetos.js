@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BtnMais from "./botoes/BtnMais";
 
 const images = [
   "/assets/img/capa-cad.png",
@@ -24,7 +25,6 @@ export default function PortifolioProjetos() {
 
   useEffect(() => {
     const carousel = carouselRef.current;
-
     let isDragging = false;
     let startX;
     let scrollLeft;
@@ -64,7 +64,6 @@ export default function PortifolioProjetos() {
 
   useEffect(() => {
     const carousel = carouselRef.current;
-
     const scrollStep = 1;
     const scrollDelay = 20;
     let intervalId;
@@ -102,7 +101,6 @@ export default function PortifolioProjetos() {
           style={{
             overflowX: "auto",
             display: "flex",
-
             scrollbarWidth: "none", // Firefox
             msOverflowStyle: "none", // IE
           }}
@@ -114,9 +112,10 @@ export default function PortifolioProjetos() {
               style={{ flex: "0 0 auto" }}
             >
               <div
-                className="w-100 position-relative"
+                className="w-100 position-relative rounded overflow-hidden"
                 style={{ height: "70vh" }}
               >
+                {/* Imagem de fundo */}
                 <Image
                   src={src}
                   alt={`Projeto ${index + 1}`}
@@ -125,12 +124,43 @@ export default function PortifolioProjetos() {
                   className="rounded"
                   draggable={false}
                 />
-                <button
-                  className="btn-ver-mais my-2"
-                  onClick={() => router.push("#")}
+
+                {/* Gradiente leve no rodapé */}
+                <div
+                  className="position-absolute bottom-0 start-0 w-100"
+                  style={{
+                    height: "30%",
+                    background:
+                      "linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0) 100%)",
+                    zIndex: 1,
+                  }}
+                />
+
+                {/* Logo no topo esquerdo */}
+                <div
+                  className="position-absolute top-0 start-0 m-3"
+                  style={{ zIndex: 2 }}
                 >
-                  Ver mais
-                </button>
+                  <Image
+                    src="/assets/img/logo-snet.svg"
+                    alt="Logo"
+                    width={100}
+                    height={30}
+                  />
+                </div>
+
+                {/* Rodapé com texto e botão alinhados */}
+                <div
+                  className="position-absolute bottom-0 start-0 w-100 p-3 text-white d-flex justify-content-between align-items-center"
+                  style={{ zIndex: 2 }}
+                >
+                  <h6 className="mb-0">Nome do Projeto</h6>
+                  <BtnMais
+                    label="Ver mais"
+                    customClass="ms-2"
+                    onClick={() => router.push("/pagina")}
+                  />
+                </div>
               </div>
             </div>
           ))}
