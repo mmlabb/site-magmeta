@@ -71,8 +71,8 @@ export default function Sobre() {
   }, []);
   return (
     <>
-      <section className="mt-5 pt-5">
-        <div className="container px-0 box-1 gap-css">
+      <section className="pc">
+        <div className="container px-0 box-1">
           <div
             className="row gap-4 gap-lg-0 align-items-center"
             data-aos="zoom-in-up"
@@ -115,10 +115,12 @@ export default function Sobre() {
         </div>
       </section>
 
-      <LogosSlider />
+      <div className="py-4">
+        <LogosSlider />
+      </div>
       <PopupBlog />
 
-      <section>
+      <section className="pc">
         <div className="container px-0 d-flex flex-column gap-css">
           <GridCard
             passos={passos}
@@ -127,8 +129,11 @@ export default function Sobre() {
             modoHome={true}
           />
         </div>
-        <div className="container px-0 text-center">
-          <div className="row py-5 d-flex align-items-center">
+      </section>
+
+      <section className="pc">
+        <div className="container px-0 text-center ">
+          <div className="row d-flex align-items-center">
             <div className="col-sm-12 col-md-6 ">
               <div className="box-texto-caminho d-flex flex-column gap-css">
                 <h2 className="texto-c  text-right txt-s">
