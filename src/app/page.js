@@ -109,7 +109,7 @@ export default function Home() {
         id="primeira-sessao"
         style={{ position: "relative", zIndex: 1 }}
       >
-        <div className="container px-0 box-1">
+        <div className="container cp box-1">
           <div className="row align-items-center">
             <div className="d-flex align-items-center col-md-12 col-lg-6">
               <div className="text-center texto1 d-flex text-lg-start gap-4 flex-column">
@@ -209,7 +209,7 @@ export default function Home() {
 
       <LogosSlider />
       <section className="pc" id="segunda-sessao">
-        <div className="container px-0 ">
+        <div className="container cp ">
           <div className="row d-flex justify-content-between">
             <div className="col-md-6 col-12 d-md-flex d-none justify-content-center align-items-center">
               <Image
@@ -246,7 +246,7 @@ export default function Home() {
       </section>
 
       <section className="pc">
-        <div className="container px-0 gap-css">
+        <div className="container cp gap-css">
           <div className="text-center px-0">
             <TituloSecao titulo="Como Funciona?" />
           </div>
@@ -266,7 +266,7 @@ export default function Home() {
       </section>
 
       <section className="pc">
-        <div className="container px-0 ">
+        <div className="container cp">
           <div className="flex-row gap-css flex-column  align-items-center">
             <div className="text-center px-0">
               <TituloSecao
@@ -280,7 +280,7 @@ export default function Home() {
       </section>
 
       <section className="pc">
-        <div className="container px-0 ">
+        <div className="container cp ">
           <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
             <div className="col-12 col-lg-6">
               <TituloSecao
