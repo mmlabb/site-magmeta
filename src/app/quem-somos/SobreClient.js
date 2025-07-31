@@ -72,7 +72,7 @@ export default function Sobre() {
   return (
     <>
       <section className="pc">
-        <div className="container px-0 box-1">
+        <div className="container cp box-1">
           <div
             className="row gap-4 gap-lg-0 align-items-center"
             data-aos="zoom-in-up"
@@ -121,7 +121,7 @@ export default function Sobre() {
       <PopupBlog />
 
       <section className="pc">
-        <div className="container px-0 d-flex flex-column gap-css">
+        <div className="container cp d-flex flex-column gap-css">
           <GridCard
             passos={passos}
             iconColor={darkMode ? "#fff" : "#000"}
@@ -132,7 +132,7 @@ export default function Sobre() {
       </section>
 
       <section className="pc">
-        <div className="container px-0 text-center ">
+        <div className="container cp text-center ">
           <div className="row d-flex align-items-center">
             <div className="col-sm-12 col-md-6 ">
               <div className="box-texto-caminho d-flex flex-column gap-css">
