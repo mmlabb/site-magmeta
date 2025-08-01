@@ -44,7 +44,7 @@ export default function PublicoCarousel({
         {recursos.map((item, index) => (
           <div key={index} className="px-2">
             <div
-              className="text-center p-3"
+              className="d-flex flex-column justify-content-center align-items-center text-center p-4"
               style={{
                 backgroundColor: `${corBase}1A`,
                 border: `1px solid ${corBorda}`,
@@ -53,13 +53,13 @@ export default function PublicoCarousel({
                 color: corIcone,
               }}
             >
-              <div className="mb-2 fs-3">
+              <div className="my-3">
                 <FontAwesomeIcon
                   icon={icones[item.icone]}
                   style={{ fontSize: "28px", color: corIcone }}
                 />
               </div>
-              <h6 className="item-t p-2">{item.nome}</h6>
+              <h6 className="item-t text-center text-wrap">{item.nome}</h6>
             </div>
           </div>
         ))}
