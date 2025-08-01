@@ -20,24 +20,24 @@ export default function BannerPrincipal({
         borderRadius: "24px",
       }}
     >
-      <div className="z-3 px-3">
-        <Image
-          src={logo}
-          alt="Logo"
-          width={100}
-          height={100}
-          className="img-fluid"
-          sizes="100%"
-          style={{ maxWidth: "100%", height: "auto" }}
-        />
-      </div>
-
-      <div className="row-banner row p-0 pt-2">
+      <div className="row-banner row p-0">
         {/* Coluna da Esquerda */}
-        <div className="col-12 col-md-6 g d-flex flex-column justify-content-between p-4">
-          <div>
+        <div className="col-12 col-md-6 d-flex flex-column gap-4 justify-content-between ">
+          {/* Logo com espaçamento */}
+          <div className="z-3">
+            <Image
+              src={logo}
+              alt="Logo"
+              width={100}
+              height={100}
+              className="img-fluid"
+              sizes="100%"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </div>
+          <div className="d-flex flex-column gap-3">
             <h3 id="text-b-sites">{titulo}</h3>
-            <div className="py-2">
+            <div>
               <span style={{ color: "#fff" }}>{descricao}</span>
             </div>
           </div>
