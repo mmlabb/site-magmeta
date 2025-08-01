@@ -14,6 +14,7 @@ import faqAnimation from "@/../public/lotties/faq-2.json";
 import PublicoCarousel from "@/components/pacote/PublicoCarousel";
 import TituloSecao from "@/components/TituloeSub";
 import { useTheme } from "@/providers/ThemeProvider";
+import BtnColorido from "@/components/botoes/BtnColor";
 
 // BENEFÍCIOS
 const beneficiosSite = [
@@ -272,6 +273,23 @@ export default function Page() {
               />
             </div>
             <SyncAccordionSlide />
+          </div>
+        </div>
+      </section>
+
+      <section className="pc">
+        <div className="container cp ">
+          <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
+            <div className="col-12 col-lg-6">
+              <TituloSecao
+                titulo="Tem uma ideia?"
+                subtitulo="Faça o orçamento dela agora!"
+              />
+            </div>
+
+            <div className="col-12 col-lg-3 position-relative">
+              <BtnColorido />
+            </div>
           </div>
         </div>
       </section>
