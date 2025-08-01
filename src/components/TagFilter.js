@@ -4,8 +4,7 @@ import "../app/blog/blog.css";
 
 const TagFilter = ({ tags, selectedTag }) => {
   return (
-    <div className="box-tags d-flex gap-3 justify-content-center flex-wrap mb-4">
-      
+    <div className="box-tags container d-flex gap-3 justify-content-center flex-wrap">
       {/* Botões de tags */}
       {tags.map((tag) => (
         <Button
