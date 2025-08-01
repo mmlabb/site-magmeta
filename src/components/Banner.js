@@ -33,7 +33,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="justify-content-between d-flex flex-column">
-              <h2 className="sub-titulo">{article.title}</h2>
+              <h3 className="sub-titulo">{article.title}</h3>
               <p id="txt-blog">{article.summary}</p>
             </div>
             <div className="d-flex box-btn-blog">
