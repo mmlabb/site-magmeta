@@ -38,15 +38,8 @@ export default function PublicoCarousel({
 
   return (
     <div
-      className={`container-fluid justify-content-center px-0 pt-5 ${customClass}`}
+      className={`container-fluid justify-content-center pt-5 px-0 ${customClass}`}
     >
-      <div className="gap-2 d-flex justify-content-center flex-column text-center py-5">
-        <h3>Para quem é?</h3>
-        <h5>
-          Somos parceiros de empresas que querem escalar suas vendas em ramos
-          como:
-        </h5>
-      </div>
       <Slider {...settings}>
         {recursos.map((item, index) => (
           <div key={index} className="px-2">
