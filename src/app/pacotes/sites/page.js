@@ -12,6 +12,8 @@ import Duvidas from "@/components/pacote/Duvidas";
 import siteAnimation from "@/../public/lotties/pc.json";
 import faqAnimation from "@/../public/lotties/faq-2.json";
 import PublicoCarousel from "@/components/pacote/PublicoCarousel";
+import TituloSecao from "@/components/TituloeSub";
+import { useTheme } from "@/providers/ThemeProvider";
 
 // BENEFÍCIOS
 const beneficiosSite = [
@@ -40,7 +42,7 @@ const recursosSite = [
 // ETAPAS / PASSOS
 const passosSite = [
   {
-    title: "1. Mais confiança e autoridade no mercado",
+    title: "Mais confiança e autoridade no mercado",
     text: [
       "Selecione o pacote ideal para seu negócio.",
       "Seu negócio apresentado de forma profissional e moderna.",
@@ -50,7 +52,7 @@ const passosSite = [
     ],
   },
   {
-    title: "2. Mais visitas se transformando em contatos no WhatsApp",
+    title: "Mais visitas se transformando em contatos no WhatsApp",
     text: [
       "Botões inteligentes para levar o visitante direto para seu WhatsApp.",
       "Conversão rápida: menos cliques, mais contatos no seu celular.",
@@ -59,7 +61,7 @@ const passosSite = [
     ],
   },
   {
-    title: "3. Mais clientes locais encontrando você no Google",
+    title: "Mais clientes locais encontrando você no Google",
     text: [
       "Escolha seu visual ou template.",
       "Conecte seus canais: WhatsApp, Instagram, localização.",
@@ -162,9 +164,11 @@ const perguntasFaqSite = [
 ];
 
 export default function Page() {
+  const { darkMode } = useTheme();
+  const { theme } = useTheme();
   return (
     <>
-      <div className="container py-5">
+      <section className="pc">
         <BannerPrincipal
           logo="/assets/img/logo-site.png"
           titulo="Seu Site Precisa Gerar Clientes, Não Só Existir"
@@ -173,7 +177,25 @@ export default function Page() {
           backgroundImage="/assets/img/bgsite.png"
           imagemCol="/assets/img/bgsit.png"
         />
+      </section>
 
+      <section className="pc">
+        <div className=" text-center">
+          <TituloSecao
+            titulo="Para quem é?"
+            subtitulo="Somos parceiros de empresas que querem escalar suas vendas em ramos como:"
+          />
+        </div>
+        <PublicoCarousel
+          recursos={recursosSite}
+          customClass="publico-mobile"
+          corBase="#00000000"
+          corBorda="#03D1E8"
+          corIcone="#03D1E8"
+        />
+      </section>
+
+      <section className="pc">
         <BeneficiosSection
           titulo="O que está incluso"
           descricao="Tudo o que seu negócio precisa para ter presença digital que realmente gera vendas:"
@@ -182,31 +204,31 @@ export default function Page() {
           checkColor="#03D1E8"
           lottieWidth="86%"
         />
-      </div>
+      </section>
 
-      <div className="container">
-        <GridCard
-          titulo="O que você ganha com nosso site:"
-          passos={passosSite}
-          iconColor="#03D1E8"
-          ativoBgColor="rgba(3, 209, 232, 0.1)"
-        />
-      </div>
+      <section className="pc">
+        <div className=" text-center">
+          <TituloSecao titulo="O que você ganha com nosso site" />
+        </div>
+        <div className="container">
+          <GridCard
+            passos={passosSite}
+            ativoBgColor={darkMode ? "rgba(229,229,229,0.16)" : "#fff"}
+            modoHome="true"
+          />
+        </div>
+      </section>
 
-      <div className="py-5 my-5">
-        <PublicoCarousel
-          recursos={recursosSite}
-          customClass="publico-mobile"
-          corBase="#00000000"
-          corBorda="#03D1E8"
-          corIcone="#03D1E8"
-        />
-      </div>
-
-      <div className="container">
+      <section className="planos pc">
+        <div className=" text-center">
+          <TituloSecao
+            titulo="Escolha o Plano Ideal para seu Negócio"
+            subtitulo="Planos flexíveis para atender às necessidades de qualquer infoprodutor, do iniciante ao avançado."
+          />
+        </div>
         <PlanosSection
           planos={planosSite}
-          destaqueBgColor="linear-gradient(to bottom, #03D1E8 0%, #027582 100%)"
+          destaqueBorderColor="#03D1E8"
           destaqueTextColor="#000"
           checkIconColor="#fff"
           checkIconColorNaoDestaque="#1C1C3C"
@@ -217,33 +239,40 @@ export default function Page() {
           corBotaoNaoDestaque="#03D1E8"
           corTextoBotaoNaoDestaque="#000000"
           iconeCor={"#03D1E8"}
+          faixaDestaqueBgColor="#03D1E8"
+          iconeDestaqueCor="#fff"
         />
+      </section>
 
+      <section className="pt-3">
+        {" "}
         <Duvidas
-          backgroundImage="/assets/img/background-2.png"
+          backgroundImage="/assets/img/bgWpp.png"
           textos={["Quer consultar o pacote ideal?"]}
           botaoLabel="Falar com Especialista"
         />
+      </section>
 
-        <div className="py-5">
-          <FaqSection
-            titulo="Perguntas e respostas mais frequentes"
-            perguntas={perguntasFaqSite}
-            animationData={faqAnimation}
-            backgroundColor="rgba(3, 209, 232, 0.1)"
-          />
-        </div>
-      </div>
+      <section className="pc">
+        <FaqSection
+          titulo="Perguntas e respostas mais frequentes"
+          perguntas={perguntasFaqSite}
+          animationData={faqAnimation}
+          backgroundColor="rgba(3, 209, 232, 0.1)"
+        />
+      </section>
 
-      <section className="py-5 acc  ">
-        <div className=" d-flex justify-content-center text-center py-4 flex-column gap-2">
-          <h3>Nossas soluções</h3>
-          <h5 className="txt-escolha">
-            Escolha seu próximo passo para crescer com a Magmeta
-          </h5>
-        </div>
-        <div className="container py-5">
-          <SyncAccordionSlide />
+      <section className="pc">
+        <div className="container cp">
+          <div className="flex-row gap-css flex-column  align-items-center">
+            <div className="text-center px-0">
+              <TituloSecao
+                titulo="Nossas soluções"
+                subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
+              />
+            </div>
+            <SyncAccordionSlide />
+          </div>
         </div>
       </section>
     </>
