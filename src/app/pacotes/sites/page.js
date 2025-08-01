@@ -201,9 +201,9 @@ export default function Page() {
           titulo="O que está incluso"
           descricao="Tudo o que seu negócio precisa para ter presença digital que realmente gera vendas:"
           beneficios={beneficiosSite}
-          animationData={siteAnimation}
           checkColor="#03D1E8"
           lottieWidth="86%"
+          imagem="/assets/img/mockup-cadcam.png"
         />
       </section>
 
@@ -259,7 +259,7 @@ export default function Page() {
           titulo="Perguntas e respostas mais frequentes"
           perguntas={perguntasFaqSite}
           animationData={faqAnimation}
-          backgroundColor="rgba(3, 209, 232, 0.1)"
+          backgroundColor="#03d1e869"
         />
       </section>
 
@@ -272,7 +272,7 @@ export default function Page() {
                 subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
               />
             </div>
-            <SyncAccordionSlide />
+            <SyncAccordionSlide variant="site" />
           </div>
         </div>
       </section>
@@ -288,7 +288,7 @@ export default function Page() {
             </div>
 
             <div className="col-12 col-lg-3 position-relative">
-              <BtnColorido />
+              <BtnColorido gradient="#03D1E8" />
             </div>
           </div>
         </div>
