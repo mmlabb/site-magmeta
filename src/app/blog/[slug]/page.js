@@ -29,9 +29,8 @@ const Page = async ({ params }) => {
 
   return (
     <>
-      <SiteNavbar />
-      <div className="container  pt-3 mt-5">
-        <div className="row pt-5 mt-5 flex-column align-items-center mb-4">
+      <div className="container pc">
+        <div className="row  flex-column align-items-center mb-4">
           <div className="col-md-8 col-lg-8 flex-column d-flex box-titulo-blog">
             <h1 className="display-5">{article.title}</h1>
             {/* TAG ÚNICA ABAIXO DO TÍTULO */}
