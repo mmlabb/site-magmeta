@@ -100,7 +100,7 @@ export default function Home() {
 
   const { theme } = useTheme(); // retorna 'light' ou 'dark'
 
-  const corBgCardHome = theme === "dark" ? "rgba(229,229,229,0.16)" : "#E5E5E5";
+  const corBgCardHome = theme === "dark" ? "rgba(229,229,229,0.16)" : "#fff";
 
   return (
     <>
@@ -253,7 +253,7 @@ export default function Home() {
           <GridCard
             passos={passos}
             iconColor={darkMode ? "#fff" : "#000"}
-            ativoBgColor={darkMode ? "rgba(229,229,229,0.16)" : "#E5E5E5"}
+            ativoBgColor={darkMode ? "rgba(229,229,229,0.16)" : "#fff"}
             modoHome={true}
           />
 
