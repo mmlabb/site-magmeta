@@ -23,7 +23,7 @@ export default function GridCard({
         return (
           <div className="col m-0" key={i}>
             <div
-              className={`card-grid-bloco h-100 p-4 d-flex gap-2 flex-column ${
+              className={`card-grid-bloco h-100 p-4 d-flex gap-3 flex-column ${
                 isAtivo ? "ativo" : ""
               }`}
               style={{
