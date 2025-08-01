@@ -59,7 +59,7 @@ const Page = async ({ params }) => {
             </div>
           </div>
 
-          <div className="col-md-7 col-lg-7 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
+          <div className="col-md-8 col-lg-8 pt-5  justify-content-center d-flex align-items-center flex-column gap-2">
             <Image
               src={article.cover}
               alt="Imagem de capa do artigo"
