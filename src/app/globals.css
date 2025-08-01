@@ -422,13 +422,9 @@ header.floating {
   transform: scale(1.1); /* Aumentar o tamanho em 10% no hover */
 }
 
-.btn-purple {
-  background: linear-gradient(to right, #5b19a9 0%, #9c5dd3 100%);
-}
 
 .btn-colorido {
   position: relative;
-  background: linear-gradient(to right, #9c5dd3 0%, #6221a2 33%, #03d1e8 100%);
   border: none;
   padding: 0;
   width: 100%;
@@ -438,6 +434,7 @@ header.floating {
   display: block;
   cursor: pointer;
   border-radius: 24px;
+  background: transparent; 
 }
 
 .btn-colorido::before {
@@ -446,7 +443,7 @@ header.floating {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #fff; /* Tema claro (padrão) */
+  background-color: #fff;
   color: #000;
   font-size: 1rem !important;
   font-weight: 500;
@@ -463,11 +460,11 @@ header.floating {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #9c5dd3 0%, #6221a2 33%, #03d1e8 100%);
   border-radius: 24px;
   filter: blur(5px);
   transition: all 0.2s ease-in-out;
   z-index: 0;
+  background: inherit; /* pega o mesmo gradiente inline */
 }
 
 /* Tema escuro */
@@ -1021,7 +1018,7 @@ main {
 }
 
 .row-faq {
-  padding: 64px !important;
+  padding: 44px !important;
 }
 
 .c-perguntas {

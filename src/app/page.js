@@ -224,7 +224,7 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 col-12 d-flex justify-content-center">
-              <div className="box-texto-caminho d-flex flex-column gap-css justify-content-center">
+              <div className="box-texto-caminho d-flex flex-column gap-4 justify-content-center">
                 <TituloSecao
                   titulo="Crescimento de verdade, com tecnologia aplicada ao seu negócio"
                   subtitulo="Desenhamos soluções personalizadas para que o seu negócio
