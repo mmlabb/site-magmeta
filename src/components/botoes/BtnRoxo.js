@@ -7,14 +7,24 @@ export default function BtnRoxo({
   icon = <CalendarCheck size={16} className="icon" />,
   className = "",
   style = {},
+  variant = "default", // ✅ nova prop
 }) {
+  const gradients = {
+    default: "linear-gradient(to right, #9c5dd3 0%, #6221a2 33%, #03d1e8 100%)",
+    site: "linear-gradient(to right, #03d1e8 0%, #1197c3 50%, #005b81 100%)",
+    chat: "linear-gradient(to right, #00c37e 0%, #1ac881 50%, #42d391 100%)",
+  };
+
   return (
     <a
       href="https://wa.me/5585988756563?text=Olá%20equipe%20Magmeta,%20quero%20agendar%20uma%20reunião."
       target="_blank"
       rel="noopener noreferrer"
       className={`btn-purple ${className}`}
-      style={style}
+      style={{
+        background: gradients[variant] || gradients.default,
+        ...style,
+      }}
     >
       <span>{children}</span>
       {icon}
