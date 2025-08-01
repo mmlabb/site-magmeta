@@ -8,9 +8,7 @@
   border-radius: 44px;
 }
 
-h3 {
-  margin-top: 3.5rem !important;
-}
+
 
 .tag-destaque {
   display: flex;
@@ -30,8 +28,6 @@ h3 {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  margin-top: 5% !important;
-  margin-bottom: 5% !important;
   border-radius: 44px;
   background-color: #181717bf;
 }
@@ -108,10 +104,7 @@ h3 {
   --bs-bg-opacity: 1 !important;
 }
 
-.box-artigos {
-  padding-top: 10% !important;
-  padding-bottom: 10% !important;
-}
+
 .cover-image {
   width: 100%; /* Faz a imagem ocupar todo o container */
   height: auto; /* Mantém a proporção */

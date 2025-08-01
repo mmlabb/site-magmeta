@@ -32,16 +32,23 @@ const Blog = () => {
       <section className="pc">
         <Banner article={bannerArticle} />
       </section>
-      <div className="container mt-5">
+
+      <section className="pc">
         <TagFilter
           tags={allTags}
           selectedTag={selectedTag}
           onSelectTag={setSelectedTag}
         />
+      </section>
+
+      <section className="pc">
         <ArticleGrid articles={filteredArticles} limit={7} />
         <PopupBlog />
-      </div>
-      <CTA />
+      </section>
+
+      <section className="pc">
+        <CTA />
+      </section>
     </>
   );
 };
