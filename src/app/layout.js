@@ -70,6 +70,7 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeProvider>
           <div id="app-theme" className="theme-dark">
+            <Navbar />
             <a
               href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
               target="_blank"

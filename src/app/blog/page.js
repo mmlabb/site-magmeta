@@ -8,7 +8,7 @@ import "./blog.css";
 import "../../app/globals.css";
 import { useState } from "react";
 import { articles } from "@/data/articles";
-import PopupBlog from "@/components/PopupBlog"
+import PopupBlog from "@/components/PopupBlog";
 
 const Blog = () => {
   const [selectedTag, setSelectedTag] = useState(null);
@@ -29,8 +29,9 @@ const Blog = () => {
 
   return (
     <>
-      <SiteNavbar />
-      <Banner article={bannerArticle} />
+      <section className="pc">
+        <Banner article={bannerArticle} />
+      </section>
       <div className="container mt-5">
         <TagFilter
           tags={allTags}
