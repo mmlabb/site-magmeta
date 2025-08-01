@@ -309,6 +309,22 @@ header.floating {
   font-weight: bold;
 }
 
+.tag {
+  h5 {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    margin-bottom: 0% !important;
+  }
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 0% !important;
+  align-items: center;
+  border-radius: 38px;
+  background-color: #6221a257;
+  justify-content: center;
+  white-space: nowrap;
+}
+
 #offcanvasNavbar {
   align-items: flex-start;
   padding-top: 0.2rem;
@@ -880,11 +896,11 @@ main {
   border-radius: 0.5rem;
   min-height: 120px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .card-grid-bloco.ativo {
-  background-color: rgba(54, 124, 255, 0.1);
+  background-color: rgba(229, 229, 229, 0.16);
 }
 
 .tipo {
@@ -1002,6 +1018,10 @@ main {
 
 .faq-box {
   border-radius: 12px;
+}
+
+.row-faq {
+  padding: 64px !important;
 }
 
 .c-perguntas {
@@ -1955,7 +1975,7 @@ body.light .accordion-button::after {
   }
 
   .txt-pop-up {
-    font-family: Inter !important;
+    font-family: Montserrat !important;
     font-weight: 700 !important;
     margin: 0 !important;
   }
