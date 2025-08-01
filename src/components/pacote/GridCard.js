@@ -8,7 +8,7 @@ export default function GridCard({
   passos,
   ativoBgColor,
   iconColor,
-  modoHome = false,
+  modoHome = true,
 }) {
   const { darkMode } = useTheme();
 
@@ -29,6 +29,7 @@ export default function GridCard({
               style={{
                 backgroundColor: isAtivo ? ativoBgColor : undefined,
                 color: modoHome ? (darkMode ? "#fff" : "#000") : undefined,
+                boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)", // <-- sombra adicionada
               }}
             >
               <div className="d-flex gap-2 justify-content-between">
@@ -57,17 +58,9 @@ export default function GridCard({
                 )}
               </div>
 
-              <div>
-                {Array.isArray(item.text) ? (
-                  <ol className="text-start ps-3 d-flex flex-column gap-2">
-                    {item.text.map((line, idx) => (
-                      <li key={idx}>{line}</li>
-                    ))}
-                  </ol>
-                ) : (
-                  <span>{item.text}</span>
-                )}
-              </div>
+              <p style={{ marginBottom: 0 }}>
+                {Array.isArray(item.text) ? item.text.join(" ") : item.text}
+              </p>
             </div>
           </div>
         );
