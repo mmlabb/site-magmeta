@@ -19,7 +19,12 @@ export default function FaqSection({
   return (
     <div
       className="container faq-box cp"
-      style={{ backgroundColor, borderRadius: "24px" }}
+      style={{
+        backgroundColor,
+        borderRadius: "24px",
+        padding: "12px",
+        boxShadow: "0 0 28px rgba(0, 0, 0, 0.29)",
+      }}
     >
       <div className="row row-faq gy-4 flex-lg-row flex-column" id="row-faq">
         {/* Accordion - sempre em cima no mobile/tablet */}
@@ -30,7 +35,7 @@ export default function FaqSection({
           </div>
 
           <div
-            className="accordion d-flex pt-3 flex-column gap-3"
+            className="accordion d-flex pt-3 flex-column gap-4"
             id="faqAccordion"
             style={{
               maxHeight: "70vh",
