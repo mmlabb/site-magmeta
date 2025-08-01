@@ -22,7 +22,7 @@ const Banner = () => {
     <div className="container relative container-banner">
       <div className="row primeiro-artigo align-items-center">
         <div className="col-md-5 col-sm-6 relative box-artigo-principal">
-          <div className="box-artigo-banner p-3">
+          <div className="box-artigo-banner p-4">
             <div className="d-flex justify-content-between">
               <div className="tag-destaque text-center">
                 <small>DESTAQUE</small>

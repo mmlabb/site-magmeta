@@ -225,7 +225,7 @@
 }
 @media (min-width: 999px) {
   .box-artigo-banner {
-    gap: 1rem;
+    gap: 3rem;
     display: flex;
     flex-direction: column;
   }
