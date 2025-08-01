@@ -1,46 +1,43 @@
 "use client";
 import { FaCheck } from "react-icons/fa";
-import Lottie from "lottie-react";
+import Image from "next/image"; 
 
 export default function BeneficiosSection({
   titulo,
   descricao,
   beneficios,
-  animationData,
+  imagem, 
   checkColor,
   isMagnet,
-  lottieWidth = "100%",
-  showLottie = true,
   compact = false,
 }) {
   return (
-    <div className={`container ${compact}`}>
-      <div
-        className={`row d-flex justify-content-between align-items-center ${
-          compact ? "" : ""
-        }`}
-      >
-        {showLottie && (
+    <div className={`container ${compact ? "" : ""}`}>
+      <div className="row d-flex justify-content-center align-items-center">
+        {imagem && (
           <div className="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
-            <Lottie
-              animationData={animationData}
-              loop={true}
-              className={` ${isMagnet ? "box-lottie" : ""}`}
+            <Image
+              src={imagem}
+              alt="Imagem ilustrativa"
+              width={0}
+              height={0}
+              sizes="100%"
+              className={`${isMagnet ? "box-lottie" : ""} img-fluid`}
               style={{
-                width: lottieWidth,
+                width: "100%",
                 height: "100%",
                 borderRadius: "24px",
-                overflow: "hidden",
+                objectFit: "contain",
               }}
             />
           </div>
         )}
 
-        <div className={showLottie ? "col-md-6" : "col-12"}>
-          {!compact && (
-            <div className="d-flex gap-3 flex-column">
-              <h3>{titulo}</h3>
-              {!compact && <p>{descricao}</p>}
+        <div className={imagem ? "col-md-6" : "col-12"}>
+          <div className="d-flex gap-2 flex-column px-0">
+            {titulo && <h3>{titulo}</h3>}
+            {descricao && <p>{descricao}</p>}
+            {beneficios?.length > 0 && (
               <ul className="list-unstyled mb-0 mt-0">
                 {beneficios.map((item, index) => (
                   <li key={index} className="d-flex align-items-start mb-2">
@@ -53,8 +50,8 @@ export default function BeneficiosSection({
                   </li>
                 ))}
               </ul>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </div>
