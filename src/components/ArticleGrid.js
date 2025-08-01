@@ -21,7 +21,7 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
   };
 
   return (
-    <div id="grid-artigos" className="container box-artigos ">
+    <div id="grid-artigos" className="container box-artigos gap-5 d-flex flex-column">
       <div className="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {lista.length > 0 ? (
           lista.map((article) => (
@@ -91,15 +91,13 @@ const ArticleGrid = ({ articles, limit, selectedTag }) => {
         )}
       </div>
       {!!limit ? (
-        <div className="row pt-5">
-          <div className="d-flex mt-4 justify-content-center">
-            <Link
-              href="/blog/todos"
-              className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
-            >
-              <span id="txt-blog">VER TODOS</span>
-            </Link>
-          </div>
+        <div className="d-flex justify-content-center">
+          <Link
+            href="/blog/todos"
+            className="btn-mobile-orcam texto-botao botao-nossa-ex btn-or botao-roxo"
+          >
+            <span id="txt-blog">VER TODOS</span>
+          </Link>
         </div>
       ) : null}
     </div>
