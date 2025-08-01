@@ -39,7 +39,7 @@ const Banner = () => {
             <div className="d-flex box-btn-blog">
               <Link
                 href={`/blog/${article.slug}`}
-                className="btn btn-outline-light rounded-pill btn-blog-roxo"
+                className="btn btn-outline-light px-3 py-2 rounded-pill" id="btn-blog-roxo"
               >
                 Artigo Completo <ArrowUpRight />
               </Link>

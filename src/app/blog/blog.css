@@ -4,8 +4,7 @@
 
 /*Css Blog*/
 .container-banner {
-  margin-top: 12% !important;
-  margin-bottom: 12% !important;
+  
   border-radius: 44px;
 }
 
@@ -77,10 +76,10 @@ h3 {
 
 .btn-primary {
   display: flex;
-  height: 8px;
+  height: 20px;
   border-color: #18171724;
   color: #fff;
-  padding: 1rem;
+  padding: 1rem !important;
   margin-bottom: 0% !important;
   align-items: center;
   border-radius: 18px;
@@ -129,7 +128,7 @@ h3 {
     text-align: center !important;
   }
 
-  .box-btn-blog {
+  #box-btn-blog {
     justify-content: center !important;
     padding-top: 24px !important;
     padding-bottom: 24px !important;
@@ -180,6 +179,8 @@ h3 {
   object-fit: cover;
   border-radius: 10px;
 }
+
+
 
 .share-buttons {
   display: flex;
