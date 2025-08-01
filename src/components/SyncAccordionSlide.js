@@ -3,24 +3,11 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Arrow90degRight } from "react-bootstrap-icons";
-import {
-  ArrowDown,
-  ArrowDownCircle,
-  ArrowLeft,
-  ArrowRight,
-  ArrowRightCircle,
-} from "react-feather";
-import {
-  ArrowRightFromLine,
-  ArrowRightIcon,
-  ArrowUpRightIcon,
-} from "lucide-react";
-import { useRouter } from "next/navigation";
+import { ArrowDownCircle } from "react-feather";
 import BtnRoxo from "./botoes/BtnRoxo";
 import { useTheme } from "@/providers/ThemeProvider";
 
-const SyncAccordionSlide = () => {
+const SyncAccordionSlide = ({ variant = "default" }) => {
   const { darkMode } = useTheme();
   const [active_index, set_active_index] = useState(0);
   const [is_paused, set_is_paused] = useState(false);
@@ -29,7 +16,6 @@ const SyncAccordionSlide = () => {
   const progress_ref = useRef(null);
   const container_ref = useRef(null);
 
-  const router = useRouter();
   const items = [
     {
       title: "Site Que Vende",
@@ -40,7 +26,6 @@ const SyncAccordionSlide = () => {
       cta: "Quero um site",
       link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
     },
-
     {
       title: "Atendimento Automático 24h",
       slug: "magnet",
@@ -50,7 +35,6 @@ const SyncAccordionSlide = () => {
       cta: "Quero um chat",
       link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
     },
-
     {
       title: "Aplicativo Para Seus Clientes",
       slug: "aplicativos",
@@ -62,7 +46,6 @@ const SyncAccordionSlide = () => {
     },
   ];
 
-  // useCallback para não recriar a função a cada render
   const start_auto_advance = useCallback(() => {
     if (interval_ref.current) clearInterval(interval_ref.current);
     interval_ref.current = setInterval(() => {
@@ -70,7 +53,6 @@ const SyncAccordionSlide = () => {
     }, 6000);
   }, [items.length]);
 
-  // Inicia ou retoma o autoplay quando não estiver pausado
   useEffect(() => {
     if (!is_paused) {
       start_auto_advance();
@@ -92,7 +74,6 @@ const SyncAccordionSlide = () => {
     }, 6000);
   };
 
-  // Ajusta a barra de progresso para ficar ao lado do item ativo
   useEffect(() => {
     if (progress_ref.current && container_ref.current) {
       const activeItem = container_ref.current.querySelector(
@@ -106,8 +87,6 @@ const SyncAccordionSlide = () => {
       progress_ref.current.style.transition = "none";
       progress_ref.current.style.top = `${offsetTop}px`;
       progress_ref.current.style.height = "0px";
-
-      // Força reflow para aplicar transição em seguida
       void progress_ref.current.offsetHeight;
 
       progress_ref.current.style.transition =
@@ -142,9 +121,7 @@ const SyncAccordionSlide = () => {
   return (
     <div className="container justify-content-between">
       <div className="d-flex flex-column-reverse flex-lg-row row-accordion gap-4">
-        {/* Accordion */}
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-center position-relative my-2">
-          {/* Barra de progresso vertical fixa */}
           <div
             style={{
               position: "absolute",
@@ -180,7 +157,6 @@ const SyncAccordionSlide = () => {
           >
             {items.map((item, index) => {
               const isActive = index === active_index;
-              // Cores baseadas no tema e no estado ativo
               const activeColor = darkMode ? "#FFFFFF" : "#1C1C3C";
               const inactiveColor = darkMode ? "#1C1C3C" : "#2725259c";
 
@@ -224,6 +200,7 @@ const SyncAccordionSlide = () => {
                         </span>
 
                         <BtnRoxo
+                          variant={variant}
                           className="p-2 w-50"
                           style={{
                             fontSize: "0.8rem",
@@ -242,7 +219,6 @@ const SyncAccordionSlide = () => {
           </div>
         </div>
 
-        {/* Slide */}
         <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center position-relative text-center">
           <AnimatePresence mode="wait">
             <motion.div
@@ -256,7 +232,7 @@ const SyncAccordionSlide = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                minHeight: "auto",  // Garante altura constante
+                minHeight: "auto",
               }}
             >
               <div
