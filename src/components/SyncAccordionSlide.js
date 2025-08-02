@@ -201,7 +201,7 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
 
                         <BtnRoxo
                           variant={variant}
-                          className="p-2 w-50"
+                          className="btn-sm w-25"
                           style={{
                             fontSize: "0.8rem",
                             alignItems: "center",
