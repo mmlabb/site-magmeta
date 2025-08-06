@@ -3,7 +3,7 @@ import { Arrow90degRight, ArrowRightShort, ArrowRightSquare } from "react-bootst
 import { ArrowDown, ArrowDownLeft, ArrowDownRight, ArrowLeft, ArrowRight, ArrowUpRight } from "react-feather";
 const CTA = () => {
   return (
-    <div className=" container box-cta p-5 text-center d-flex flex-colunm gap-5">
+    <div className="container box-cta p-5 text-center d-flex flex-colunm gap-5">
       <h3>Transforme ideias em soluções tecnológicas que geram resultados. Fale com a Magmeta Soluções e leve seu negócio para o próximo nível.</h3>
       <div className="d-flex justify-content-center">
         <a

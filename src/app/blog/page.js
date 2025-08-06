@@ -29,7 +29,7 @@ const Blog = () => {
 
   return (
     <>
-      <section className="pc">
+      <section className="pc" id="section-banner-blog">
         <Banner article={bannerArticle} />
       </section>
 
@@ -41,12 +41,12 @@ const Blog = () => {
         />
       </section>
 
-      <section className="pc">
+      <section>
         <ArticleGrid articles={filteredArticles} limit={7} />
         <PopupBlog />
       </section>
 
-      <section className="pc">
+      <section className="pc" id="section-cta-blog">
         <CTA />
       </section>
     </>

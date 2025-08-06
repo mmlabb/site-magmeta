@@ -1274,6 +1274,11 @@ body.light .accordion-button::after {
 /* RESPONSIVO */
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
+  #section-banner-blog {
+    display: none !important;
+  }
+
+
   .bg-transparentnav {
     padding-left: 12px !important;
   }
@@ -1321,6 +1326,12 @@ body.light .accordion-button::after {
   .texto-botao {
     margin-left: 24px !important;
     margin-right: 24px !important;
+  }
+
+
+  #section-cta-blog {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   /* .linha-1 {
