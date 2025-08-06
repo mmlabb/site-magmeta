@@ -10,7 +10,9 @@ const logos = [
   { src: "/assets/img/us.svg", alt: "usados" },
   { src: "/assets/img/logo-klubi.svg", alt: "klubi" },
   { src: "/assets/img/mcl.svg", alt: "mc-love" },
-  { src: "/assets/img/cadl.svg", alt: "marq" },
+  { src: "/assets/img/cadl.svg", alt: "logo-cadcam" },
+  { src: "/assets/img/logo-snet.svg", alt: "logo-snet" },
+  { src: "/assets/img/logo-disk-cirurgia.png", alt: "logo-disk-cirurgia" },
 ];
 
 const LogosSlider = () => {
@@ -39,7 +41,7 @@ const LogosSlider = () => {
   }, []);
 
   const settings = {
-    slidesToShow: isMobile ? 2 : 6,
+    slidesToShow: isMobile ? 2 : 5,
     slidesToScroll: 1,
     autoplay: autoplay,
     infinite: autoplay,
@@ -51,7 +53,7 @@ const LogosSlider = () => {
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 4 },
+        settings: { slidesToShow: 6 },
       },
       {
         breakpoint: 768,
