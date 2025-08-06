@@ -889,7 +889,7 @@ main {
 
 .card-grid-bloco {
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   min-height: 120px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   background-color: #fff;
@@ -946,7 +946,7 @@ main {
 .gap-css {
   display: flex;
   flex-direction: column;
-  gap: 32px !important;
+  gap: 44px !important;
 }
 
 .plano-box {
@@ -1274,6 +1274,11 @@ body.light .accordion-button::after {
 /* RESPONSIVO */
 /*TELAS DE CELULAR*/
 @media (max-width: 768px) {
+  .bg-transparentnav {
+    padding-left: 12px !important;
+  }
+
+
   #row-logos {
     padding-top: 0% !important;
   }
