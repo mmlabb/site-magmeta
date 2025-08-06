@@ -3,26 +3,60 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import BtnMais from "./botoes/BtnMais";
+import { useRouter } from "next/navigation";
 
-const images = [
-  "/assets/img/capa-cad.png",
-  "/assets/img/cad.png",
-  "/assets/img/snet.png",
-  "/assets/img/cad.png",
-  "/assets/img/snet.png",
-  "/assets/img/cad.png",
-  "/assets/img/snet.png",
-  "/assets/img/cad.png",
+const projetos = [
+  {
+    imagem: "/assets/img/cad.png",
+    logo: "/assets/img/us.svg",
+    nome: "Marketplace",
+    link: "/projetos/cad",
+  },
+  {
+    imagem: "/assets/img/snet.png",
+    logo: "/assets/img/logo-snet.svg",
+    nome: "Aplicativo",
+    link: "/projetos/snet",
+  },
+  {
+    imagem: "/assets/img/mockup-marq.png",
+    logo: "/assets/img/cadl.svg",
+    nome: "Aplicativo",
+    link: "/projetos/marq",
+  },
+  {
+    imagem: "/assets/img/cad.png",
+    logo: "/assets/img/us.svg",
+    nome: "Marketplace",
+    link: "/projetos/cad2",
+  },
+  {
+    imagem: "/assets/img/snet.png",
+    logo: "/assets/img/logo-snet.svg",
+    nome: "Aplicativo",
+    link: "/projetos/snet2",
+  },
+  {
+    imagem: "/assets/img/mockup-marq.png",
+    logo: "/assets/img/cadl.svg",
+    nome: "Aplicativo",
+    link: "/projetos/marq2",
+  },
 ];
 
 export default function PortifolioProjetos() {
   const carouselRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
+  const router = useRouter();
+
+  // DUPLICAÇÃO para loop infinito real
+  const projetosDuplicados = [...projetos, ...projetos];
 
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min");
   }, []);
 
+  // Drag manual
   useEffect(() => {
     const carousel = carouselRef.current;
     let isDragging = false;
@@ -34,6 +68,7 @@ export default function PortifolioProjetos() {
       startX = e.pageX - carousel.offsetLeft;
       scrollLeft = carousel.scrollLeft;
       carousel.classList.add("dragging");
+      carousel.style.scrollBehavior = "auto";
     };
 
     const mouseMove = (e) => {
@@ -47,6 +82,7 @@ export default function PortifolioProjetos() {
     const mouseUpOrLeave = () => {
       isDragging = false;
       carousel.classList.remove("dragging");
+      carousel.style.scrollBehavior = "smooth";
     };
 
     carousel.addEventListener("mousedown", mouseDown);
@@ -62,20 +98,20 @@ export default function PortifolioProjetos() {
     };
   }, []);
 
+  // Autoplay infinito 
   useEffect(() => {
     const carousel = carouselRef.current;
     const scrollStep = 1;
-    const scrollDelay = 20;
+    const scrollDelay = 12;
     let intervalId;
 
     const startAutoplay = () => {
       intervalId = setInterval(() => {
         if (!isHovered && carousel) {
           carousel.scrollLeft += scrollStep;
-          if (
-            carousel.scrollLeft + carousel.offsetWidth >=
-            carousel.scrollWidth
-          ) {
+
+          // Quando passar da metade dos itens duplicados, volta para início original
+          if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
             carousel.scrollLeft = 0;
           }
         }
@@ -102,10 +138,11 @@ export default function PortifolioProjetos() {
             overflowX: "auto",
             display: "flex",
             scrollbarWidth: "none", // Firefox
-            msOverflowStyle: "none", // IE
+            msOverflowStyle: "none", // IE/Edge
+            whiteSpace: "nowrap",
           }}
         >
-          {images.map((src, index) => (
+          {projetosDuplicados.map((projeto, index) => (
             <div
               key={index}
               className="col-12 col-sm-6 col-md-4 col-lg-3 p-2"
@@ -115,9 +152,8 @@ export default function PortifolioProjetos() {
                 className="w-100 position-relative rounded overflow-hidden"
                 style={{ height: "70vh" }}
               >
-                {/* Imagem de fundo */}
                 <Image
-                  src={src}
+                  src={projeto.imagem}
                   alt={`Projeto ${index + 1}`}
                   layout="fill"
                   objectFit="cover"
@@ -125,7 +161,6 @@ export default function PortifolioProjetos() {
                   draggable={false}
                 />
 
-                {/* Gradiente leve no rodapé */}
                 <div
                   className="position-absolute bottom-0 start-0 w-100"
                   style={{
@@ -136,29 +171,28 @@ export default function PortifolioProjetos() {
                   }}
                 />
 
-                {/* Logo no topo esquerdo */}
                 <div
                   className="position-absolute top-0 start-0 m-3"
                   style={{ zIndex: 2 }}
                 >
                   <Image
-                    src="/assets/img/logo-snet.svg"
-                    alt="Logo"
+                    src={projeto.logo}
+                    alt={`Logo ${index + 1}`}
                     width={100}
-                    height={30}
+                    height={60}
                   />
                 </div>
 
-                {/* Rodapé com texto e botão alinhados */}
                 <div
                   className="position-absolute bottom-0 start-0 w-100 p-3 text-white d-flex justify-content-between align-items-center"
                   style={{ zIndex: 2 }}
                 >
-                  <h6 className="mb-0">Nome do Projeto</h6>
+                  <h6 className="mb-0">{projeto.nome}</h6>
                   <BtnMais
+                    className="d-none"
                     label="Ver mais"
                     customClass="ms-2"
-                    onClick={() => router.push("/pagina")}
+                    onClick={() => router.push(projeto.link)}
                   />
                 </div>
               </div>
