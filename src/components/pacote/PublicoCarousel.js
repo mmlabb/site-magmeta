@@ -38,7 +38,7 @@ export default function PublicoCarousel({
 
   return (
     <div
-      className={`container-fluid justify-content-center pt-5 px-0 ${customClass}`}
+      className={`container-fluid justify-content-center  px-0 ${customClass}`}
     >
       <Slider {...settings}>
         {recursos.map((item, index) => (
