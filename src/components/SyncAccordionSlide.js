@@ -198,18 +198,21 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
                         >
                           {item.content}
                         </span>
-
-                        <BtnRoxo
-                          variant={variant}
-                          className="btn-sm w-25"
-                          style={{
-                            fontSize: "0.8rem",
-                            alignItems: "center",
-                            justifyContent: "center",
-                          }}
-                        >
-                          <small className="text-nowrap p-2">{item.cta}</small>
-                        </BtnRoxo>
+                        <div>
+                          <BtnRoxo
+                            variant={variant}
+                            className="btn-sm"
+                            style={{
+                              fontSize: "0.8rem",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            <small className="text-nowrap btn-sml p-2">
+                              {item.cta}
+                            </small>
+                          </BtnRoxo>
+                        </div>
                       </div>
                     </motion.div>
                   )}
