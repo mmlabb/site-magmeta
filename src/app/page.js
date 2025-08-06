@@ -280,6 +280,15 @@ export default function Home() {
       </section>
 
       <section className="pc">
+        <div id="cases">
+          <div className=" d-flex justify-content-center text-center py-5 flex-column">
+            <h3>Cases</h3>
+          </div>
+          <PortifolioProjetos />
+        </div>
+      </section>
+
+      <section className="pc">
         <div className="container cp ">
           <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
             <div className="col-12 col-lg-6">
@@ -295,15 +304,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section className="pc">
-        <div id="cases">
-          <div className=" d-flex justify-content-center text-center py-5 flex-column">
-            <h3>Cases</h3>
-          </div>
-          <PortifolioProjetos />
-        </div>
-      </section> */}
     </>
   );
 }
