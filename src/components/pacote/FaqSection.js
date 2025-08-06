@@ -28,7 +28,7 @@ export default function FaqSection({
     >
       <div className="row row-faq gy-4 flex-lg-row flex-column" id="row-faq">
         {/* Accordion - sempre em cima no mobile/tablet */}
-        <div className="col-12 col-lg-6">
+        <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
           <div className="px-3 pt-2 pt-md-4">
             <span className="pb-2 d-block">FAQ</span>
             <h4>{titulo}</h4>
