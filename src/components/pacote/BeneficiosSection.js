@@ -1,12 +1,12 @@
 "use client";
 import { FaCheck } from "react-icons/fa";
-import Image from "next/image"; 
+import Image from "next/image";
 
 export default function BeneficiosSection({
   titulo,
   descricao,
   beneficios,
-  imagem, 
+  imagem,
   checkColor,
   isMagnet,
   compact = false,
@@ -33,25 +33,19 @@ export default function BeneficiosSection({
           </div>
         )}
 
-        <div className={imagem ? "col-md-6" : "col-12"}>
-          <div className="d-flex gap-2 flex-column px-0">
-            {titulo && <h3>{titulo}</h3>}
-            {descricao && <p>{descricao}</p>}
-            {beneficios?.length > 0 && (
-              <ul className="list-unstyled mb-0 mt-0">
-                {beneficios.map((item, index) => (
-                  <li key={index} className="d-flex align-items-start mb-2">
-                    <FaCheck
-                      className="me-4 mt-1"
-                      color={checkColor}
-                      size={16}
-                    />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
+        <div className={imagem ? "col-md-6" : "col-12"} style={{ padding: 0 }}>
+          {titulo && <h3>{titulo}</h3>}
+          {descricao && <p>{descricao}</p>}
+          {beneficios?.length > 0 && (
+            <ul className="list-unstyled mb-0 mt-0">
+              {beneficios.map((item, index) => (
+                <li key={index} className="d-flex align-items-start mb-2">
+                  <FaCheck className="me-4 mt-1" color={checkColor} size={16} />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </div>
