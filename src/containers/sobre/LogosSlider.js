@@ -43,7 +43,7 @@ export default function LogosSlider() {
         }
       `}</style>
 
-      <Container fluid className="px-0">
+      <Container fluid className="px-0" data-aos="zoom-in">
         <div style={sliderWrapperStyle}>
           <div style={sliderTrackStyle}>
             {duplicatedLogos.map((logo, index) => (
