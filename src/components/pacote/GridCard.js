@@ -25,7 +25,7 @@ export default function GridCard({
             className="col m-0"
             key={i}
             data-aos="fade-down" // animação do AOS
-            data-aos-delay={i * 500} // delay progressivo (0ms, 200ms, 400ms...)
+            data-aos-delay={i * 200} // delay progressivo (0ms, 200ms, 400ms...)
           >
             <div
               className={`card-grid-bloco h-100 p-4 d-flex gap-3 flex-column ${

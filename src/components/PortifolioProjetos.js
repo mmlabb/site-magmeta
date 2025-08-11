@@ -147,7 +147,7 @@ export default function PortifolioProjetos() {
               className="col-12 col-sm-6 col-md-4 col-lg-3 p-2"
               style={{ flex: "0 0 auto" }}
               data-aos="fade-up"
-              data-aos-delay={index * 300}
+              data-aos-delay={index * 200}
             >
               <div
                 className="w-100 position-relative rounded"

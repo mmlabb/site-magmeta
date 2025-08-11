@@ -133,10 +133,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="d-flex row btn-or position-relative">
-                  <div
-                    className="botao-nossa-ex col-12 col-lg-6"
-                    data-aos="fade-down-right"
-                  >
+                  <div className="botao-nossa-ex col-12 col-lg-6">
                     <BtnColorido />
                   </div>
                 </div>
@@ -283,7 +280,7 @@ export default function Home() {
       <section className="pc">
         <div className="container cp">
           <div className="flex-row gap-css flex-column  align-items-center">
-            <div className="text-center px-0" data-aos="zoom-in">
+            <div className="text-center px-0" data-aos="zoom-out-up">
               <TituloSecao
                 titulo="Nossas soluções"
                 subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
@@ -298,7 +295,7 @@ export default function Home() {
         <div id="cases" className="gap-css cp">
           <div
             className="flex-row  flex-column text-center px-0 align-items-center"
-            data-aos="zoom-in"
+            data-aos="zoom-out-up"
           >
             <TituloSecao titulo="Cases" />
           </div>
@@ -307,19 +304,16 @@ export default function Home() {
       </section>
 
       <section className="pc">
-        <div className="container cp">
+        <div className="container cp" data-aos="fade-down">
           <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
-            <div className="col-12 col-lg-6" data-aos="fade-down">
+            <div className="col-12 col-lg-6">
               <TituloSecao
                 titulo="Tem uma ideia?"
                 subtitulo="Faça o orçamento dela agora!"
               />
             </div>
 
-            <div
-              className="col-12 col-lg-3 position-relative"
-              data-aos="zoom-in"
-            >
+            <div className="col-12 col-lg-3 position-relative">
               <BtnColorido />
             </div>
           </div>
