@@ -27,7 +27,6 @@ export default function BtnRoxo({
       }}
     >
       <span>{children}</span>
-      {icon}
     </a>
   );
 }
