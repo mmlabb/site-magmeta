@@ -1244,6 +1244,32 @@ body.light .accordion-button::after {
   color: #fff !important;
   cursor: pointer;
 }
+
+@keyframes bounceDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Classe que você vai adicionar junto do data-aos */
+.aos-animate.bounce-down {
+  animation-name: bounceDown !important;
+  animation-timing-function: ease;
+  animation-duration: 1s !important;
+  animation-fill-mode: forwards;
+}
+
 /*RODAPÉ*/
 
 #logo-rodape {
@@ -1283,11 +1309,9 @@ body.light .accordion-button::after {
     display: none !important;
   }
 
-
   .bg-transparentnav {
     padding-left: 12px !important;
   }
-
 
   #row-logos {
     padding-top: 0% !important;
@@ -1332,7 +1356,6 @@ body.light .accordion-button::after {
     margin-left: 24px !important;
     margin-right: 24px !important;
   }
-
 
   #section-cta-blog {
     padding-left: 12px;
@@ -2065,7 +2088,6 @@ body.light .accordion-button::after {
 }
 
 @media (max-width: 768px) {
-
   #cases {
     margin: 0% !important;
   }
