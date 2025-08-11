@@ -280,9 +280,9 @@ export default function Home() {
       </section>
 
       <section className="pc">
-        <div id="cases">
-          <div className=" d-flex justify-content-center text-center py-5 flex-column">
-            <h3>Cases</h3>
+        <div id="cases" className="gap-css cp">
+          <div className="flex-row  flex-column text-center px-0 align-items-center">
+            <TituloSecao titulo="Cases" />
           </div>
           <PortifolioProjetos />
         </div>
