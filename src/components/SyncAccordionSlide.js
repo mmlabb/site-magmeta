@@ -119,7 +119,7 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
   }, [start_auto_advance]);
 
   return (
-    <div className="container justify-content-between">
+    <div className="container justify-content-between"  data-aos="zoom-in-down">
       <div className="d-flex flex-column-reverse flex-lg-row row-accordion gap-4">
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-center position-relative my-2">
           <div
