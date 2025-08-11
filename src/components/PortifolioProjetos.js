@@ -49,7 +49,6 @@ export default function PortifolioProjetos() {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
 
-  // DUPLICAÇÃO para loop infinito real
   const projetosDuplicados = [...projetos, ...projetos];
 
   useEffect(() => {
@@ -98,7 +97,7 @@ export default function PortifolioProjetos() {
     };
   }, []);
 
-  // Autoplay infinito 
+  // Autoplay infinito
   useEffect(() => {
     const carousel = carouselRef.current;
     const scrollStep = 1;
@@ -110,7 +109,6 @@ export default function PortifolioProjetos() {
         if (!isHovered && carousel) {
           carousel.scrollLeft += scrollStep;
 
-          // Quando passar da metade dos itens duplicados, volta para início original
           if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
             carousel.scrollLeft = 0;
           }
@@ -136,9 +134,10 @@ export default function PortifolioProjetos() {
           ref={carouselRef}
           style={{
             overflowX: "auto",
+            overflowY: "hidden", // evita barra vertical fantasma
             display: "flex",
-            scrollbarWidth: "none", // Firefox
-            msOverflowStyle: "none", // IE/Edge
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
             whiteSpace: "nowrap",
           }}
         >
@@ -147,10 +146,15 @@ export default function PortifolioProjetos() {
               key={index}
               className="col-12 col-sm-6 col-md-4 col-lg-3 p-2"
               style={{ flex: "0 0 auto" }}
+              data-aos="fade-up"
+              data-aos-delay={index * 300}
             >
               <div
-                className="w-100 position-relative rounded overflow-hidden"
-                style={{ height: "70vh" }}
+                className="w-100 position-relative rounded"
+                style={{
+                  height: "70vh",
+                  overflow: "hidden", // impede corte na imagem com AOS
+                }}
               >
                 <Image
                   src={projeto.imagem}
