@@ -112,7 +112,10 @@ export default function Home() {
         <div className="container cp box-1">
           <div className="row align-items-center">
             <div className="d-flex align-items-center col-md-12 col-lg-6">
-              <div className="text-center texto1 d-flex text-lg-start gap-4 flex-column">
+              <div
+                className="text-center  texto1 d-flex text-lg-start gap-4 flex-column"
+                data-aos="fade-right"
+              >
                 <div className="">
                   <h1 className="texto-magnetize-metas">
                     Transformamos seu negócio em uma máquina de vendas com
@@ -130,14 +133,20 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="d-flex row btn-or position-relative">
-                  <div className="botao-nossa-ex col-12 col-lg-6">
+                  <div
+                    className="botao-nossa-ex col-12 col-lg-6"
+                    data-aos="fade-down-right"
+                  >
                     <BtnColorido />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-12 col-lg-6 d-flex justify-content-end container-img-app-magmeta">
+            <div
+              className="col-md-12 col-lg-6 d-flex justify-content-end container-img-app-magmeta"
+              data-aos="fade-left"
+            >
               <div className="img-app-magmeta">
                 <Image
                   className="app-magmeta"
@@ -211,7 +220,10 @@ export default function Home() {
       <section className="pc" id="segunda-sessao">
         <div className="container cp ">
           <div className="row d-flex justify-content-between">
-            <div className="col-md-6 col-12 d-md-flex d-none justify-content-center align-items-center">
+            <div
+              className="col-md-6 col-12 d-md-flex d-none justify-content-center align-items-center"
+              data-aos="fade-right"
+            >
               <Image
                 className="img-fluid"
                 src="/assets/img/img-sabemos-cam.svg"
@@ -223,7 +235,10 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-md-6 col-12 d-flex justify-content-center">
+            <div
+              className="col-md-6 col-12 d-flex justify-content-center"
+              data-aos="fade-left"
+            >
               <div className="box-texto-caminho d-flex flex-column gap-4 justify-content-center">
                 <TituloSecao
                   titulo="Crescimento de verdade, com tecnologia aplicada ao seu negócio"
@@ -268,7 +283,7 @@ export default function Home() {
       <section className="pc">
         <div className="container cp">
           <div className="flex-row gap-css flex-column  align-items-center">
-            <div className="text-center px-0">
+            <div className="text-center px-0" data-aos="zoom-in">
               <TituloSecao
                 titulo="Nossas soluções"
                 subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
@@ -281,7 +296,10 @@ export default function Home() {
 
       <section className="pc">
         <div id="cases" className="gap-css cp">
-          <div className="flex-row  flex-column text-center px-0 align-items-center">
+          <div
+            className="flex-row  flex-column text-center px-0 align-items-center"
+            data-aos="zoom-in"
+          >
             <TituloSecao titulo="Cases" />
           </div>
           <PortifolioProjetos />
@@ -289,16 +307,19 @@ export default function Home() {
       </section>
 
       <section className="pc">
-        <div className="container cp ">
+        <div className="container cp">
           <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6" data-aos="fade-down">
               <TituloSecao
                 titulo="Tem uma ideia?"
                 subtitulo="Faça o orçamento dela agora!"
               />
             </div>
 
-            <div className="col-12 col-lg-3 position-relative">
+            <div
+              className="col-12 col-lg-3 position-relative"
+              data-aos="zoom-in"
+            >
               <BtnColorido />
             </div>
           </div>
