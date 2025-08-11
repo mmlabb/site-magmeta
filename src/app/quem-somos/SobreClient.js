@@ -12,6 +12,11 @@ import GridCard from "@/components/pacote/GridCard";
 import { useTheme } from "@/providers/ThemeProvider";
 import BtnColorido from "@/components/botoes/BtnColor";
 
+import AOS from "aos";
+import AOSInit from "@/components/AOSInit";
+
+
+
 const CheckIcon = () => {
   return (
     <Image
@@ -100,7 +105,10 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div className="col-md-12 col-lg-6 d-flex justify-content-center mascot-magmeta align-items-center">
+            <div
+              className="col-md-12 col-lg-6 d-flex justify-content-center mascot-magmeta align-items-center"
+              data-aos="fade-left"
+            >
               {animationData ? (
                 <Lottie
                   animationData={animationData}
@@ -135,7 +143,10 @@ export default function Sobre() {
         <div className="container cp text-center ">
           <div className="row d-flex align-items-center">
             <div className="col-sm-12 col-md-6 ">
-              <div className="box-texto-caminho d-flex flex-column gap-css">
+              <div
+                className="box-texto-caminho d-flex flex-column gap-css"
+                data-aos="fade-right"
+              >
                 <h2 className="texto-c  text-right txt-s">
                   Tem um Projeto?
                   <br />
@@ -150,7 +161,10 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-6 d-flex img-vamos-conversar">
+            <div
+              className="col-sm-12 col-md-6 d-flex img-vamos-conversar"
+              data-aos="fade-left"
+            >
               <div>
                 <Lottie
                   animationData={talkk}
