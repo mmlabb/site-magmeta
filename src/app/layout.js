@@ -10,6 +10,8 @@ import Footer from "@/components/Footer";
 import MetaPixel from "@/components/MetaPixel";
 import PopupBlog from "@/components/PopupBlog";
 import LayoutClient from "@/components/LayoutClient";
+import "aos/dist/aos.css";
+import AOSInit from "@/components/AOSInit";
 
 export const metadata = {
   title: "Magmeta Soluções",
@@ -85,7 +87,10 @@ export default function RootLayout({ children }) {
                 style={{ width: "auto", height: "auto" }}
               />
             </a>
-            <LayoutClient>{children}</LayoutClient>
+            <LayoutClient>
+              <AOSInit />
+              {children}
+            </LayoutClient>
             <Footer />
             <PopupBlog />
           </div>
