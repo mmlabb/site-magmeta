@@ -21,7 +21,12 @@ export default function GridCard({
           modoHome || (isFirstRow && !isMiddle) || (!isFirstRow && isMiddle);
 
         return (
-          <div className="col m-0" key={i}>
+          <div
+            className="col m-0"
+            key={i}
+            data-aos="fade-down" // animação do AOS
+            data-aos-delay={i * 500} // delay progressivo (0ms, 200ms, 400ms...)
+          >
             <div
               className={`card-grid-bloco h-100 p-4 d-flex gap-3 flex-column ${
                 isAtivo ? "ativo" : ""
@@ -29,7 +34,7 @@ export default function GridCard({
               style={{
                 backgroundColor: isAtivo ? ativoBgColor : undefined,
                 color: modoHome ? (darkMode ? "#fff" : "#000") : undefined,
-                boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)", // <-- sombra adicionada
+                boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)",
               }}
             >
               <div className="d-flex gap-2 justify-content-between">
