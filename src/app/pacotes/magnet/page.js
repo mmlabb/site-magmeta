@@ -10,8 +10,11 @@ import CtaAcao from "@/components/pacote/CtaAcao";
 import SyncAccordionSlide from "@/components/SyncAccordionSlide";
 import Duvidas from "@/components/pacote/Duvidas";
 import appAnimation from "@/../public/lotties/chat.json";
-import faqAnimation from "@/../public/lotties/faq.json";
+import faqAnimation from "@/../public/lotties/faq-2.json";
 import PublicoCarousel from "@/components/pacote/PublicoCarousel";
+import TituloSecao from "@/components/TituloeSub";
+import { useTheme } from "@/providers/ThemeProvider";
+import BtnColorido from "@/components/botoes/BtnColor";
 
 // BENEFÍCIOS
 const beneficiosMagnet = [
@@ -27,31 +30,25 @@ const beneficiosMagnet = [
 
 // PÚBLICO-ALVO
 const recursosChat = [
-  { emoji: "🧑🏻‍⚕️", title: "Clínicas e consultórios médicos" },
-  { emoji: "🍔", title: "Restaurantes, lanchonetes e delivery" },
-  { emoji: "💇🏻‍♀️", title: "Salões de beleza, estética e bem-estar" },
-  { emoji: "🛒", title: "E-commerce e lojas físicas" },
-  { emoji: "💻", title: "Prestadores de serviço em geral" },
+  { nome: "Clínicas e Consultórios", icone: "stethoscope" },
+  { nome: "Escritórios de Advocacia", icone: "gavel" },
+  { nome: "Imobiliárias", icone: "home" },
+  { nome: "Salões de Beleza e Barbearias", icone: "cut" },
+  { nome: "Restaurantes e Cafeterias", icone: "utensils" },
+  { nome: "Construtoras e Arquitetos", icone: "drafting-compass" },
+  { nome: "Autoescolas", icone: "car-side" },
+  { nome: "Academias e Personal Trainers", icone: "dumbbell" },
+  { nome: "Clínicas Veterinárias e Petshops", icone: "paw" },
+  { nome: "Fotógrafos e Filmagens", icone: "camera-retro" },
 ];
 
 // ETAPAS / PASSOS
-const passosMagnet = [
-  {
-    title: "Escolha seu plano",
-    text: "Selecione o pacote que melhor atende seu negócio.",
-  },
-  {
-    title: "Integração fácil",
-    text: "Conectamos seu WhatsApp em minutos sem complicações.",
-  },
+const wppChat = [
   {
     title: "Crie mensagens",
     text: "Monte fluxos inteligentes para atender clientes 24h.",
   },
-  {
-    title: "Monitore resultados",
-    text: "Acompanhe relatórios de desempenho em tempo real.",
-  },
+
   {
     title: "Automatize tudo",
     text: "Deixe os chatbots cuidarem do trabalho repetitivo.",
@@ -143,84 +140,136 @@ const perguntasFaqMagnet = [
 ];
 
 export default function Page() {
+  const { darkMode } = useTheme();
+  const { theme } = useTheme();
   return (
     <>
-      <div className="container py-5">
+      <section className="pc cp">
         <BannerPrincipal
-          logo="/assets/img/logo-magnet.svg"
+          logo="/assets/img/logo-atend.svg"
           titulo="Atendimento Inteligente"
           descricao="Seu Atendimento 100% Automatizado Atenda. Converta. Escale. O Magnet Chat é uma plataforma de atendimento automatizado que transforma sua operação digital. Atenda seus clientes de forma rápida, inteligente e 100% automatizada, direto no WhatsApp, Instagram, Facebook e no seu site."
-          botoes={[
-            { label: "Ver Demonstração", href: "#" },
-            { label: "Falar com um Especialista", href: "#" },
-          ]}
-          backgroundImage="/assets/img/bg.png"
-          imagemCol="/assets/img/mchat.png"
+          botoes={[{ label: "Falar com um Especialista", href: "#" }]}
+          backgroundImage="/assets/img/bg-atend.png"
+          imagemCol="/assets/img/wpp-24h.png"
         />
+      </section>
 
-        <BeneficiosSection
-          titulo="O que é o Magnet Chat?"
-          descricao="Sua plataforma de atendimento automatizado com muitos benefícios:"
-          beneficios={beneficiosMagnet}
-          animationData={appAnimation}
-          checkColor="#367CFF"
-          isMagnet={true}
-          lottieWidth="74%"
-        />
-      </div>
-
-      <PublicoCarousel
-        recursos={recursosChat}
-        customClass="publico-mobile"
-        corBase="#367cff"
-      />
-
-      <div className="container">
-        <GridCard
-          titulo="🔧 Como Funciona?"
-          passos={passosMagnet}
-          iconColor="#367CFF"
-          ativoBgColor="rgba(54, 124, 255, 0.1)"
-        />
-
-        <PlanosSection
-          planos={planosMagnet}
-          destaqueBgColor="linear-gradient(to bottom, #367CFF 0%, #204A99 100%)"
-          destaqueTextColor="#fff"
-          checkIconColor="#fff"
-          checkIconColorNaoDestaque="#0d6efd"
-        />
-
-        <div className="py-5">
-          {" "}
-          <FaqSection
-            titulo="Perguntas e respostas mais frequentes"
-            perguntas={perguntasFaqMagnet}
-            animationData={faqAnimation}
-            backgroundColor="rgba(54, 124, 255, 0.1)"
+      <section className="pc">
+        <div className=" text-center">
+          <TituloSecao
+            titulo="Para quem é?"
+            subtitulo="Somos parceiros de empresas que querem escalar suas vendas em ramos como:"
           />
         </div>
+        <PublicoCarousel
+          recursos={recursosChat}
+          customClass="publico-mobile"
+          corBase="#00000000"
+          corBorda="#25D366"
+          corIcone="#25D366"
+        />
+      </section>
 
+      <section className="pc ">
+        <div className="container cp">
+          <BeneficiosSection
+            titulo="Transforme seu Atendimento com um Atendente Inteligente 24/7"
+            descricao="Nossa solução usa tecnologia avançada de IA para automatizar seu atendimento no WhatsApp, oferecendo respostas personalizadas 24/7 sem perder o toque humano."
+            beneficios={beneficiosMagnet}
+            checkColor="#25D366"
+            isMagnet={true}
+            imagem="/assets/img/wpp-24h.png"
+            lottieWidth="100%"
+          />
+        </div>
+      </section>
+
+      <section className="pc cp">
+        <div className=" text-center">
+          <TituloSecao titulo="O que você ganha com nosso site" />
+        </div>
+        <div className="container">
+          <GridCard
+            passos={wppChat}
+            ativoBgColor={darkMode ? "rgba(229,229,229,0.16)" : "#fff"}
+            modoHome="true"
+          />
+        </div>
+        <div className="d-flex row justify-content-center">
+          <div className="col-12 col-lg-3 position-relative">
+            <BtnColorido gradient="#25D366" />
+          </div>
+        </div>
+      </section>
+
+      <section className="pc">
+        <div className=" text-center">
+          <TituloSecao
+            titulo="Escolha o Plano Ideal para seu Negócio"
+            subtitulo="Planos flexíveis para atender às necessidades de qualquer infoprodutor, do iniciante ao avançado."
+          />
+        </div>
+        <PlanosSection
+          planos={planosMagnet}
+          destaqueBorderColor="#25D366"
+          destaqueTextColor={darkMode ? "#fff" : "#1C1C3C"}
+          checkIconColor="#25D366"
+          destaqueBtnColor="#1C1C3C"
+          corBotaoNaoDestaque="#25D366"
+          corTextoBotaoNaoDestaque="#000000"
+          iconeCor="#fff"
+          faixaDestaqueBgColor="#25D366"
+          iconeDestaqueCor="#fff"
+        />
+      </section>
+
+      <section className="pt-3 cp">
+        {" "}
         <Duvidas
-          backgroundImage="/assets/img/background-1.png"
-          textos={["Ficou com alguma dúvida?"]}
+          backgroundImage="/assets/img/bgWpp.png"
+          textos={["Quer consultar o pacote ideal?"]}
           botaoLabel="Falar com Especialista"
         />
+      </section>
 
-        <CtaAcao
-          titulo="Pronto para automatizar seu atendimento? 🚀"
-          descricao="Automatize seu atendimento, gere mais negócios e aumente suas conversões. Tenha seu chat funcionando em poucos dias."
-          botaoPrimario={{ label: "Quero saber mais" }}
-          botaoSecundario={{
-            titulo: "🔥 Comece agora!",
-            label: "Assinar plano",
-          }}
+      <section className="pc cp">
+        <FaqSection
+          titulo="Perguntas e respostas mais frequentes"
+          perguntas={perguntasFaqMagnet}
+          animationData={faqAnimation}
+          backgroundColor="rgba(37, 211, 102, 0.1)"
         />
-      </div>
+      </section>
 
-      <section className="py-5 acc my-5">
-        <div className="container">
-          <SyncAccordionSlide />
+      <section className="pc cp">
+        <div className="container cp">
+          <div className="flex-row gap-css flex-column  align-items-center">
+            <div className="text-center px-0">
+              <TituloSecao
+                titulo="Nossas soluções"
+                subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
+              />
+            </div>
+            <SyncAccordionSlide variant="chat" />
+          </div>
+        </div>
+      </section>
+
+      <section className="pc">
+        <div className="container cp " data-aos="fade-down">
+          <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
+            <div className="col-12 col-lg-6">
+              <TituloSecao
+                titulo="Tem uma ideia?"
+                subtitulo="Faça o orçamento dela agora!"
+              />
+            </div>
+
+            <div className="col-12 col-lg-3 position-relative">
+              <BtnColorido gradient="#25D366" />
+            </div>
+          </div>
         </div>
       </section>
     </>
