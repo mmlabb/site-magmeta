@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import AOSInit from "../AOSInit";
 
 export default function BannerPrincipal({
   logo,
@@ -12,7 +13,9 @@ export default function BannerPrincipal({
 }) {
   return (
     <div
-      className="container c-txt-b p-5"
+      className="container c-txt-b p-5 cp"
+      data-aos="flip-up"
+      data-aos-duration="2000"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
