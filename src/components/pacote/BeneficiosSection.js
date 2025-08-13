@@ -12,10 +12,10 @@ export default function BeneficiosSection({
   compact = false,
 }) {
   return (
-    <div className={`container ${compact ? "" : ""}`}>
-      <div className="row d-flex justify-content-center align-items-center">
+    <div className={`container ${compact ? "" : ""} cp`}>
+      <div className="row d-flex justify-content-between align-items-center">
         {imagem && (
-          <div className="col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+          <div className="col-md-5 d-flex justify-content-center mb-4 mb-md-0" data-aos="zoom-in-up">
             <Image
               src={imagem}
               alt="Imagem ilustrativa"
@@ -33,7 +33,12 @@ export default function BeneficiosSection({
           </div>
         )}
 
-        <div className={imagem ? "col-md-6" : "col-12"} style={{ padding: 0 }}>
+        <div
+          data-aos="fade-left"
+          className={`${
+            imagem ? "col-md-6" : "col-12"
+          } d-flex flex-column gap-3 p-0`}
+        >
           {titulo && <h3>{titulo}</h3>}
           {descricao && <p>{descricao}</p>}
           {beneficios?.length > 0 && (
