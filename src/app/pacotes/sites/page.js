@@ -169,7 +169,7 @@ export default function Page() {
   const { theme } = useTheme();
   return (
     <>
-      <section className="pc">
+      <section className="pc cp">
         <BannerPrincipal
           logo="/assets/img/logo-site.png"
           titulo="Seu Site Precisa Gerar Clientes, Não Só Existir"
@@ -196,7 +196,7 @@ export default function Page() {
         />
       </section>
 
-      <section className="pc">
+      <section className="pc cp">
         <BeneficiosSection
           titulo="O que está incluso"
           descricao="Tudo o que seu negócio precisa para ter presença digital que realmente gera vendas:"
@@ -207,16 +207,21 @@ export default function Page() {
         />
       </section>
 
-      <section className="pc">
+      <section className="pc cp">
         <div className=" text-center">
           <TituloSecao titulo="O que você ganha com nosso site" />
         </div>
-        <div className="container">
+        <div className="container cp">
           <GridCard
             passos={passosSite}
             ativoBgColor={darkMode ? "rgba(229,229,229,0.16)" : "#fff"}
             modoHome="true"
           />
+        </div>
+        <div className="d-flex row justify-content-center">
+          <div className="col-12 col-lg-3 position-relative">
+            <BtnColorido gradient="#03D1E8" />
+          </div>
         </div>
       </section>
 
@@ -230,22 +235,22 @@ export default function Page() {
         <PlanosSection
           planos={planosSite}
           destaqueBorderColor="#03D1E8"
-          destaqueTextColor="#000"
-          checkIconColor="#fff"
+          destaqueTextColor={darkMode ? "#fff" : "#1C1C3C"}
+          checkIconColor="#03D1E8"
           checkIconColorNaoDestaque="#1C1C3C"
           destaqueBtnHoverColor="#000"
           corIconeFaixa="#03D1E8"
           corBotaoDestaque="#1C1C3C"
           destaqueBtnColor="#1C1C3C"
           corBotaoNaoDestaque="#03D1E8"
-          corTextoBotaoNaoDestaque="#000000"
+          corTextoBotaoNaoDestaque="#1C1C3C"
           iconeCor={"#03D1E8"}
           faixaDestaqueBgColor="#03D1E8"
           iconeDestaqueCor="#fff"
         />
       </section>
 
-      <section className="pt-3">
+      <section className="pt-3 cp">
         {" "}
         <Duvidas
           backgroundImage="/assets/img/bgWpp.png"
@@ -254,7 +259,7 @@ export default function Page() {
         />
       </section>
 
-      <section className="pc">
+      <section className="pc cp">
         <FaqSection
           titulo="Perguntas e respostas mais frequentes"
           perguntas={perguntasFaqSite}
@@ -278,7 +283,7 @@ export default function Page() {
       </section>
 
       <section className="pc">
-        <div className="container cp ">
+        <div className="container cp " data-aos="fade-down">
           <div className="row gap-css d-flex d-flex text-center flex-column align-items-center ">
             <div className="col-12 col-lg-6">
               <TituloSecao
