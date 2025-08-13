@@ -280,7 +280,7 @@ export default function Home() {
       <section className="pc">
         <div className="container cp">
           <div className="flex-row gap-css flex-column  align-items-center">
-            <div className="text-center px-0" data-aos="zoom-out-up">
+            <div className="text-center px-0">
               <TituloSecao
                 titulo="Nossas soluções"
                 subtitulo="Escolha seu próximo passo para crescer com a Magmeta"
