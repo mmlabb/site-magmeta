@@ -1,11 +1,26 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDownCircle } from "react-feather";
 import BtnRoxo from "./botoes/BtnRoxo";
 import { useTheme } from "@/providers/ThemeProvider";
+
+const gradients = {
+  default: "linear-gradient(to right, #5B19A9 100%,  #9C5DD3 100%)",
+  site: "linear-gradient(to right, #03d1e8 0%, #1197c3 50%, #005b81 100%)",
+  chat: "linear-gradient(to right, #00c37e 0%, #1ac881 50%, #42d391 100%)",
+  app: "linear-gradient(to right, #C900A4 0%, #9A007F 100%)",
+};
+
+const progressGradients = {
+  site: "linear-gradient(to right, rgb(3, 209, 232) 0%, rgb(17, 151, 195) 50%, rgb(0, 91, 129) 100%)",
+  default: gradients.default,
+  chat: gradients.chat,
+  app: gradients.app,
+};
 
 const SyncAccordionSlide = ({ variant = "default" }) => {
   const { darkMode } = useTheme();
@@ -24,7 +39,7 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
         "Sua página pronta para atrair clientes com foco total em conversões via WhatsApp.Design estratégico que transforma visitantes em contatos reais. Desenvolvemos páginas focadas em conversão, com botões diretos para o WhatsApp.Design estratégico, responsivo e otimizado para atrair e reter visitantes.Você apresenta seus serviços com clareza e direciona o cliente para a ação certa.",
       image: "/assets/img/site.png",
       cta: "Quero um site",
-      link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
+      link: "/pacotes/sites",
     },
     {
       title: "Atendimento Automático 24h",
@@ -119,7 +134,7 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
   }, [start_auto_advance]);
 
   return (
-    <div className="container justify-content-between"  data-aos="zoom-in-down">
+    <div className="container justify-content-between" data-aos="zoom-in-down">
       <div className="d-flex flex-column-reverse flex-lg-row row-accordion gap-4">
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-center position-relative my-2">
           <div
@@ -141,7 +156,8 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
                 width: "100%",
                 height: "0px",
                 top: "0px",
-                backgroundColor: "#5B19A9",
+                background:
+                  progressGradients[variant] || progressGradients.default,
                 borderRadius: "24px",
                 transition: "height 4.5s linear, top 0.5s ease",
               }}
@@ -198,20 +214,22 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
                         >
                           {item.content}
                         </span>
-                        <div>
-                          <BtnRoxo
-                            variant={variant}
-                            className="btn-sm"
-                            style={{
-                              fontSize: "0.8rem",
-                              alignItems: "center",
-                              justifyContent: "center",
-                            }}
-                          >
-                            <small className="text-nowrap btn-sml p-2">
-                              {item.cta}
-                            </small>
-                          </BtnRoxo>
+                        <div className="d-flex justify-content-start">
+                          <Link href={item.link}>
+                            <BtnRoxo
+                              variant={variant}
+                              className="btn-sm"
+                              style={{
+                                fontSize: "0.8rem",
+                                alignItems: "center",
+                                justifyContent: "center",
+                              }}
+                            >
+                              <small className="text-nowrap btn-sml p-2">
+                                {item.cta}
+                              </small>
+                            </BtnRoxo>
+                          </Link>
                         </div>
                       </div>
                     </motion.div>
