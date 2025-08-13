@@ -2,20 +2,21 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMedal, faTrophy, faGem } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from "@/providers/ThemeProvider";
 
 export default function PlanosSection({
   planos,
   destaqueTextColor,
   checkIconColor,
-  checkIconColorNaoDestaque,
   destaqueBtnColor,
   iconeCor,
-  iconeDestaqueCor, // nova prop para cor do ícone do destaque
+  iconeDestaqueCor,
   corBotaoNaoDestaque,
   corTextoBotaoNaoDestaque,
   destaqueBorderColor,
   faixaDestaqueBgColor,
 }) {
+  const { darkMode, theme } = useTheme(); // pega do ThemeProvider
   const icons = [faMedal, faTrophy, faGem]; // essencial, impulso, premium
 
   return (
@@ -27,6 +28,7 @@ export default function PlanosSection({
 
           return (
             <div className="col-12 col-md-4 mb-4" key={index}>
+              {/* Faixa título */}
               <div
                 className="faixa-titulo d-flex align-items-center justify-content-center gap-2"
                 style={
@@ -44,6 +46,8 @@ export default function PlanosSection({
                   {plano.nome}
                 </h5>
               </div>
+
+              {/* Box do plano */}
               <div
                 className={`plano-box ${isDestaque ? "plano-destaque" : ""}`}
                 style={
@@ -57,13 +61,29 @@ export default function PlanosSection({
                 }
               >
                 <div>
-                  {plano.etiqueta && (
-                    <div className="etiqueta">{plano.etiqueta}</div>
-                  )}
+                  {/* Etiqueta sempre presente */}
+                  <div
+                    className="etiqueta"
+                    style={
+                      isDestaque
+                        ? {}
+                        : {
+                            backgroundColor: "transparent",
+                            color: "transparent",
+                            border: "none",
+                          }
+                    }
+                  >
+                    {plano.etiqueta || "\u00A0"}
+                  </div>
+
+                  {/* Preço e descrição */}
                   <div id="text-plano" className="preco pt-4">
                     {plano.preco}
                   </div>
                   <div className="descricao">{plano.descricao}</div>
+
+                  {/* Lista de benefícios */}
                   <div className="d-flex flex-column justify-content-between">
                     <ul className="beneficios">
                       {plano.beneficios.map((item, idx) => (
@@ -76,16 +96,26 @@ export default function PlanosSection({
                             color={
                               isDestaque
                                 ? checkIconColor
-                                : checkIconColorNaoDestaque
+                                : darkMode
+                                ? "#fff" // branco no dark
+                                : "#000" // preto no light
                             }
                             style={{ minWidth: "16px", minHeight: "16px" }}
                           />
-                          <span>{item}</span>
+                          <span
+                            style={{
+                              color: isDestaque ? destaqueTextColor : "inherit",
+                            }}
+                          >
+                            {item}
+                          </span>
                         </li>
                       ))}
                     </ul>
                   </div>
                 </div>
+
+                {/* Botão */}
                 <div className="text-center mt-3">
                   <button
                     className="btn btn-outline-primary btn-white btn-succe"
