@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Clientes from "@/containers/Customers";
 import "./sobre.css";
-import CardsSection from "@/containers/sobre/CardsSection";
 import PopupBlog from "@/components/PopupBlog";
 import Lottie from "lottie-react";
 import LogosSlider from "@/containers/sobre/LogosSlider";
@@ -12,10 +11,7 @@ import GridCard from "@/components/pacote/GridCard";
 import { useTheme } from "@/providers/ThemeProvider";
 import BtnColorido from "@/components/botoes/BtnColor";
 
-import AOS from "aos";
 import AOSInit from "@/components/AOSInit";
-
-
 
 const CheckIcon = () => {
   return (
@@ -77,12 +73,8 @@ export default function Sobre() {
   return (
     <>
       <section className="pc">
-        <div className="container cp box-1">
-          <div
-            className="row gap-4 gap-lg-0 align-items-center"
-            data-aos="zoom-in-up"
-            data-aos-duration="3000"
-          >
+        <div className="container cp box-1" >
+          <div className="row gap-4 gap-lg-0 align-items-center">
             <div className="box-texto-somos-magmeta col-md-12 col-lg-6">
               <div className="d-flex box-texto-sobre gap-3 flex-column">
                 <div className="txt-1">
@@ -105,10 +97,7 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div
-              className="col-md-12 col-lg-6 d-flex justify-content-center mascot-magmeta align-items-center"
-              data-aos="fade-left"
-            >
+            <div className="col-md-12 col-lg-6 d-flex justify-content-center mascot-magmeta align-items-center">
               {animationData ? (
                 <Lottie
                   animationData={animationData}
