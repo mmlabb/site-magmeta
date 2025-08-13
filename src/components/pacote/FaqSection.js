@@ -19,11 +19,12 @@ export default function FaqSection({
   return (
     <div
       className="container faq-box cp"
+      data-aos="zoom-out"
       style={{
         backgroundColor,
         borderRadius: "24px",
         padding: "12px",
-        boxShadow: "0 0 28px rgba(0, 0, 0, 0.29)",
+        boxShadow: "0 0 18px rgba(0, 0, 0, 0.10)",
       }}
     >
       <div className="row row-faq gy-4 flex-lg-row flex-column" id="row-faq">
@@ -31,7 +32,7 @@ export default function FaqSection({
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
           <div className="px-3 pt-2 pt-md-4">
             <span className="pb-2 d-block">FAQ</span>
-            <h4>{titulo}</h4>
+            <h3>{titulo}</h3>
           </div>
 
           <div
