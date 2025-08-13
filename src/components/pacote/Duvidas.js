@@ -6,6 +6,7 @@ export default function Duvidas({ backgroundImage, textos, botaoLabel }) {
   return (
     <div
       className="container"
+      data-aos="flip-up"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
