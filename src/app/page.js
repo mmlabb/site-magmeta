@@ -291,7 +291,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pc">
+      <section className="pc px-0">
         <div id="cases" className="gap-css cp">
           <div
             className="flex-row  flex-column text-center px-0 align-items-center"
@@ -299,8 +299,8 @@ export default function Home() {
           >
             <TituloSecao titulo="Cases" />
           </div>
-          <PortifolioProjetos />
         </div>
+        <PortifolioProjetos />
       </section>
 
       <section className="pc">
