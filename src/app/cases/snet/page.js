@@ -105,21 +105,18 @@ export default function Page() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <BannerPrincipal imagemCol="/assets/img/mockup-snet1.png" />
+        <BannerPrincipal />
       </section>
 
       <section className="pc">
-        <div className="container">
-          {" "}
-          <BeneficiosSection
-            titulo="O que é o Magnet Chat?"
-            descricao="Sua plataforma de atendimento automatizado com muitos benefícios:"
-            beneficios={beneficiosApps}
-            checkColor="#25D366"
-            imagem="/assets/img/mockup-snet2.png"
-            invertDesktop={true}
-          />
-        </div>
+        <BeneficiosSection
+          titulo="O que é o Magnet Chat?"
+          descricao="Sua plataforma de atendimento automatizado com muitos benefícios:"
+          beneficios={beneficiosApps}
+          checkColor="#25D366"
+          imagem="/assets/img/mockup-snet2.png"
+          invertDesktop={true}
+        />
       </section>
 
       <section>

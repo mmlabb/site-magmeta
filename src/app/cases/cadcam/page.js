@@ -1,9 +1,4 @@
 "use client";
-
-import SegundoC from "@/containers/cases/SegundoC";
-import TerceiroC from "@/containers/cases/TerceiroC";
-import QuartoC from "@/containers/cases/QuartoC";
-import QuintoCta from "@/containers/cases/QuintoCta";
 import BannerPrincipal from "@/components/pacote/BannerPrincipal";
 import BeneficiosSection from "@/components/pacote/BeneficiosSection";
 import DepoimentoBox from "@/components/DepoimentoBox";
@@ -12,6 +7,7 @@ import TituloSecao from "@/components/TituloeSub";
 import PortifolioProjetos from "@/components/PortifolioProjetos";
 import RelatedArticles from "@/components/RelatedArticles";
 import { articles } from "@/data/articles";
+import Reducao from "@/components/Reducao";
 const statsData = [
   {
     target: 21,
@@ -85,12 +81,19 @@ const data = {
 };
 // BENEFÍCIOS
 const beneficiosApps = [
-  "Sem dor de cabeça para implementação.",
-  "Suporte.",
-  "Crie fluxos inteligentes de conversa.",
+  "Template otimizado para navegação mobile",
+  "Navegação por categorias visuais que facilitam o encontro de produtos",
+  "Botão direto de contato pelo WhatsApp",
+  "Link personalizado com domínio Magmeta",
+  "Imagens e textos adaptados para conversão rápida",
+];
+
+const beneficiosCad = [
+  "Template otimizado para navegação mobile ",
+  "Seções visuais com categorias claras",
   "Centralize seus atendimentos.",
   "Chatbots inteligentes 24h.",
-  "Interface profissional e intuitiva.",
+  "Interface profissional e intuitiva. ",
   "Gere leads, qualifique clientes e feche mais vendas.",
   "Automatize seu atendimento sem precisar de desenvolvedores ou processos complexos.",
 ];
@@ -99,7 +102,7 @@ export default function Page() {
   return (
     <>
       <section
-        className="w-100 text-center"
+        className="w-100 text-center d-none d-md-block"
         style={{
           backgroundImage: "url(/assets/img/banner-cadcam.png)",
           width: "100%",
@@ -109,32 +112,29 @@ export default function Page() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <BannerPrincipal imagemCol="/" />
+        <BannerPrincipal />
       </section>
 
       <section className="pc">
         <div className="container">
           {" "}
           <BeneficiosSection
-            titulo="O que é o Magnet Chat?"
-            descricao="Sua plataforma de atendimento automatizado com muitos benefícios:"
+            titulo="Usados CADCAM"
+            descricao="De vitrine comum a referência digital no setor odontológico Criamos uma experiência moderna para o Usados CADCAM que não apenas organiza os produtos, mas transforma visitantes em contatos qualificados pelo WhatsApp."
             beneficios={beneficiosApps}
             checkColor="#000"
             imagem="/assets/img/mockup-cadcam1.png"
             invertDesktop={true}
           />
         </div>
-      </section>
-
-      <section>
-        <Counter data={statsData} />
+        <Reducao />
       </section>
 
       <section className="pc">
         <div className="container">
           <BeneficiosSection
-            titulo="Conheça nossos diferenciais"
-            descricao="A escolha certa para sua empresa."
+            titulo="Quem somos"
+            descricao="Unimos pessoas que amam o que fazem e estão alinhadas numa mesma meta, dispostas a enfrentar grandes desafios e desenvolver soluções e produtos inovadores que vão além de uma entrega, mas impactam vidas positivamente. E com estas mentes formamos a Magmeta."
             imagem="/assets/img/mockup-cadcam.png"
             invertDesktop={false}
           ></BeneficiosSection>
@@ -144,7 +144,7 @@ export default function Page() {
       <section className="pc">
         <div className="container">
           <BeneficiosSection
-            beneficios={beneficiosApps}
+            beneficios={beneficiosCad}
             checkColor="#25D366"
             imagem="/assets/img/pc-cadcam.png"
             invertDesktop={true}
