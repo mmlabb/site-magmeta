@@ -11,11 +11,11 @@ export default function BeneficiosSection({
   isMagnet,
   compact = false,
   invertDesktop = false,
-  children, // permite conteúdo customizado
+  children, 
 }) {
   return (
     <div className={`container ${compact ? "" : ""} cp`}>
-      <div className="row d-flex justify-content-between align-items-center">
+      <div className="row d-flex gap-4 align-items-center justify-content-center">
         {/* Coluna da imagem */}
         {imagem && (
           <div
