@@ -9,7 +9,7 @@ const PopupBlog = () => {
 
   if (!isVisible) return null;
   return (
-    <div className="popupContainer">
+    <div className="popupContainer d-none">
       <div className="popupContent">
         <button
           onClick={() => setIsVisible(false)}
