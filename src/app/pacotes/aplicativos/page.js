@@ -151,7 +151,7 @@ export default function Page() {
           titulo="Atendimento Inteligente"
           descricao="Seu Atendimento 100% Automatizado Atenda. Converta. Escale. O Magnet Chat é uma plataforma de atendimento automatizado que transforma sua operação digital. Atenda seus clientes de forma rápida, inteligente e 100% automatizada, direto no WhatsApp, Instagram, Facebook e no seu site."
           botoes={[{ label: "Ver Demonstração", href: "#" }]}
-          backgroundImage="/assets/img/bg-app.png"
+          backgroundImage="/assets/img/bg-apps.png"
           imagemCol="/assets/img/img-apps.png"
         />
       </section>
