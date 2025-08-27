@@ -15,7 +15,7 @@ export default function BannerPrincipal({
 
   return (
     <div
-      className="container c-txt-b p-5 cp"
+      className="container c-txt-b p-5"
       data-aos="flip-up"
       data-aos-duration="2000"
       style={{
