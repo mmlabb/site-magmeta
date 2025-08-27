@@ -15,7 +15,7 @@ export default function BannerPrincipal({
 
   return (
     <div
-      className="container c-txt-b p-5"
+      className="container c-txt-b"
       data-aos="flip-up"
       data-aos-duration="2000"
       style={{
@@ -27,10 +27,10 @@ export default function BannerPrincipal({
         borderRadius: "24px",
       }}
     >
-      <div className="row-banner row p-0">
+      <div className="row-banner row p-0 d-flex justify-content-center aling-items-center">
         {/* Coluna da Esquerda - só renderiza se NÃO for somente imagem */}
         {!somenteImagem && (
-          <div className="col-12 col-md-6 d-flex flex-column gap-4 justify-content-between ">
+          <div className="col-12 col-md-6 d-flex flex-column gap-4 justify-content-between p-5">
             {logo && (
               <div className="z-3">
                 <Image
