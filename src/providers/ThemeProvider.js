@@ -11,7 +11,7 @@ const ThemeContext = createContext({
 
 export const ThemeProvider = ({ children }) => {
   const pathname = usePathname();
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const alternateTheme = () => {
     setDarkMode(!darkMode);
