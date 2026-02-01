@@ -48,7 +48,7 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
         "Automatize suas conversas com clientes usando chatbots no WhatsApp. Responda dúvidas, colete dados e envie informações 24 horas por dia. Chatbots inteligentes fazem triagens, tiram dúvidas e coletam informações dos clientes.Tudo isso com linguagem personalizada para o seu negócio. Mais agilidade, menos trabalho e mais vendas acontecendo mesmo fora do horário comercial.",
       image: "/assets/img/atendimento24.png",
       cta: "Quero um chat",
-      link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
+      link: "https://wa.me/5561995217659?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
     },
     {
       title: "Aplicativo Para Seus Clientes",
@@ -57,7 +57,7 @@ const SyncAccordionSlide = ({ variant = "default" }) => {
         "Tenha um app exclusivo para seu negócio, com sua marca e funcionalidades. Facilite pedidos, agendamentos ou comunicação direta com seus clientes. Desenvolvemos aplicativos sob medida para facilitar agendamentos, pedidos ou suporte.Com visual profissional e funcionalidades pensadas no seu público.Integração com sistemas e atualizações sempre que você precisar.",
       image: "/assets/img/app.png",
       cta: "Quero um app",
-      link: "https://wa.me/5511987654321?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
+      link: "https://wa.me/5561995217659?text=Olá%20equipe%20MagMeta,%20quero%20agendar%20uma%20reunião",
     },
   ];
 

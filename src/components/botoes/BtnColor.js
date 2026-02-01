@@ -7,7 +7,7 @@ const BtnColorido = ({ gradient }) => {
   return (
     <div className="btn-wrapper">
       <a
-        href={`https://wa.me/5561981689203?text=${encodeURIComponent(
+        href={`https://wa.me/5561995217659?text=${encodeURIComponent(
           "Olá, vim pelo site e gostaria de saber mais!"
         )}`}
         className="btn-colorido"

@@ -90,9 +90,9 @@ export default function Home() {
     function resetBoxes() {
       portfolioBoxes.forEach((box) => {
         if (window.innerWidth > 800) {
-          box.style.width = "50%"; // Set width to 25% for smaller screens
+          box.style.width = "50%";
         } else {
-          box.style.width = "50%"; // Keep the original width for tablets and larger
+          box.style.width = "50%"; 
         }
       });
     }
