@@ -74,7 +74,7 @@ Ao investir em um app, você está construindo uma ponte direta com o cliente, c
 
 **Dê o primeiro passo: comece a planejar hoje o seu aplicativo e prepare-se para vender mais, se destacar da concorrência e construir um negócio ainda mais forte.**
 
-**[📲 Clique aqui e dê o primeiro passo rumo à inovação! 🚀](https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
+**[📲 Clique aqui e dê o primeiro passo rumo à inovação! 🚀](https://api.whatsapp.com/send?phone=+5561995217659&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
 
     `,
     tags: ["APP", "Vendas", "Automação"],
@@ -152,7 +152,7 @@ Empresas que tratam a tecnologia como aliada colhem resultados concretos: **mais
 
 Se você quer **acelerar seu crescimento** e encontrar as melhores soluções para o seu negócio, fale com nossos especialistas. Vamos juntos criar uma **estratégia sob medida para o seu sucesso**.
 
-**[📲 Clique aqui e dê o primeiro passo rumo à inovação! 🚀](https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
+**[📲 Clique aqui e dê o primeiro passo rumo à inovação! 🚀](https://api.whatsapp.com/send?phone=+5561995217659&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
     `,
     tags: ["Automação", "IA", "Inovação"],
     date: "2025-03-26",
@@ -267,7 +267,7 @@ Após a instalação, **treine seus colaboradores** e **monitore o uso real** do
 **Tecnologia é ferramenta, não fim.** O segredo está em usar a tecnologia certa, no momento certo, **com o time certo**. Profissionais especializados em software não apenas implementam sistemas — **eles criam soluções sob medida que impulsionam o crescimento sustentável** da sua empresa.
 
 
-**[📲 Clique aqui e agende sua consultoria estratégica!](https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
+**[📲 Clique aqui e agende sua consultoria estratégica!](https://api.whatsapp.com/send?phone=+5561995217659&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
     `,
     tags: ["Escalabilidade", "Inovação", "Tecnologia"],
     date: "2025-06-25",
@@ -327,7 +327,7 @@ Negócios que tratam a estrutura como prioridade crescem com mais confiança e m
 
 Crescimento sustentável não acontece por acaso. Ele exige estrutura, planejamento e a tecnologia certa. As empresas que mais se destacam hoje são aquelas que conseguiram transformar caos em organização e decisões em dados.
 
- Se sua empresa está pronta para crescer, mas quer evitar os erros mais comuns, **[📲 Clique aqui e fale com um especialista, vamos juntos transformar sua operação em uma máquina eficiente e escalável.](https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
+ Se sua empresa está pronta para crescer, mas quer evitar os erros mais comuns, **[📲 Clique aqui e fale com um especialista, vamos juntos transformar sua operação em uma máquina eficiente e escalável.](https://api.whatsapp.com/send?phone=+5561995217659&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta.)**
     `,
     tags: ["Crescimento", "Tecnologia", "Gestão", "IA"],
     date: "2025-11-01",
@@ -426,7 +426,7 @@ Em um mundo cada vez mais conectado, proteger seu negócio digital não é mais 
 Adotar práticas básicas de segurança, utilizar ferramentas acessíveis e manter-se informado já coloca você à frente de muitos concorrentes. Investir em cibersegurança é investir na continuidade, credibilidade e crescimento do seu negócio.
 
 
-[📲 Clique aqui e fale com um especialista!](https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20ciberseguran%C3%A7a%20para%20meu%20neg%C3%B3cio%20digital.)
+[📲 Clique aqui e fale com um especialista!](https://api.whatsapp.com/send?phone=+5561995217659&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20ciberseguran%C3%A7a%20para%20meu%20neg%C3%B3cio%20digital.)
 
     `,
     tags: ["Segurança", "Proteção"],

@@ -67,7 +67,7 @@ export default function SolucoesMagmeta() {
               </div>
               <div>
                 <a
-                  href="https://api.whatsapp.com/send?phone=+5561981689203&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
+                  href="https://api.whatsapp.com/send?phone=+5561995217659&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20as%20Solu%C3%A7%C3%B5es%20Magmeta."
                   className="btn btn-light w-100 fw-bold"
                 >
                   {solucao.buttonText} <Zap size={18} />
